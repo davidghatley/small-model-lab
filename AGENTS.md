@@ -8,7 +8,7 @@ David's original brief is kept as written in `docs/brief.md`. It describes what 
 ## Owner's rules (house rules + brief)
 - **Never install or run a GPU unlock** (kernel module or UEFI). David does that himself. Record `gpu: stock|unlocked` on every run's setup line.
 - GPU jobs always go through `~/anime-pipeline/tools/gpu_run [--free] [--need MiB]` (see the gpu-share skill). Keep batches under ~30 min. Never kill processes you didn't start. Free ComfyUI by API, never by killing it.
-- Ask before downloads over **10 GB** (house rule, stricter than the brief's 20 GB), before sudo, before touching other projects' envs, and before anything that sends data to a paid API.
+- Downloads of any size are fine without asking (David, 2026-11-03); put big ones on `/mnt/work`. Still ask before sudo, before touching other projects' envs, and before anything that sends data to a paid API.
 - Check every model's license before using it and record it in the ledger. Some judges are **non-commercial only**. Prefer ungated models.
 - Fix seeds. Save the exact config and command for every result next to it in `runs/`.
 - Held-out sets stay held out: never train on eval prompts.
