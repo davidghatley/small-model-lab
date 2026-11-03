@@ -1,0 +1,23 @@
+.venv*/
+__pycache__/
+*.log
+.env
+data/
+media/
+out/
+models/
+weights/
+*.safetensors
+*.gguf
+*.bin
+*.pt
+# run outputs: keep text summaries, ignore bulk
+runs/**/*.png
+runs/**/*.jpg
+runs/**/*.webp
+runs/**/*.html
+runs/**/pairs/
+runs/**/renders/
+runs/**/checkpoints/
+runs/**/*.jsonl
+!runs/**/summary.jsonl
