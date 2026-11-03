@@ -1,0 +1,29 @@
+{
+  "args": {
+    "judge": "imajev-2b",
+    "model_path": "/mnt/models/llm/imajev-2b",
+    "adapter": null,
+    "quant": "nf4",
+    "out": "runs/E0/bench/imajev-2b-nf4/",
+    "runs": 10,
+    "warmup": 1,
+    "seed": 0,
+    "rotations": 1,
+    "fast": false,
+    "no_calibration": false,
+    "effort": null,
+    "server_cmd": null
+  },
+  "seed": 0,
+  "gpu": "stock",
+  "versions": {
+    "torch": "2.14.1",
+    "transformers": "5.22.1",
+    "peft": "0.21.2",
+    "playwright": "1.64.1",
+    "Pillow": "13.0.0"
+  },
+  "python": "3.12.15",
+  "gpu_name": "NVIDIA GeForce RTX 3060",
+  "command": "/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/e0_bench.py --judge imajev-2b --model-path /mnt/models/llm/imajev-2b --quant nf4 --out runs/E0/bench/imajev-2b-nf4/"
+}

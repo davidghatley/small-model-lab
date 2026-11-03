@@ -23,3 +23,4 @@ runs/**/*.jsonl
 !runs/**/summary.jsonl
 !runs/E0/fixtures/*.png
 !runs/E0/fixtures/*.html
+.venv-rsijev/

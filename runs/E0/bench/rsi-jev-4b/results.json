@@ -1,0 +1,204 @@
+{
+  "judge": "rsi-jev-4b",
+  "quant": "bf16",
+  "errors": [],
+  "load_s": 72.83976244926453,
+  "latency": {
+    "single_A": {
+      "n": 10,
+      "p50_ms": 690.1138829998672,
+      "p90_ms": 698.1073819566518,
+      "mean_ms": 691.7655853321776
+    },
+    "single_B": {
+      "n": 10,
+      "p50_ms": 688.4480089647695,
+      "p90_ms": 691.4081211900339,
+      "mean_ms": 689.0958368079737
+    },
+    "pair_AB": {
+      "n": 10,
+      "p50_ms": 634.9119830410928,
+      "p90_ms": 636.8518504779786,
+      "mean_ms": 635.1396851008758
+    },
+    "pair_BA": {
+      "n": 10,
+      "p50_ms": 635.0372415035963,
+      "p90_ms": 636.6054183337837,
+      "mean_ms": 635.1593710947782
+    }
+  },
+  "latency_all_ops": {
+    "n": 40,
+    "p50_ms": 664.091597427614,
+    "p90_ms": 690.9342680126429,
+    "mean_ms": 662.7901195839513
+  },
+  "latency_single": {
+    "n": 20,
+    "p50_ms": 689.9830665206537,
+    "p90_ms": 696.4400460477918,
+    "mean_ms": 690.4307110700756
+  },
+  "latency_pairwise": {
+    "n": 20,
+    "p50_ms": 635.0372415035963,
+    "p90_ms": 636.8518504779786,
+    "mean_ms": 635.149528097827
+  },
+  "vram": {
+    "torch_max_allocated_mib": 9723.9208984375,
+    "nvidia_smi_proc_peak_mib": 9964,
+    "nvidia_smi_gpu_used_peak_mib": 10518,
+    "note": "torch figure is 0 when the model runs in a child server (omnijev); use nvidia_smi_proc_peak_mib"
+  },
+  "single": {
+    "A_clean": {
+      "p_good": 0.9359766244888306,
+      "rating": {
+        "type": "score",
+        "score": 3.0910826202016324,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.0007316724513657391,
+          "1": 0.003010595915839076,
+          "2": 0.053924184292554855,
+          "3": 0.7891106009483337,
+          "4": 0.1532229632139206
+        },
+        "confidence": 0.7363882511854172
+      }
+    },
+    "B_flawed": {
+      "p_good": 0.010394826531410217,
+      "rating": {
+        "type": "score",
+        "score": 0.3897897247225046,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.6397261023521423,
+          "1": 0.33955851197242737,
+          "2": 0.013809757307171822,
+          "3": 0.005010800901800394,
+          "4": 0.0018948238575831056
+        },
+        "confidence": 0.5496576279401779
+      }
+    },
+    "scores_A_gt_B": true
+  },
+  "pairwise": {
+    "pairwise_worked": true,
+    "failures": {},
+    "p_A_better_when_A_first": 0.9919243454933167,
+    "p_A_better_when_B_first": 0.9943919102661312,
+    "choice_AB": "A_clean",
+    "choice_BA": "A_clean",
+    "swap_consistent": true,
+    "picks_clean_page_both_orders": true,
+    "yes_no_answer": "A (clean)"
+  },
+  "probability_field_present": true,
+  "deterministic_across_runs": {
+    "single_A": true,
+    "single_B": true,
+    "pair_AB": true,
+    "pair_BA": true
+  },
+  "failed_ops": {},
+  "raw_outputs_last_run": {
+    "single_A": {
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.9359766244888306
+        },
+        "rating": {
+          "type": "score",
+          "score": 3.0910826202016324,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.0007316724513657391,
+            "1": 0.003010595915839076,
+            "2": 0.053924184292554855,
+            "3": 0.7891106009483337,
+            "4": 0.1532229632139206
+          },
+          "confidence": 0.7363882511854172
+        }
+      }
+    },
+    "single_B": {
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.010394826531410217
+        },
+        "rating": {
+          "type": "score",
+          "score": 0.3897897247225046,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.6397261023521423,
+            "1": 0.33955851197242737,
+            "2": 0.013809757307171822,
+            "3": 0.005010800901800394,
+            "4": 0.0018948238575831056
+          },
+          "confidence": 0.5496576279401779
+        }
+      }
+    },
+    "pair_AB": {
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "first",
+          "probabilities": {
+            "first": 0.9919243454933167,
+            "second": 0.00807562842965126
+          },
+          "confidence": 0.9838486909866333
+        }
+      }
+    },
+    "pair_BA": {
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "second",
+          "probabilities": {
+            "first": 0.005608089733868837,
+            "second": 0.9943919777870178
+          },
+          "confidence": 0.9887839555740356
+        }
+      }
+    }
+  }
+}

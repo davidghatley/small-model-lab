@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/e0_bench.py --judge rsi-jev-4b --model-path /mnt/models/llm/rsi-jev-4b --out runs/E0/bench/rsi-jev-4b/

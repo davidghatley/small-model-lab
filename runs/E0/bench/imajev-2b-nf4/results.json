@@ -1,0 +1,256 @@
+{
+  "judge": "imajev-2b",
+  "quant": "nf4",
+  "errors": [],
+  "load_s": 15.777432441711426,
+  "latency": {
+    "single_A": {
+      "n": 10,
+      "p50_ms": 1072.9860599385574,
+      "p90_ms": 1074.4914399227127,
+      "mean_ms": 1071.9903716351837
+    },
+    "single_B": {
+      "n": 10,
+      "p50_ms": 1071.4897834695876,
+      "p90_ms": 1074.143781955354,
+      "mean_ms": 1071.0054823197424
+    },
+    "pair_AB": {
+      "n": 10,
+      "p50_ms": 1003.3153964905068,
+      "p90_ms": 1004.9544324167073,
+      "mean_ms": 1002.8966517187654
+    },
+    "pair_BA": {
+      "n": 10,
+      "p50_ms": 1001.9581030355766,
+      "p90_ms": 1003.7434863857926,
+      "mean_ms": 1001.3711968902498
+    }
+  },
+  "latency_all_ops": {
+    "n": 40,
+    "p50_ms": 1036.533000995405,
+    "p90_ms": 1073.8174555590376,
+    "mean_ms": 1036.8159256409854
+  },
+  "latency_single": {
+    "n": 20,
+    "p50_ms": 1071.7450814554468,
+    "p90_ms": 1074.3734882213175,
+    "mean_ms": 1071.497926977463
+  },
+  "latency_pairwise": {
+    "n": 20,
+    "p50_ms": 1002.8387139318511,
+    "p90_ms": 1004.9544324167073,
+    "mean_ms": 1002.1339243045078
+  },
+  "vram": {
+    "torch_max_allocated_mib": 2280.01416015625,
+    "nvidia_smi_proc_peak_mib": 2568,
+    "nvidia_smi_gpu_used_peak_mib": 3023,
+    "note": "torch figure is 0 when the model runs in a child server (omnijev); use nvidia_smi_proc_peak_mib"
+  },
+  "single": {
+    "A_clean": {
+      "p_good": 0.8272709547491975,
+      "rating": {
+        "type": "score",
+        "score": 2.6764039703501896,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.06652109360576268,
+          "1": 0.05124727864571368,
+          "2": 0.2157584285033878,
+          "3": 0.47225296228284314,
+          "4": 0.19422023696229268
+        },
+        "confidence": 0.33069749036251084,
+        "unknown_probability": 0.02826404505689151,
+        "abstained": false,
+        "calibration_version": "imajev-2b-1.0"
+      }
+    },
+    "B_flawed": {
+      "p_good": 0.041480722400685587,
+      "rating": {
+        "type": "score",
+        "score": 1.1045701577475648,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.3052798008463534,
+          "1": 0.4474504511116373,
+          "2": 0.1412391827126655,
+          "3": 0.04948092010677882,
+          "4": 0.056549645222565004
+        },
+        "confidence": 0.2769599378374702,
+        "unknown_probability": 0.10459670097745843,
+        "abstained": false,
+        "calibration_version": "imajev-2b-1.0"
+      }
+    },
+    "scores_A_gt_B": true
+  },
+  "pairwise": {
+    "pairwise_worked": true,
+    "failures": {},
+    "p_A_better_when_A_first": 0.9165491520750758,
+    "p_A_better_when_B_first": 0.8912408089070702,
+    "choice_AB": "A_clean",
+    "choice_BA": "A_clean",
+    "swap_consistent": true,
+    "picks_clean_page_both_orders": true,
+    "yes_no_answer": "A (clean)"
+  },
+  "probability_field_present": true,
+  "deterministic_across_runs": {
+    "single_A": true,
+    "single_B": true,
+    "pair_AB": true,
+    "pair_BA": true
+  },
+  "failed_ops": {},
+  "raw_outputs_last_run": {
+    "single_A": {
+      "model": "imajev-v1.1",
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.8272709547491975,
+          "unknown_probability": 0.003934365669248737,
+          "abstained": false,
+          "calibration_version": "imajev-2b-1.0"
+        },
+        "rating": {
+          "type": "score",
+          "score": 2.6764039703501896,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.06652109360576268,
+            "1": 0.05124727864571368,
+            "2": 0.2157584285033878,
+            "3": 0.47225296228284314,
+            "4": 0.19422023696229268
+          },
+          "confidence": 0.33069749036251084,
+          "unknown_probability": 0.02826404505689151,
+          "abstained": false,
+          "calibration_version": "imajev-2b-1.0"
+        }
+      },
+      "usage": {
+        "prefill_ms": 0.0,
+        "questions_ms": 1061.7,
+        "input_tokens": 1139,
+        "rotations": 1
+      }
+    },
+    "single_B": {
+      "model": "imajev-v1.1",
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.041480722400685587,
+          "unknown_probability": 0.026147687094701794,
+          "abstained": false,
+          "calibration_version": "imajev-2b-1.0"
+        },
+        "rating": {
+          "type": "score",
+          "score": 1.1045701577475648,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.3052798008463534,
+            "1": 0.4474504511116373,
+            "2": 0.1412391827126655,
+            "3": 0.04948092010677882,
+            "4": 0.056549645222565004
+          },
+          "confidence": 0.2769599378374702,
+          "unknown_probability": 0.10459670097745843,
+          "abstained": false,
+          "calibration_version": "imajev-2b-1.0"
+        }
+      },
+      "usage": {
+        "prefill_ms": 0.0,
+        "questions_ms": 1061.7,
+        "input_tokens": 1139,
+        "rotations": 1
+      }
+    },
+    "pair_AB": {
+      "model": "imajev-v1.1",
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "first",
+          "probabilities": {
+            "first": 0.9165491520750758,
+            "second": 0.08345084792492422
+          },
+          "confidence": 0.81364260071555,
+          "unknown_probability": 0.02335343060678603,
+          "abstained": false,
+          "calibration_version": "imajev-2b-1.0"
+        }
+      },
+      "usage": {
+        "prefill_ms": 0.0,
+        "questions_ms": 988.8,
+        "input_tokens": 2151,
+        "rotations": 1
+      }
+    },
+    "pair_BA": {
+      "model": "imajev-v1.1",
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "second",
+          "probabilities": {
+            "first": 0.10875919109292974,
+            "second": 0.8912408089070704
+          },
+          "confidence": 0.7434540983052546,
+          "unknown_probability": 0.04987659597411298,
+          "abstained": false,
+          "calibration_version": "imajev-2b-1.0"
+        }
+      },
+      "usage": {
+        "prefill_ms": 0.0,
+        "questions_ms": 991.5,
+        "input_tokens": 2151,
+        "rotations": 1
+      }
+    }
+  }
+}
