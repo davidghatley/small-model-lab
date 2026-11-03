@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/e0_bench.py --judge imajev-2b --model-path /mnt/models/llm/imajev-2b --out runs/E0/bench/imajev-2b/
