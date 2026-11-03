@@ -42,12 +42,31 @@ class Imajev:
         from vision_decision.jev_api import to_response
         from vision_decision.calibration import TemperatureCalibrator
         self.S, self.load_image_bytes, self.to_response = S, load_image_bytes, to_response
+        if a.quant in ("nf4", "int8"):
+            self._patch_quant(torch, a.quant)
         mp = Path(a.model_path)
         bundle = mp / "bundle.json"
         bundle.write_text(json.dumps({"repo": "base", "path": str(mp / "base")}))
         self.backend = S.TorchBackend(str(bundle), str(mp), rotations=a.rotations, fast=a.fast)
         cal = mp / "calibration.json"
         self.cal = TemperatureCalibrator.load(cal) if cal.exists() and not a.no_calibration else None
+
+    @staticmethod
+    def _patch_quant(torch, kind):
+        """Quantize the base at load time (bitsandbytes) without editing imajev's code: wrap the from_pretrained it calls.
+        The vision tower and lm_head stay bf16 (imajev's readout is initialised from lm_head rows)."""
+        from transformers import BitsAndBytesConfig, Qwen3_5ForConditionalGeneration as Q
+        if kind == "nf4":
+            cfg = BitsAndBytesConfig(load_in_4bit=True, bnb_4bit_quant_type="nf4", bnb_4bit_use_double_quant=True,
+                                     bnb_4bit_compute_dtype=torch.bfloat16, llm_int8_skip_modules=["visual", "lm_head"])
+        else:
+            cfg = BitsAndBytesConfig(load_in_8bit=True, llm_int8_skip_modules=["visual", "lm_head"])
+        orig = Q.from_pretrained.__func__
+
+        def fp(cls, path, *args, **kw):
+            kw.update(quantization_config=cfg, device_map={"": 0})
+            return orig(cls, path, *args, **kw)
+        Q.from_pretrained = classmethod(fp)
 
     def ask(self, images, state, questions):
         loaded = [self.load_image_bytes(Path(p).read_bytes()) for p in images]

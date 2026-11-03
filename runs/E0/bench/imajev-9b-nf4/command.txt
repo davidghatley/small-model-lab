@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/e0_bench.py --judge imajev-9b --model-path /mnt/work/models/imajev-9b --quant nf4 --out runs/E0/bench/imajev-9b-nf4/

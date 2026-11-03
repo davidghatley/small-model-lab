@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/e0_bench.py --judge omnijev-0.8b --model-path /mnt/models/llm/omnijev-0.8b --out runs/E0/bench/omnijev-0.8b/

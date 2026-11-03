@@ -8,7 +8,7 @@ GPU commands go through the shared gate: `~/anime-pipeline/tools/gpu_run --free 
 
 ## e0_bench.py (E0 judge benchmark)
 Per judge: load, then 1 warmup + 10 timed runs of 4 ops (single-image A, single-image B, pairwise A,B, pairwise B,A). Writes to `--out`: `results.json` (p50/p90 latency per op and overall, VRAM = torch max_allocated + nvidia-smi per-process and whole-GPU peak, raw answers, probabilities, pairwise worked, swap consistency, determinism), `config.json` (args, seed, versions, `gpu: stock`), `command.txt`, `run.log`.
-Seed fixed by `--seed` (default 0). Other flags: `--runs`, `--warmup`, `--quant <label>`, `--rotations N` and `--fast` and `--no-calibration` (imajev), `--effort` (rsijev), `--server-cmd` (omnijev), `--adapter` (override inference from the judge name).
+Seed fixed by `--seed` (default 0). Other flags: `--runs`, `--warmup`, `--quant <label>` (imajev: `nf4` = bitsandbytes 4-bit NF4 + double quant + bf16 compute, or `int8`; vision tower and lm_head stay bf16; omnijev: `gguf*`), `--rotations N` and `--fast` and `--no-calibration` (imajev), `--effort` (rsijev), `--server-cmd` (omnijev), `--adapter` (override inference from the judge name).
 
 Template (swap the judge/path):
 ```
@@ -23,6 +23,7 @@ imajev ships a LoRA adapter plus decision readout on a Qwen3.5 base. Layout the 
 |---|---|---|---|
 | imajev-2b (TESTED) | `hf download mohit67890/imajev-2b --local-dir /mnt/models/llm/imajev-2b --exclude 'assets/*' 'mlx/*'` and base `hf download Qwen/Qwen3.5-2B --revision 15852e8c16360a2fea060d615a32b45270f8a8fc --local-dir /mnt/models/llm/imajev-2b/base` | ~4.4 GB | `--judge imajev-2b --model-path /mnt/models/llm/imajev-2b` |
 | imajev-4b (untested; same code path as 2b) | `hf download mohit67890/imajev-4b ...` same excludes, `--local-dir /mnt/models/llm/imajev-4b`; base `Qwen/Qwen3.5-4B --revision 851bf6e806efd8d0a36b00ddf55e13ccb7b8cd0a` into `.../imajev-4b/base` | ~9.3 GB base + adapter, tight on 12 GB | `--judge imajev-4b --model-path /mnt/models/llm/imajev-4b` |
+| imajev-9b (TESTED, nf4 only; bf16 does not fit) | `hf download mohit67890/imajev-9b --local-dir /mnt/work/models/imajev-9b --exclude 'assets/*' --exclude 'mlx/*'` (repeat `--exclude`; the one-flag-two-patterns form fails) and base `hf download Qwen/Qwen3.5-9B --revision c202236235762e1c871ad0ccb60c8ee5ba337b9a --local-dir /mnt/work/models/imajev-9b/base` (on /mnt/work SSD, not /mnt/models) | ~19 GB | `--judge imajev-9b --model-path /mnt/work/models/imajev-9b --quant nf4` (8.8 GB nvidia-smi peak) |
 | rsi-jev-4b (untested) | `hf download shgao/rsi-jev-v6.1-vl-4b --local-dir /mnt/models/llm/rsi-jev-4b`; own venv: `.venv-rsijev` (rsi-jev pins transformers 5.17.x; built from `runs/E0/bench/venv_after_rsijev.txt`). Run with `.venv-rsijev/bin/python`, not `.venv` | ~9.7 GB bf16, tight | `--judge rsi-jev-4b --model-path /mnt/models/llm/rsi-jev-4b [--effort auto]` |
 | omnijev-0.8b (untested) | `hf download OmniJev/OneJev1.6-0.8B --local-dir /mnt/models/llm/omnijev-0.8b`; `VIRTUAL_ENV=.venv uv pip install flide torchvision` | ~1.7 GB | `--judge omnijev-0.8b --model-path /mnt/models/llm/omnijev-0.8b` |
 | omnijev-4b (untested) | `hf download OmniJev/OneJev1.6-4B --local-dir /mnt/models/llm/omnijev-4b`; flide as above | ~9.1 GB bf16, tight | `--judge omnijev-4b --model-path /mnt/models/llm/omnijev-4b` |

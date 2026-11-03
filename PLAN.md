@@ -4,7 +4,7 @@ Goal: one publishable before/after result on the 3060: a small coder model impro
 Full queue and acceptance criteria: docs/brief.md. Status lives in LEDGER.md.
 
 ## Phases
-- [ ] E0 judge recon → top-2 judges (runs/E0/judges.md)
+- [x] E0 judge recon → top-2 judges (runs/E0/judges.md)
 - [ ] E1 judge taste validation (gate: ≥75% agreement on high-confidence pairs)
 - [ ] E2 design loop, 2–3 DPO rounds, held-out eval under 3 judges
 - [ ] E3 stock vs unlocked (after David applies the unlock)
@@ -20,3 +20,4 @@ Full queue and acceptance criteria: docs/brief.md. Status lives in LEDGER.md.
 - 2026-11-03: Weights go in /mnt/models/llm/<name>/ (66 GB free today).
 - 2026-11-03: David approved the imajev-9b download (19.3 GB, over the 10 GB rule). It runs in 4-bit NF4 because bf16 won't fit.
 - 2026-11-03: David: use the other drives freely. Big weights now go to /mnt/work/models (imajev-9b first).
+- 2026-11-03: E0 picks: omnijev-0.8b (training judge), imajev-9b nf4 (held-out judge), rsi-jev-4b also scored in E1. Three judges go to E1, not two, because one fixture pair can't rank taste.

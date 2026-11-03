@@ -41,3 +41,31 @@ Not installed by the runner: `requests` is not in the README's install commands 
 Runner session: about 1 h (started around 15:40 MST, finished 16:37 MST), mostly downloads (omnijev-0.8b 75 s, imajev-4b ~12 GB with restarts ~17 min, rsi-jev-4b 9.1 GB ~10 min, omnijev-4b 14 GB ~25 min with restarts). Bench runs: 4 s, 98 s, 107 s, 3 s.
 
 Logs: `runs/E0/dl_imajev-4b.log`, `runs/E0/dl_rsi-jev-4b.log`, `runs/E0/dl3_omnijev-4b.log`, `runs/E0/install_*.log`.
+
+## omnijev rerun
+
+Old failed outputs (requests missing) moved to `runs/E0/bench/omnijev-0.8b.failed1` and `runs/E0/bench/omnijev-4b.failed1`.
+
+### omnijev-0.8b: PASS (exit 0)
+- single p50: 146.3 ms (A_clean 147.1, B_flawed 145.4); pairwise p50: 266.1 ms
+- nvidia_smi_proc_peak_mib: 5260 (gpu used peak 5820)
+- pairwise.pairwise_worked: true; swap_consistent: true; picks_clean_page_both_orders: true (choice A_clean in both orders)
+- pairwise probabilities: p_A_better_when_A_first 0.9527, p_A_better_when_B_first 0.9952
+- single p_good: A_clean 0.8037, B_flawed 0.0028 (scores_A_gt_B: true)
+- probability fields present: true; 0 errors; deterministic across runs
+- Log: `runs/E0/bench/omnijev-0.8b.stdout.log`
+
+### omnijev-4b: FAIL (exit 1), two attempts, same error
+Attempt 1 (moved to `runs/E0/bench/omnijev-4b.failed2`, stdout at `runs/E0/bench/omnijev-4b.failed2.stdout.log`) and attempt 2 (current `runs/E0/bench/omnijev-4b/`, stdout at `runs/E0/bench/omnijev-4b.stdout.log`) both failed while loading weights in the child server:
+```
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 1.19 GiB. GPU 0 has a total capacity of 11.62 GiB of which 1.19 GiB is free. ... this process has 9.89 GiB memory in use. Of the allocated memory 9.73 GiB is allocated by PyTorch ...
+  File ".../flide/backbones/load.py", line 173, in _load_into   src = f.get_tensor(key)
+RuntimeError: server exited 1; see server.log
+```
+- Context: the 0.8b run finished before this; gpu_run --need 10000 passed, and nvidia-smi showed 547 MiB used by others at the retry. The loader itself reached ~9.9 GiB, so the failure is not transient contention. imajev-4b and rsi-jev-4b (same ~9.7 GiB footprint, earlier) loaded fine on this card, so this is marginal headroom in the loader, not a missing package.
+- No results.json produced, so no latency, VRAM, pairwise or probability numbers. Not run: pairwise, probabilities.
+- Next options (not tried, need your call): set `PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True` (reserved-but-unallocated was only 38 MiB, so unlikely to help), or the omnijev-4b loader's lean/fp8 path if the script exposes one. scripts/ was not edited.
+
+### Run summary
+- gpu: stock (no driver, firmware or unlock changes; gpu_run used normally)
+- Wall time: about 2 min for both judges (0.8b bench ~1 min, 4b two attempts ~30 s each)

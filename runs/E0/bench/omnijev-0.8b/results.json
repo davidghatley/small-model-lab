@@ -1,0 +1,284 @@
+{
+  "judge": "omnijev-0.8b",
+  "quant": "bf16",
+  "errors": [],
+  "load_s": 40.0334153175354,
+  "latency": {
+    "single_A": {
+      "n": 10,
+      "p50_ms": 147.0734653994441,
+      "p90_ms": 147.67687832936645,
+      "mean_ms": 147.1065976191312
+    },
+    "single_B": {
+      "n": 10,
+      "p50_ms": 145.4205245245248,
+      "p90_ms": 146.18802042677999,
+      "mean_ms": 145.438951975666
+    },
+    "pair_AB": {
+      "n": 10,
+      "p50_ms": 266.39161142520607,
+      "p90_ms": 338.40129829477496,
+      "mean_ms": 335.3837229544297
+    },
+    "pair_BA": {
+      "n": 10,
+      "p50_ms": 266.1226319614798,
+      "p90_ms": 266.85183686204255,
+      "mean_ms": 266.0227790940553
+    }
+  },
+  "latency_all_ops": {
+    "n": 40,
+    "p50_ms": 206.24232990667224,
+    "p90_ms": 266.85183686204255,
+    "mean_ms": 223.48801291082054
+  },
+  "latency_single": {
+    "n": 20,
+    "p50_ms": 146.2743029696867,
+    "p90_ms": 147.52157721668482,
+    "mean_ms": 146.2727747973986
+  },
+  "latency_pairwise": {
+    "n": 20,
+    "p50_ms": 266.14606147632,
+    "p90_ms": 267.73262249771506,
+    "mean_ms": 300.7032510242425
+  },
+  "vram": {
+    "torch_max_allocated_mib": 0.0,
+    "nvidia_smi_proc_peak_mib": 5260,
+    "nvidia_smi_gpu_used_peak_mib": 5820,
+    "note": "torch figure is 0 when the model runs in a child server (omnijev); use nvidia_smi_proc_peak_mib"
+  },
+  "single": {
+    "A_clean": {
+      "p_good": 0.803702,
+      "rating": {
+        "type": "score",
+        "score": 3.129773,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.013429,
+          "1": 0.038011,
+          "2": 0.11105,
+          "3": 0.480379,
+          "4": 0.357131
+        },
+        "confidence": 0.512925
+      }
+    },
+    "B_flawed": {
+      "p_good": 0.002816,
+      "rating": {
+        "type": "score",
+        "score": 0.328466,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.732551,
+          "1": 0.213903,
+          "2": 0.047739,
+          "3": 0.004144,
+          "4": 0.001663
+        },
+        "confidence": 0.726278
+      }
+    },
+    "scores_A_gt_B": true
+  },
+  "pairwise": {
+    "pairwise_worked": true,
+    "failures": {},
+    "p_A_better_when_A_first": 0.952732,
+    "p_A_better_when_B_first": 0.995243,
+    "choice_AB": "A_clean",
+    "choice_BA": "A_clean",
+    "swap_consistent": true,
+    "picks_clean_page_both_orders": true,
+    "yes_no_answer": "A (clean)"
+  },
+  "probability_field_present": true,
+  "deterministic_across_runs": {
+    "single_A": true,
+    "single_B": true,
+    "pair_AB": true,
+    "pair_BA": true
+  },
+  "failed_ops": {},
+  "raw_outputs_last_run": {
+    "single_A": {
+      "model": "omnijev-0.8b",
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.803702
+        },
+        "rating": {
+          "type": "score",
+          "score": 3.129773,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.013429,
+            "1": 0.038011,
+            "2": 0.11105,
+            "3": 0.480379,
+            "4": 0.357131
+          },
+          "confidence": 0.512925
+        }
+      },
+      "usage": {
+        "input_tokens": 1223,
+        "output_tokens": 2
+      },
+      "onejev": {
+        "prompt_version": "onejev-labels-v2",
+        "prompt_sha256": "45945a29c39f13e9db80901e02640a91ee9e4fe802ba92906897b926d27788d2",
+        "prefix_tokens": 1073,
+        "branches": 2,
+        "timing": {
+          "plan_s": 0.00840145698748529,
+          "queue_s": 9.512994438409805e-05,
+          "forward_s": 0.13703284016810358,
+          "gpu_wait_s": 0.13735119998455048,
+          "total_s": 0.14589006500318646
+        },
+        "path": "graph",
+        "round": 1
+      }
+    },
+    "single_B": {
+      "model": "omnijev-0.8b",
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.002816
+        },
+        "rating": {
+          "type": "score",
+          "score": 0.328466,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.732551,
+            "1": 0.213903,
+            "2": 0.047739,
+            "3": 0.004144,
+            "4": 0.001663
+          },
+          "confidence": 0.726278
+        }
+      },
+      "usage": {
+        "input_tokens": 1223,
+        "output_tokens": 2
+      },
+      "onejev": {
+        "prompt_version": "onejev-labels-v2",
+        "prompt_sha256": "45945a29c39f13e9db80901e02640a91ee9e4fe802ba92906897b926d27788d2",
+        "prefix_tokens": 1073,
+        "branches": 2,
+        "timing": {
+          "plan_s": 0.007266605971381068,
+          "queue_s": 9.015901014208794e-05,
+          "forward_s": 0.1363632360007614,
+          "gpu_wait_s": 0.13665365404449403,
+          "total_s": 0.14409299986436963
+        },
+        "path": "graph",
+        "round": 1
+      }
+    },
+    "pair_AB": {
+      "model": "omnijev-0.8b",
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "first",
+          "probabilities": {
+            "first": 0.952732,
+            "second": 0.047268
+          },
+          "confidence": 0.905463
+        }
+      },
+      "usage": {
+        "input_tokens": 2156,
+        "output_tokens": 1
+      },
+      "onejev": {
+        "prompt_version": "onejev-labels-v2",
+        "prompt_sha256": "ef39cf88a4c688b857e4656e3d63fdffe92899f56b80594a5c78123abd014bd4",
+        "prefix_tokens": 2090,
+        "branches": 1,
+        "timing": {
+          "plan_s": 0.016387143870815635,
+          "queue_s": 8.486188016831875e-05,
+          "forward_s": 0.25060594198293984,
+          "gpu_wait_s": 0.25089260796085,
+          "total_s": 0.26743260584771633
+        },
+        "path": "graph",
+        "round": 1
+      }
+    },
+    "pair_BA": {
+      "model": "omnijev-0.8b",
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "second",
+          "probabilities": {
+            "first": 0.004757,
+            "second": 0.995243
+          },
+          "confidence": 0.990486
+        }
+      },
+      "usage": {
+        "input_tokens": 2156,
+        "output_tokens": 1
+      },
+      "onejev": {
+        "prompt_version": "onejev-labels-v2",
+        "prompt_sha256": "ef39cf88a4c688b857e4656e3d63fdffe92899f56b80594a5c78123abd014bd4",
+        "prefix_tokens": 2090,
+        "branches": 1,
+        "timing": {
+          "plan_s": 0.01350433798506856,
+          "queue_s": 0.0001330631785094738,
+          "forward_s": 0.2498225208837539,
+          "gpu_wait_s": 0.25017496896907687,
+          "total_s": 0.26392453210428357
+        },
+        "path": "graph",
+        "round": 1
+      }
+    }
+  }
+}
