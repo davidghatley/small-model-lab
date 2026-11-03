@@ -13,7 +13,7 @@ David's original brief is kept as written in `docs/brief.md`. It describes what 
 - Fix seeds. Save the exact config and command for every result next to it in `runs/`.
 - Held-out sets stay held out: never train on eval prompts.
 - Never delete anything. Move it aside instead.
-- Weights live in `/mnt/models/llm/<name>/`, never in this repo. `/` has almost no free space.
+- Weights live outside this repo: `/mnt/models/llm/<name>/` (fast NVMe, fills up) or `/mnt/work/models/<name>/` (SATA SSD, ~430 GB free). `/mnt/scratch` (NVMe, ~200 GB) and `/mnt/archive` (HDD, ~790 GB) are also fine for datasets and checkpoints. David said (2026-11-03) disk space isn't tight, so use the other drives freely. Never use `/`.
 - Run Python that reads downloaded files with `python -I`, from scripts kept outside the download dir.
 
 ## Roles and model routing
@@ -52,4 +52,4 @@ Agent definitions are in `.claude/agents/`. A session started before those files
 
 ## Traps
 - `gpu_run` caps RAM at 20 GB, and the cap counts page cache. mmap-heavy engines need `GPU_RUN_MEM=44G`.
-- Free space: `/mnt/models` has ~66 GB free (2026-11-03). Check `df -h /mnt/models` before pulling weights.
+- `/mnt/models` was 91% full on 2026-11-03. New big weights go to `/mnt/work/models`.
