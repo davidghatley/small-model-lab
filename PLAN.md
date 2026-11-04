@@ -22,3 +22,4 @@ Full queue and acceptance criteria: docs/brief.md. Status lives in LEDGER.md.
 - 2026-11-03: David: use the other drives freely. Big weights now go to /mnt/work/models (imajev-9b first).
 - 2026-11-03: E0 picks: omnijev-0.8b (training judge), imajev-9b nf4 (held-out judge), rsi-jev-4b also scored in E1. Three judges go to E1, not two, because one fixture pair can't rank taste.
 - 2026-11-03: E1 frontier work (300 page pairs, 100 reference labels) is done by Claude Code subagents, not a paid API (David). A scout picks the local coder (David).
+- 2026-11-03: Coder = Qwen2.5-Coder-7B-Instruct (Apache-2.0, ungated), QLoRA via Unsloth. Not Qwen3.5-9B: Unsloth advises against QLoRA on Qwen3.5 and bf16 LoRA at 9B needs 22 GB (https://unsloth.ai/docs/models/qwen3.5/fine-tune). Not Mellum 2.1: MoE, not in Unsloth's catalog. Backup: Qwen3.5-2B or 4B bf16 LoRA if 7B DPO runs out of memory.
