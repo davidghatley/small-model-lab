@@ -25,6 +25,7 @@ ap.add_argument("--rank", type=int, default=16); ap.add_argument("--alpha", type
 ap.add_argument("--save-steps", type=int, default=5); ap.add_argument("--warmup-steps", type=int, default=2)
 ap.add_argument("--eval-frac", type=float, default=0.0, help="fraction of BRIEFS (all their pairs) held out; eval once before (first chunk) and once after training")
 ap.add_argument("--seed", type=int, default=0); ap.add_argument("--max-minutes", type=float, default=None)
+ap.add_argument("--max-steps-per-chunk", type=int, default=None, help=argparse.SUPPRESS)  # testing: force chunk boundaries
 a = ap.parse_args()
 
 out = Path(a.out); out.mkdir(parents=True, exist_ok=True)
@@ -82,7 +83,8 @@ class Budget(TrainerCallback):
     stopped = False
 
     def on_step_end(self, args, state, control, **kw):
-        if a.max_minutes and time.time() - T0 > a.max_minutes * 60 and state.global_step < state.max_steps:
+        over = (a.max_minutes and time.time() - T0 > a.max_minutes * 60) or (a.max_steps_per_chunk and len(st.t) + 1 >= a.max_steps_per_chunk)
+        if over and state.global_step < state.max_steps:
             control.should_save = True; control.should_training_stop = True; Budget.stopped = True
         return control
 
@@ -99,9 +101,41 @@ class StepTimes(TrainerCallback):
 
 
 st = StepTimes()
-trainer = DPOTrainer(model=model, ref_model=None, args=cfg, train_dataset=ds, eval_dataset=eds, processing_class=tok, callbacks=[Budget(), st, LrPrint()])
+
+
+def lorab_norm(m):
+    """Sum of L2 norms of all lora_B weights of the trainable ('default') adapter."""
+    return float(sum(p.detach().float().norm().item() for n, p in m.named_parameters() if "lora_B" in n and ".ref." not in n and ".default." in n))
+
+
+def load_ckpt_adapter(m, ckpt):
+    """Explicitly load the 'default' adapter from a checkpoint. Needed because Trainer's PEFT resume loads only the
+    checkpoint's 'ref/' subdir (TRL's frozen reference adapter, lora_B==0) and never the main adapter_model.safetensors."""
+    from safetensors.torch import load_file
+    from peft import set_peft_model_state_dict
+    sd = load_file(str(Path(ckpt) / "adapter_model.safetensors"), device="cpu")
+    res = set_peft_model_state_dict(m, sd, adapter_name="default")
+    bad_unexp = list(getattr(res, "unexpected_keys", []) or [])
+    bad_miss = [k for k in (getattr(res, "missing_keys", []) or []) if "lora_" in k and ".ref." not in k]
+    if bad_unexp or bad_miss:
+        print(f"FATAL: adapter load mismatch unexpected={bad_unexp[:3]} missing={bad_miss[:3]}", flush=True); sys.exit(4)
+    n = lorab_norm(m); gs = int(ckpt.rsplit("-", 1)[1])
+    print(f"loaded adapter from {ckpt}; lora_B norm={n:.6f}", flush=True)
+    if gs > 0 and not n > 0:
+        print(f"FATAL: lora_B norm is {n} after resuming at global_step {gs}; adapter weights were not restored", flush=True); sys.exit(5)
+    return n
+
+
+class ResumeLoad(TrainerCallback):
+    # Trainer loads checkpoint (incl. its buggy PEFT path) before on_train_begin, so re-assert our load here
+    def on_train_begin(self, args, state, control, model=None, **kw):
+        if ck: load_ckpt_adapter(model, ck[-1])
+
+
+trainer = DPOTrainer(model=model, ref_model=None, args=cfg, train_dataset=ds, eval_dataset=eds, processing_class=tok, callbacks=[Budget(), st, LrPrint(), ResumeLoad()])
 ck = sorted(glob.glob(str(ckdir / "checkpoint-*")), key=lambda p: int(p.rsplit("-", 1)[1]))
 if ck: print("resuming from", ck[-1], flush=True)
+norm_start = load_ckpt_adapter(model, ck[-1]) if ck else lorab_norm(model)
 
 
 def run_eval(tag):
@@ -129,7 +163,9 @@ except Exception: pass
 hist = trainer.state.log_history
 (out / "train_log.jsonl").write_text("".join(json.dumps(h) + "\n" for h in hist))
 done = trainer.state.global_step >= trainer.state.max_steps
+norm_end = lorab_norm(model)
 chunk = dict(chunk_train_seconds=round(train_s, 1), steps_this_chunk=len(st.t), s_per_step_mean=round(sum(st.t) / max(1, len(st.t)), 2),
+             lorab_norm_start=norm_start, lorab_norm_end=norm_end, resumed_from=ck[-1] if ck else None,
              global_step=trainer.state.global_step, max_steps=trainer.state.max_steps, peak=peak, done=done)
 with open(out / "chunks.jsonl", "a") as f: f.write(json.dumps(chunk) + "\n")
 print(json.dumps(chunk), flush=True)
@@ -138,6 +174,11 @@ if done:
     if eds is not None:
         eval_after = run_eval("eval_after"); (out / "eval_after.json").write_text(json.dumps(eval_after, indent=1))
     model.save_pretrained(str(out / "adapter")); tok.save_pretrained(str(out / "adapter"))
+    from safetensors import safe_open
+    with safe_open(str(out / "adapter" / "adapter_model.safetensors"), "pt") as f:
+        fn = sum(f.get_tensor(k).float().norm().item() for k in f.keys() if "lora_B" in k)
+    print(f"final adapter lora_B norm (file)={fn:.6f} live={norm_end:.6f}", flush=True)
+    if not fn > 0: print("FATAL: saved adapter has zero lora_B", flush=True); sys.exit(5)
     tl = [h for h in hist if "loss" in h]
     last = tl[-max(1, len(tl) // 4):]
     mean = lambda k: (sum(h[k] for h in last if k in h) / max(1, sum(1 for h in last if k in h))) if last else None
