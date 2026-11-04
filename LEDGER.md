@@ -26,5 +26,6 @@ Cost note: ~20 Sonnet page-writing agents + 4 Opus labelers (plan usage, no API)
 - Round 0 retrain at lr 5e-5 (runs/E2/round0/train_lr5e-5, 2.7 h, eval-frac 0.1 by brief): held-out pair reward acc 0.62 (111 pairs, ~69/111, p~0.01 vs 0.5), margin +0.016, eval loss 0.693 -> 0.685. Train last quarter acc 0.60. Weak but real signal.
 - Eval r0_lr5e-5 vs base, 100 held-out briefs, 97 clean pairs (runs/E2/eval/r0_lr5e-5/report.md): omnijev-0.8b win 0.485 [0.43,0.54], imajev-9b 0.495 [0.44,0.55]; confident pairs n=2/4. Null. Cause: 63/100 tuned pages byte-identical to base (adapter verified loaded in vLLM); policy shift too small (held-out margin 0.016).
 - Next: cleaner labels (omnijev-0.8b AND rsi-jev-4b agree, both conf>=0.7) + stronger update (lr 1e-4, 2 epochs); fast gate = held-out pair acc and identical-page rate before full eval.
+- Consensus select (runs/E2/round0/select_consensus): rsi-jev vs omnijev-0.8b same side 80.4% overall, 99.4% where both conf>=0.7; kept 1041 pairs / 371 briefs; no length bias (chosen longer 52%). Training lr 1e-4 x2 epochs -> runs/E2/round0/train_cons_lr1e-4, eval chained -> runs/E2/eval/r0_cons_lr1e-4.
 ## E3 — Unlock as a measured variable   status: planned (waits for David's unlock)
 ## E4 — Weight-space probe   status: planned (optional, ask before API spend)
