@@ -8,7 +8,7 @@ Stages: gen -> render -> judge -> select -> train -> summary ('all' loops each s
 Policy: round 0 = base AWQ; round N>0 samples from the AWQ base + the LoRA trained in round N-1 (default <prev round>/train/adapter, override
 --policy-adapter). The train stage of round N continues from that same adapter (--adapter-in), so "round k LoRA" = what round k-1 produced.
 Layout in --out: pages/ (gen.jsonl, render.jsonl, s<k>.html/.png/.raw.txt), judge/ (manifest.jsonl, scores_<judge>.jsonl), select/ (dpo.jsonl,
-stats.json), train/ (adapter/, checkpoints/, train_summary.json), stages/<stage>/{config.json,command.txt,chunks.jsonl,chunk<n>.log}, summary.json.
+stats.json), train/ (adapter/, checkpoints/, train_summary.json; or --train-out), stages/<stage>/{config.json,command.txt,chunks.jsonl,chunk<n>.log}, summary.json.
 Exit codes: 0 stage(s) complete, 3 stage incomplete (time budget), other = failure.
 """
 import argparse, collections, datetime, json, os, platform, shlex, statistics, subprocess, sys, threading, time
@@ -30,7 +30,7 @@ def jl(path):
 
 class Paths:
     def __init__(s, a):
-        s.out = Path(a.out); s.pages = s.out / "pages"; s.judge = s.out / "judge"; s.sel = s.out / "select"; s.train = s.out / "train"
+        s.out = Path(a.out); s.pages = s.out / "pages"; s.judge = s.out / "judge"; s.sel = s.out / "select"; s.train = Path(a.train_out) if a.train_out else s.out / "train"
         s.scores = s.judge / f"scores_{a.judge}.jsonl"; s.manifest = s.judge / "manifest.jsonl"; s.dpo = s.sel / "dpo.jsonl"
 
 
@@ -252,10 +252,14 @@ def stage_train(a, P):
     if not P.dpo.exists() or not P.dpo.read_text().strip(): sys.exit("no DPO dataset (run select; or zero pairs kept)")
     cmd = [PYU, "scripts/e2_dpo.py", "--dataset", str(P.dpo), "--out", str(P.train), "--max-minutes", str(a.max_minutes),
            "--grad-accum", str(a.grad_accum), "--save-steps", str(a.save_steps), "--seed", str(a.seed)]
+    if a.lr is not None: cmd += ["--lr", str(a.lr)]
+    if a.beta is not None: cmd += ["--beta", str(a.beta)]
+    if a.epochs is not None: cmd += ["--epochs", str(a.epochs)]
+    if a.eval_frac: cmd += ["--eval-frac", str(a.eval_frac)]
     if a.max_steps > 0: cmd += ["--max-steps", str(a.max_steps)]
     ad = a.adapter_in or policy_adapter(a)
     if ad: cmd += ["--adapter-in", ad]
-    run_chunk(a, P, "train", cmd, NEED["train"])
+    run_chunk(a, P, "train" if not a.train_out else "train_" + Path(a.train_out).name, cmd, NEED["train"])
     return 0 if (P.train / "train_summary.json").exists() else 3
 
 
@@ -298,6 +302,11 @@ def main():
     ap.add_argument("--policy-adapter", default=None, help="LoRA dir to sample from ('none' = base); default prev round's train/adapter")
     ap.add_argument("--adapter-in", default=None, help="train: adapter to continue from (default = policy adapter)")
     ap.add_argument("--max-steps", type=int, default=-1); ap.add_argument("--grad-accum", type=int, default=16); ap.add_argument("--save-steps", type=int, default=5)
+    ap.add_argument("--lr", type=float, default=None, help="train: learning rate (default: e2_dpo.py's 5e-6)")
+    ap.add_argument("--beta", type=float, default=None, help="train: DPO beta (default 0.1)")
+    ap.add_argument("--epochs", type=float, default=None, help="train: epochs (default 1)")
+    ap.add_argument("--eval-frac", type=float, default=0.0, help="train: fraction of briefs held out for one eval before and one after training")
+    ap.add_argument("--train-out", default=None, help="train: output dir (default <out>/train); summary reads it too")
     ap.add_argument("--render-workers", type=int, default=6); ap.add_argument("--no-gpu-run", action="store_true")
     a = ap.parse_args()
     a.out = str(Path(a.out)); P = Paths(a); P.out.mkdir(parents=True, exist_ok=True)

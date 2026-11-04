@@ -23,6 +23,7 @@ ap.add_argument("--epochs", type=float, default=1.0); ap.add_argument("--max-ste
 ap.add_argument("--batch-size", type=int, default=1); ap.add_argument("--grad-accum", type=int, default=16)
 ap.add_argument("--rank", type=int, default=16); ap.add_argument("--alpha", type=int, default=16)
 ap.add_argument("--save-steps", type=int, default=5); ap.add_argument("--warmup-steps", type=int, default=2)
+ap.add_argument("--eval-frac", type=float, default=0.0, help="fraction of BRIEFS (all their pairs) held out; eval once before (first chunk) and once after training")
 ap.add_argument("--seed", type=int, default=0); ap.add_argument("--max-minutes", type=float, default=None)
 a = ap.parse_args()
 
@@ -42,8 +43,19 @@ vers = dict(torch=torch.__version__, transformers=transformers.__version__, trl=
 (out / "config.json").write_text(json.dumps(dict(args=vars(a), versions=vers, gpu="stock"), indent=1))
 
 rows = [json.loads(l) for l in open(a.dataset) if l.strip()]
-ds = datasets.Dataset.from_list([{k: r[k] for k in ("prompt", "chosen", "rejected")} for r in rows])
-print(f"{len(ds)} pairs", flush=True)
+import hashlib
+def is_eval(r):  # deterministic per brief id + seed, identical on every chunk
+    h = int(hashlib.sha256(f"{r['brief_id']}|{a.seed}".encode()).hexdigest()[:8], 16) / 0x100000000
+    return h < a.eval_frac
+ev_rows = [r for r in rows if a.eval_frac > 0 and is_eval(r)]
+tr_rows = [r for r in rows if not (a.eval_frac > 0 and is_eval(r))]
+assert not ({r["brief_id"] for r in ev_rows} & {r["brief_id"] for r in tr_rows}), "eval/train briefs overlap"
+if ev_rows:
+    with open(out / "eval_pairs.jsonl", "w") as f: f.write("".join(json.dumps(r) + "\n" for r in ev_rows))
+cols = ("prompt", "chosen", "rejected")
+ds = datasets.Dataset.from_list([{k: r[k] for k in cols} for r in tr_rows])
+eds = datasets.Dataset.from_list([{k: r[k] for k in cols} for r in ev_rows]) if ev_rows else None
+print(f"{len(ds)} train pairs ({len({r['brief_id'] for r in tr_rows})} briefs), {len(ev_rows)} eval pairs ({len({r['brief_id'] for r in ev_rows})} briefs), lr={a.lr:.3e}", flush=True)
 
 model, tok = FastLanguageModel.from_pretrained(model_name=a.base, max_seq_length=a.max_length, dtype=None, load_in_4bit=True)
 assert tok.eos_token == "<|im_end|>", tok.eos_token
@@ -59,7 +71,7 @@ else:
 
 ckdir = out / "checkpoints"
 cfg = DPOConfig(
-    output_dir=str(ckdir), per_device_train_batch_size=a.batch_size, gradient_accumulation_steps=a.grad_accum,
+    output_dir=str(ckdir), per_device_train_batch_size=a.batch_size, per_device_eval_batch_size=1, gradient_accumulation_steps=a.grad_accum,
     num_train_epochs=a.epochs, max_steps=a.max_steps, learning_rate=a.lr, lr_scheduler_type="linear", warmup_steps=a.warmup_steps,
     beta=a.beta, max_length=a.max_length, bf16=True, gradient_checkpointing=True, optim="adamw_8bit", seed=a.seed, data_seed=a.seed,
     logging_steps=1, save_strategy="steps", save_steps=a.save_steps, save_total_limit=2, report_to="none",
@@ -75,6 +87,11 @@ class Budget(TrainerCallback):
         return control
 
 
+class LrPrint(TrainerCallback):
+    def on_log(self, args, state, control, logs=None, **kw):
+        if logs and "learning_rate" in logs: print(f"step {state.global_step} lr={logs['learning_rate']:.3e}", flush=True)
+
+
 class StepTimes(TrainerCallback):
     def __init__(self): self.t = []; self.last = None
     def on_step_begin(self, args, state, control, **kw): self.last = time.time()
@@ -82,9 +99,22 @@ class StepTimes(TrainerCallback):
 
 
 st = StepTimes()
-trainer = DPOTrainer(model=model, ref_model=None, args=cfg, train_dataset=ds, processing_class=tok, callbacks=[Budget(), st])
+trainer = DPOTrainer(model=model, ref_model=None, args=cfg, train_dataset=ds, eval_dataset=eds, processing_class=tok, callbacks=[Budget(), st, LrPrint()])
 ck = sorted(glob.glob(str(ckdir / "checkpoint-*")), key=lambda p: int(p.rsplit("-", 1)[1]))
 if ck: print("resuming from", ck[-1], flush=True)
+
+
+def run_eval(tag):
+    t = time.time(); m = trainer.evaluate(eval_dataset=eds, metric_key_prefix="eval")
+    r = dict(eval_loss=m.get("eval_loss"), rewards_accuracies=m.get("eval_rewards/accuracies"), rewards_margins=m.get("eval_rewards/margins"),
+             rewards_chosen=m.get("eval_rewards/chosen"), rewards_rejected=m.get("eval_rewards/rejected"),
+             pairs=len(eds), seconds=round(time.time() - t, 1), s_per_pair=round((time.time() - t) / len(eds), 2))
+    print(tag, json.dumps(r), flush=True)
+    return r
+
+
+if eds is not None and not ck and not (out / "eval_before.json").exists():
+    (out / "eval_before.json").write_text(json.dumps(run_eval("eval_before"), indent=1))
 torch.cuda.reset_peak_memory_stats()
 t_train = time.time()
 trainer.train(resume_from_checkpoint=ck[-1] if ck else None)
@@ -104,12 +134,18 @@ chunk = dict(chunk_train_seconds=round(train_s, 1), steps_this_chunk=len(st.t), 
 with open(out / "chunks.jsonl", "a") as f: f.write(json.dumps(chunk) + "\n")
 print(json.dumps(chunk), flush=True)
 if done:
+    eval_after = None
+    if eds is not None:
+        eval_after = run_eval("eval_after"); (out / "eval_after.json").write_text(json.dumps(eval_after, indent=1))
     model.save_pretrained(str(out / "adapter")); tok.save_pretrained(str(out / "adapter"))
     tl = [h for h in hist if "loss" in h]
     last = tl[-max(1, len(tl) // 4):]
     mean = lambda k: (sum(h[k] for h in last if k in h) / max(1, sum(1 for h in last if k in h))) if last else None
     chunks = [json.loads(l) for l in open(out / "chunks.jsonl")]
-    summ = dict(pairs=len(ds), steps=trainer.state.global_step, effective_batch=a.batch_size * a.grad_accum,
+    eb = json.loads((out / "eval_before.json").read_text()) if (out / "eval_before.json").exists() else None
+    lrs = [h["learning_rate"] for h in hist if "learning_rate" in h]
+    summ = dict(pairs=len(ds), eval_pairs=len(ev_rows), eval_briefs=len({r["brief_id"] for r in ev_rows}), eval_before=eb, eval_after=eval_after,
+                lr_arg=a.lr, lr_peak_logged=max(lrs) if lrs else None, lr_last_logged=lrs[-1] if lrs else None, beta=a.beta, epochs=a.epochs, steps=trainer.state.global_step, effective_batch=a.batch_size * a.grad_accum,
                 loss_first=tl[0]["loss"] if tl else None, loss_last_quarter_mean=mean("loss"),
                 reward_margin_last_quarter_mean=mean("rewards/margins"), reward_accuracy_last_quarter_mean=mean("rewards/accuracies"),
                 rewards_chosen_last=mean("rewards/chosen"), rewards_rejected_last=mean("rewards/rejected"),
