@@ -11,7 +11,10 @@ Decision / next: top 2 = omnijev-0.8b (train judge) + imajev-9b nf4 (held-out ju
 Env note: rsi-jev pins transformers 5.17 → own .venv-rsijev; main .venv uses 5.22.1.
 Cost note: ~2 h wall, mostly downloads (~45 GB). No paid API.
 
-## E1 — Does the judge have taste?   status: planned
+## E1 — Does the judge have taste?   status: running
+Hypothesis: at least one fast local judge agrees ≥75% with frontier reference labels on its high-confidence pairs, with low position bias.
+Setup (planned): 300 pairs. ~200 frontier strong-vs-flawed (obvious/moderate/subtle flaws) + hard strong-vs-strong, written by Claude subagents (David 2026-11-03: no paid API); ~100 small-model pairs from the coder the scout picks. 100-pair reference labels from a blind Claude labeler on screenshots; David hand-checks 30. Judges: omnijev-0.8b, omnijev-4b Q8, rsi-jev-4b, imajev-9b nf4, both orders. Brief splits are fixed up front: briefs/e1 (200), e2_train (500), e2_eval (100, held out). gpu: stock.
+Result: (pending)
 ## E2 — The design loop   status: planned
 ## E3 — Unlock as a measured variable   status: planned (waits for David's unlock)
 ## E4 — Weight-space probe   status: planned (optional, ask before API spend)
