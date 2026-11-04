@@ -23,6 +23,7 @@ Cost note: ~20 Sonnet page-writing agents + 4 Opus labelers (plan usage, no API)
 - Setup: gpu stock; coder Qwen2.5-Coder-7B-Instruct (Apache-2.0), vLLM AWQ gen, judge omnijev-0.8b order-averaged, keep conf >= 0.7, DPO QLoRA r16 beta 0.1, ref = base, seed 0.
 - Round 0 (2026-11-04, 4.5 h): 1968/2000 clean samples, 2906 pairs scored, 1233 kept from 402 briefs. No length bias in kept pairs (chosen longer 51.5%, mean diff -4.6 tok).
 - Round 0 DPO at lr 5e-6: 78 steps, 2.9 h, peak 8.0 GiB. Did not learn: loss 0.693 -> 0.696 (last quarter), reward acc 0.43, margin ~0. Adapter kept at runs/E2/round0/train/ but treated as a null result.
-- Next: retrain round 0 at lr 5e-5 with a brief-level held-out pair split to measure preference accuracy on unseen briefs.
+- Round 0 retrain at lr 5e-5 (runs/E2/round0/train_lr5e-5, 2.7 h, eval-frac 0.1 by brief): held-out pair reward acc 0.62 (111 pairs, ~69/111, p~0.01 vs 0.5), margin +0.016, eval loss 0.693 -> 0.685. Train last quarter acc 0.60. Weak but real signal.
+- Next: held-out eval base vs r0_lr5e-5 on 100 eval briefs (runs/E2/eval/r0_lr5e-5), judges omnijev-0.8b + imajev-9b.
 ## E3 — Unlock as a measured variable   status: planned (waits for David's unlock)
 ## E4 — Weight-space probe   status: planned (optional, ask before API spend)
