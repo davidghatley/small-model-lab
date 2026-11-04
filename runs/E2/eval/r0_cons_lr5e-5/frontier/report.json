@@ -1,0 +1,313 @@
+{
+ "n": 50,
+ "policy_y": "r0_cons",
+ "win_rate_y": 0.68,
+ "ci95": [
+  0.54,
+  0.8
+ ],
+ "n_conf_ge_0_7": 23,
+ "win_rate_conf": 0.826,
+ "rows": [
+  {
+   "pair_id": "pair_01",
+   "brief_id": "e2_eval-0024",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_02",
+   "brief_id": "e2_eval-0009",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_03",
+   "brief_id": "e2_eval-0012",
+   "win_y": 0.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_04",
+   "brief_id": "e2_eval-0008",
+   "win_y": 1.0,
+   "conf": 0.75
+  },
+  {
+   "pair_id": "pair_05",
+   "brief_id": "e2_eval-0050",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_06",
+   "brief_id": "e2_eval-0014",
+   "win_y": 1.0,
+   "conf": 0.55
+  },
+  {
+   "pair_id": "pair_07",
+   "brief_id": "e2_eval-0001",
+   "win_y": 1.0,
+   "conf": 0.85
+  },
+  {
+   "pair_id": "pair_08",
+   "brief_id": "e2_eval-0092",
+   "win_y": 0.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_09",
+   "brief_id": "e2_eval-0095",
+   "win_y": 0.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_10",
+   "brief_id": "e2_eval-0057",
+   "win_y": 1.0,
+   "conf": 0.75
+  },
+  {
+   "pair_id": "pair_11",
+   "brief_id": "e2_eval-0017",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_12",
+   "brief_id": "e2_eval-0066",
+   "win_y": 0.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_13",
+   "brief_id": "e2_eval-0054",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_14",
+   "brief_id": "e2_eval-0043",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_15",
+   "brief_id": "e2_eval-0082",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_16",
+   "brief_id": "e2_eval-0002",
+   "win_y": 1.0,
+   "conf": 0.75
+  },
+  {
+   "pair_id": "pair_17",
+   "brief_id": "e2_eval-0049",
+   "win_y": 1.0,
+   "conf": 0.75
+  },
+  {
+   "pair_id": "pair_18",
+   "brief_id": "e2_eval-0088",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_19",
+   "brief_id": "e2_eval-0080",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_20",
+   "brief_id": "e2_eval-0070",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_21",
+   "brief_id": "e2_eval-0020",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_22",
+   "brief_id": "e2_eval-0007",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_23",
+   "brief_id": "e2_eval-0025",
+   "win_y": 1.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_24",
+   "brief_id": "e2_eval-0011",
+   "win_y": 1.0,
+   "conf": 0.85
+  },
+  {
+   "pair_id": "pair_25",
+   "brief_id": "e2_eval-0062",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_26",
+   "brief_id": "e2_eval-0031",
+   "win_y": 1.0,
+   "conf": 0.9
+  },
+  {
+   "pair_id": "pair_27",
+   "brief_id": "e2_eval-0023",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_28",
+   "brief_id": "e2_eval-0030",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_29",
+   "brief_id": "e2_eval-0084",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_30",
+   "brief_id": "e2_eval-0039",
+   "win_y": 0.0,
+   "conf": 0.55
+  },
+  {
+   "pair_id": "pair_31",
+   "brief_id": "e2_eval-0094",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_32",
+   "brief_id": "e2_eval-0081",
+   "win_y": 1.0,
+   "conf": 0.55
+  },
+  {
+   "pair_id": "pair_33",
+   "brief_id": "e2_eval-0045",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_34",
+   "brief_id": "e2_eval-0099",
+   "win_y": 1.0,
+   "conf": 0.55
+  },
+  {
+   "pair_id": "pair_35",
+   "brief_id": "e2_eval-0087",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_36",
+   "brief_id": "e2_eval-0029",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_37",
+   "brief_id": "e2_eval-0035",
+   "win_y": 0.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_38",
+   "brief_id": "e2_eval-0077",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_39",
+   "brief_id": "e2_eval-0046",
+   "win_y": 1.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_40",
+   "brief_id": "e2_eval-0015",
+   "win_y": 1.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_41",
+   "brief_id": "e2_eval-0085",
+   "win_y": 0.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_42",
+   "brief_id": "e2_eval-0074",
+   "win_y": 1.0,
+   "conf": 0.55
+  },
+  {
+   "pair_id": "pair_43",
+   "brief_id": "e2_eval-0004",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_44",
+   "brief_id": "e2_eval-0021",
+   "win_y": 1.0,
+   "conf": 0.8
+  },
+  {
+   "pair_id": "pair_45",
+   "brief_id": "e2_eval-0016",
+   "win_y": 1.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_46",
+   "brief_id": "e2_eval-0022",
+   "win_y": 0.0,
+   "conf": 0.55
+  },
+  {
+   "pair_id": "pair_47",
+   "brief_id": "e2_eval-0032",
+   "win_y": 0.0,
+   "conf": 0.65
+  },
+  {
+   "pair_id": "pair_48",
+   "brief_id": "e2_eval-0079",
+   "win_y": 1.0,
+   "conf": 0.7
+  },
+  {
+   "pair_id": "pair_49",
+   "brief_id": "e2_eval-0060",
+   "win_y": 1.0,
+   "conf": 0.6
+  },
+  {
+   "pair_id": "pair_50",
+   "brief_id": "e2_eval-0071",
+   "win_y": 1.0,
+   "conf": 0.6
+  }
+ ]
+}

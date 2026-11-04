@@ -1,0 +1,25 @@
+{"pair_id": "pair_01", "better": "b", "confidence": 0.6, "rationale": "B has bolder full-width hero and calm spacing; A is cramped with clipped, awkward icon gallery."}
+{"pair_id": "pair_02", "better": "b", "confidence": 0.8, "rationale": "B has consistent full-width bands and a styled CTA; A has mismatched section widths and default button."}
+{"pair_id": "pair_03", "better": "a", "confidence": 0.7, "rationale": "A has a strong split hero with styled form; B's contact form is unstyled and cramped, though A's footer overlaps."}
+{"pair_id": "pair_04", "better": "b", "confidence": 0.75, "rationale": "B fits dark moody tone, clean testimonial and logo tiles; A shows broken logo images."}
+{"pair_id": "pair_05", "better": "b", "confidence": 0.8, "rationale": "B has carded pricing and feature grid; A uses default buttons and broken icon glyphs."}
+{"pair_id": "pair_06", "better": "b", "confidence": 0.55, "rationale": "A has nicer layout but visible broken images; B is plain but intact, with one default button."}
+{"pair_id": "pair_07", "better": "b", "confidence": 0.85, "rationale": "A leaks raw alt-text markup, broken avatars, overlapping triangle; B is clean with clear stats cards."}
+{"pair_id": "pair_08", "better": "a", "confidence": 0.65, "rationale": "A's monospace dark style fits retro engineers; B has odd full-width button and inconsistent widths."}
+{"pair_id": "pair_09", "better": "b", "confidence": 0.7, "rationale": "B has a stronger headline hierarchy; A shows gray placeholder boxes and weaker hero."}
+{"pair_id": "pair_10", "better": "b", "confidence": 0.75, "rationale": "B has a polished labeled form card; A has unstyled inputs and a default blue link."}
+{"pair_id": "pair_11", "better": "a", "confidence": 0.65, "rationale": "A has a strong hero and styled form despite broken images; B is an empty hero with run-on title."}
+{"pair_id": "pair_12", "better": "a", "confidence": 0.7, "rationale": "A is cohesive and high-energy; B has uneven cards, default buttons and clashing green band."}
+{"pair_id": "pair_13", "better": "b", "confidence": 0.65, "rationale": "B uses cards, team avatars and CTA band; A is plain bullet lists. B avatars slightly glitchy."}
+{"pair_id": "pair_14", "better": "a", "confidence": 0.6, "rationale": "A's clean pricing table suits direct tone; B's cards are unevenly sized with centered bullets."}
+{"pair_id": "pair_15", "better": "b", "confidence": 0.65, "rationale": "B has tidy cards and a styled CTA; A uses default button and awkward team row."}
+{"pair_id": "pair_16", "better": "b", "confidence": 0.75, "rationale": "A shows broken book-cover images and unstyled form row; B has organized cards."}
+{"pair_id": "pair_17", "better": "b", "confidence": 0.75, "rationale": "A has run-on inline title/subtitle and placeholder images; B is clean with styled form, minor OWL glitch."}
+{"pair_id": "pair_18", "better": "a", "confidence": 0.65, "rationale": "A has neat testimonial cards; B's testimonials are cramped and footer covers gallery."}
+{"pair_id": "pair_19", "better": "b", "confidence": 0.8, "rationale": "A is an empty, misaligned hero with edge-hugging title; B shows structured sections."}
+{"pair_id": "pair_20", "better": "a", "confidence": 0.6, "rationale": "A is consistent and spacious; B has mismatched widths, odd newsletter pill, default button."}
+{"pair_id": "pair_21", "better": "a", "confidence": 0.6, "rationale": "A fits dark moody tone with nice cards; B's purple hero and default buttons less fitting. A subtext overflows."}
+{"pair_id": "pair_22", "better": "b", "confidence": 0.8, "rationale": "B has testimonial cards and a clean table; A has placeholder avatars and run-together table text."}
+{"pair_id": "pair_23", "better": "a", "confidence": 0.7, "rationale": "A has polished feature cards; B has low-contrast subtitle and unstyled pricing table."}
+{"pair_id": "pair_24", "better": "b", "confidence": 0.85, "rationale": "A is only an empty gradient with one line; B has hero, feature cards and locations."}
+{"pair_id": "pair_25", "better": "b", "confidence": 0.6, "rationale": "A's hero title is nearly invisible, lorem ipsum, footer overlaps; B readable though tables unstyled."}
