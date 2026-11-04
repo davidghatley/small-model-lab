@@ -1,0 +1,40 @@
+{
+ "n_staging": 200,
+ "n_pairs": 200,
+ "n_graded": 150,
+ "n_hard": 50,
+ "graded_by_severity": {
+  "obvious": 50,
+  "moderate": 50,
+  "subtle": 50
+ },
+ "side_balance_intended_better": {
+  "a": 84,
+  "b": 66
+ },
+ "pixel_diff_by_severity": {
+  "obvious": {
+   "n": 50,
+   "median_pct_changed": 41.4111328125,
+   "min_pct_changed": 8.4978515625,
+   "median_mean_abs_diff": 36.02505696614583,
+   "min_mean_abs_diff": 10.538178385416666
+  },
+  "moderate": {
+   "n": 50,
+   "median_pct_changed": 90.117578125,
+   "min_pct_changed": 14.495703125,
+   "median_mean_abs_diff": 37.48708447265625,
+   "min_mean_abs_diff": 10.4142880859375
+  },
+  "subtle": {
+   "n": 50,
+   "median_pct_changed": 21.091552734375,
+   "min_pct_changed": 5.82666015625,
+   "median_mean_abs_diff": 18.68416552734375,
+   "min_mean_abs_diff": 6.9471513671875
+  }
+ },
+ "flagged": [],
+ "font_failures": {}
+}

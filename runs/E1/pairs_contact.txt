@@ -1,0 +1,1 @@
+contact sheet: left=strong right=flawed; order row-major: fg-0010, fg-0055, fg-0066, fg-0077, fg-0091, fg-0098, fg-0103, fg-0107, fg-0122, fg-0124, fg-0130, fg-0149
