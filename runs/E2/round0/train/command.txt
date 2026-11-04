@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv-unsloth/bin/python scripts/e2_dpo.py --dataset runs/E2/round0/select/dpo.jsonl --out runs/E2/round0/train --max-minutes 25.0 --grad-accum 16 --save-steps 5 --seed 0

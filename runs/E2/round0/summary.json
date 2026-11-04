@@ -1,0 +1,88 @@
+{
+ "round": 0,
+ "out": "runs/E2/round0",
+ "gpu": "stock",
+ "versions": {
+  "python": "3.12.15",
+  "main": "5.22.1",
+  "vllm": "0.33.0",
+  "unsloth": "trl 1.15.0 unsloth 2026.11.1"
+ },
+ "written": "2026-11-04T00:56:42",
+ "stages": {
+  "gen": {
+   "chunks": 2,
+   "wall_s": 3058.7,
+   "peak_gpu_used_mib": 11759
+  },
+  "render": {
+   "chunks": 1,
+   "wall_s": 462.2,
+   "peak_gpu_used_mib": 612
+  },
+  "judge": {
+   "chunks": 2,
+   "wall_s": 1668.9,
+   "peak_gpu_used_mib": 6358
+  },
+  "train": {
+   "chunks": 7,
+   "wall_s": 10719.2,
+   "peak_gpu_used_mib": 9057
+  }
+ },
+ "gen": {
+  "samples": 881,
+  "tokens": 1215119,
+  "wall_s": 1375.6,
+  "agg_tok_per_s": 883.3
+ },
+ "select": {
+  "pairs_scored": 2906,
+  "pairs_conf_ge_thr": 1233,
+  "dropped_cycle": 0,
+  "dropped_too_long": 0,
+  "pairs_kept": 1233,
+  "briefs_with_pairs": 402,
+  "clean_samples": 1968,
+  "sample_flags": {
+   "unclean_or_truncated": 32
+  },
+  "length_kept_chosen_vs_rejected": {
+   "n": 1233,
+   "mean_tokens_chosen": 1255.1,
+   "mean_tokens_rejected": 1259.8,
+   "median_diff": 17,
+   "mean_diff": -4.6,
+   "frac_chosen_longer": 0.515,
+   "frac_equal": 0.002
+  }
+ },
+ "train": {
+  "pairs": 1233,
+  "steps": 78,
+  "effective_batch": 16,
+  "loss_first": 0.6931473016738892,
+  "loss_last_quarter_mean": 0.6960140247094003,
+  "reward_margin_last_quarter_mean": -0.005217790640400429,
+  "reward_accuracy_last_quarter_mean": 0.4342105263157895,
+  "rewards_chosen_last": -0.0011792032100617546,
+  "rewards_rejected_last": 0.004038587385318686,
+  "s_per_step_mean": 134.99,
+  "peak_torch_max_allocated_mib": 7992.9443359375,
+  "peak_torch_max_reserved_mib": 8224.0,
+  "train_seconds": 10587.8,
+  "chunks": 7,
+  "versions": {
+   "torch": "2.14.1+cu130",
+   "transformers": "5.17.0",
+   "trl": "1.15.0",
+   "peft": "0.21.2",
+   "unsloth": "2026.11.1",
+   "python": "3.12.15",
+   "gpu_name": "NVIDIA GeForce RTX 3060"
+  },
+  "gpu": "stock"
+ },
+ "policy_adapter": null
+}

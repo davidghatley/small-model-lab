@@ -18,6 +18,10 @@ Gate: the coded gate pooled sources and reported PASS. On coder pairs only, 0.8b
 Decision: training judge = omnijev-0.8b, order-averaged, keep pairs at conf ≥0.7 (not the brief's 0.8: accuracy is the same within CI and coverage doubles; 0.8 is the ablation). Held-out judges = imajev-9b (confident subset) + Opus on 50 eval briefs. Limits: flaws are mostly palette/type-scale CSS changes; hard pairs ≈ chance for everyone.
 Cost note: ~20 Sonnet page-writing agents + 4 Opus labelers (plan usage, no API); GPU ≈ 2.5 h.
 
-## E2 — The design loop   status: planned
+## E2 — The design loop   status: running (round 0 retrain)
+- Setup: gpu stock; coder Qwen2.5-Coder-7B-Instruct (Apache-2.0), vLLM AWQ gen, judge omnijev-0.8b order-averaged, keep conf >= 0.7, DPO QLoRA r16 beta 0.1, ref = base, seed 0.
+- Round 0 (2026-11-04, 4.5 h): 1968/2000 clean samples, 2906 pairs scored, 1233 kept from 402 briefs. No length bias in kept pairs (chosen longer 51.5%, mean diff -4.6 tok).
+- Round 0 DPO at lr 5e-6: 78 steps, 2.9 h, peak 8.0 GiB. Did not learn: loss 0.693 -> 0.696 (last quarter), reward acc 0.43, margin ~0. Adapter kept at runs/E2/round0/train/ but treated as a null result.
+- Next: retrain round 0 at lr 5e-5 with a brief-level held-out pair split to measure preference accuracy on unseen briefs.
 ## E3 — Unlock as a measured variable   status: planned (waits for David's unlock)
 ## E4 — Weight-space probe   status: planned (optional, ask before API spend)

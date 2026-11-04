@@ -1,0 +1,26 @@
+{
+ "pairs": 1233,
+ "steps": 78,
+ "effective_batch": 16,
+ "loss_first": 0.6931473016738892,
+ "loss_last_quarter_mean": 0.6960140247094003,
+ "reward_margin_last_quarter_mean": -0.005217790640400429,
+ "reward_accuracy_last_quarter_mean": 0.4342105263157895,
+ "rewards_chosen_last": -0.0011792032100617546,
+ "rewards_rejected_last": 0.004038587385318686,
+ "s_per_step_mean": 134.99,
+ "peak_torch_max_allocated_mib": 7992.9443359375,
+ "peak_torch_max_reserved_mib": 8224.0,
+ "train_seconds": 10587.8,
+ "chunks": 7,
+ "versions": {
+  "torch": "2.14.1+cu130",
+  "transformers": "5.17.0",
+  "trl": "1.15.0",
+  "peft": "0.21.2",
+  "unsloth": "2026.11.1",
+  "python": "3.12.15",
+  "gpu_name": "NVIDIA GeForce RTX 3060"
+ },
+ "gpu": "stock"
+}
