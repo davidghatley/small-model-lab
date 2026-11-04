@@ -1,0 +1,30 @@
+{"pair_id": "sm-0045", "better": "a", "confidence": 0.7, "rationale": "A has strong headline hierarchy and even team grid; B has tiny unstyled default button and orphaned left-aligned team text."}
+{"pair_id": "sm-0013", "better": "a", "confidence": 0.8, "rationale": "A has clear headline, structured form and styled CTA; B is low-contrast grey text jammed inline with tagline, no CTA."}
+{"pair_id": "sm-0019", "better": "a", "confidence": 0.75, "rationale": "A has strong contrast and consistent centered layout; B's white text on pastel gradient is barely readable, team layout lopsided."}
+{"pair_id": "sm-0012", "better": "a", "confidence": 0.55, "rationale": "Both broken: A's giant black triangle dominates; B has black squares and content jammed against left edge. A slightly less chaotic."}
+{"pair_id": "sm-0098", "better": "a", "confidence": 0.8, "rationale": "A has full-width consistent sections and bold hierarchy; B has mismatched narrow column widths, misaligned blocks, muddy palette."}
+{"pair_id": "sm-0022", "better": "a", "confidence": 0.65, "rationale": "A is clean and readable; B has washed-out pink headline, nearly invisible CTA button, awkward staggered cards."}
+{"pair_id": "sm-0002", "better": "a", "confidence": 0.75, "rationale": "A has centered hero, styled form card and CTA; B headline butts left edge, empty hero, no CTA."}
+{"pair_id": "sm-0184", "better": "a", "confidence": 0.75, "rationale": "A is minimal but polished; B is cramped unstyled HTML with no spacing, default form controls and blue link."}
+{"pair_id": "sm-0188", "better": "b", "confidence": 0.55, "rationale": "A's team row is broken with avatars far left and names centered; B cramped with default button but coherently aligned."}
+{"pair_id": "sm-0109", "better": "b", "confidence": 0.65, "rationale": "B has clean dark theme, stat row, accent color; A has blue-on-blue headline and mixed left/center alignment."}
+{"pair_id": "sm-0033", "better": "b", "confidence": 0.7, "rationale": "B has balanced hero and card grid (placeholders); A is just one long headline floating in empty gradient."}
+{"pair_id": "sm-0128", "better": "b", "confidence": 0.8, "rationale": "B has clear sections and hierarchy; A shows a literal 'Hero Image' placeholder and title jammed inline with tagline."}
+{"pair_id": "sm-0103", "better": "a", "confidence": 0.6, "rationale": "A has hero, form and feature grid despite broken images; B is only headline crammed inline with tagline."}
+{"pair_id": "sm-0089", "better": "a", "confidence": 0.8, "rationale": "A has centered feature cards with good spacing; B's dark subtitle on blue is low contrast and features flush to left edge."}
+{"pair_id": "sm-0163", "better": "b", "confidence": 0.65, "rationale": "B has prominent CTA button and carded sections; A has awkward centered bullet lists and no CTA."}
+{"pair_id": "sm-0005", "better": "a", "confidence": 0.75, "rationale": "A has consistent centered sections with chips; B has body text flush to card edge and large empty gaps."}
+{"pair_id": "sm-0097", "better": "b", "confidence": 0.75, "rationale": "B has strong hero contrast and readable FAQ; A has headline jammed inline with tagline and washed-out hero."}
+{"pair_id": "sm-0175", "better": "b", "confidence": 0.6, "rationale": "B has vivid hero and destination cards, though unequal widths; A is a lone headline on empty gradient."}
+{"pair_id": "sm-0159", "better": "b", "confidence": 0.75, "rationale": "B has cohesive palette and styled CTA button; A has broken image default button and inconsistent alignment."}
+{"pair_id": "sm-0136", "better": "a", "confidence": 0.65, "rationale": "A has hero plus carded content sections; B is just centered headline on a gradient, no structure or CTA."}
+{"pair_id": "sm-0040", "better": "b", "confidence": 0.8, "rationale": "B has centered hero and feature card; A's all-caps headline runs flush to the left edge in empty gradient."}
+{"pair_id": "sm-0009", "better": "b", "confidence": 0.55, "rationale": "B is plainer but cleanly aligned; A's pricing cards are awkwardly staggered with centered bullets overlapping card edges."}
+{"pair_id": "sm-0046", "better": "a", "confidence": 0.8, "rationale": "A has strong hero and translucent feature cards; B is headline and faint tagline jammed inline, nothing else."}
+{"pair_id": "sm-0017", "better": "a", "confidence": 0.6, "rationale": "A contains content in padded cards; B's sections are flush to left edge. A's hero contrast is weak though."}
+{"pair_id": "sm-0119", "better": "a", "confidence": 0.75, "rationale": "A has clean hierarchy, testimonial card and clear CTA; B has narrow floating hero box and clashing yellow/orange."}
+{"pair_id": "sm-0055", "better": "b", "confidence": 0.55, "rationale": "A has content flush to edges and a broken image; B is only a hero but coherent and readable."}
+{"pair_id": "sm-0044", "better": "b", "confidence": 0.7, "rationale": "B has structured features, card and CTA; A's content is flush left to edge with broken two-column alignment."}
+{"pair_id": "sm-0054", "better": "b", "confidence": 0.65, "rationale": "B has contained comparison cards and consistent padding; A has cramped table and features flush to left edge."}
+{"pair_id": "sm-0168", "better": "a", "confidence": 0.7, "rationale": "A has clear hero, team row and CTA band; B is low-contrast white serif on tan with nothing else."}
+{"pair_id": "sm-0068", "better": "a", "confidence": 0.65, "rationale": "A has sectioned layout despite default form/link; B's headline and tagline collide inline on empty gradient."}
