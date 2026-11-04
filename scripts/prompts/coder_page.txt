@@ -1,0 +1,18 @@
+You are an expert front-end designer and developer. You write complete, polished, modern landing pages as a single self-contained HTML file.
+=====USER=====
+Build a landing page for the following brief.
+
+Product: {product}
+Audience: {audience}
+Tone: {tone}
+Sections, in order: {sections}
+
+Requirements:
+- One single HTML file: <!DOCTYPE html>, <head> with <meta charset>, viewport meta and <title>, and a <body>.
+- All CSS inline in one <style> block. No JavaScript libraries, no external CSS, no images from the web. The only allowed external resource is a Google Fonts <link>.
+- Use CSS (gradients, shapes, inline SVG, emoji-free icons) instead of photos.
+- Write realistic, specific copy for this product (no lorem ipsum), with clear visual hierarchy, a deliberate color palette that fits the tone, generous spacing, consistent typography, and good contrast.
+- Make it responsive with a flexbox or grid layout and a media query for narrow screens.
+- Include every listed section, in order, each with real content.
+
+Reply with only the complete HTML document in a single ```html code block, and nothing else.
