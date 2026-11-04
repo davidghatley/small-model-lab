@@ -19,6 +19,8 @@ sys.path.insert(0, str(ROOT / "scripts"))
 GPU_RUN = os.path.expanduser("~/anime-pipeline/tools/gpu_run")
 AWQ = "/mnt/work/models/qwen2.5-coder-7b-instruct-awq"
 NEED = dict(gen=11000, judge=6500, train=9500)
+JUDGE_NEED = {"rsi-jev-4b": 10500}  # per-judge VRAM override
+PYR = str(ROOT / ".venv-rsijev/bin/python")  # rsi-jev needs transformers 5.17
 PY, PYV, PYU = str(ROOT / ".venv/bin/python"), str(ROOT / ".venv-vllm/bin/python"), str(ROOT / ".venv-unsloth/bin/python")
 STAGES = ["gen", "render", "judge", "select", "train", "summary"]
 
@@ -30,7 +32,7 @@ def jl(path):
 
 class Paths:
     def __init__(s, a):
-        s.out = Path(a.out); s.pages = s.out / "pages"; s.judge = s.out / "judge"; s.sel = s.out / "select"; s.train = Path(a.train_out) if a.train_out else s.out / "train"
+        s.out = Path(a.out); s.pages = s.out / "pages"; s.judge = s.out / "judge"; s.sel = Path(a.select_out) if a.select_out else s.out / "select"; s.train = Path(a.train_out) if a.train_out else s.out / "train"
         s.scores = s.judge / f"scores_{a.judge}.jsonl"; s.manifest = s.judge / "manifest.jsonl"; s.dpo = s.sel / "dpo.jsonl"
 
 
@@ -147,8 +149,9 @@ def stage_judge(a, P):
     rows, _ = build_manifest(a, P)
     scored = {r["pair_id"] for r in jl(P.scores) if r.get("p_a_avg") is not None}
     if all(r["pair_id"] in scored for r in rows): return 0
-    run_chunk(a, P, "judge", [PY, "scripts/e2_judge.py", "--judge", a.judge, "--manifest", str(P.manifest), "--out", str(P.scores),
-                              "--max-minutes", str(a.max_minutes)], NEED["judge"])
+    run_chunk(a, P, "judge" if a.judge == "omnijev-0.8b" else "judge_" + a.judge,
+              [PYR if a.judge.startswith("rsi-jev") else PY, "scripts/e2_judge.py", "--judge", a.judge, "--manifest", str(P.manifest), "--out", str(P.scores),
+                              "--max-minutes", str(a.max_minutes)], JUDGE_NEED.get(a.judge, NEED["judge"]))
     scored = {r["pair_id"] for r in jl(P.scores) if r.get("p_a_avg") is not None}
     return 0 if all(r["pair_id"] in scored for r in rows) else 3
 
@@ -180,15 +183,27 @@ def stage_select(a, P):
     briefs = {b["id"]: b for b in load_briefs(a)}
     ok, flags, gen = clean_samples(P)
     rows, _ = build_manifest(a, P)
-    sc = {r["pair_id"]: r for r in jl(P.scores)}
+    judges = a.judges.split(",") if a.judges else [a.judge]
+    if len(judges) > 1 and not a.consensus: sys.exit("--judges with several judges needs --consensus")
+    scs = {j: {r["pair_id"]: r for r in jl(P.judge / f"scores_{j}.jsonl")} for j in judges}
     P.sel.mkdir(parents=True, exist_ok=True)
     cand, n_scored, n_unscored = [], 0, 0
+    jkept = collections.Counter(); pair_n = agree_n = both_conf = both_conf_agree = 0
     allpairs = []  # every scored pair, for the length-bias diagnostics
     for r in rows:
-        s = sc.get(r["pair_id"])
-        if not s or s.get("p_a_avg") is None: n_unscored += 1; continue
+        if any(not x.get(r["pair_id"]) or x[r["pair_id"]].get("p_a_avg") is None for x in scs.values()): n_unscored += 1; continue
         n_scored += 1
-        p = s["p_a_avg"]; conf = max(p, 1 - p)
+        s = scs[judges[0]][r["pair_id"]]
+        ps = {j: scs[j][r["pair_id"]]["p_a_avg"] for j in judges}
+        for j in judges:
+            if max(ps[j], 1 - ps[j]) >= a.conf: jkept[j] += 1
+        sides = {pj > .5 for pj in ps.values()}
+        if len(judges) > 1:
+            pair_n += 1; agree_n += len(sides) == 1
+            if all(max(pj, 1 - pj) >= a.conf for pj in ps.values()): both_conf += 1; both_conf_agree += len(sides) == 1
+        # consensus: p = mean over judges of P(a better); needs the same side from all judges and every judge's conf >= thr
+        p = sum(ps.values()) / len(ps)
+        conf = min(max(pj, 1 - pj) for pj in ps.values()) if len(sides) == 1 else 0.0
         w, l = (r["i"], r["j"]) if p > 0.5 else (r["j"], r["i"])
         pc = p if p > 0.5 else 1 - p  # P(chosen better), order-averaged
         d = dict(brief_id=r["brief_id"], w=w, l=l, p=pc, conf=conf, flip=(s["p_a_ab"] > .5) != (s["p_a_ba"] > .5))
@@ -233,7 +248,10 @@ def stage_select(a, P):
     per = collections.Counter(r["brief_id"] for r in out_rows)
     final_keys = {(r["brief_id"], r["chosen_k"], r["rejected_k"]) for r in out_rows}
     nb = len(ok)
-    stats = dict(round=a.round, conf_threshold=a.conf, judge=a.judge, briefs_in_set=len(load_briefs(a)), briefs_with_2plus_clean=sum(len(v) >= 2 for v in ok.values()),
+    stats = dict(round=a.round, conf_threshold=a.conf, judge=",".join(judges), consensus=bool(a.consensus),
+                 per_judge_pairs_conf_ge_thr={j: jkept[j] for j in judges},
+                 judge_side_agreement_all_scored=(round(agree_n / pair_n, 4) if pair_n else None), judge_pairs_compared=pair_n,
+                 judges_both_conf_ge_thr=both_conf, judges_both_conf_agree_rate=(round(both_conf_agree / both_conf, 4) if both_conf else None), briefs_in_set=len(load_briefs(a)), briefs_with_2plus_clean=sum(len(v) >= 2 for v in ok.values()),
                  sample_flags=dict(flags), clean_samples=sum(len(v) for v in ok.values()), pairs_scored=n_scored, pairs_unscored=n_unscored,
                  pairs_conf_ge_thr=len(cand), dropped_cycle=dropped_cycle, dropped_too_long=dropped_len, pairs_kept=len(out_rows),
                  order_flip_rate_all_scored=round(sum(d["flip"] for d in allpairs) / max(1, len(allpairs)), 3),
@@ -249,8 +267,9 @@ def stage_select(a, P):
 
 def stage_train(a, P):
     if (P.train / "train_summary.json").exists(): return 0
-    if not P.dpo.exists() or not P.dpo.read_text().strip(): sys.exit("no DPO dataset (run select; or zero pairs kept)")
-    cmd = [PYU, "scripts/e2_dpo.py", "--dataset", str(P.dpo), "--out", str(P.train), "--max-minutes", str(a.max_minutes),
+    ds = Path(a.dataset) if a.dataset else P.dpo
+    if not ds.exists() or not ds.read_text().strip(): sys.exit("no DPO dataset (run select; or zero pairs kept)")
+    cmd = [PYU, "scripts/e2_dpo.py", "--dataset", str(ds), "--out", str(P.train), "--max-minutes", str(a.max_minutes),
            "--grad-accum", str(a.grad_accum), "--save-steps", str(a.save_steps), "--seed", str(a.seed)]
     if a.lr is not None: cmd += ["--lr", str(a.lr)]
     if a.beta is not None: cmd += ["--beta", str(a.beta)]
@@ -297,6 +316,10 @@ def main():
     ap.add_argument("--seed", type=int, default=0); ap.add_argument("--gen-max-tokens", type=int, default=6144)
     ap.add_argument("--max-minutes", type=float, default=25.0, help="per GPU call; keep < 30 (house rule)")
     ap.add_argument("--judge", default="omnijev-0.8b"); ap.add_argument("--conf", type=float, default=0.7)
+    ap.add_argument("--judges", default=None, help="select: comma list of judges whose scores_<judge>.jsonl are combined (needs --consensus if >1)")
+    ap.add_argument("--consensus", action="store_true", help="select: keep a pair only if every judge picks the same side with order-averaged conf >= --conf")
+    ap.add_argument("--select-out", default=None, help="select/train: dir for dpo.jsonl + stats.json (default <out>/select)")
+    ap.add_argument("--dataset", default=None, help="train: DPO jsonl override (default <select-out>/dpo.jsonl)")
     ap.add_argument("--max-length", type=int, default=4096, help="drop pairs whose prompt+longer completion exceeds this")
     ap.add_argument("--prompt", default=str(ROOT / "scripts/prompts/coder_page.txt"))
     ap.add_argument("--policy-adapter", default=None, help="LoRA dir to sample from ('none' = base); default prev round's train/adapter")

@@ -6,6 +6,7 @@ manifest rows: {"pair_id", "a_png", "b_png"}. Output rows: pair_id, judge, p_fir
 p_a_ab (P a better, order a,b), p_a_ba (order b,a, flipped), p_a_avg (order-averaged P a better), errors, lat.
 Scores already in --out are skipped, so a rerun (even with a bigger manifest) only scores what is missing.
 Logic is the same as score_pairs.py (e0_bench adapters, Q_PAIR/STATE_PAIR, p_first) minus the single-image calls.
+rsi-jev-4b: run with .venv-rsijev/bin/python and gpu_run --need 10500 (e2_loop.py stage_judge does this itself).
 """
 import argparse, json, sys, time, types, random
 from pathlib import Path
@@ -14,6 +15,7 @@ import e0_bench as E
 
 PRESETS = {  # judge -> (adapter, model_path, quant)
     "omnijev-0.8b": ("omnijev", "/mnt/models/llm/omnijev-0.8b", None),
+    "rsi-jev-4b": ("rsijev", "/mnt/models/llm/rsi-jev-4b", None),  # run under .venv-rsijev/bin/python (transformers 5.17)
     "imajev-9b": ("imajev", "/mnt/work/models/imajev-9b", "nf4"),
 }
 
