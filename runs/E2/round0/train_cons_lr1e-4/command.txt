@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv-unsloth/bin/python scripts/e2_dpo.py --dataset runs/E2/round0/select_consensus/dpo.jsonl --out runs/E2/round0/train_cons_lr1e-4 --max-minutes 25.0 --grad-accum 16 --save-steps 5 --seed 0 --lr 0.0001 --epochs 2.0 --eval-frac 0.1

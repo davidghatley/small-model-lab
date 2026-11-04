@@ -1,0 +1,53 @@
+{
+ "pairs": 947,
+ "eval_pairs": 94,
+ "eval_briefs": 31,
+ "eval_before": {
+  "eval_loss": 0.6931471228599548,
+  "rewards_accuracies": 0.0,
+  "rewards_margins": 0.0,
+  "rewards_chosen": 0.0,
+  "rewards_rejected": 0.0,
+  "pairs": 94,
+  "seconds": 425.0,
+  "s_per_pair": 4.52
+ },
+ "eval_after": {
+  "eval_loss": 0.689566969871521,
+  "rewards_accuracies": 0.5957446808510638,
+  "rewards_margins": 0.007881627502316173,
+  "rewards_chosen": 0.0019393676360623237,
+  "rewards_rejected": -0.005942259533727106,
+  "pairs": 94,
+  "seconds": 428.7,
+  "s_per_pair": 4.56
+ },
+ "lr_arg": 0.0001,
+ "lr_peak_logged": 0.0001,
+ "lr_last_logged": 8.474576271186441e-07,
+ "beta": 0.1,
+ "epochs": 2.0,
+ "steps": 120,
+ "effective_batch": 16,
+ "loss_first": 0.6931473016738892,
+ "loss_last_quarter_mean": 0.6654832323392232,
+ "reward_margin_last_quarter_mean": 0.05820288425675244,
+ "reward_accuracy_last_quarter_mean": 0.68125,
+ "rewards_chosen_last": 0.032972169558403645,
+ "rewards_rejected_last": -0.025230714892913873,
+ "s_per_step_mean": 134.66,
+ "peak_torch_max_allocated_mib": 8122.2021484375,
+ "peak_torch_max_reserved_mib": 8386.0,
+ "train_seconds": 16254.8,
+ "chunks": 12,
+ "versions": {
+  "torch": "2.14.1+cu130",
+  "transformers": "5.17.0",
+  "trl": "1.15.0",
+  "peft": "0.21.2",
+  "unsloth": "2026.11.1",
+  "python": "3.12.15",
+  "gpu_name": "NVIDIA GeForce RTX 3060"
+ },
+ "gpu": "stock"
+}

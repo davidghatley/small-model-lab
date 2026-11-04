@@ -1,0 +1,228 @@
+{
+ "policy_x": {
+  "name": "base",
+  "spec": "base"
+ },
+ "policy_y": {
+  "name": "r0_cons",
+  "spec": "runs/E2/round0/train_cons_lr1e-4/adapter"
+ },
+ "n_briefs": 100,
+ "page_validity": {
+  "x": {
+   "n": 100,
+   "clean": 98,
+   "unclean": 2,
+   "render_failed": 0,
+   "blank": 0
+  },
+  "y": {
+   "n": 100,
+   "clean": 98,
+   "unclean": 2,
+   "render_failed": 0,
+   "blank": 0
+  }
+ },
+ "n_pairs_both_clean": 98,
+ "temperature": 0.7,
+ "seed": 0,
+ "gpu": "stock",
+ "holdout_guard": {
+  "datasets_checked": [
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/_smoke/dpo40.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/_smoke/round0/select/dpo.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/round0/select/dpo.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/round0/select_consensus/dpo.jsonl"
+  ],
+  "rows_checked": 2341
+ },
+ "judges": {
+  "omnijev-0.8b": {
+   "all": {
+    "n": 98,
+    "win_rate": 0.505,
+    "win_rate_ci95": [
+     0.464,
+     0.546
+    ],
+    "mean_p_y": 0.504,
+    "mean_p_y_ci95": [
+     0.496,
+     0.514
+    ],
+    "mean_log_len_ratio_y_over_x": 0.013,
+    "frac_y_longer": 0.143,
+    "lc_win_rate": 0.371,
+    "lc_win_rate_ci95": [
+     0.102,
+     0.665
+    ],
+    "length_slope": 24.372,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.186,
+       0.0
+      ],
+      "n": 33,
+      "win_rate": 0.439
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.0
+      ],
+      "n": 33,
+      "win_rate": 0.515
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.504
+      ],
+      "n": 32,
+      "win_rate": 0.562
+     }
+    ],
+    "bucketed_lc_win_rate": 0.505,
+    "n_ties": 79
+   },
+   "conf_ge_0_7": {
+    "n": 2,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+     1.0,
+     1.0
+    ],
+    "mean_p_y": 0.758,
+    "mean_p_y_ci95": [
+     0.743,
+     0.774
+    ],
+    "mean_log_len_ratio_y_over_x": 0.194,
+    "frac_y_longer": 1.0,
+    "lc_win_rate": null,
+    "lc_win_rate_ci95": [
+     NaN,
+     NaN
+    ],
+    "length_slope": null,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       0.113,
+       0.113
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     },
+     {
+      "lr_range": [
+       0.276,
+       0.276
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     }
+    ],
+    "bucketed_lc_win_rate": 1.0,
+    "n_ties": 0
+   },
+   "order_flip_rate": 0.929
+  },
+  "imajev-9b": {
+   "all": {
+    "n": 98,
+    "win_rate": 0.505,
+    "win_rate_ci95": [
+     0.464,
+     0.551
+    ],
+    "mean_p_y": 0.508,
+    "mean_p_y_ci95": [
+     0.499,
+     0.519
+    ],
+    "mean_log_len_ratio_y_over_x": 0.013,
+    "frac_y_longer": 0.143,
+    "lc_win_rate": 0.473,
+    "lc_win_rate_ci95": [
+     0.175,
+     0.727
+    ],
+    "length_slope": 4.592,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.186,
+       0.0
+      ],
+      "n": 33,
+      "win_rate": 0.47
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.0
+      ],
+      "n": 33,
+      "win_rate": 0.515
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.504
+      ],
+      "n": 32,
+      "win_rate": 0.531
+     }
+    ],
+    "bucketed_lc_win_rate": 0.505,
+    "n_ties": 79
+   },
+   "conf_ge_0_7": {
+    "n": 2,
+    "win_rate": 1.0,
+    "win_rate_ci95": [
+     1.0,
+     1.0
+    ],
+    "mean_p_y": 0.777,
+    "mean_p_y_ci95": [
+     0.767,
+     0.787
+    ],
+    "mean_log_len_ratio_y_over_x": 0.194,
+    "frac_y_longer": 1.0,
+    "lc_win_rate": null,
+    "lc_win_rate_ci95": [
+     NaN,
+     NaN
+    ],
+    "length_slope": null,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       0.113,
+       0.113
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     },
+     {
+      "lr_range": [
+       0.276,
+       0.276
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     }
+    ],
+    "bucketed_lc_win_rate": 1.0,
+    "n_ties": 0
+   },
+   "order_flip_rate": 0.949
+  }
+ }
+}
