@@ -1,0 +1,296 @@
+{
+  "judge": "omnijev-4b",
+  "quant": "gguf-q8_0",
+  "errors": [],
+  "load_s": 5.06475567817688,
+  "latency": {
+    "single_A": {
+      "n": 10,
+      "p50_ms": 478.45941747073084,
+      "p90_ms": 480.9668011497706,
+      "mean_ms": 477.75580275338143
+    },
+    "single_B": {
+      "n": 10,
+      "p50_ms": 425.73615605942905,
+      "p90_ms": 427.39819502457976,
+      "mean_ms": 425.07580420933664
+    },
+    "pair_AB": {
+      "n": 10,
+      "p50_ms": 442.5583385163918,
+      "p90_ms": 447.6674136007204,
+      "mean_ms": 444.76319609675556
+    },
+    "pair_BA": {
+      "n": 10,
+      "p50_ms": 377.6578863617033,
+      "p90_ms": 378.8256846135482,
+      "mean_ms": 377.4103772826493
+    }
+  },
+  "latency_all_ops": {
+    "n": 40,
+    "p50_ms": 434.4608848914504,
+    "p90_ms": 478.5385903669521,
+    "mean_ms": 431.2512950855307
+  },
+  "latency_single": {
+    "n": 20,
+    "p50_ms": 450.9914934169501,
+    "p90_ms": 479.76723548490554,
+    "mean_ms": 451.41580348135903
+  },
+  "latency_pairwise": {
+    "n": 20,
+    "p50_ms": 409.83587747905403,
+    "p90_ms": 445.6522780004889,
+    "mean_ms": 411.0867866897024
+  },
+  "vram": {
+    "torch_max_allocated_mib": 0.0,
+    "nvidia_smi_proc_peak_mib": 6628,
+    "nvidia_smi_gpu_used_peak_mib": 7187,
+    "note": "torch figure is 0 when the model runs in a child server (omnijev); use nvidia_smi_proc_peak_mib"
+  },
+  "single": {
+    "A_clean": {
+      "p_good": 0.890257,
+      "rating": {
+        "type": "score",
+        "score": 3.182107,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.010992,
+          "1": 0.049842,
+          "2": 0.104552,
+          "3": 0.415293,
+          "4": 0.41932
+        },
+        "confidence": 0.318422
+      }
+    },
+    "B_flawed": {
+      "p_good": 0.006753,
+      "rating": {
+        "type": "score",
+        "score": 0.220725,
+        "legend": {
+          "0": "terrible",
+          "1": "poor",
+          "2": "mediocre",
+          "3": "good",
+          "4": "excellent"
+        },
+        "probabilities": {
+          "0": 0.831201,
+          "1": 0.132802,
+          "2": 0.025333,
+          "3": 0.005403,
+          "4": 0.005263
+        },
+        "confidence": 0.816063
+      }
+    },
+    "scores_A_gt_B": true
+  },
+  "pairwise": {
+    "pairwise_worked": true,
+    "failures": {},
+    "p_A_better_when_A_first": 0.999448,
+    "p_A_better_when_B_first": 0.992951,
+    "choice_AB": "A_clean",
+    "choice_BA": "A_clean",
+    "swap_consistent": true,
+    "picks_clean_page_both_orders": true,
+    "yes_no_answer": "A (clean)"
+  },
+  "probability_field_present": true,
+  "deterministic_across_runs": {
+    "single_A": true,
+    "single_B": true,
+    "pair_AB": true,
+    "pair_BA": true
+  },
+  "failed_ops": {},
+  "raw_outputs_last_run": {
+    "single_A": {
+      "model": "OneJev1.6-4B.Q8_0",
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.890257
+        },
+        "rating": {
+          "type": "score",
+          "score": 3.182107,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.010992,
+            "1": 0.049842,
+            "2": 0.104552,
+            "3": 0.415293,
+            "4": 0.41932
+          },
+          "confidence": 0.318422
+        }
+      },
+      "usage": {
+        "input_tokens": 224,
+        "output_tokens": 2
+      },
+      "qev": {
+        "prompt_version": "qev-labels-v2",
+        "prompt_sha256": "45945a29c39f13e9db80901e02640a91ee9e4fe802ba92906897b926d27788d2",
+        "fork_mode": "llama.cpp",
+        "prefix_tokens": 74,
+        "branches": 2,
+        "timing": {
+          "render_s": 0.0011397979687899351,
+          "forward_s": 0.43306327192112803,
+          "total_s": 0.4769753359723836
+        },
+        "media": {
+          "images": 1,
+          "videos": 0,
+          "load_s": 0.042495167115703225
+        },
+        "backend": "llama.cpp"
+      }
+    },
+    "single_B": {
+      "model": "OneJev1.6-4B.Q8_0",
+      "answers": {
+        "good": {
+          "type": "noul",
+          "noul": 0.006753
+        },
+        "rating": {
+          "type": "score",
+          "score": 0.220725,
+          "legend": {
+            "0": "terrible",
+            "1": "poor",
+            "2": "mediocre",
+            "3": "good",
+            "4": "excellent"
+          },
+          "probabilities": {
+            "0": 0.831201,
+            "1": 0.132802,
+            "2": 0.025333,
+            "3": 0.005403,
+            "4": 0.005263
+          },
+          "confidence": 0.816063
+        }
+      },
+      "usage": {
+        "input_tokens": 224,
+        "output_tokens": 2
+      },
+      "qev": {
+        "prompt_version": "qev-labels-v2",
+        "prompt_sha256": "45945a29c39f13e9db80901e02640a91ee9e4fe802ba92906897b926d27788d2",
+        "fork_mode": "llama.cpp",
+        "prefix_tokens": 74,
+        "branches": 2,
+        "timing": {
+          "render_s": 0.0011354221496731043,
+          "forward_s": 0.405419158982113,
+          "total_s": 0.42515624803490937
+        },
+        "media": {
+          "images": 1,
+          "videos": 0,
+          "load_s": 0.018337415996938944
+        },
+        "backend": "llama.cpp"
+      }
+    },
+    "pair_AB": {
+      "model": "OneJev1.6-4B.Q8_0",
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "first",
+          "probabilities": {
+            "first": 0.999448,
+            "second": 0.000552
+          },
+          "confidence": 0.998896
+        }
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 1
+      },
+      "qev": {
+        "prompt_version": "qev-labels-v2",
+        "prompt_sha256": "ef39cf88a4c688b857e4656e3d63fdffe92899f56b80594a5c78123abd014bd4",
+        "fork_mode": "llama.cpp",
+        "prefix_tokens": 92,
+        "branches": 1,
+        "timing": {
+          "render_s": 0.0008779268246144056,
+          "forward_s": 0.3799870640505105,
+          "total_s": 0.43956495774909854
+        },
+        "media": {
+          "images": 2,
+          "videos": 0,
+          "load_s": 0.05842374893836677
+        },
+        "backend": "llama.cpp"
+      }
+    },
+    "pair_BA": {
+      "model": "OneJev1.6-4B.Q8_0",
+      "answers": {
+        "better": {
+          "type": "choice",
+          "choice": "second",
+          "probabilities": {
+            "first": 0.007049,
+            "second": 0.992951
+          },
+          "confidence": 0.985903
+        }
+      },
+      "usage": {
+        "input_tokens": 158,
+        "output_tokens": 1
+      },
+      "qev": {
+        "prompt_version": "qev-labels-v2",
+        "prompt_sha256": "ef39cf88a4c688b857e4656e3d63fdffe92899f56b80594a5c78123abd014bd4",
+        "fork_mode": "llama.cpp",
+        "prefix_tokens": 92,
+        "branches": 1,
+        "timing": {
+          "render_s": 0.0010169760789722204,
+          "forward_s": 0.31242486089468,
+          "total_s": 0.37214334798045456
+        },
+        "media": {
+          "images": 2,
+          "videos": 0,
+          "load_s": 0.058424274902790785
+        },
+        "backend": "llama.cpp"
+      }
+    }
+  }
+}

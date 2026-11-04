@@ -11,7 +11,8 @@ Test: one fixture pair at 1280×800, a clean landing page (A) and a deliberately
 | imajev-4b | Apache-2.0 (no) | bf16 | 10.4 GB | 1747 ms | 1652 ms | yes, swap-consistent | 0.996 / 0.979 | 0.939 / 0.061 | self-reported |
 | imajev-2b | Apache-2.0 (no) | bf16 | 5.1 GB | 1155 ms | 1089 ms | yes, swap-consistent | 0.934 / 0.901 | 0.803 / 0.019 | self-reported |
 | imajev-2b | Apache-2.0 (no) | nf4 | 2.6 GB | 1072 ms | 1003 ms | yes, swap-consistent | 0.917 / 0.891 | 0.827 / 0.041 | self-reported |
-| omnijev-4b | Apache-2.0 (no) | bf16 | OOM on load | — | — | — | — | — | GGUF/low-mem path in progress |
+| **omnijev-4b** (OneJev 1.6) | Apache-2.0 (no) | GGUF Q8_0 (llama.cpp via qev) | 6.6 GB | 451 ms | 410 ms | yes, swap-consistent | 0.999 / 0.993 | 0.890 / 0.007 | probs yes; calibration not documented |
+| omnijev-4b | Apache-2.0 (no) | bf16 | OOM on load (flide fp8 needs compute capability ≥8.9; the 3060 is 8.6) | — | — | — | — | — | — |
 | Vev | CC BY-NC 4.0 | — | not run | | | | | | non-commercial |
 | StartLux-Decision | CC BY-NC 4.0 | — | not run | | | | | | non-commercial |
 | Simple Jev / open-alternative-jev | Apache-2.0 code | — | not run | | | | | | 27B+ bases, no vision documented |
@@ -27,5 +28,5 @@ Every run was deterministic across all 10 repeats. NF4 moved imajev-2b's probabi
 
 ## Pick
 - **Top 2: omnijev-0.8b** (training-judge candidate: 5–10× faster than the rest, so the DPO loop is cheap) and **imajev-9b nf4** (held-out judge candidate: a different model family, the strongest single-image separation, and slow is fine for 100 eval briefs).
-- **rsi-jev-4b** also goes into E1, because scoring with it is cheap. If it beats omnijev on agreement, it becomes the training judge. Note its non-commercial training-data caveat in any writeup.
-- This deviates from the brief's "top 2": three judges go into E1, because the ranking can't be made on one fixture pair.
+- **rsi-jev-4b** and **omnijev-4b Q8** also go into E1, because scoring with them is cheap (300 pairs × 2 orders takes ≤26 min even for imajev-9b). Whichever fast judge agrees best becomes the training judge. Note rsi-jev's non-commercial training-data caveat in any writeup.
+- This deviates from the brief's "top 2": four judges go into E1, because the ranking can't be made on one fixture pair.

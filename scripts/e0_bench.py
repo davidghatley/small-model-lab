@@ -104,10 +104,17 @@ class OmniJev:
         if a.server_cmd:
             cmd = a.server_cmd.format(model_path=a.model_path, port=self.port)
         elif a.quant and a.quant.startswith("gguf"):
-            cmd = f"qev serve --gguf {a.model_path} --port {self.port}"
+            # qev lives in its own venv (.venv-qev); llama-server is a prebuilt CUDA build (see scripts/README.md)
+            lcpp = Path(os.environ.get("LLAMA_CPP_DIR", "/mnt/work/tools/llama.cpp-b12083/llama-b12083"))
+            os.environ["LD_LIBRARY_PATH"] = f"{lcpp}:" + os.environ.get("LD_LIBRARY_PATH", "")
+            cmd = f"qev serve --gguf {a.model_path} --llama-server {lcpp}/llama-server --tokenizer {os.environ.get('QEV_TOKENIZER', '/mnt/models/llm/omnijev-4b')} --port {self.port}"
+            mm = os.environ.get("QEV_MMPROJ") or next(iter(sorted(Path(a.model_path).parent.glob("*mmproj-f16.gguf"))), None)
+            if mm: cmd += f" --mmproj {mm}"
         else:
             cmd = f"flide serve --model {a.model_path} --port {self.port}"
-        exe = shutil.which(cmd.split()[0]) or str(ROOT / ".venv/bin" / cmd.split()[0])
+        venv = ".venv-qev" if cmd.startswith("qev") else ".venv"
+        exe = str(ROOT / venv / "bin" / cmd.split()[0])
+        if not Path(exe).exists(): exe = shutil.which(cmd.split()[0]) or exe
         self.cmd = [exe] + cmd.split()[1:]
         self.proc = subprocess.Popen(self.cmd, stdout=open(Path(a.out) / "server.log", "w"), stderr=subprocess.STDOUT)
         self.child_pids = [self.proc.pid]
@@ -121,6 +128,12 @@ class OmniJev:
                 time.sleep(1)
         else:
             raise RuntimeError("server did not come up in 600 s")
+        # llama-server is a grandchild of qev: count every descendant for the nvidia-smi per-process peak
+        kids, todo = [], [self.proc.pid]
+        while todo:
+            r = subprocess.run(["pgrep", "-P", str(todo.pop())], capture_output=True, text=True).stdout.split()
+            kids += [int(x) for x in r]; todo += [int(x) for x in r]
+        self.child_pids += kids
 
     def ask(self, images, state, questions):
         media = [{"type": "image", "data": "data:image/png;base64," + base64.b64encode(Path(p).read_bytes()).decode()} for p in images]
