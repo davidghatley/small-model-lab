@@ -1,0 +1,724 @@
+{
+  "labels_available": {
+    "by_construction": 150,
+    "reference": 120
+  },
+  "judges": {
+    "omnijev-0.8b": {
+      "n_scored": 300,
+      "n_errors": 0,
+      "agreement": {
+        "by_construction": {
+          "overall": {
+            "n": 150,
+            "agree": 0.6866666666666666
+          },
+          "high_conf": {
+            "n": 12,
+            "agree": 1.0,
+            "coverage": 0.08
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 150,
+              "agree": 0.6866666666666666
+            }
+          },
+          "by_flaw_severity": {
+            "moderate": {
+              "n": 50,
+              "agree": 0.66
+            },
+            "obvious": {
+              "n": 50,
+              "agree": 0.88
+            },
+            "subtle": {
+              "n": 50,
+              "agree": 0.52
+            }
+          }
+        },
+        "reference": {
+          "overall": {
+            "n": 120,
+            "agree": 0.7166666666666667
+          },
+          "high_conf": {
+            "n": 19,
+            "agree": 0.8421052631578947,
+            "coverage": 0.15833333333333333
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 20,
+              "agree": 0.8
+            },
+            "frontier_hard": {
+              "n": 40,
+              "agree": 0.65
+            },
+            "small_model": {
+              "n": 60,
+              "agree": 0.7333333333333333
+            }
+          },
+          "by_flaw_severity": {
+            "None": {
+              "n": 100,
+              "agree": 0.7
+            },
+            "moderate": {
+              "n": 7,
+              "agree": 0.7142857142857143
+            },
+            "obvious": {
+              "n": 7,
+              "agree": 1.0
+            },
+            "subtle": {
+              "n": 6,
+              "agree": 0.6666666666666666
+            }
+          },
+          "high_conf_by_reference_confidence>=0.8": {
+            "n": 29,
+            "agree": 0.896551724137931
+          }
+        }
+      },
+      "calibration": {
+        "label_source": "reference",
+        "bins": [
+          {
+            "lo": 0.5,
+            "hi": 0.55,
+            "n": 25,
+            "mean_conf": 0.52361266,
+            "accuracy": 0.64
+          },
+          {
+            "lo": 0.55,
+            "hi": 0.6,
+            "n": 22,
+            "mean_conf": 0.5705378409090909,
+            "accuracy": 0.5909090909090909
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.65,
+            "n": 21,
+            "mean_conf": 0.6294518095238095,
+            "accuracy": 0.7142857142857143
+          },
+          {
+            "lo": 0.65,
+            "hi": 0.7,
+            "n": 16,
+            "mean_conf": 0.67110540625,
+            "accuracy": 0.75
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.75,
+            "n": 8,
+            "mean_conf": 0.726935375,
+            "accuracy": 0.75
+          },
+          {
+            "lo": 0.75,
+            "hi": 0.8,
+            "n": 9,
+            "mean_conf": 0.7745382222222221,
+            "accuracy": 0.8888888888888888
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.8500000000000001,
+            "n": 11,
+            "mean_conf": 0.8200237272727272,
+            "accuracy": 0.7272727272727273
+          },
+          {
+            "lo": 0.8500000000000001,
+            "hi": 0.9,
+            "n": 3,
+            "mean_conf": 0.8786811666666666,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.9,
+            "hi": 0.95,
+            "n": 2,
+            "mean_conf": 0.92886925,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.95,
+            "hi": 1.0,
+            "n": 3,
+            "mean_conf": 0.9654336666666667,
+            "accuracy": 1.0
+          }
+        ],
+        "ece": 0.07704606250000001
+      },
+      "position_bias": {
+        "n": 300,
+        "flip_rate": 0.3333333333333333,
+        "mean_p_first_minus_0.5": -0.030726214999999946
+      },
+      "single_vs_pairwise": {
+        "n": 300,
+        "consistency": 0.7066666666666667,
+        "single_agrees_with_by_construction": {
+          "n": 150,
+          "agree": 0.76
+        },
+        "single_agrees_with_reference": {
+          "n": 120,
+          "agree": 0.6
+        }
+      },
+      "pairwise_latency_mean_s": 0.2805767469717345,
+      "gate": "PASS"
+    },
+    "omnijev-4b": {
+      "n_scored": 300,
+      "n_errors": 0,
+      "agreement": {
+        "by_construction": {
+          "overall": {
+            "n": 150,
+            "agree": 0.9
+          },
+          "high_conf": {
+            "n": 26,
+            "agree": 1.0,
+            "coverage": 0.17333333333333334
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 150,
+              "agree": 0.9
+            }
+          },
+          "by_flaw_severity": {
+            "moderate": {
+              "n": 50,
+              "agree": 0.98
+            },
+            "obvious": {
+              "n": 50,
+              "agree": 1.0
+            },
+            "subtle": {
+              "n": 50,
+              "agree": 0.72
+            }
+          }
+        },
+        "reference": {
+          "overall": {
+            "n": 120,
+            "agree": 0.6416666666666667
+          },
+          "high_conf": {
+            "n": 9,
+            "agree": 1.0,
+            "coverage": 0.075
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 20,
+              "agree": 0.9
+            },
+            "frontier_hard": {
+              "n": 40,
+              "agree": 0.625
+            },
+            "small_model": {
+              "n": 60,
+              "agree": 0.5666666666666667
+            }
+          },
+          "by_flaw_severity": {
+            "None": {
+              "n": 100,
+              "agree": 0.59
+            },
+            "moderate": {
+              "n": 7,
+              "agree": 1.0
+            },
+            "obvious": {
+              "n": 7,
+              "agree": 1.0
+            },
+            "subtle": {
+              "n": 6,
+              "agree": 0.6666666666666666
+            }
+          },
+          "high_conf_by_reference_confidence>=0.8": {
+            "n": 29,
+            "agree": 0.9310344827586207
+          }
+        }
+      },
+      "calibration": {
+        "label_source": "reference",
+        "bins": [
+          {
+            "lo": 0.5,
+            "hi": 0.55,
+            "n": 37,
+            "mean_conf": 0.5206226351351351,
+            "accuracy": 0.4864864864864865
+          },
+          {
+            "lo": 0.55,
+            "hi": 0.6,
+            "n": 25,
+            "mean_conf": 0.57245856,
+            "accuracy": 0.44
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.65,
+            "n": 21,
+            "mean_conf": 0.6282523095238096,
+            "accuracy": 0.6190476190476191
+          },
+          {
+            "lo": 0.65,
+            "hi": 0.7,
+            "n": 18,
+            "mean_conf": 0.6719343055555556,
+            "accuracy": 0.9444444444444444
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.75,
+            "n": 7,
+            "mean_conf": 0.7257252142857143,
+            "accuracy": 0.8571428571428571
+          },
+          {
+            "lo": 0.75,
+            "hi": 0.8,
+            "n": 3,
+            "mean_conf": 0.7794243333333334,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.8500000000000001,
+            "n": 5,
+            "mean_conf": 0.8216176000000001,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.8500000000000001,
+            "hi": 0.9,
+            "n": 2,
+            "mean_conf": 0.8749045,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.9,
+            "hi": 0.95,
+            "n": 2,
+            "mean_conf": 0.935462,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.95,
+            "hi": 1.0,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          }
+        ],
+        "ece": 0.10438176666666663
+      },
+      "position_bias": {
+        "n": 300,
+        "flip_rate": 0.5833333333333334,
+        "mean_p_first_minus_0.5": -0.13028381499999997
+      },
+      "single_vs_pairwise": {
+        "n": 300,
+        "consistency": 0.78,
+        "single_agrees_with_by_construction": {
+          "n": 150,
+          "agree": 0.8333333333333334
+        },
+        "single_agrees_with_reference": {
+          "n": 120,
+          "agree": 0.6166666666666667
+        }
+      },
+      "pairwise_latency_mean_s": 1.6285540880612097,
+      "gate": "PASS"
+    },
+    "rsi-jev-4b": {
+      "n_scored": 300,
+      "n_errors": 0,
+      "agreement": {
+        "by_construction": {
+          "overall": {
+            "n": 150,
+            "agree": 0.7733333333333333
+          },
+          "high_conf": {
+            "n": 60,
+            "agree": 0.95,
+            "coverage": 0.4
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 150,
+              "agree": 0.7733333333333333
+            }
+          },
+          "by_flaw_severity": {
+            "moderate": {
+              "n": 50,
+              "agree": 0.82
+            },
+            "obvious": {
+              "n": 50,
+              "agree": 0.98
+            },
+            "subtle": {
+              "n": 50,
+              "agree": 0.52
+            }
+          }
+        },
+        "reference": {
+          "overall": {
+            "n": 120,
+            "agree": 0.6166666666666667
+          },
+          "high_conf": {
+            "n": 33,
+            "agree": 0.8787878787878788,
+            "coverage": 0.275
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 20,
+              "agree": 0.75
+            },
+            "frontier_hard": {
+              "n": 40,
+              "agree": 0.55
+            },
+            "small_model": {
+              "n": 60,
+              "agree": 0.6166666666666667
+            }
+          },
+          "by_flaw_severity": {
+            "None": {
+              "n": 100,
+              "agree": 0.59
+            },
+            "moderate": {
+              "n": 7,
+              "agree": 0.7142857142857143
+            },
+            "obvious": {
+              "n": 7,
+              "agree": 1.0
+            },
+            "subtle": {
+              "n": 6,
+              "agree": 0.5
+            }
+          },
+          "high_conf_by_reference_confidence>=0.8": {
+            "n": 29,
+            "agree": 0.9310344827586207
+          }
+        }
+      },
+      "calibration": {
+        "label_source": "reference",
+        "bins": [
+          {
+            "lo": 0.5,
+            "hi": 0.55,
+            "n": 20,
+            "mean_conf": 0.5224900614470244,
+            "accuracy": 0.3
+          },
+          {
+            "lo": 0.55,
+            "hi": 0.6,
+            "n": 12,
+            "mean_conf": 0.5714146538327137,
+            "accuracy": 0.3333333333333333
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.65,
+            "n": 19,
+            "mean_conf": 0.6198534714548212,
+            "accuracy": 0.5789473684210527
+          },
+          {
+            "lo": 0.65,
+            "hi": 0.7,
+            "n": 14,
+            "mean_conf": 0.673284787684679,
+            "accuracy": 0.7142857142857143
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.75,
+            "n": 8,
+            "mean_conf": 0.7240425031632185,
+            "accuracy": 0.625
+          },
+          {
+            "lo": 0.75,
+            "hi": 0.8,
+            "n": 14,
+            "mean_conf": 0.7781102212944201,
+            "accuracy": 0.6428571428571429
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.8500000000000001,
+            "n": 10,
+            "mean_conf": 0.8250065232627094,
+            "accuracy": 0.6
+          },
+          {
+            "lo": 0.8500000000000001,
+            "hi": 0.9,
+            "n": 7,
+            "mean_conf": 0.8765649952526603,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.9,
+            "hi": 0.95,
+            "n": 6,
+            "mean_conf": 0.9356312009816369,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.95,
+            "hi": 1.0,
+            "n": 10,
+            "mean_conf": 0.9702647627796978,
+            "accuracy": 1.0
+          }
+        ],
+        "ece": 0.12617970467157041
+      },
+      "position_bias": {
+        "n": 300,
+        "flip_rate": 0.30333333333333334,
+        "mean_p_first_minus_0.5": 0.02000317033845933
+      },
+      "single_vs_pairwise": {
+        "n": 300,
+        "consistency": 0.71,
+        "single_agrees_with_by_construction": {
+          "n": 150,
+          "agree": 0.8266666666666667
+        },
+        "single_agrees_with_reference": {
+          "n": 120,
+          "agree": 0.6666666666666666
+        }
+      },
+      "pairwise_latency_mean_s": 0.6474649986973964,
+      "gate": "PASS"
+    },
+    "imajev-9b": {
+      "n_scored": 300,
+      "n_errors": 0,
+      "agreement": {
+        "by_construction": {
+          "overall": {
+            "n": 150,
+            "agree": 0.9533333333333334
+          },
+          "high_conf": {
+            "n": 68,
+            "agree": 1.0,
+            "coverage": 0.4533333333333333
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 150,
+              "agree": 0.9533333333333334
+            }
+          },
+          "by_flaw_severity": {
+            "moderate": {
+              "n": 50,
+              "agree": 1.0
+            },
+            "obvious": {
+              "n": 50,
+              "agree": 1.0
+            },
+            "subtle": {
+              "n": 50,
+              "agree": 0.86
+            }
+          }
+        },
+        "reference": {
+          "overall": {
+            "n": 120,
+            "agree": 0.7166666666666667
+          },
+          "high_conf": {
+            "n": 14,
+            "agree": 1.0,
+            "coverage": 0.11666666666666667
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 20,
+              "agree": 0.95
+            },
+            "frontier_hard": {
+              "n": 40,
+              "agree": 0.675
+            },
+            "small_model": {
+              "n": 60,
+              "agree": 0.6666666666666666
+            }
+          },
+          "by_flaw_severity": {
+            "None": {
+              "n": 100,
+              "agree": 0.67
+            },
+            "moderate": {
+              "n": 7,
+              "agree": 1.0
+            },
+            "obvious": {
+              "n": 7,
+              "agree": 1.0
+            },
+            "subtle": {
+              "n": 6,
+              "agree": 0.8333333333333334
+            }
+          },
+          "high_conf_by_reference_confidence>=0.8": {
+            "n": 29,
+            "agree": 1.0
+          }
+        }
+      },
+      "calibration": {
+        "label_source": "reference",
+        "bins": [
+          {
+            "lo": 0.5,
+            "hi": 0.55,
+            "n": 34,
+            "mean_conf": 0.5260579474461538,
+            "accuracy": 0.47058823529411764
+          },
+          {
+            "lo": 0.55,
+            "hi": 0.6,
+            "n": 20,
+            "mean_conf": 0.575076972171219,
+            "accuracy": 0.6
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.65,
+            "n": 11,
+            "mean_conf": 0.624811702472835,
+            "accuracy": 0.8181818181818182
+          },
+          {
+            "lo": 0.65,
+            "hi": 0.7,
+            "n": 17,
+            "mean_conf": 0.6783537455321149,
+            "accuracy": 0.8235294117647058
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.75,
+            "n": 14,
+            "mean_conf": 0.7215562821646027,
+            "accuracy": 0.8571428571428571
+          },
+          {
+            "lo": 0.75,
+            "hi": 0.8,
+            "n": 10,
+            "mean_conf": 0.7741628181474561,
+            "accuracy": 0.9
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.8500000000000001,
+            "n": 6,
+            "mean_conf": 0.8240241956385624,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.8500000000000001,
+            "hi": 0.9,
+            "n": 5,
+            "mean_conf": 0.8718547323306105,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.9,
+            "hi": 0.95,
+            "n": 3,
+            "mean_conf": 0.9093866365472713,
+            "accuracy": 1.0
+          },
+          {
+            "lo": 0.95,
+            "hi": 1.0,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          }
+        ],
+        "ece": 0.1008707790966039
+      },
+      "position_bias": {
+        "n": 300,
+        "flip_rate": 0.39666666666666667,
+        "mean_p_first_minus_0.5": -0.123764494620481
+      },
+      "single_vs_pairwise": {
+        "n": 300,
+        "consistency": 0.7766666666666666,
+        "single_agrees_with_by_construction": {
+          "n": 150,
+          "agree": 0.82
+        },
+        "single_agrees_with_reference": {
+          "n": 120,
+          "agree": 0.7
+        }
+      },
+      "pairwise_latency_mean_s": 2.5745262559891366,
+      "gate": "PASS"
+    }
+  }
+}

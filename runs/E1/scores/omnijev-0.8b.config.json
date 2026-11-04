@@ -1,0 +1,21 @@
+{
+  "args": {
+    "judge": "omnijev-0.8b",
+    "model_path": "/mnt/models/llm/omnijev-0.8b",
+    "adapter": null,
+    "quant": null,
+    "pairs": "runs/E1/pairs",
+    "out": "runs/E1/scores/omnijev-0.8b.jsonl",
+    "seed": 0,
+    "limit": null,
+    "rotations": 1,
+    "fast": false,
+    "no_calibration": false,
+    "effort": null,
+    "server_cmd": null
+  },
+  "seed": 0,
+  "gpu": "stock",
+  "python": "3.12.15",
+  "command": "/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/score_pairs.py --judge omnijev-0.8b --model-path /mnt/models/llm/omnijev-0.8b --pairs runs/E1/pairs --out runs/E1/scores/omnijev-0.8b.jsonl"
+}

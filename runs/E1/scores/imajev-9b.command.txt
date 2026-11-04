@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/score_pairs.py --judge imajev-9b --quant nf4 --model-path /mnt/work/models/imajev-9b --pairs runs/E1/pairs --out runs/E1/scores/imajev-9b.jsonl

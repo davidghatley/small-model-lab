@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/score_pairs.py --judge omnijev-4b --adapter omnijev --quant gguf-q8_0 --model-path /mnt/work/models/omnijev-4b-gguf/OneJev1.6-4B.Q8_0.gguf --pairs runs/E1/pairs --out runs/E1/scores/omnijev-4b.jsonl

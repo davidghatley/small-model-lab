@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv-rsijev/bin/python scripts/score_pairs.py --judge rsi-jev-4b --model-path /mnt/models/llm/rsi-jev-4b --pairs runs/E1/pairs --out runs/E1/scores/rsi-jev-4b.jsonl

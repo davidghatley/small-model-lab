@@ -1,0 +1,21 @@
+{
+  "args": {
+    "judge": "rsi-jev-4b",
+    "model_path": "/mnt/models/llm/rsi-jev-4b",
+    "adapter": null,
+    "quant": null,
+    "pairs": "runs/E1/pairs",
+    "out": "runs/E1/scores/rsi-jev-4b.jsonl",
+    "seed": 0,
+    "limit": null,
+    "rotations": 1,
+    "fast": false,
+    "no_calibration": false,
+    "effort": null,
+    "server_cmd": null
+  },
+  "seed": 0,
+  "gpu": "stock",
+  "python": "3.12.15",
+  "command": "/home/davidhatley/Projects/small-model-lab/.venv-rsijev/bin/python scripts/score_pairs.py --judge rsi-jev-4b --model-path /mnt/models/llm/rsi-jev-4b --pairs runs/E1/pairs --out runs/E1/scores/rsi-jev-4b.jsonl"
+}
