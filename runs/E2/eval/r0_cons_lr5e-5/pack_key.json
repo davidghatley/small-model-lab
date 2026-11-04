@@ -1,0 +1,252 @@
+{
+ "pair_01": {
+  "brief_id": "e2_eval-0024",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_02": {
+  "brief_id": "e2_eval-0009",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_03": {
+  "brief_id": "e2_eval-0012",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_04": {
+  "brief_id": "e2_eval-0008",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_05": {
+  "brief_id": "e2_eval-0050",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_06": {
+  "brief_id": "e2_eval-0014",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_07": {
+  "brief_id": "e2_eval-0001",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_08": {
+  "brief_id": "e2_eval-0092",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_09": {
+  "brief_id": "e2_eval-0095",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_10": {
+  "brief_id": "e2_eval-0057",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_11": {
+  "brief_id": "e2_eval-0017",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_12": {
+  "brief_id": "e2_eval-0066",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_13": {
+  "brief_id": "e2_eval-0054",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_14": {
+  "brief_id": "e2_eval-0043",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_15": {
+  "brief_id": "e2_eval-0082",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_16": {
+  "brief_id": "e2_eval-0002",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_17": {
+  "brief_id": "e2_eval-0049",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_18": {
+  "brief_id": "e2_eval-0088",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_19": {
+  "brief_id": "e2_eval-0080",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_20": {
+  "brief_id": "e2_eval-0070",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_21": {
+  "brief_id": "e2_eval-0020",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_22": {
+  "brief_id": "e2_eval-0007",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_23": {
+  "brief_id": "e2_eval-0025",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_24": {
+  "brief_id": "e2_eval-0011",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_25": {
+  "brief_id": "e2_eval-0062",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_26": {
+  "brief_id": "e2_eval-0031",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_27": {
+  "brief_id": "e2_eval-0023",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_28": {
+  "brief_id": "e2_eval-0030",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_29": {
+  "brief_id": "e2_eval-0084",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_30": {
+  "brief_id": "e2_eval-0039",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_31": {
+  "brief_id": "e2_eval-0094",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_32": {
+  "brief_id": "e2_eval-0081",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_33": {
+  "brief_id": "e2_eval-0045",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_34": {
+  "brief_id": "e2_eval-0099",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_35": {
+  "brief_id": "e2_eval-0087",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_36": {
+  "brief_id": "e2_eval-0029",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_37": {
+  "brief_id": "e2_eval-0035",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_38": {
+  "brief_id": "e2_eval-0077",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_39": {
+  "brief_id": "e2_eval-0046",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_40": {
+  "brief_id": "e2_eval-0015",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_41": {
+  "brief_id": "e2_eval-0085",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_42": {
+  "brief_id": "e2_eval-0074",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_43": {
+  "brief_id": "e2_eval-0004",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_44": {
+  "brief_id": "e2_eval-0021",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_45": {
+  "brief_id": "e2_eval-0016",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_46": {
+  "brief_id": "e2_eval-0022",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_47": {
+  "brief_id": "e2_eval-0032",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_48": {
+  "brief_id": "e2_eval-0079",
+  "a": "r0_cons",
+  "b": "base"
+ },
+ "pair_49": {
+  "brief_id": "e2_eval-0060",
+  "a": "base",
+  "b": "r0_cons"
+ },
+ "pair_50": {
+  "brief_id": "e2_eval-0071",
+  "a": "r0_cons",
+  "b": "base"
+ }
+}
