@@ -1,0 +1,163 @@
+{
+  "labels_available": {
+    "by_construction": 4,
+    "reference": 6
+  },
+  "judges": {
+    "omnijev-0.8b": {
+      "n_scored": 6,
+      "n_errors": 0,
+      "agreement": {
+        "by_construction": {
+          "overall": {
+            "n": 4,
+            "agree": 1.0
+          },
+          "high_conf": {
+            "n": 4,
+            "agree": 1.0,
+            "coverage": 1.0
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 4,
+              "agree": 1.0
+            }
+          },
+          "by_flaw_severity": {
+            "obvious": {
+              "n": 4,
+              "agree": 1.0
+            }
+          }
+        },
+        "reference": {
+          "overall": {
+            "n": 6,
+            "agree": 0.8333333333333334
+          },
+          "high_conf": {
+            "n": 4,
+            "agree": 1.0,
+            "coverage": 0.6666666666666666
+          },
+          "by_source": {
+            "frontier_graded": {
+              "n": 6,
+              "agree": 0.8333333333333334
+            }
+          },
+          "by_flaw_severity": {
+            "None": {
+              "n": 2,
+              "agree": 0.5
+            },
+            "obvious": {
+              "n": 4,
+              "agree": 1.0
+            }
+          },
+          "high_conf_by_reference_confidence>=0.8": {
+            "n": 4,
+            "agree": 1.0
+          }
+        }
+      },
+      "calibration": {
+        "label_source": "reference",
+        "bins": [
+          {
+            "lo": 0.5,
+            "hi": 0.55,
+            "n": 2,
+            "mean_conf": 0.522034,
+            "accuracy": 0.5
+          },
+          {
+            "lo": 0.55,
+            "hi": 0.6,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.6,
+            "hi": 0.65,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.65,
+            "hi": 0.7,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.7,
+            "hi": 0.75,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.75,
+            "hi": 0.8,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.8,
+            "hi": 0.8500000000000001,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.8500000000000001,
+            "hi": 0.9,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.9,
+            "hi": 0.95,
+            "n": 0,
+            "mean_conf": null,
+            "accuracy": null
+          },
+          {
+            "lo": 0.95,
+            "hi": 1.0,
+            "n": 4,
+            "mean_conf": 0.98008775,
+            "accuracy": 1.0
+          }
+        ],
+        "ece": 0.020619499999999975
+      },
+      "position_bias": {
+        "n": 6,
+        "flip_rate": 0.3333333333333333,
+        "mean_p_first_minus_0.5": -0.02617683333333337
+      },
+      "single_vs_pairwise": {
+        "n": 6,
+        "consistency": 1.0,
+        "single_agrees_with_by_construction": {
+          "n": 4,
+          "agree": 1.0
+        },
+        "single_agrees_with_reference": {
+          "n": 6,
+          "agree": 0.8333333333333334
+        }
+      },
+      "pairwise_latency_mean_s": 0.4725972047696511,
+      "gate": "PASS"
+    }
+  }
+}

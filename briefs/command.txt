@@ -1,0 +1,2 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/make_briefs.py
+seed=20261103

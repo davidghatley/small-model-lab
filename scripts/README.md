@@ -34,3 +34,21 @@ Notes for the runner:
 - Pairwise is tried for every judge; a failure is recorded in `results.json` (`pairwise.pairwise_worked=false`, `failed_ops`), not fatal. Exit code 1 only if single-image scoring fails.
 - omnijev runs as a child server, so torch VRAM reads 0; use `nvidia_smi_proc_peak_mib`.
 - Smoke result (imajev-2b, 3060, eager bf16, rotations 1): p50 ~1.12 s per call, torch peak 4.67 GiB-ish (4667 MiB), nvidia-smi 5050 MiB.
+
+## E1 (does the judge have taste?)
+Briefs: `.venv/bin/python scripts/make_briefs.py` (seeded; `--check` only verifies) writes `briefs/e1.jsonl` (200), `briefs/e2_train.jsonl` (500), `briefs/e2_eval.jsonl` (100, HELD OUT: never train on it, never use in E1). Fields: id, product, industry, audience, tone, sections, description. The check asserts unique ids and no exact or normalized text shared across any briefs/splits.
+
+Pair layout (`runs/E1/pairs/<pair_id>/`): `a.html b.html a.png b.png meta.json`; meta.json = `{pair_id, brief_id, source: frontier_graded|frontier_hard|small_model, intended_better: "a"|"b"|null, flaw_severity: obvious|moderate|subtle|null, flaw_notes}`. Optional labels: `runs/E1/labels/reference.jsonl` (`{pair_id, better: "a"|"b", confidence, rationale}`) and `labels/david.jsonl` (same shape).
+
+```
+.venv/bin/python scripts/render_pairs.py --pairs runs/E1/pairs          # renders missing PNGs (1280x800 viewport), validates; exit 1 if invalid
+# score (resumable; writes <out>.config.json and <out>.command.txt beside the jsonl); all four judges:
+G="$HOME/anime-pipeline/tools/gpu_run --free --need 9000"
+$G .venv/bin/python scripts/score_pairs.py --judge omnijev-0.8b --model-path /mnt/models/llm/omnijev-0.8b --out runs/E1/scores/omnijev-0.8b.jsonl
+$G .venv/bin/python scripts/score_pairs.py --judge omnijev-4b --adapter omnijev --quant gguf-q8_0 --model-path /mnt/work/models/omnijev-4b-gguf/OneJev1.6-4B.Q8_0.gguf --out runs/E1/scores/omnijev-4b.jsonl
+$G .venv-rsijev/bin/python scripts/score_pairs.py --judge rsi-jev-4b --model-path /mnt/models/llm/rsi-jev-4b --out runs/E1/scores/rsi-jev-4b.jsonl
+$G .venv/bin/python scripts/score_pairs.py --judge imajev-9b --quant nf4 --model-path /mnt/work/models/imajev-9b --out runs/E1/scores/imajev-9b.jsonl
+.venv/bin/python scripts/analyze_e1.py --scores runs/E1/scores/*.jsonl --out runs/E1   # analysis.md/json + calibration_<judge>.png
+bash scripts/smoke_e1.sh                                                              # 6 synthetic pairs end to end, runs/E1/_smoke/
+```
+score_pairs.py reuses the adapters in e0_bench.py (same flags: `--adapter --quant --rotations --fast --no-calibration --effort --server-cmd`; `--limit N` for a trial). Row: `p_first_ab`, `p_first_ba` (P first image better, orders (a,b) and (b,a)), `p_a_ab`, `p_a_ba`, `p_a_avg`, `choice_ab`, `choice_ba`, `p_good_a`, `p_good_b`, `lat_*`. analyze_e1.py: high-confidence = order-averaged P(a) >= 0.8 or <= 0.2; calibration = 10 bins over confidence 0.5-1.0 vs the reference labels (by-construction if no reference); gate PASS if high-confidence agreement vs reference >= 0.75. matplotlib was added to `.venv` for the plots.
