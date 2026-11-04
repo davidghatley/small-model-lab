@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Colopix — The neighbourhood record club</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3efe6;--card:#fffdf8;--ink:#1d2b32;--mute:#53636b;--teal:#1f5a62;--amber:#c9822b;--line:#ddd6c6;--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "DM Sans",system-ui,sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+.logo{font:400 28px "DM Serif Display",serif;color:var(--teal)}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0;font-size:15px;color:var(--mute)}
+.pill{background:var(--teal);color:#fff;padding:10px 20px;border-radius:99px;font-size:15px;font-weight:500;text-decoration:none}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s5);align-items:center;padding:var(--s4) 0 var(--s5)}
+.tag{display:inline-block;background:#e6dfcd;color:var(--teal);font-size:14px;font-weight:700;padding:6px 14px;border-radius:99px;margin-bottom:var(--s3)}
+h1{font:400 66px/1.05 "DM Serif Display",serif;letter-spacing:-.01em;color:var(--ink)}
+.lede{color:var(--mute);font-size:20px;margin:var(--s3) 0 var(--s4);max-width:30em}
+.btns{display:flex;gap:var(--s2)}
+.btn{background:var(--amber);color:#1d1408;padding:16px 30px;border-radius:99px;font-weight:700;text-decoration:none}
+.btn.o{background:transparent;border:2px solid var(--teal);color:var(--teal)}
+.vinyl{position:relative;aspect-ratio:1;max-width:460px;justify-self:center;width:100%}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);background:var(--teal);color:#fff;border-radius:20px;padding:var(--s4)}
+.stats div{padding:0 var(--s3);border-left:1px solid #ffffff44}.stats div:first-child{border:0}
+.stats b{display:block;font:400 54px "DM Serif Display",serif;color:#f1c98a}
+section{padding:var(--s5) 0 0}
+h2{font:400 42px/1.15 "DM Serif Display",serif;margin-bottom:var(--s4)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.step{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:var(--s4) var(--s3)}
+.step i{font:normal 400 36px "DM Serif Display",serif;color:var(--amber)}
+.step h3{margin:8px 0;font-size:20px}.step p{color:var(--mute);font-size:16px}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+blockquote{background:var(--card);border-radius:16px;padding:var(--s4);border:1px solid var(--line);font:400 22px/1.45 "DM Serif Display",serif}
+blockquote cite{display:block;font:500 15px "DM Sans";color:var(--mute);margin-top:var(--s2)}
+.final{text-align:center;background:var(--card);border-radius:24px;padding:var(--s5) var(--s4);border:1px solid var(--line)}
+footer{display:flex;justify-content:space-between;color:var(--mute);font-size:14px;padding:var(--s5) 0 var(--s4)}
+</style><style>/* flaws */
+body{background:#e8ff3a}
+h1{font-family:Impact,"Comic Sans MS",fantasy;font-size:84px;color:#ff2fa0;position:relative;z-index:3;margin-right:-160px;line-height:.95}
+.lede{font:italic 11px "Courier New",monospace;color:#d8d2a0;max-width:none}
+.hero{grid-template-columns:1fr 1.4fr;gap:0;align-items:start}
+.vinyl{margin-left:-120px;margin-top:40px;opacity:.9;justify-self:start}
+.btn{background:#7cf5ff;color:#9fe8f0;font-family:"Times New Roman",serif;font-size:12px;padding:6px 10px;border-radius:0}
+.btn.o{border:1px dashed #ff2fa0;color:#ff2fa0}
+nav ul{gap:4px;font-size:10px;color:#e3f06a;font-family:"Courier New",monospace}
+.logo{font-family:"Comic Sans MS",cursive;color:#ff7a00}
+.tag{background:#ffe600;color:#fff7a0;font-size:9px;transform:translateY(30px)}
+.stats{margin-top:-90px;position:relative;z-index:5;background:#7b2cff}
+.stats div:nth-child(2){margin-top:30px}
+.pill{background:#00e0a0;color:#00e0a0}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">Colopix</span><ul><li>How it works</li><li>The shops</li><li>Stories</li><li>Gift a club</li></ul><a class="pill" href="#">Join the club</a></nav>
+<header class="hero">
+<div><span class="tag">Now spinning in 14 neighbourhoods</span>
+<h1>Good records, picked by people down the street.</h1>
+<p class="lede">Each month a local record-shop owner chooses one album for you, pressed on vinyl and delivered by bike or collected in store. No algorithms, just taste you can trust.</p>
+<div class="btns"><a class="btn" href="#">Find your local club</a><a class="btn o" href="#">See this month's pick</a></div></div>
+<svg class="vinyl" viewBox="0 0 400 400" role="img" aria-label="Vinyl record"><circle cx="200" cy="200" r="190" fill="#1d2b32"/><g fill="none" stroke="#2f4550" stroke-width="2"><circle cx="200" cy="200" r="170"/><circle cx="200" cy="200" r="150"/><circle cx="200" cy="200" r="130"/><circle cx="200" cy="200" r="110"/></g><circle cx="200" cy="200" r="72" fill="#c9822b"/><circle cx="200" cy="200" r="60" fill="none" stroke="#a96a1d" stroke-width="2"/><text x="200" y="196" text-anchor="middle" font-family="DM Serif Display,serif" font-size="22" fill="#1d1408">Colopix</text><text x="200" y="218" text-anchor="middle" font-family="DM Sans,sans-serif" font-size="11" fill="#1d1408" letter-spacing="2">SIDE A</text><circle cx="200" cy="200" r="6" fill="#f3efe6"/><path d="M60 110a170 170 0 0 1 90-70" stroke="#ffffff22" stroke-width="10" fill="none" stroke-linecap="round"/></svg>
+</header>
+<div class="stats"><div><b>3,200</b>members across town</div><div><b>41</b>independent shops</div><div><b>96%</b>renew after year one</div></div>
+<section><h2>How it works</h2><div class="steps">
+<div class="step"><i>1</i><h3>Pick your shop</h3><p>Choose the record store nearest you and tell them what you already love.</p></div>
+<div class="step"><i>2</i><h3>Get a monthly pick</h3><p>Your shop owner selects an album and writes you a short note about why.</p></div>
+<div class="step"><i>3</i><h3>Listen, keep or swap</h3><p>Keep it, or swap it in-store next month for something else from the racks.</p></div></div></section>
+<section><h2>Kind words from the neighbourhood</h2><div class="quotes">
+<blockquote>"I run a café, and the club's picks became our Friday playlist. Customers ask about every record."<cite>Marisol Teague, Bean &amp; Barrow Café</cite></blockquote>
+<blockquote>"Simple, fair, and it keeps money on our high street. I recommend it to every shop owner I know."<cite>Dev Anand, Anand Hardware</cite></blockquote></div></section>
+<section><div class="final"><h2 style="margin-bottom:var(--s2)">Your next favourite record is a short walk away.</h2><p style="color:var(--mute);margin-bottom:var(--s3)">First month is half price. Cancel any time.</p><a class="btn" href="#">Join the club</a></div></section>
+<footer><span>© 2026 Colopix Records Co-op</span><span>Privacy · Terms · Shop owners · Contact</span></footer>
+</div></body></html>

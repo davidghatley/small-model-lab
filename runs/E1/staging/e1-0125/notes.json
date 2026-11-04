@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0125",
+ "severity": "subtle",
+ "flaws": [
+  "off-palette purple CTA clashes with teal brand",
+  "lede and headline run to an overlong line length",
+  "hero padding slightly cramped, card padding tight"
+ ]
+}

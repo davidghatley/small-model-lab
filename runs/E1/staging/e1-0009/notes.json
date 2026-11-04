@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0009",
+ "severity": "obvious",
+ "flaws": [
+  "Hot-pink page background with lime headline and orange image block: clashing palette",
+  "Plant image rotated and absolutely positioned on top of the headline and lead text",
+  "Eyebrow and lead set at 9-10px in pale pink on pink (near zero contrast)",
+  "Impact, script, Courier and Comic Sans mixed with the original fonts",
+  "CTA pale pink text on pale pink fill, secondary link overlaps the primary button"
+ ]
+}

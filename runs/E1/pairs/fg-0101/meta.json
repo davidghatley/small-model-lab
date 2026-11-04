@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0101",
+ "brief_id": "e1-0101",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero text column stretched so subhead line length is overlong",
+  "Primary CTA muted, smaller and less prominent",
+  "Off-palette red logo/accent against sage scheme"
+ ],
+ "staging_src": "runs/E1/staging/e1-0101",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 17.957,
+ "pixel_pct_changed": 19.189
+}

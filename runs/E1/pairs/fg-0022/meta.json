@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0022",
+ "brief_id": "e1-0022",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 38px serif so the 22px lede competes with it; weak hierarchy",
+  "Muddy desaturated khaki/olive palette replacing the playful yellow/pink/navy, killing the quirky tone",
+  "CTA turned into a small low-contrast tan button that does not stand out",
+  "Four font families mixed (Georgia, Trebuchet, Courier, Bricolage)",
+  "Inconsistent spacing: tight hero/lede gap, large sticker and nav gaps, cramped awkward hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0022",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 57.887,
+ "pixel_pct_changed": 99.999
+}

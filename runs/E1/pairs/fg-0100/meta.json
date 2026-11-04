@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0100",
+ "brief_id": "e1-0100",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 34px serif so it no longer dominates; subhead and eyebrow larger/louder than H1",
+  "Hero padding and gaps collapsed, cramped",
+  "CTA recolored to low-contrast beige and shrunk, doesn't stand out",
+  "Muddy khaki palette on spec card; Georgia + Comic Sans + Plex = 3+ fonts"
+ ],
+ "staging_src": "runs/E1/staging/e1-0100",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 18.463,
+ "pixel_pct_changed": 42.886
+}

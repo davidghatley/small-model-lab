@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0140",
+ "severity": "subtle",
+ "flaws": [
+  "CTA recolored to a pale tan with low-contrast text and shrunk, much less prominent",
+  "off-palette purple accent on logo and secondary link",
+  "flatter type scale: hero headline cut from 68px to 50px",
+  "nav padding cramped"
+ ]
+}

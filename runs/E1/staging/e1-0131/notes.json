@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0131",
+ "severity": "subtle",
+ "flaws": [
+  "primary CTA made low-emphasis, no longer pops",
+  "off-palette magenta accent on eyebrow tag",
+  "overlong line length on lede"
+ ]
+}

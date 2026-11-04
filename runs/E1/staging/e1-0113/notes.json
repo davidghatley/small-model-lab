@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0113",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: headline reduced to 54px",
+  "CTA made pale, flat and smaller so it is less prominent",
+  "Step cards unevenly aligned (middle offset down, third shifted left)"
+ ]
+}

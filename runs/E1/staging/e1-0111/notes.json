@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0111",
+ "severity": "obvious",
+ "flaws": [
+  "Right panel pulled left with negative margin so it overlaps the headline",
+  "Clashing neon green/pink/yellow on panel and CTA",
+  "Lead copy 11px in pale grey on off-white (unreadable)",
+  "Headline in Times, lead in Georgia, button in Comic Sans (inconsistent fonts)",
+  "CTA tiny with low-contrast text",
+  "Bottom strip cells misaligned with uneven padding"
+ ]
+}

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fisyni — Farm boxes for school schedules</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfdf9;--soft:#eef5ea;--ink:#13261a;--mute:#53675a;--line:#d8e4d3;--g:#2f7d4f;--gd:#1f5a38;--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 "Source Sans 3",system-ui,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;font-family:Outfit,sans-serif;font-size:15px}
+.logo{font-weight:700;font-size:26px;color:var(--gd)}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0;color:var(--mute)}
+.btn{display:inline-block;background:var(--g);color:#fff;font:600 16px Outfit;padding:16px 32px;border-radius:10px;text-decoration:none}
+.btn.g{background:#fff;color:var(--gd);border:1.5px solid var(--g);margin-left:12px}
+.btn.s{padding:9px 18px;font-size:14px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:var(--s5);align-items:center;padding:var(--s4) 0 var(--s5)}
+.lab{display:inline-block;font:600 13px Outfit;letter-spacing:.1em;text-transform:uppercase;background:var(--soft);color:var(--gd);padding:6px 14px;border-radius:6px;margin-bottom:var(--s3)}
+h1{font:700 64px/1.04 Outfit;letter-spacing:-.03em}
+.lede{color:var(--mute);font-size:20px;margin:var(--s3) 0 var(--s4);max-width:28em}
+.box{background:var(--soft);border-radius:24px;padding:var(--s4);border:1px solid var(--line)}
+.box h3{font:600 14px Outfit;letter-spacing:.1em;text-transform:uppercase;color:var(--mute);margin-bottom:var(--s2)}
+.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--line)}.row:last-child{border:0}
+.row b{font-family:Outfit;color:var(--gd)}
+.logos{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line);font:600 18px Outfit;color:#8aa090}
+.logos small{font:600 12px Outfit;letter-spacing:.12em;text-transform:uppercase}
+section{padding:var(--s5) 0 0}
+h2{font:700 40px/1.12 Outfit;letter-spacing:-.02em;margin-bottom:var(--s4)}
+table{width:100%;border-collapse:collapse;border:1px solid var(--line);border-radius:12px;overflow:hidden}
+th,td{padding:16px 20px;text-align:left;border-bottom:1px solid var(--line)}
+th{background:var(--soft);font:600 14px Outfit;letter-spacing:.06em;text-transform:uppercase}
+td:not(:first-child),th:not(:first-child){text-align:center}.ck{color:var(--g);font-weight:700}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.st{border:1px solid var(--line);border-radius:16px;padding:var(--s4) var(--s3);background:#fff}
+.st i{font:normal 700 32px Outfit;color:var(--g)}.st h3{font:600 20px Outfit;margin:8px 0}.st p{color:var(--mute);font-size:16px}
+.q{background:var(--soft);border-radius:16px;padding:var(--s4) var(--s3)}.q cite{display:block;margin-top:var(--s2);font:600 15px Outfit;font-style:normal;color:var(--gd)}
+details{border-bottom:1px solid var(--line);padding:var(--s2) 0;font:500 19px Outfit}details p{font:400 17px "Source Sans 3";color:var(--mute);margin-top:8px}
+.cta{background:var(--gd);color:#fff;border-radius:24px;text-align:center;padding:var(--s5) var(--s4);margin-top:var(--s5)}
+.cta .btn{background:#fff;color:var(--gd)}.cta h2{margin-bottom:var(--s3)}
+footer{display:flex;justify-content:space-between;color:var(--mute);font-size:14px;padding:var(--s4) 0}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">Fisyni</span><ul><li>How it works</li><li>Compare</li><li>FAQ</li><li>For schools</li></ul><a class="btn s" href="#">Start a box</a></nav>
+<header class="hero">
+<div><span class="lab">New this year</span>
+<h1>Farm-fresh boxes that fit a teacher's week.</h1>
+<p class="lede">A weekly box of seasonal vegetables from three farms within 40 miles, packed Friday and delivered to your school or home. Skip, swap or pause in two taps.</p>
+<a class="btn" href="#">Start your first box</a><a class="btn g" href="#">See this week's box</a></div>
+<div class="box"><h3>This week in the box</h3><div class="row"><span>Rainbow carrots</span><b>1.2 lb</b></div><div class="row"><span>Lacinato kale</span><b>1 bunch</b></div><div class="row"><span>Honeycrisp apples</span><b>2 lb</b></div><div class="row"><span>Delicata squash</span><b>2 pc</b></div><div class="row"><span>Teacher discount</span><b>-15%</b></div></div>
+</header>
+<div class="logos"><small>Delivering to staff rooms at</small><span>Lincoln Elementary</span><span>Mapleton High</span><span>Riverbend Academy</span><span>St. Anne's</span></div>
+<section><h2>Fisyni vs. the alternatives</h2><table><tr><th>&nbsp;</th><th>Fisyni</th><th>Grocery</th><th>Meal kit</th></tr><tr><td>Local farms</td><td class="ck">Yes</td><td>Rarely</td><td>No</td></tr><tr><td>Delivered to school</td><td class="ck">Yes</td><td>No</td><td>No</td></tr><tr><td>Pause any week</td><td class="ck">Yes</td><td>n/a</td><td>Fee</td></tr><tr><td>Average weekly cost</td><td class="ck">$34</td><td>$48</td><td>$72</td></tr></table></section>
+<section><h2>How it works</h2><div class="g3"><div class="st"><i>01</i><h3>Choose a size</h3><p>Small for one, large for a family.</p></div><div class="st"><i>02</i><h3>Set your drop</h3><p>School office, staff room or your door.</p></div><div class="st"><i>03</i><h3>Cook, skip or swap</h3><p>Edit upcoming boxes until Wednesday noon.</p></div></div></section>
+<section><h2>What teachers say</h2><div class="g3"><div class="q">"Pickup at the staff room beats the Saturday market."<cite>Ms. Rowan, 4th grade</cite></div><div class="q">"Recipes on the card mean dinner by 6."<cite>Mr. Patel, Chemistry</cite></div><div class="q">"I pause for holidays without any emails."<cite>Dr. Lindgren, Principal</cite></div></div></section>
+<section><h2>FAQ</h2><details><summary>Can I pause during school breaks?</summary><p>Yes, with one tap, up to 12 weeks a year.</p></details><details><summary>Is the teacher discount automatic?</summary><p>Use your school email at signup.</p></details></section>
+<div class="cta"><h2>Fill your fridge, not your calendar.</h2><a class="btn" href="#">Start your first box</a></div>
+<footer><span>© 2026 Fisyni Farm Collective</span><span>Privacy · Terms · Contact</span></footer>
+</div></body></html>

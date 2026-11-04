@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0114",
+ "severity": "obvious",
+ "flaws": [
+  "Headline widened across the sidebar and overlaps the quote column",
+  "Oversized red circle dragged over the headline",
+  "Lead paragraph 10px pale grey on paper in Courier",
+  "Quote in red Comic Sans at small size on near-matching background",
+  "Clashing neon green/magenta CTA, blue Impact headline (inconsistent fonts)",
+  "Nav links and footer facts washed out to near-invisible"
+ ]
+}

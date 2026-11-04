@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Quium - Living green for waiting rooms and wards</title>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,300;0,400;0,600;1,300&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f6f4ee;--ink:#1c2b22;--green:#2f5d46;--mute:#66726a;--line:#d8d6cb}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.65 Inter,system-ui,sans-serif}
+.wrap{max-width:1100px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:baseline;padding:30px 0;border-bottom:1px solid var(--ink);font-size:13px;letter-spacing:.08em;text-transform:uppercase}
+.logo{font:600 28px Spectral,serif;letter-spacing:.02em;text-transform:none}
+nav span+span{margin-left:28px}
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:64px;padding:72px 0 88px}
+.issue{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--green);margin-bottom:28px;display:block}
+h1{font:300 80px/1 Spectral,serif;letter-spacing:-.025em;margin-bottom:28px}
+h1 i{font-weight:300;color:var(--green)}
+.lead{font:300 22px/1.5 Spectral,serif;color:var(--mute);max-width:26em;margin-bottom:36px}
+.btn{display:inline-block;background:var(--green);color:#fff;font-weight:500;font-size:15px;padding:17px 32px;letter-spacing:.04em}
+.btn.line{background:none;color:var(--ink);border-bottom:1px solid var(--ink);padding:17px 4px;margin-left:24px}
+.plant{background:#e6e8dc;height:100%;min-height:440px;position:relative;overflow:hidden}
+.plant svg{position:absolute;inset:0;width:100%;height:100%}
+.cap{font-size:12px;color:var(--mute);margin-top:10px;display:block}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font:300 46px/1.08 Spectral,serif;letter-spacing:-.02em;margin-bottom:44px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.feat span{font-size:12px;letter-spacing:.14em;color:var(--green);display:block;margin-bottom:12px}
+.feat h3{font:600 22px Spectral,serif;margin-bottom:8px}
+.feat p{color:var(--mute);font-size:15px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--ink)}
+.plan{padding:36px;border-right:1px solid var(--ink)}
+.plan:last-child{border:0}
+.plan.on{background:var(--green);color:#fff}
+.plan h3{font:600 22px Spectral,serif}
+.plan .n{font:300 54px Spectral,serif;margin:10px 0 14px;letter-spacing:-.02em}
+.plan .n small{font:400 14px Inter}
+.plan ul{padding-left:18px;font-size:14.5px}
+.app{display:flex;justify-content:space-between;align-items:center;gap:40px}
+.app h2{margin-bottom:12px;font-size:38px}
+.app p{color:var(--mute);max-width:30em}
+.cta{background:var(--ink);color:var(--bg);text-align:center;border:0}
+.cta h2{font-size:56px;margin-bottom:28px}
+.cta .btn{background:var(--bg);color:var(--ink)}
+footer{padding:36px 0;font-size:13px;color:var(--mute)}
+footer .wrap{display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+body{background:#ffd6f0}
+.logo{font:700 26px 'Comic Sans MS',cursive;color:#ff77d0}
+nav{color:#ffc0e8}
+.hero{display:block;position:relative;padding:10px 0 0}
+h1{font:700 70px/.9 Impact,sans-serif;color:#9bff00;width:80%;position:relative;z-index:1;letter-spacing:0}
+h1 i{color:#00e5ff;font-family:'Brush Script MT',cursive}
+.issue{font-size:9px;color:#ffc0e8}
+.lead{font:400 10px/1.2 'Courier New',monospace;color:#f0b0dd;width:40%;position:relative;z-index:1}
+.hero>div:last-child{position:absolute;right:-30px;top:30px;width:430px;z-index:2;transform:rotate(7deg)}
+.plant{background:#ff7a00}
+.btn{background:#ffe0f4;color:#ffd0ef;position:relative;z-index:1}
+.btn.line{color:#ffc0e8;margin-left:-60px;border-color:#ffc0e8}
+.hero+section,section{padding-top:20px}
+section:first-of-type{margin-top:300px}
+
+</style></head><body>
+<div class="wrap"><nav><span class="logo">Quium</span><div><span>Features</span><span>Pricing</span><span>App</span><span>Contact</span></div></nav>
+<header class="hero"><div><span class="issue">Houseplants for healthcare facilities / Our mission: calmer rooms</span>
+<h1>Bring something <i>living</i> to the waiting room.</h1>
+<p class="lead">Quium delivers, places and maintains houseplants across clinics, wards and admin offices. One invoice, zero watering schedules for your staff.</p>
+<a class="btn" href="#">Request a site visit</a><a class="btn line" href="#">View pricing</a></div>
+<div><div class="plant"><svg viewBox="0 0 300 440" preserveAspectRatio="xMidYMax slice"><rect x="95" y="320" width="110" height="120" fill="#b86f4a"/><rect x="88" y="310" width="124" height="22" fill="#c9825b"/><g fill="#2f5d46"><path d="M150 310C100 270 90 200 120 150c30 40 40 100 30 160z"/><path d="M150 310C200 260 215 190 190 130c-35 40-45 110-40 180z"/><path d="M150 310C140 240 150 160 150 90c25 60 20 140 0 220z" fill="#3d7658"/></g></svg></div><span class="cap">Fig. 1. Zamioculcas, low light, ideal for ward corridors.</span></div></header></div>
+<section><div class="wrap"><h2>Plants that ask for nothing</h2><div class="feat"><div><span>01</span><h3>Hospital-safe selection</h3><p>Non-toxic, low-allergen, no flowering species near immunocompromised patients.</p></div><div><span>02</span><h3>Infection-aware care</h3><p>Sealed pots, sanitised tools and no soil exposure in clinical areas.</p></div><div><span>03</span><h3>Fully maintained</h3><p>Fortnightly visits, replaced if a plant struggles. You never touch a watering can.</p></div></div></div></section>
+<section><div class="wrap"><h2>Pricing by the room</h2><div class="plans"><div class="plan"><h3>Reception</h3><div class="n">$89<small> / month</small></div><ul><li>Up to 6 plants</li><li>Monthly care visit</li></ul></div><div class="plan on"><h3>Facility</h3><div class="n">$340<small> / month</small></div><ul><li>Up to 30 plants</li><li>Fortnightly care visit</li><li>Single consolidated invoice</li></ul></div><div class="plan"><h3>Campus</h3><div class="n">Quote</div><ul><li>Multiple buildings</li><li>Dedicated horticulturist</li></ul></div></div></div></section>
+<section><div class="wrap app"><div><h2>Track every plant in the app</h2><p>Care logs, photos and invoices in one place, so administrators can approve a visit in seconds.</p></div><a class="btn" href="#">Download the app</a></div></section>
+<section class="cta"><div class="wrap"><h2>A quieter, greener ward starts with one room.</h2><a class="btn" href="#">Request a site visit</a></div></section>
+<footer><div class="wrap"><span>Quium Ltd.</span><span>Privacy / Terms / hello@quium.example</span></div></footer>
+</body></html>

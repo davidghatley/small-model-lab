@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0141",
+ "brief_id": "e1-0141",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "hero panel overlaps headline and copy",
+  "body copy and nav are low-contrast, tiny (10-12px)",
+  "headline in Comic Sans, CTA in Times: inconsistent fonts",
+  "CTA yellow with near-white text, misplaced off the text column",
+  "panel recolored yellow with clashing text"
+ ],
+ "staging_src": "runs/E1/staging/e1-0141",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 35.834,
+ "pixel_pct_changed": 33.175
+}

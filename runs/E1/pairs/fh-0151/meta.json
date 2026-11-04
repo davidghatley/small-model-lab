@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0151",
+ "brief_id": "e1-0151",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 delivers bold high-energy tone with strong hierarchy and a concrete stat; v2 is friendly but generic.",
+ "staging_src": "runs/E1/staging/e1-0151",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Neo-brutalist yellow/red split hero with shadow buttons, Archivo Black",
+  "Soft light-blue centered hero, rounded pills, Poppins"
+ ],
+ "v1_side": "b"
+}

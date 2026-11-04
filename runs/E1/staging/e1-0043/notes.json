@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0043",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 44px and lost its highlight, no longer dominant",
+  "Four font families (Plex Sans, Plex Mono, Georgia, Trebuchet)",
+  "Muddy beige/olive palette with grey body text",
+  "Inconsistent spacing: tight top, huge bottom padding, odd lead margins",
+  "CTA turned pale grey on grey, barely distinguishable from the page"
+ ]
+}

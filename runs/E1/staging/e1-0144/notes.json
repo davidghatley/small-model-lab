@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0144",
+ "severity": "obvious",
+ "flaws": [
+  "hero headline small and grey on dark, not dominant",
+  "body text near-invisible and tiny",
+  "chip text same color as its background",
+  "CTA tiny, yellow with white text, absolutely placed away from copy",
+  "nav links black on near-black",
+  "random fonts (Brush Script, Papyrus, Courier)",
+  "glaring magenta blob behind the text"
+ ]
+}

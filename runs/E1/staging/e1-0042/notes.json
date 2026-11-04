@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0042",
+ "severity": "obvious",
+ "flaws": [
+  "Headline hot pink on cream, clashing with terracotta brand and weak contrast",
+  "Lead paragraph 11px light beige on cream (near unreadable)",
+  "Eyebrow 9px and overlapping the headline via negative margin",
+  "Jar graphic pulled left and rotated so it overlaps the headline column",
+  "Nav in Comic Sans, oversize, cyan; logo displaced into the nav area",
+  "CTA buttons cyan and yellow with white text and overlapping each other"
+ ]
+}

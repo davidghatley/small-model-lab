@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0050",
+ "brief_id": "e1-0050",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Primary CTA recolored to a pale beige with low contrast, so it no longer stands out",
+  "Off-palette purple accent on the hero chip",
+  "Hero paragraph has no max-width (overlong line length)",
+  "Hero text column widened and illustration squeezed, giving ~90+ character lines"
+ ],
+ "staging_src": "runs/E1/staging/e1-0050",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 21.585,
+ "pixel_pct_changed": 22.748
+}

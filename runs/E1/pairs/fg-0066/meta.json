@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0066",
+ "brief_id": "e1-0066",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline 20px grey Arial on paper, no hierarchy",
+  "Certificate card rotated and dragged over the hero text, purple/lime/magenta clash",
+  "Lead 11px Comic Sans in near-background color",
+  "CTA mustard on mustard-tone, tiny",
+  "Nav 9px Times",
+  "Stats bar dark text on dark background, unreadable",
+  "Hero grid broken"
+ ],
+ "staging_src": "runs/E1/staging/e1-0066",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 88.256,
+ "pixel_pct_changed": 57.213
+}

@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0001",
+ "brief_id": "e1-0001",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 30px so it no longer dominates; kicker is bigger than the headline",
+  "Muddy beige-on-beige palette, grey-brown low-energy text",
+  "Cramped, inconsistent hero spacing and narrow vertical rhythm",
+  "Four font families (Lobster/script, Impact, Trebuchet/Verdana, serif, Courier)",
+  "CTA button washed out, small, and blends into the paper"
+ ],
+ "staging_src": "runs/E1/staging/e1-0001",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 41.038,
+ "pixel_pct_changed": 99.679
+}

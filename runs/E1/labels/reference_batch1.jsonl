@@ -1,0 +1,30 @@
+{"pair_id": "fg-0149", "better": "a", "confidence": 0.72, "rationale": "A has a strong solid CTA and consistent accent color; B's CTA is washed out and its green eyebrow clashes."}
+{"pair_id": "fg-0119", "better": "a", "confidence": 0.85, "rationale": "B's buttons are vertically misaligned, stats indented off-grid, and the orange CTA clashes; A is aligned and cohesive."}
+{"pair_id": "fg-0067", "better": "a", "confidence": 0.9, "rationale": "A has clear headline hierarchy and a real CTA button; B has a weak low-contrast headline, a text-link CTA and mixed monospace."}
+{"pair_id": "fh-0173", "better": "a", "confidence": 0.55, "rationale": "A is elegant and cohesive; B shows the product and a stronger CTA but has cramped nav and an overhanging italic."}
+{"pair_id": "fg-0056", "better": "a", "confidence": 0.8, "rationale": "A has bold, high-contrast CTAs and an accent that fits the palette; B's pale CTAs and pink accent weaken it."}
+{"pair_id": "fg-0097", "better": "a", "confidence": 0.92, "rationale": "B has a washed-out disabled-looking CTA, mismatched serif headline and cramped spacing; A has crisp hierarchy and a clear CTA."}
+{"pair_id": "fg-0048", "better": "a", "confidence": 0.92, "rationale": "B has illegible faded body text, a tiny logo, an overlapping button pair and a garish tilted card; A is clean and bold."}
+{"pair_id": "fg-0078", "better": "b", "confidence": 0.95, "rationale": "A is near-broken: invisible body text, cut-off CTA, cramped nav, overlapping headline; B is clear and well structured."}
+{"pair_id": "fh-0181", "better": "b", "confidence": 0.68, "rationale": "B has full nav, a product-preview card and a stats band; A is clean but sparse with no navigation."}
+{"pair_id": "fh-0170", "better": "b", "confidence": 0.65, "rationale": "B has a polished split layout, illustration and stats; A's empty color blocks and muddy glow feel unfinished."}
+{"pair_id": "fg-0026", "better": "b", "confidence": 0.7, "rationale": "Nearly identical; B uses one accent color consistently and a better-balanced table, while A mixes magenta with orange."}
+{"pair_id": "fh-0167", "better": "a", "confidence": 0.58, "rationale": "A has distinctive elegant type and a cohesive palette; B is clear with a data table but generic and top-heavy."}
+{"pair_id": "fg-0096", "better": "b", "confidence": 0.97, "rationale": "A is broken: illustration covers the headline, illegible text, garish neon buttons; B is clean, readable and warm."}
+{"pair_id": "fh-0171", "better": "b", "confidence": 0.6, "rationale": "B has a balanced split layout with a data panel and refined type; A is bold but its nav is cramped."}
+{"pair_id": "fh-0153", "better": "b", "confidence": 0.6, "rationale": "B has a structured editorial grid, nav and stats band; A is clean but generic with minimal navigation."}
+{"pair_id": "fh-0161", "better": "a", "confidence": 0.58, "rationale": "A balances the headline with a stats panel and logo row; B has a strong headline but an empty right side."}
+{"pair_id": "fh-0175", "better": "b", "confidence": 0.65, "rationale": "B is refined with a centered hierarchy and fitting serif; A's black highlight block crowds the text and feels chaotic."}
+{"pair_id": "fh-0154", "better": "a", "confidence": 0.68, "rationale": "A has a clean editorial serif and clear CTAs; B's drop-shadowed display headline hurts readability and feels overstuffed."}
+{"pair_id": "fh-0165", "better": "a", "confidence": 0.65, "rationale": "A is clean and trustworthy for legal plans; B's ultra-tight brutalist headline collides and feels too loud."}
+{"pair_id": "fh-0160", "better": "b", "confidence": 0.62, "rationale": "B has a stronger composition with a plan panel, stats and an accent CTA; A uses default-looking Times and is sparse."}
+{"pair_id": "fh-0179", "better": "a", "confidence": 0.7, "rationale": "A is bold and cohesive; B's highlight block overlaps and clips the first headline line."}
+{"pair_id": "fg-0040", "better": "a", "confidence": 0.68, "rationale": "A has punchy hierarchy and contrast though its CTA falls below the fold; B is muddy, low-contrast and has a weak ghost CTA."}
+{"pair_id": "fh-0156", "better": "a", "confidence": 0.75, "rationale": "A is cohesive, on-theme and has a stats band; B's chart label wraps badly and the nav is near-empty."}
+{"pair_id": "fh-0186", "better": "a", "confidence": 0.65, "rationale": "A has an atmospheric gradient and serif that suit luxury travel; B is clean but uses placeholder gradient tiles."}
+{"pair_id": "fh-0183", "better": "a", "confidence": 0.75, "rationale": "A is polished with a fitting serif and illustration; B's tight-tracked headline lines collide and its target graphic doesn't fit."}
+{"pair_id": "fg-0020", "better": "b", "confidence": 0.72, "rationale": "B has a solid dark CTA and generous spacing; A is cramped with a washed-out CTA."}
+{"pair_id": "fh-0185", "better": "b", "confidence": 0.65, "rationale": "B has a product visual, full nav and a polished dark theme; A is clean but plain with no nav."}
+{"pair_id": "fg-0112", "better": "a", "confidence": 0.92, "rationale": "B has a tiny Arial headline, monospace eyebrow and disabled-looking CTA; A has refined serif hierarchy and a strong CTA."}
+{"pair_id": "fh-0191", "better": "b", "confidence": 0.6, "rationale": "B is bold and readable with a cohesive retro palette; A's pixel headline is harder to read and its game panel is empty."}
+{"pair_id": "fh-0163", "better": "b", "confidence": 0.58, "rationale": "B has a cohesive dark theme with clear CTAs and steps; A has a useful table but plain type and an empty lower half."}

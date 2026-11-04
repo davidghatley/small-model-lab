@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0170",
+ "brief_id": "e1-0170",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 feels handmade and premium with better type hierarchy; v2 is louder and less earthy-refined.",
+ "staging_src": "runs/E1/staging/e1-0170",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Warm cream paper, Fraunces serif, split hero with illustrated arch house, terracotta accent",
+  "Dark forest green, Archivo Black caps, centered hero with ember glow and color tiles"
+ ],
+ "v1_side": "b"
+}

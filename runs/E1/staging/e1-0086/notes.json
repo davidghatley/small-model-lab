@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0086",
+ "severity": "subtle",
+ "flaws": [
+  "Hero CTA recolored yellow on yellow panel so it barely stands out, smaller",
+  "Headline reduced to 60px: flatter type scale",
+  "Hero padding cramped; lede line runs full column; stats row nudged out of alignment with hero edges"
+ ]
+}

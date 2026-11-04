@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0149",
+ "brief_id": "e1-0149",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA washed-out taupe with white text, smaller, much less prominent",
+  "off-palette green eyebrow",
+  "flatter headline scale (76px to 60px)",
+  "paragraph line length overlong and nav/hero padding cramped"
+ ],
+ "staging_src": "runs/E1/staging/e1-0149",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 27.035,
+ "pixel_pct_changed": 16.992
+}

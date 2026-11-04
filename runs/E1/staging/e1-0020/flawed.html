@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bopix — Travel cover, read carefully</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f6f2ea;--ink:#16140f;--mute:#5d584c;--rule:#d9d2c3;--accent:#7a1f1f;--s1:8px;--s2:16px;--s3:24px;--s4:48px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font:400 17px/1.6 Inter,system-ui,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0;border-bottom:1px solid var(--rule);font-size:14px}
+nav .logo{font:500 26px Newsreader,serif;letter-spacing:-.01em}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0;color:var(--mute)}
+nav .login{font-weight:600}
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:var(--s5);padding:var(--s5) 0 var(--s4);align-items:end}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600;margin-bottom:var(--s3)}
+h1{font:400 76px/1.02 Newsreader,serif;letter-spacing:-.025em}
+h1 em{font-style:italic;color:var(--accent)}
+.lede{max-width:34em;color:var(--mute);margin:var(--s3) 0 var(--s4);font-size:19px}
+.cta{display:flex;gap:var(--s3);align-items:center}
+.btn{background:var(--ink);color:var(--paper);padding:16px 28px;font-weight:600;font-size:15px;text-decoration:none;border-radius:2px}
+.link{color:var(--ink);font-size:15px;border-bottom:1px solid var(--ink);text-decoration:none;padding-bottom:2px}
+.aside{border-top:2px solid var(--ink);padding-top:var(--s2)}
+.aside h3{font:500 15px Inter;letter-spacing:.08em;text-transform:uppercase;margin-bottom:var(--s2)}
+.row{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--rule);font-size:15px}
+.row b{font:500 20px Newsreader,serif}
+.logos{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0;border-top:1px solid var(--rule);border-bottom:1px solid var(--rule);color:var(--mute);font:500 20px Newsreader,serif}
+.logos span:first-child{font:600 12px Inter;letter-spacing:.14em;text-transform:uppercase}
+section{padding:var(--s5) 0}
+h2{font:400 44px/1.1 Newsreader,serif;letter-spacing:-.02em;margin-bottom:var(--s4)}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s4)}
+.plan{border-top:2px solid var(--ink);padding-top:var(--s3)}
+.plan .p{font:400 48px Newsreader,serif}
+.plan p{color:var(--mute);font-size:15px;margin-top:var(--s2)}
+.news{background:var(--ink);color:var(--paper)}
+.news form{display:flex;gap:var(--s2);margin-top:var(--s3)}
+.news input{flex:1;background:transparent;border:1px solid #6f6a5d;color:var(--paper);padding:16px;font:inherit}
+.news button{background:var(--paper);color:var(--ink);border:0;padding:0 28px;font-weight:600}
+footer{padding:var(--s4) 0;font-size:14px;color:var(--mute);display:flex;justify-content:space-between}
+</style><style>/* flaws */
+.hero{padding:28px 0 20px;gap:40px;grid-template-columns:10fr 4fr}
+.lede{max-width:none;font-size:16px;margin:12px 0 18px}
+h1{font-size:64px}
+.btn{background:#e4ddcd;color:#6d675a;font-weight:500;padding:10px 16px;font-size:13px}
+.kicker{margin-bottom:12px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">Bopix</span><ul><li>Compare</li><li>For IT &amp; security teams</li><li>Pricing</li><li>Journal</li></ul><span class="login">Sign in</span></nav>
+<header class="hero">
+<div><div class="kicker">Premium travel insurance, compared</div>
+<h1>Fewer policies. <em>Better</em> read.</h1>
+<p class="lede">We read the fine print of 140 premium travel policies so your IT team doesn't have to, then rank them on cover for devices, data loss and evacuation for staff abroad.</p>
+<div class="cta"><a class="btn" href="#">Compare policies</a><a class="link" href="#">See how we score</a></div></div>
+<div class="aside"><h3>This week's top three</h3>
+<div class="row"><span>Meridian Select</span><b>9.2</b></div>
+<div class="row"><span>Hollis &amp; Vane Global</span><b>8.9</b></div>
+<div class="row"><span>Northgate Corporate</span><b>8.7</b></div></div>
+</header>
+<div class="logos"><span>Read by teams at</span><span>Halvorsen</span><span>Brightwell</span><span>Kestrel &amp; Co</span><span>Orrin Labs</span><span>Ponsonby</span></div>
+<section><h2>Pricing, stated plainly</h2>
+<div class="plans">
+<div class="plan"><h3>Reader</h3><div class="p">Free</div><p>Full rankings and the plain-English summary of every policy.</p></div>
+<div class="plan"><h3>Team</h3><div class="p">$290<small style="font-size:16px">/yr</small></div><p>Side-by-side comparisons, claims-history data and up to 25 travellers.</p></div>
+<div class="plan"><h3>Concierge</h3><div class="p">$1,900<small style="font-size:16px">/yr</small></div><p>A named adviser who negotiates cover and handles renewals.</p></div>
+</div></section></div>
+<section class="news"><div class="wrap"><h2 style="margin-bottom:0">The Thursday read</h2><p style="color:#b9b3a3;margin-top:8px">One policy clause, explained, every week. No promotions.</p>
+<form><input placeholder="you@company.com"><button>Subscribe</button></form></div></section>
+<div class="wrap"><section style="text-align:center"><h2>Cover that reads as well as it covers.</h2><a class="btn" href="#">Compare policies</a></section>
+<footer><span>© 2026 Bopix Ltd. Authorised insurance intermediary.</span><span>Privacy · Terms · Contact</span></footer></div>
+</body></html>

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0026",
+ "brief_id": "e1-0026",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Off-palette magenta accent on label, logo and table ticks clashes with the orange CTA",
+  "Hero column widened and lede max-width removed, giving ~95 character lines",
+  "Comparison table padded tight and nudged down so it does not align with the hero text column"
+ ],
+ "staging_src": "runs/E1/staging/e1-0026",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 9.787,
+ "pixel_pct_changed": 8.906
+}

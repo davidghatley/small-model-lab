@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0108",
+ "severity": "obvious",
+ "flaws": [
+  "Headline oversized and overlapping loaf art",
+  "Lead 11px yellow-on-yellow unreadable",
+  "Buttons yellow-on-yellow with Comic Sans",
+  "Logo in script font, nav text tiny low-contrast",
+  "Art overlapping text column"
+ ]
+}

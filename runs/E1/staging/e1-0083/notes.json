@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0083",
+ "severity": "subtle",
+ "flaws": [
+  "H1 reduced to 52px: flatter type scale, headline less dominant",
+  "CTA restyled as a pale outline button, much less prominent",
+  "Off-palette teal accent on eyebrow and stat numbers; hero lede overlong line; cramped hero padding"
+ ]
+}

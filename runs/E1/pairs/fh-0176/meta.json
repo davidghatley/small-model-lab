@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0176",
+ "brief_id": "e1-0176",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has richer hierarchy and a concrete object plate; v2 is elegant but sparse and its tiles are empty.",
+ "staging_src": "runs/E1/staging/e1-0176",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Editorial grid with hairline rules, Caslon serif, asymmetric 7/5 split with line-drawn plate and stats row",
+  "Pure white centered Cormorant masthead, ultra-minimal category strip"
+ ],
+ "v1_side": "b"
+}

@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0196",
+ "brief_id": "e1-0196",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 shows the actual comparison table above the fold with high legibility for retirees; v2's chart is decorative and low-contrast text is smaller.",
+ "staging_src": "runs/E1/staging/e1-0196",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1 light paper, serif headline, comparison table in the hero, large readable text for retirees",
+  "v2 dark navy blueprint, grotesk, abstract price chart"
+ ],
+ "v1_side": "b"
+}

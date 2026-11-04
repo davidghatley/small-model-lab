@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0126",
+ "severity": "obvious",
+ "flaws": [
+  "acid green, magenta and cyan palette clashes with luxury tone",
+  "body copy dark green on dark green, unreadable",
+  "hero visual slides over headline and text",
+  "8px eyebrow and low-contrast nav",
+  "Impact, Comic Sans, Courier mixed in place of refined serif",
+  "white-on-neon CTA low contrast"
+ ]
+}

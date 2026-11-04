@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0119",
+ "brief_id": "e1-0119",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Flatter type scale: headline reduced to 44px",
+  "CTA recolored to off-palette orange",
+  "Secondary button and proof row misaligned with the 72px content edge"
+ ],
+ "staging_src": "runs/E1/staging/e1-0119",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 15.964,
+ "pixel_pct_changed": 12.691
+}

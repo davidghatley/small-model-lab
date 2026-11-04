@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0128",
+ "severity": "subtle",
+ "flaws": [
+  "off-palette orange eyebrow and logo against green brand",
+  "overlong body line length in hero",
+  "CTAs reduced to faint ghost buttons"
+ ]
+}

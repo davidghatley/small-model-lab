@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0119",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: headline reduced to 44px",
+  "CTA recolored to off-palette orange",
+  "Secondary button and proof row misaligned with the 72px content edge"
+ ]
+}

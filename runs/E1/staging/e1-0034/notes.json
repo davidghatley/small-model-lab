@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0034",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 30px Georgia, weaker than eyebrow",
+  "Four font families (DM Sans, Georgia, Courier, Trebuchet)",
+  "Both CTAs same pale sage, low-contrast, no primary",
+  "Muddy olive/khaki panel and desaturated palette",
+  "Cramped hero with tight padding, uneven row spacing and offset panel"
+ ]
+}

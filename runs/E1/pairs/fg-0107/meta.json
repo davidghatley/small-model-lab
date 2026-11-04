@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0107",
+ "brief_id": "e1-0107",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero lead line length overlong",
+  "Primary CTA washed out salmon with weak border, less prominent",
+  "Off-palette blue cover clashing with red/teal/yellow scheme"
+ ],
+ "staging_src": "runs/E1/staging/e1-0107",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.407,
+ "pixel_pct_changed": 22.627
+}

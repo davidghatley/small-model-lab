@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0078",
+ "brief_id": "e1-0078",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "headline shrunk and in Impact, pale yellow on light blue, overlapped by glasses graphic",
+  "lead text 10px pale on light blue",
+  "yellow tag with near-yellow text, light-blue CTA with light-blue text, overlapping the lead",
+  "glasses illustration pulled left over text; hero has large dead space below",
+  "nav 8px low contrast, Courier logo, inconsistent fonts"
+ ],
+ "staging_src": "runs/E1/staging/e1-0078",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 20.815,
+ "pixel_pct_changed": 61.448
+}

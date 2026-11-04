@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0104",
+ "severity": "subtle",
+ "flaws": [
+  "CTA buttons washed out to low-contrast grey, less prominent",
+  "Lead line length stretched too long",
+  "Off-palette hot-pink tile and uneven vertical alignment in tile grid"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0121",
+ "brief_id": "e1-0121",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline shrunk to 40px, no longer dominant over 22px lede",
+  "four font families (Space Grotesk, Georgia, Courier, Trebuchet)",
+  "muddy olive/brown/grey palette",
+  "cramped hero with tiny, inconsistent gaps",
+  "CTA grey on grey, does not stand out",
+  "button gap 3px vs other spacing"
+ ],
+ "staging_src": "runs/E1/staging/e1-0121",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 40.237,
+ "pixel_pct_changed": 99.936
+}

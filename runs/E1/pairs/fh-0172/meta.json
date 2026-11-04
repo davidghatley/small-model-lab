@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0172",
+ "brief_id": "e1-0172",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1's dark glow better fits futuristic/sleek and has stronger hierarchy; v2 is clean but more generic SaaS.",
+ "staging_src": "runs/E1/staging/e1-0172",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Dark void with blue glow, light-weight Sora headline with gradient word, centered, glass step strip",
+  "Light cool-gray, heavy Manrope, split hero with abstract live stage card"
+ ],
+ "v1_side": "b"
+}

@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0120",
+ "brief_id": "e1-0120",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "h1 in clashing purple Impact against bone",
+  "stat sidebar overlaps the headline and lede",
+  "lede and nav at very low contrast and tiny size",
+  "kick label 9px unreadable",
+  "mixed Comic Sans / Courier / Impact fonts",
+  "CTA lime with white text, low contrast"
+ ],
+ "staging_src": "runs/E1/staging/e1-0120",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 21.73,
+ "pixel_pct_changed": 26.55
+}

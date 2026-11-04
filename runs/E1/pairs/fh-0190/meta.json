@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0190",
+ "brief_id": "e1-0190",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has clearer hierarchy, more tactile earthy cues and a visible how-it-works; v2 is sparse with abstract swatches.",
+ "staging_src": "runs/E1/staging/e1-0190",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1 light cream, split hero with arched landscape illustration, dashed-card steps",
+  "v2 dark moss green, centered serif hero, offset swatch gallery"
+ ],
+ "v1_side": "b"
+}

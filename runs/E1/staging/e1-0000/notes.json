@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0000",
+ "severity": "obvious",
+ "flaws": [
+  "Hero art block absolutely positioned and rotated, overlapping the headline/CTA column",
+  "Acid-yellow page background clashing with magenta/cyan accents",
+  "Lead paragraph and proof stats at 9-10px with very low contrast",
+  "Mixed fonts: Comic Sans nav, Courier headline, Georgia body, Impact stats",
+  "CTA button yellow-on-yellow, nearly invisible; CTAs stacked and cramped"
+ ]
+}

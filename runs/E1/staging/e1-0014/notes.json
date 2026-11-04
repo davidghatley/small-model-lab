@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0014",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: headline cut from 76px to 50px so it barely outranks the 19px subtext",
+  "Off-palette olive-green CTA clashing with the sky/sun/coral scheme",
+  "Hero copy column nudged 22px right of the nav/logo edge and top padding squeezed, giving slight misalignment and cramped feel"
+ ]
+}

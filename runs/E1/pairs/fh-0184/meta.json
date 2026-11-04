@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0184",
+ "brief_id": "e1-0184",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1's quote slip shows the product concretely and the blunt styling matches no-nonsense; v2 is clean but plain with a weaker focal point.",
+ "staging_src": "runs/E1/staging/e1-0184",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1: kraft-paper neo-brutalist, uppercase heavy grotesque, split hero with sample quote slip",
+  "v2: minimal white Inter text-led single column, facts row"
+ ],
+ "v1_side": "b"
+}

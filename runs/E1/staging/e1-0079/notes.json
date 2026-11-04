@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0079",
+ "severity": "moderate",
+ "flaws": [
+  "headline cut to 46px light serif, losing the punchy irreverent weight and hierarchy",
+  "both CTAs small, beige on beige, no border or shadow",
+  "Palatino and Brush Script added to Archivo Black and Space Grotesk (4 families)",
+  "muddy khaki/beige palette replaces orange/lime/black; card text low contrast",
+  "cramped hero with inconsistent gaps"
+ ]
+}

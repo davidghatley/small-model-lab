@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0045",
+ "brief_id": "e1-0045",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline pale tan on tan, nearly invisible",
+  "Handwritten note 11px and lead 12px, low contrast",
+  "Paper form graphic overlaps headline and CTA",
+  "Nav switched to oversize magenta Impact, clashing with earthy palette",
+  "CTA green-on-green text unreadable and shifted over other blocks",
+  "Logo displaced downward into the nav"
+ ],
+ "staging_src": "runs/E1/staging/e1-0045",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 14.493,
+ "pixel_pct_changed": 19.721
+}

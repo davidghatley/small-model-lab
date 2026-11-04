@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0145",
+ "brief_id": "e1-0145",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline shrunk and no longer dominant",
+  "Georgia, Arial, Trebuchet, Courier and Bungee mixed: 4+ families",
+  "muddy olive/khaki badge, washed-out retro palette",
+  "CTA low contrast and doesn't stand out",
+  "cramped hero spacing"
+ ],
+ "staging_src": "runs/E1/staging/e1-0145",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 38.859,
+ "pixel_pct_changed": 41.534
+}

@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0169",
+ "brief_id": "e1-0169",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 shows concrete first-time-owner value and has stronger hierarchy; v2 is warm but plainer.",
+ "staging_src": "runs/E1/staging/e1-0169",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1 bright blue/orange split hero with checklist card and partner logos",
+  "v2 centered warm cream serif with three promise cards"
+ ],
+ "v1_side": "a"
+}

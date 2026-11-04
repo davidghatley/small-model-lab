@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0055",
+ "brief_id": "e1-0055",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline small, light and in a mismatched serif; weak hierarchy, odd spacing",
+  "CTA in pale grey with low contrast",
+  "Muddy grey-green panel color",
+  "Muddy khaki accent",
+  "Another font family in the lede",
+  "Cramped hero",
+  "Buttons nearly touching"
+ ],
+ "staging_src": "runs/E1/staging/e1-0055",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 37.714,
+ "pixel_pct_changed": 41.103
+}

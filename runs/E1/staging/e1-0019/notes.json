@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0019",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 36px script font, overshadowed by 24px eyebrow and 23px subtext",
+  "Muddy bronze-grey palette; gold accents and body copy dimmed to low contrast",
+  "Book-a-consult CTA is a tiny dark button nearly invisible against the background",
+  "Four font families (Bodoni Moda, Pacifico, Lobster, Jost) in hero",
+  "Cramped hero (10px top padding, 12px gaps) beneath an over-spaced nav"
+ ]
+}

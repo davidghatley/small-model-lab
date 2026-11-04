@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0053",
+ "severity": "subtle",
+ "flaws": [
+  "CTA buttons recolored to off-palette bright blue",
+  "Hero padding cut so content feels cramped against nav",
+  "Headline indented relative to kicker and paragraph (uneven alignment)"
+ ]
+}

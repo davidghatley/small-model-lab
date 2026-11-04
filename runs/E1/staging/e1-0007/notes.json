@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0007",
+ "severity": "moderate",
+ "flaws": [
+  "Headline reduced to 34px regular Georgia, weaker than the 20px eyebrow and body so hierarchy is flat",
+  "Muddy olive/khaki palette replacing the crisp clinical white and teal",
+  "Hero stacked into a cramped single column with tight uneven spacing",
+  "Four font families (script logo, Courier nav, Georgia heading, Verdana body)",
+  "CTAs washed-out khaki and no longer stand out; two buttons look identical"
+ ]
+}

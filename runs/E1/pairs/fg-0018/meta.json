@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0018",
+ "brief_id": "e1-0018",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Pale khaki page background replaces dark navy; clashing yellow/orange headline and hot-pink card",
+  "Rotated pink dotted-border stat card dragged over the headline: overlapping blocks",
+  "Subhead, tag and nav at 8-10px with near-background colours: unreadable",
+  "CTA buttons tiny, green-on-green and beige-on-beige, displaced away from copy",
+  "Fonts mixed: Pacifico, Courier New, Comic Neue, Sora"
+ ],
+ "staging_src": "runs/E1/staging/e1-0018",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 175.401,
+ "pixel_pct_changed": 99.945
+}

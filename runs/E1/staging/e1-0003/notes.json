@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0003",
+ "severity": "obvious",
+ "flaws": [
+  "Dark grey page background with dark-grey nav and logo text (illegible)",
+  "Headline in a script font, overlapped by the stat card which sits above it",
+  "Lead and pills at 10-11px with near-zero contrast",
+  "Clashing neon green/pink/cyan; buttons have text matching background and overlap each other",
+  "Hero columns collapsed into an absolute-positioned broken layout; mixed fonts"
+ ]
+}

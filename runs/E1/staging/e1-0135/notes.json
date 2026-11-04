@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0135",
+ "severity": "obvious",
+ "flaws": [
+  "script font on headline, inconsistent with sleek tone",
+  "tiny near-invisible body text",
+  "ring graphic overlaps headline and copy",
+  "CTA text cyan on cyan, unreadable",
+  "tiny, invisible nav links",
+  "clashing yellow/magenta pill"
+ ]
+}

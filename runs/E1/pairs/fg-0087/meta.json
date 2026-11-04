@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0087",
+ "brief_id": "e1-0087",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Red Impact headline overlaps the orange photo block",
+  "Photo block shifted left over the text column and recoloured orange",
+  "Eyebrow, lede, nav and trust row shrunk to 8-12px with low contrast on pale background",
+  "Yellow CTA with white text and clashing cyan/pink secondary button, offset out of line",
+  "Mixed fonts: script body, Impact, Courier, Times"
+ ],
+ "staging_src": "runs/E1/staging/e1-0087",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 28.413,
+ "pixel_pct_changed": 25.274
+}

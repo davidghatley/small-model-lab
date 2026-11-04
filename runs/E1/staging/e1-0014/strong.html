@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veten - Your own weather station</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--sky:#dff3ff;--sun:#ffc933;--coral:#ff6b57;--navy:#102a54;--mute:#4a6283;--white:#fff;--s1:8px;--s2:16px;--s3:24px;--s4:48px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{font-family:Nunito,"Trebuchet MS",Arial,sans-serif;background:var(--sky);color:var(--navy);line-height:1.55}
+.w{max-width:1140px;margin:0 auto;padding:0 var(--s3)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+.logo{font-family:Fredoka,"Trebuchet MS",sans-serif;font-weight:700;font-size:30px;display:flex;align-items:center;gap:10px}
+.logo i{width:30px;height:30px;border-radius:50%;background:var(--sun);display:block;box-shadow:0 0 0 5px rgba(255,201,51,.35)}
+nav a{color:var(--navy);text-decoration:none;font-weight:700;margin-left:var(--s3)}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s4);align-items:center;padding:var(--s4) 0 var(--s5)}
+.pill{display:inline-block;background:var(--white);border-radius:99px;padding:6px 16px;font-weight:700;font-size:14px;margin-bottom:var(--s3)}
+h1{font-family:Fredoka,"Trebuchet MS",sans-serif;font-size:76px;line-height:1;font-weight:700;letter-spacing:-1px}
+h1 em{font-style:normal;color:var(--coral)}
+.sub{font-size:21px;color:var(--mute);max-width:28em;margin:var(--s3) 0 var(--s4)}
+.btn{display:inline-block;background:var(--coral);color:#fff;font-family:Fredoka,sans-serif;font-weight:600;font-size:20px;padding:18px 36px;border-radius:99px;text-decoration:none;box-shadow:0 6px 0 #c7402f}
+.btn.g{background:var(--white);color:var(--navy);box-shadow:0 6px 0 #b9d5e8;margin-left:var(--s2)}
+.station{position:relative;height:420px}
+.station .body{position:absolute;left:70px;right:70px;top:20px;bottom:20px;background:var(--white);border-radius:48px;box-shadow:0 10px 0 #b9d5e8;padding:var(--s3);text-align:center}
+.station .body b{font-family:Fredoka,sans-serif;font-size:88px;display:block;line-height:1;margin-top:var(--s3)}.station small{font-weight:700;color:var(--mute)}
+.chips{display:flex;gap:10px;justify-content:center;margin-top:var(--s3)}.chips span{background:var(--sky);border-radius:99px;padding:6px 14px;font-weight:700;font-size:14px}
+.sun{position:absolute;right:0;top:0;width:110px;height:110px;border-radius:50%;background:var(--sun)}
+.cloud{position:absolute;left:0;bottom:30px;width:150px;height:60px;border-radius:99px;background:var(--white)}
+section{padding:var(--s5) 0}
+h2{font-family:Fredoka,sans-serif;font-size:46px;margin-bottom:var(--s4);line-height:1.1}
+.white{background:var(--white)}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}.team div{text-align:center}.av{width:112px;height:112px;border-radius:50%;margin:0 auto var(--s2)}.team b{font-family:Fredoka,sans-serif;font-size:20px;display:block}.team span{color:var(--mute);font-size:15px}
+.logos{display:flex;justify-content:space-between;font-family:Fredoka,sans-serif;font-size:26px;color:var(--mute)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.post{background:var(--white);border-radius:24px;overflow:hidden;box-shadow:0 6px 0 #b9d5e8}.post .im{height:140px}.post div.t{padding:var(--s3)}.post small{font-weight:700;color:var(--coral)}.post h3{font-family:Fredoka,sans-serif;font-size:21px;margin-top:4px}
+footer{padding:var(--s4) 0;font-size:14px;color:var(--mute);display:flex;justify-content:space-between}
+</style></head><body>
+<div class="w"><nav><div class="logo"><i></i>Veten</div><div><a href="#">Kit</a><a href="#">Team</a><a href="#">Blog</a></div></nav>
+<div class="hero"><div><span class="pill">Premium kit &middot; built by students, for students</span>
+<h1>Become the <em>weather</em> nerd you were meant to be.</h1>
+<p class="sub">Veten is a backyard-to-balcony station with lab-grade sensors, a bright dashboard and open data. Set it up in ten minutes and forecast your own street.</p>
+<a class="btn" href="#">Build my station</a><a class="btn g" href="#">See the sensors</a></div>
+<div class="station"><div class="sun"></div><div class="cloud"></div><div class="body"><small>RIGHT NOW ON YOUR BALCONY</small><b>18&deg;C</b><div class="chips"><span>62% humidity</span><span>12 km/h NW</span><span>1014 hPa</span></div></div></div></div></div>
+<section class="white"><div class="w"><h2>Meet the crew</h2><div class="team">
+<div><div class="av" style="background:var(--sun)"></div><b>Maya Torres</b><span>Climate science</span></div>
+<div><div class="av" style="background:var(--coral)"></div><b>Sam Okafor</b><span>Hardware</span></div>
+<div><div class="av" style="background:#7cc8ff"></div><b>Lena Brandt</b><span>Firmware</span></div>
+<div><div class="av" style="background:#9be39b"></div><b>Raj Patel</b><span>Community</span></div></div></div></section>
+<section><div class="w"><h2>Used in labs and dorms at</h2><div class="logos"><span>Northgate U</span><span>Tidewater</span><span>St. Brannock</span><span>Redfield Tech</span><span>Lakeside</span></div></div></section>
+<section class="white"><div class="w"><h2>From the blog</h2><div class="g3">
+<div class="post"><div class="im" style="background:linear-gradient(135deg,#ffc933,#ff6b57)"></div><div class="t"><small>GUIDE</small><h3>Mount your station for clean wind data</h3></div></div>
+<div class="post"><div class="im" style="background:linear-gradient(135deg,#7cc8ff,#dff3ff)"></div><div class="t"><small>PROJECT</small><h3>Predicting fog with a dorm-room dataset</h3></div></div>
+<div class="post"><div class="im" style="background:linear-gradient(135deg,#9be39b,#ffc933)"></div><div class="t"><small>NEWS</small><h3>Veten open data hits 4 million readings</h3></div></div></div></div></section>
+<div class="w"><footer><span>&copy; 2026 Veten Instruments</span><span>hello@veten.example &middot; Privacy</span></footer></div>
+</body></html>

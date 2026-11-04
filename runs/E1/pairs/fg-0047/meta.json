@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0047",
+ "brief_id": "e1-0047",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Orange gradient accent off-palette against the mint/violet scheme",
+  "Lead line length stretched to about 95 characters",
+  "Primary CTA reduced to a dark low-emphasis button"
+ ],
+ "staging_src": "runs/E1/staging/e1-0047",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 15.657,
+ "pixel_pct_changed": 21.448
+}

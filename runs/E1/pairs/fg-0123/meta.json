@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0123",
+ "brief_id": "e1-0123",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "headline in teal Times against pale grid, low contrast",
+  "photo frame overlaps and rotates over headline and text",
+  "lede, nav and spec label tiny and washed out",
+  "hero grid collapsed to one column leaving a broken layout",
+  "Comic Sans logo plus Times plus Plex fonts",
+  "orange CTA with cream text, unreadable"
+ ],
+ "staging_src": "runs/E1/staging/e1-0123",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 28.469,
+ "pixel_pct_changed": 35.016
+}

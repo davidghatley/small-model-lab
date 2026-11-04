@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mobo - Sensors measured to six decimals</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff;--soft:#f3f6f9;--ink:#0d1b2a;--mute:#5a6b7d;--line:#dbe3ea;--acc:#0a6cff}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 'IBM Plex Sans',system-ui,sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;height:76px;border-bottom:1px solid var(--line)}
+.logo{font:600 22px 'IBM Plex Sans';letter-spacing:.02em;display:flex;gap:10px;align-items:center}
+.logo i{width:18px;height:18px;border:3px solid var(--acc);border-radius:50%;display:block}
+nav ul{display:flex;gap:32px;list-style:none;padding:0;color:var(--mute);font-size:15px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;padding:80px 0;align-items:center}
+.eyebrow{font:13px 'IBM Plex Mono',monospace;color:var(--acc);text-transform:uppercase;letter-spacing:.1em;margin-bottom:20px;display:block}
+h1{font:600 60px/1.06 'IBM Plex Sans';letter-spacing:-.025em;margin-bottom:24px}
+.lead{font-size:19px;color:var(--mute);max-width:29em;margin-bottom:36px}
+.btn{display:inline-block;background:var(--acc);color:#fff;font-weight:500;padding:16px 28px;border-radius:4px}
+.btn.ghost{background:none;color:var(--ink);border:1px solid var(--line);margin-left:10px}
+.panel{background:var(--soft);border:1px solid var(--line);border-radius:8px;padding:28px}
+.panel .row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--line);font:14px 'IBM Plex Mono',monospace}
+.panel .row:last-child{border:0}
+.panel .row b{font-weight:400;color:var(--acc)}
+.panel h3{font:500 13px 'IBM Plex Mono';text-transform:uppercase;letter-spacing:.1em;color:var(--mute);margin-bottom:6px}
+.spark{height:90px;margin:12px 0}
+section{padding:80px 0}
+.soft{background:var(--soft)}
+h2{font:600 36px/1.15 'IBM Plex Sans';letter-spacing:-.02em;margin-bottom:12px}
+.sub{color:var(--mute);font-size:18px;max-width:34em;margin-bottom:44px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid var(--ink)}
+.stats div{padding:28px 24px 0 0}
+.stats b{font:300 56px 'IBM Plex Sans';letter-spacing:-.03em;display:block;line-height:1}
+.stats span{color:var(--mute);font-size:14px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:1px solid var(--line);border-radius:8px;padding:28px}
+.card h3{font:600 19px 'IBM Plex Sans';margin-bottom:8px}
+.card p{color:var(--mute);font-size:15px}
+.card .m{font:400 13px 'IBM Plex Mono';color:var(--acc);margin-bottom:10px;display:block}
+.chips{display:flex;flex-wrap:wrap;gap:12px}
+.chips span{border:1px solid var(--line);background:#fff;border-radius:4px;padding:10px 20px;font:14px 'IBM Plex Mono'}
+.loc{display:grid;grid-template-columns:repeat(4,1fr);gap:24px}
+.loc h3{font:600 17px 'IBM Plex Sans'}
+.loc p{color:var(--mute);font-size:15px}
+footer{border-top:1px solid var(--line);padding:36px 0;color:var(--mute);font-size:14px}
+footer .wrap{display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+h1{font-size:42px;line-height:1.2;letter-spacing:0;font-weight:500}
+.eyebrow{color:#e0248c}
+.btn{background:#e0248c}
+.btn.ghost{background:none}
+.hero>div:first-child{padding-left:34px;margin-top:-10px}
+.panel{margin-top:60px}
+
+</style></head><body>
+<div class="wrap"><nav><span class="logo"><i></i>Mobo</span><ul><li>Products</li><li>Case studies</li><li>Locations</li><li>Integrations</li></ul><a class="btn" href="#" style="padding:10px 20px">Request a datasheet</a></nav>
+<header class="hero"><div><span class="eyebrow">Industrial sensing / Seed-stage / ISO 17025 lab</span>
+<h1>Sensors that report what is true, to six decimals.</h1>
+<p class="lead">Mobo builds calibrated pressure, vibration and temperature sensors for plants where a drifting reading costs a shift. Traceable to national standards. Shipped with their own proof.</p>
+<a class="btn" href="#">Request a datasheet</a><a class="btn ghost" href="#">Talk to an engineer</a></div>
+<div class="panel"><h3>Line 4 / Live calibration</h3>
+<svg class="spark" viewBox="0 0 300 90" preserveAspectRatio="none"><polyline fill="none" stroke="#0a6cff" stroke-width="2" points="0,50 20,48 40,52 60,47 80,49 100,46 120,51 140,48 160,50 180,47 200,49 220,48 240,50 260,47 280,49 300,48"/><line x1="0" y1="48" x2="300" y2="48" stroke="#dbe3ea" stroke-dasharray="4"/></svg>
+<div class="row"><span>Pressure</span><b>101.325 kPa</b></div><div class="row"><span>Drift (30 d)</span><b>0.002%</b></div><div class="row"><span>Traceability</span><b>NIST-linked</b></div></div></header></div>
+<section class="soft"><div class="wrap"><h2>Measured, not promised</h2><p class="sub">Numbers from fielded sensors across 61 plants.</p><div class="stats"><div><b>0.002%</b><span>Annual drift</span></div><div><b>61</b><span>Plants live</span></div><div><b>99.98%</b><span>Uptime</span></div><div><b>14 ms</b><span>Response time</span></div></div></div></section>
+<section><div class="wrap"><h2>Case studies</h2><p class="sub">Where a quiet sensor paid for itself.</p><div class="grid3"><div class="card"><span class="m">Dairy processing</span><h3>Cut CIP rework by 31%</h3><p>Stable temperature data let the plant shorten wash cycles safely.</p></div><div class="card"><span class="m">Paper mill</span><h3>Bearings caught 19 days early</h3><p>Vibration trends flagged a failing roller before the outage window.</p></div><div class="card"><span class="m">Semiconductor</span><h3>Zero out-of-spec lots</h3><p>Cleanroom pressure held within 0.01 kPa for a full quarter.</p></div></div></div></section>
+<section class="soft"><div class="wrap"><h2>Integrations</h2><p class="sub">Speaks the protocols your control room already runs.</p><div class="chips"><span>OPC UA</span><span>Modbus</span><span>MQTT</span><span>PROFINET</span><span>AVEVA PI</span><span>Ignition</span><span>Grafana</span></div></div></section>
+<section><div class="wrap"><h2>Locations</h2><p class="sub">Calibration labs and support, close to the plant.</p><div class="loc"><div><h3>Rotterdam</h3><p>EMEA lab and support</p></div><div><h3>Houston</h3><p>Americas lab and support</p></div><div><h3>Singapore</h3><p>APAC lab</p></div><div><h3>Stuttgart</h3><p>Engineering HQ</p></div></div></div></section>
+<footer><div class="wrap"><span>Mobo Instruments, 2026</span><span>Privacy / Terms / sales@mobo.example</span></div></footer>
+</body></html>

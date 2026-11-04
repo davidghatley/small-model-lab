@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0063",
+ "severity": "obvious",
+ "flaws": [
+  "Headline 28px Impact in pale tan, very low contrast",
+  "Lead 12px near-invisible",
+  "Hero grid broken to 1fr/3fr",
+  "Review board rotated and pulled over the text, cyan and magenta clash",
+  "Neon since-badge clashes with palette",
+  "Tiny cyan CTA with white text",
+  "Nav 9px Times, low contrast"
+ ]
+}

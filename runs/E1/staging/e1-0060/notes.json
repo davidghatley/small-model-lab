@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0060",
+ "severity": "obvious",
+ "flaws": [
+  "Headline shrunk to 30px in pale tan on cream (very low contrast), Courier font",
+  "Lead paragraph 11px Comic Sans in near-background color",
+  "Nav links 9px low contrast",
+  "Price card pulled left over the hero text with rotation, purple and neon green clash",
+  "CTA tiny neon-green button with white text",
+  "Logo wall text 9px and washed out"
+ ]
+}

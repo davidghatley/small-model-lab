@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veora - Legal aid for refugees, funded by founders like you</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;800&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#1a1a2e;--yel:#ffd23f;--pink:#ff6b9d;--blue:#3d5afe;--mint:#4fd9b0;--bg:#fff8e6}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.55 Nunito,system-ui,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:80px}
+.logo{font:800 30px 'Bricolage Grotesque',sans-serif;display:flex;gap:10px;align-items:center}
+.logo i{width:30px;height:30px;background:var(--pink);border:3px solid var(--ink);border-radius:50% 50% 50% 0;display:block}
+nav ul{display:flex;gap:28px;list-style:none;padding:0;font-weight:800}
+.btn{display:inline-block;background:var(--blue);color:#fff;font:800 18px Nunito,sans-serif;padding:16px 30px;border:3px solid var(--ink);border-radius:16px;box-shadow:5px 5px 0 var(--ink)}
+.btn.y{background:var(--yel);color:var(--ink)}
+.btn.sm{padding:10px 20px;font-size:15px;box-shadow:3px 3px 0 var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;padding:48px 0 80px}
+.pill{display:inline-block;background:var(--mint);border:3px solid var(--ink);border-radius:999px;padding:4px 16px;font-weight:800;font-size:14px;margin-bottom:20px}
+h1{font:800 68px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.03em;margin-bottom:24px}
+h1 mark{background:var(--yel);padding:0 10px;border-radius:12px;display:inline-block;transform:rotate(-2deg)}
+.lead{font-size:21px;max-width:28em;margin-bottom:32px}
+.art{position:relative;height:420px}
+.blob{position:absolute;border:3px solid var(--ink);border-radius:28px}
+.b1{inset:20px 40px 60px 0;background:var(--pink);transform:rotate(4deg)}
+.b2{inset:60px 0 20px 50px;background:var(--yel);padding:28px;font:800 26px/1.2 'Bricolage Grotesque',sans-serif;display:flex;flex-direction:column;justify-content:space-between}
+.b2 small{font:600 15px Nunito;display:block}
+section{padding:72px 0}
+h2{font:800 44px/1.1 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;margin-bottom:12px}
+.sub{font-size:19px;margin-bottom:36px;max-width:34em}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:28px;box-shadow:6px 6px 0 var(--ink)}
+.card h3{font:800 24px 'Bricolage Grotesque',sans-serif}
+.card .n{font:800 46px 'Bricolage Grotesque';margin:8px 0}
+.card .n small{font:600 15px Nunito}
+.card ul{padding-left:20px;font-size:15px}
+.card.hot{background:var(--blue);color:#fff}
+table{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff}
+th,td{padding:14px 20px;text-align:left;border-bottom:2px solid var(--ink)}
+th{background:var(--yel);font:800 16px Nunito}
+tr:last-child td{border-bottom:0}
+.int{display:flex;flex-wrap:wrap;gap:14px}
+.int span{background:#fff;border:3px solid var(--ink);border-radius:999px;padding:10px 22px;font-weight:800}
+.cta{background:var(--pink);border:3px solid var(--ink);border-radius:32px;padding:56px;text-align:center;box-shadow:8px 8px 0 var(--ink)}
+.cta h2{margin-bottom:24px}
+form{display:flex;gap:12px;max-width:520px}
+input{flex:1;padding:14px 20px;border:3px solid var(--ink);border-radius:16px;font:600 17px Nunito}
+footer{background:var(--ink);color:#e8e4d4;padding:40px 0;margin-top:40px;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+body{background:#2b2b2b}
+nav ul{color:#3a3a3a;font-size:9px}
+.logo{color:#4a4a4a;font-family:'Times New Roman',serif}
+.hero{display:block;position:relative}
+h1{font:800 66px/.9 'Brush Script MT',cursive;color:#7a1f1f;position:relative;z-index:1;width:70%}
+h1 mark{background:#14ff7c;color:#ff6b9d;transform:rotate(-8deg)}
+.pill{background:#ffd23f;color:#fff3b0;border-color:#ffd23f;font-size:10px}
+.lead{font:400 11px/1.3 'Courier New',monospace;color:#555;width:42%;position:relative;z-index:1}
+.art{position:absolute;top:30px;right:-40px;width:520px;z-index:2}
+.b2{background:#00e5ff;color:#00d0e8}
+.btn{background:#14ff7c;color:#1aff80;border-color:#14ff7c;box-shadow:none;position:relative;z-index:1}
+.btn.y{background:#ff6b9d;color:#ff7aa8;border-color:#ff6b9d;margin-left:-30px}
+section{padding-top:260px}
+
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo"><i></i>Veora</span><ul><li>Pricing</li><li>Compare</li><li>Integrations</li></ul><a class="btn sm" href="#">Sponsor a case</a></nav>
+<header class="hero"><div><span class="pill">Legal aid priced for small budgets</span>
+<h1>Help a family stay. <mark>Cheaply.</mark></h1>
+<p class="lead">Veora gives refugees real lawyers for asylum and work permits. Startups sponsor cases from $49 a month, and see exactly where it goes.</p>
+<a class="btn" href="#">Sponsor a case</a> &nbsp; <a class="btn y" href="#">See how it works</a></div>
+<div class="art"><div class="blob b1"></div><div class="blob b2"><span>312 families helped in 2025</span><small>Average cost per case: $410</small></div></div></header>
+</div>
+<section><div class="wrap"><h2>Pick the plan that fits your runway</h2><p class="sub">Monthly, cancel any time. Every dollar is tagged to a case you can follow.</p>
+<div class="grid3"><div class="card"><h3>Friend</h3><div class="n">$49<small> /mo</small></div><ul><li>Fund one filing a quarter</li><li>Impact email</li></ul></div><div class="card hot"><h3>Team</h3><div class="n">$199<small> /mo</small></div><ul><li>Sponsor a full case a year</li><li>Meet your case manager</li><li>Employee volunteering</li></ul></div><div class="card"><h3>Champion</h3><div class="n">$749<small> /mo</small></div><ul><li>Fund a caseworker seat</li><li>Co-branded report</li></ul></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Why Veora over a one-off donation</h2><p class="sub">A quick comparison.</p>
+<table><tr><th></th><th>Veora</th><th>Big charity</th><th>One-off donation</th></tr><tr><td>See your case</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>Overhead</td><td>9%</td><td>31%</td><td>Varies</td></tr><tr><td>Team involvement</td><td>Yes</td><td>Rarely</td><td>No</td></tr></table></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Works where you already work</h2><p class="sub">Give through payroll and tools your team uses.</p><div class="int"><span>Slack</span><span>Stripe</span><span>Gusto</span><span>Rippling</span><span>Notion</span><span>Zapier</span></div></div></section>
+<div class="wrap"><div class="cta"><h2>Your next 49 dollars can change a life.</h2><a class="btn y" href="#">Sponsor a case</a></div></div>
+<section><div class="wrap" style="text-align:center"><h2>Get the monthly case file</h2><p class="sub" style="margin:0 auto 24px">One story, one number, one thing you can do.</p><form style="margin:0 auto"><input placeholder="founder@startup.co"><a class="btn" href="#">Join</a></form></div></section>
+<footer><div class="wrap"><span>Veora Legal Aid, a registered charity</span><span>Privacy / Terms / press@veora.example</span></div></footer>
+</body></html>

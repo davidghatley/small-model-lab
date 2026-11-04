@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0034",
+ "brief_id": "e1-0034",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 30px Georgia, weaker than eyebrow",
+  "Four font families (DM Sans, Georgia, Courier, Trebuchet)",
+  "Both CTAs same pale sage, low-contrast, no primary",
+  "Muddy olive/khaki panel and desaturated palette",
+  "Cramped hero with tight padding, uneven row spacing and offset panel"
+ ],
+ "staging_src": "runs/E1/staging/e1-0034",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 18.78,
+ "pixel_pct_changed": 28.999
+}

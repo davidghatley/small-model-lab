@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0015",
+ "brief_id": "e1-0015",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Saturated turquoise page background clashing with magenta pixel-font headline and yellow/green buttons",
+  "Headline set in Press Start 2P across 820px overflowing into and overlapping the rotated hero image",
+  "Hero image pulled left and rotated over the text block; blocks overlap",
+  "Subtext, eyebrow and nav at 8-10px in turquoise/lime on turquoise: unreadable",
+  "CTA buttons tiny with white text on yellow and green-on-green, displaced from the copy",
+  "Mixed fonts: Press Start 2P, Comic Neue, Courier, Karla"
+ ],
+ "staging_src": "runs/E1/staging/e1-0015",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 84.061,
+ "pixel_pct_changed": 95.157
+}

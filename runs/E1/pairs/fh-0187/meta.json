@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0187",
+ "brief_id": "e1-0187",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 is warmer and friendlier for students with a clear illustrated focal point; v2 is tasteful but more generic and less student-fitting.",
+ "staging_src": "runs/E1/staging/e1-0187",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1: bright playful cream/blue/yellow rounded sans, split hero with shirt illustration and floating status tags",
+  "v2: terracotta and serif, centered hero with stat chips"
+ ],
+ "v1_side": "a"
+}

@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0001",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 30px so it no longer dominates; kicker is bigger than the headline",
+  "Muddy beige-on-beige palette, grey-brown low-energy text",
+  "Cramped, inconsistent hero spacing and narrow vertical rhythm",
+  "Four font families (Lobster/script, Impact, Trebuchet/Verdana, serif, Courier)",
+  "CTA button washed out, small, and blends into the paper"
+ ]
+}

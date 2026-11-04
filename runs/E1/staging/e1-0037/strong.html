@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elquika - Property Management Platform</title>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f6f8;--card:#fff;--ink:#0d1b2a;--mu:#5b6b7c;--ac:#0b6e4f;--line:#d8dfe6}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Manrope,system-ui,sans-serif}
+.w{max-width:1180px;margin:0 auto;padding:0 36px}
+nav{display:flex;justify-content:space-between;align-items:center;height:68px}
+.logo{font-weight:800;font-size:21px;letter-spacing:-.02em}.logo b{color:var(--ac)}
+nav .l{display:flex;gap:28px;font-size:14px;color:var(--mu);font-weight:500;align-items:center}
+.btn{display:inline-block;background:var(--ac);color:#fff;padding:14px 26px;border-radius:8px;font-weight:700;text-decoration:none}
+.btn.s{padding:9px 16px;font-size:14px}.btn.o{background:var(--card);color:var(--ink);border:1px solid var(--line)}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center;padding:56px 0 72px}
+.mono{font:500 12px 'JetBrains Mono',monospace;color:var(--ac);letter-spacing:.1em;text-transform:uppercase;margin-bottom:16px}
+h1{font-size:54px;line-height:1.06;font-weight:800;letter-spacing:-.03em;margin-bottom:20px}
+.lede{color:var(--mu);font-size:18px;max-width:490px;margin-bottom:28px}
+.cta{display:flex;gap:12px}
+.dash{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px;box-shadow:0 20px 50px rgba(13,27,42,.1)}
+.dash h4{font:500 12px 'JetBrains Mono',monospace;color:var(--mu);margin-bottom:14px;text-transform:uppercase;letter-spacing:.08em}
+.kp{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-bottom:16px}.kp div{background:var(--bg);border-radius:10px;padding:12px}.kp b{font-size:24px;display:block;font-variant-numeric:tabular-nums}.kp span{font-size:12px;color:var(--mu)}
+.tr{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line);font-size:14px}.ok{color:var(--ac);font-weight:700}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:34px;line-height:1.15;letter-spacing:-.02em;margin-bottom:10px}.sub{color:var(--mu);margin-bottom:34px;max-width:540px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px}.card h3{font-size:18px;margin-bottom:6px}.card p{color:var(--mu);font-size:15px}
+.price{font:500 36px 'JetBrains Mono',monospace;margin:8px 0}.card.f{border:2px solid var(--ac)}
+.apps{display:flex;gap:14px;align-items:center}.store{background:var(--ink);color:#fff;padding:12px 22px;border-radius:10px;font-weight:700}
+form{display:flex;gap:12px;max-width:520px}form input{flex:1;padding:14px;border:1px solid var(--line);border-radius:8px;font:inherit}
+footer{max-width:1180px;margin:0 auto;padding:28px 36px;display:flex;justify-content:space-between;font-size:14px;color:var(--mu);border-top:1px solid var(--line)}
+</style></head><body>
+<div class="w"><nav><div class="logo">elquika<b>.</b></div><div class="l"><span>Pricing</span><span>Blog</span><span>App</span><a class="btn s" href="#">Start free trial</a></div></nav>
+<header class="hero"><div><div class="mono">Property management / v3.1</div>
+<h1>Every unit, every ledger, one clean system.</h1>
+<p class="lede">Elquika reconciles rent, maintenance and owner statements to the cent. Built for portfolios of 50 to 5,000 units that expect precision.</p>
+<div class="cta"><a class="btn" href="#">Start free trial</a><a class="btn o" href="#">View live demo</a></div></div>
+<div class="dash"><h4>Portfolio / October 2026</h4><div class="kp"><div><b>98.6%</b><span>occupancy</span></div><div><b>$412k</b><span>rent collected</span></div><div><b>14</b><span>open tickets</span></div></div>
+<div class="tr"><span>Unit 4B, 22 Alder St</span><span class="ok">Paid</span></div><div class="tr"><span>Unit 12A, 9 Pike Ave</span><span class="ok">Paid</span></div><div class="tr"><span>Unit 2C, 31 Moss Rd</span><span>Due Nov 5</span></div></div></header></div>
+<section><div class="w"><h2>Pricing</h2><p class="sub">Simple per-unit rates. Cheaper than a part-time bookkeeper.</p><div class="g3">
+<div class="card"><h3>Core</h3><div class="price">$1.50</div><p>per unit / month. Rent, ledgers, owner statements.</p></div>
+<div class="card f"><h3>Pro</h3><div class="price">$2.40</div><p>per unit / month. Adds maintenance, vendors and tenant app.</p></div>
+<div class="card"><h3>Scale</h3><div class="price">$3.10</div><p>per unit / month. API, audit logs, priority support.</p></div></div></div></section>
+<section><div class="w"><h2>Blog</h2><p class="sub">Notes on running tight portfolios.</p><div class="g3">
+<div class="card"><div class="mono">Accounting</div><h3>Three-way reconciliation for landlords</h3><p>Bank, ledger and statement should agree. Here is how.</p></div>
+<div class="card"><div class="mono">Operations</div><h3>Cutting vendor response time by 40%</h3><p>What we saw across 2,100 work orders.</p></div>
+<div class="card"><div class="mono">Tenants</div><h3>Why autopay adoption stalls at 60%</h3><p>And the two nudges that fix it.</p></div></div></div></section>
+<section><div class="w"><h2>Get the app</h2><p class="sub">Tenants pay, request repairs and chat from their phone.</p><div class="apps"><div class="store">App Store</div><div class="store">Google Play</div></div></div></section>
+<section><div class="w"><h2>Monthly ledger notes</h2><p class="sub">One email a month. No fluff.</p><form><input placeholder="you@email.com"><a class="btn" href="#">Subscribe</a></form></div></section>
+<footer><span>Elquika Systems Inc.</span><span>sales@elquika.com</span></footer>
+</body></html>

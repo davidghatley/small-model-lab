@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0027",
+ "brief_id": "e1-0027",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Pink page with orange, cyan, purple and green blocks clashes and abandons the clean clinical tone",
+  "Headline overlaps the produce card via negative margin; card rotated and misplaced",
+  "Lede at 10px pink on pink, CTA and nav at 9px with matching fill and text colour, nearly invisible",
+  "Inconsistent fonts: Brush Script, Comic Sans, Courier, Impact, Times",
+  "Logo wall strip pulled up over the hero with text matching its purple background; second CTA and tag labels vanish"
+ ],
+ "staging_src": "runs/E1/staging/e1-0027",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 42.704,
+ "pixel_pct_changed": 99.999
+}

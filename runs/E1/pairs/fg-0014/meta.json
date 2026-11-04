@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0014",
+ "brief_id": "e1-0014",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Flatter type scale: headline cut from 76px to 50px so it barely outranks the 19px subtext",
+  "Off-palette olive-green CTA clashing with the sky/sun/coral scheme",
+  "Hero copy column nudged 22px right of the nav/logo edge and top padding squeezed, giving slight misalignment and cramped feel"
+ ],
+ "staging_src": "runs/E1/staging/e1-0014",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 22.545,
+ "pixel_pct_changed": 43.567
+}

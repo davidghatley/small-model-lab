@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0035",
+ "severity": "subtle",
+ "flaws": [
+  "Off-palette violet accent in headline against teal/orange scheme",
+  "CTA demoted to muted steel-blue small button",
+  "Slightly uneven alignment: pill indented and tank panel dropped relative to copy"
+ ]
+}

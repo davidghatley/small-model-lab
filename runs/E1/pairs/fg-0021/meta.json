@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0021",
+ "brief_id": "e1-0021",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Neon yellow/magenta/purple/orange palette clashes and abandons the calm trustworthy tone",
+  "Headline overlaps the vinyl graphic via negative margins and the stats band overlaps the hero",
+  "Lede is 11px light-yellow monospace on yellow, near unreadable; tag, nav and buttons also tiny and low contrast",
+  "Mixed Impact, Comic Sans, Courier, Times fonts",
+  "Broken hero grid with offset vinyl and a misaligned stat column; nav links crammed together",
+  "Nav pill and CTA text match their backgrounds so labels vanish"
+ ],
+ "staging_src": "runs/E1/staging/e1-0021",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 90.615,
+ "pixel_pct_changed": 100.0
+}

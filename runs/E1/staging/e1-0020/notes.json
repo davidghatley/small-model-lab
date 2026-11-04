@@ -1,0 +1,1 @@
+{"brief_id":"e1-0020","severity":"subtle","severity":"subtle","flaws":["Hero padding cramped (28px top vs 96px) and headline-to-body spacing tight","Lede paragraph has no max-width, running ~100+ characters per line","Primary CTA demoted to a small low-contrast beige button that nearly disappears into the paper background"]}

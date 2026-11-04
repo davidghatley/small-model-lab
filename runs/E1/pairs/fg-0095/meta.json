@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0095",
+ "brief_id": "e1-0095",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA is a washed-out pale blue button with low contrast and smaller size",
+  "Kicker uses an off-palette orange against the cool blue scheme",
+  "Hero padding and meta spacing cramped against nav and photo"
+ ],
+ "staging_src": "runs/E1/staging/e1-0095",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 26.307,
+ "pixel_pct_changed": 22.334
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0002",
+ "brief_id": "e1-0002",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero stacked single column so the lead paragraph runs ~120 characters per line (overlong measure)",
+  "Off-palette teal eyebrow accent against the red/black system",
+  "CTA reduced to a pale ghost button, much less prominent"
+ ],
+ "staging_src": "runs/E1/staging/e1-0002",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 17.031,
+ "pixel_pct_changed": 26.817
+}

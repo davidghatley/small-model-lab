@@ -1,0 +1,14 @@
+{
+ "brief_id": "e1-0051",
+ "severity": "obvious",
+ "flaws": [
+  "Hot-pink hero background clashing with lime accent text",
+  "Tiny low-contrast hero paragraph",
+  "Tiny eyebrow text",
+  "Stat captions tiny and near-invisible",
+  "Phone mockup pulled left so it overlaps the headline",
+  "Headline switched to a mismatched comic font",
+  "CTA buttons use a third unrelated font",
+  "Stat row cramped and misaligned from the text column"
+ ]
+}

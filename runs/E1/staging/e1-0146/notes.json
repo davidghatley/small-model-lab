@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0146",
+ "severity": "subtle",
+ "flaws": [
+  "off-palette blue CTA with weak white-on-light-blue contrast replacing the gold accent",
+  "flatter headline scale (76px to 62px)",
+  "cramped nav and hero padding",
+  "paragraph line length overlong"
+ ]
+}

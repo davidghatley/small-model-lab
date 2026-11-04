@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0012",
+ "brief_id": "e1-0012",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Garish yellow page background clashing with magenta headline and cyan panel",
+  "Timeline panel pulled left over the headline/hero text with rotation, overlapping blocks",
+  "Subtext, label and nav set at 9-11px in pale yellow on yellow: unreadable low contrast",
+  "CTA buttons tiny, mis-positioned and low contrast, offset into the panel",
+  "Inconsistent fonts: Pacifico, Comic Neue, Courier, DM Sans mixed in hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0012",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 51.521,
+ "pixel_pct_changed": 99.988
+}

@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0161",
+ "brief_id": "e1-0161",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 light, grid-based look fits clean and clinical; v2 dark and loud is less clinical.",
+ "staging_src": "runs/E1/staging/e1-0161",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1 light clinical split hero with live status panel and logo row",
+  "v2 dark teal giant-type single column"
+ ],
+ "v1_side": "a"
+}

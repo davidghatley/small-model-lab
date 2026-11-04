@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0044",
+ "brief_id": "e1-0044",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Lead paragraph widened to roughly 95 characters per line",
+  "Off-palette hot pink used for the eyebrow and headline highlight",
+  "Primary CTA washed out and smaller, less prominent"
+ ],
+ "staging_src": "runs/E1/staging/e1-0044",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 12.355,
+ "pixel_pct_changed": 17.894
+}

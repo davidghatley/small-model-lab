@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0017",
+ "brief_id": "e1-0017",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Flatter type scale: headline cut from 78px to 54px, close to the 19px subhead",
+  "Off-palette orange CTA against the monochrome-and-electric-blue system, and made smaller/less prominent",
+  "Subhead measure unbounded so lines run overlong and push past the column; hero padding slightly cramped"
+ ],
+ "staging_src": "runs/E1/staging/e1-0017",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 26.493,
+ "pixel_pct_changed": 30.829
+}

@@ -1,0 +1,14 @@
+{
+ "brief_id": "e1-0052",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk and lightened so it is not dominant; margin collapsed",
+  "CTA recolored to a pale grey-blue that blends into the page",
+  "Muddy olive-grey brand color",
+  "Beige-tinted panels clash with the cool palette",
+  "Third font family (monospace) in eyebrow",
+  "Fourth font family in the panel",
+  "Cramped hero with tight gap and padding",
+  "Inconsistent spacing between lede and buttons"
+ ]
+}

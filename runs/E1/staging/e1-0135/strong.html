@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Losolco - The cycling club in your pocket</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07090f;--card:#0f1422;--cy:#22e4ff;--vi:#8b5cff;--text:#eaf0ff;--mute:#8d99b8}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--text);line-height:1.6}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 0}
+.logo{font-weight:700;font-size:24px;letter-spacing:.2em;text-transform:uppercase}
+.logo b{color:var(--cy)}
+nav ul{display:flex;gap:32px;list-style:none;color:var(--mute);font-size:15px}
+.hero{position:relative;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding:48px 0 88px}
+.hero:before{content:"";position:absolute;right:-120px;top:-40px;width:620px;height:620px;background:radial-gradient(circle,rgba(139,92,255,.35),transparent 65%);z-index:-1}
+.pill{display:inline-block;border:1px solid var(--cy);color:var(--cy);font-size:13px;letter-spacing:.14em;text-transform:uppercase;padding:6px 16px;border-radius:30px}
+h1{font-weight:700;font-size:78px;line-height:1;letter-spacing:-.03em;margin:24px 0}
+h1 span{background:linear-gradient(90deg,var(--cy),var(--vi));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--mute);font-size:20px;max-width:28em;margin-bottom:36px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--cy),#4aa8ff);color:#04131a;font-weight:700;font-size:18px;padding:18px 34px;border-radius:12px;text-decoration:none;box-shadow:0 0 32px rgba(34,228,255,.4)}
+.btn.g{background:none;color:var(--text);border:1px solid #2b3555;box-shadow:none;margin-left:12px}
+.ring{position:relative;width:400px;height:400px;margin:0 auto;border-radius:50%;border:1px solid #2b3555;display:flex;align-items:center;justify-content:center;background:radial-gradient(circle,#101830,transparent 70%)}
+.ring:before{content:"";position:absolute;inset:34px;border-radius:50%;border:2px solid var(--cy);border-right-color:transparent;border-bottom-color:var(--vi)}
+.ring div{text-align:center}
+.ring b{display:block;font-size:72px;font-weight:700;line-height:1}
+.ring span{color:var(--mute);font-size:14px;letter-spacing:.12em;text-transform:uppercase}
+section{padding:72px 0}
+h2{font-size:42px;font-weight:700;letter-spacing:-.02em;margin-bottom:32px}
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:var(--card);border:1px solid #1d2644;border-radius:18px;padding:26px}
+.card b{display:block;font-size:44px;color:var(--cy)}
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.gal div{height:170px;border-radius:18px;border:1px solid #1d2644;display:flex;align-items:end;padding:16px;color:var(--text);font-weight:500}
+table{width:100%;border-collapse:collapse;background:var(--card);border-radius:18px;overflow:hidden}
+th,td{padding:16px 22px;text-align:left;border-bottom:1px solid #1d2644}
+th{color:var(--cy);font-weight:500;font-size:14px;letter-spacing:.1em;text-transform:uppercase}
+.cta{text-align:center;background:linear-gradient(135deg,#121a3a,#2a1a5a)}
+footer{padding:36px 0;color:var(--mute);font-size:14px}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">Loso<b>lco</b></div><ul><li>Rides</li><li>Gallery</li><li>Clubs near you</li><li>Pricing</li></ul></nav>
+<header class="hero">
+<div><span class="pill">Family cycling, simplified</span>
+<h1>Ride together. <span>Stay in sync.</span></h1>
+<p class="lede">Losolco plans routes with kid-safe grades, shows every rider on one live map and costs less than a bike tube each month.</p>
+<a class="btn" href="#cta">Join your local club</a><a class="btn g" href="#">Watch demo</a></div>
+<div class="ring"><div><b>24.6</b><span>km this weekend</span></div></div>
+</header></div>
+<section><div class="wrap"><h2>The season so far</h2>
+<div class="cards"><div class="card"><b>12k</b>families riding</div><div class="card"><b>340</b>local clubs</div><div class="card"><b>$3</b>per family, monthly</div><div class="card"><b>4.9</b>app store rating</div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Out on the road</h2>
+<div class="gal"><div style="background:linear-gradient(135deg,#0e2a45,#0f1422)">Saturday greenway loop</div><div style="background:linear-gradient(135deg,#2a1a5a,#0f1422)">Kids' skills clinic</div><div style="background:linear-gradient(135deg,#0d3a40,#0f1422)">Sunset family ride</div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Plans</h2>
+<table><tr><th>Feature</th><th>Losolco</th><th>Premium fitness apps</th><th>Group chat</th></tr>
+<tr><td>Live family map</td><td>Included</td><td>Paid tier</td><td>No</td></tr><tr><td>Kid-safe route grades</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>Monthly price</td><td>$3</td><td>$12</td><td>Free</td></tr></table></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Find a club</h2>
+<div class="cards"><div class="card"><b>Austin</b>14 clubs</div><div class="card"><b>Portland</b>22 clubs</div><div class="card"><b>Minneapolis</b>17 clubs</div><div class="card"><b>Asheville</b>9 clubs</div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="card" style="display:flex;justify-content:space-between;align-items:center"><h2 style="margin:0">Get the app</h2><div><a class="btn" href="#">App Store</a> <a class="btn g" href="#">Google Play</a></div></div></div></section>
+<section class="cta" id="cta"><div class="wrap"><h2>Your first ride is on us.</h2><a class="btn" href="#">Join your local club</a></div></section>
+<footer><div class="wrap">Losolco Labs. Ride safe. hello@losolco.app</div></footer>
+</body></html>

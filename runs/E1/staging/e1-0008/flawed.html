@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Razen - Plant-based butcher. Cuts above, not from.</title>
+<link href="https://fonts.googleapis.com/css2?family=Bowlby+One&family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff3e0;--ink:#2a1210;--red:#e5383b;--pink:#ffb3b0;--green:#1f6f4a}
+*{box-sizing:border-box;margin:0}
+body{background:var(--cream);color:var(--ink);font:18px/1.55 'Work Sans',system-ui,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:0 36px}
+nav{display:flex;justify-content:space-between;align-items:center;height:84px}
+.logo{font:400 32px 'Bowlby One';color:var(--red);letter-spacing:-.01em}
+nav ul{display:flex;gap:30px;list-style:none;padding:0;font-weight:700;font-size:16px}
+.btn{display:inline-block;background:var(--red);color:#fff;font:700 19px 'Work Sans';padding:18px 34px;border-radius:12px;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.btn.g{background:var(--green)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;padding:44px 0 84px}
+.sticker{display:inline-block;background:var(--pink);border:3px solid var(--ink);border-radius:99px;padding:4px 18px;font-weight:700;font-size:15px;transform:rotate(-2deg);margin-bottom:22px}
+h1{font:400 76px/.98 'Bowlby One';letter-spacing:-.02em;margin-bottom:24px}
+h1 span{color:var(--red)}
+.lead{font-size:22px;max-width:25em;margin-bottom:34px}
+.cut{height:440px;background:var(--pink);border:4px solid var(--ink);border-radius:36px;position:relative;overflow:hidden;box-shadow:8px 8px 0 var(--ink)}
+.cut svg{position:absolute;inset:0;width:100%;height:100%}
+.strip{background:var(--ink);color:var(--cream);padding:16px 0;overflow:hidden;white-space:nowrap;font:400 22px 'Bowlby One';letter-spacing:.02em}
+.strip span{margin:0 28px;color:var(--pink)}
+section{padding:80px 0}
+h2{font:400 48px/1.05 'Bowlby One';letter-spacing:-.01em;margin-bottom:14px}
+.sub{font-size:20px;max-width:30em;margin-bottom:40px}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.stat{background:#fff;border:3px solid var(--ink);border-radius:24px;padding:28px;box-shadow:6px 6px 0 var(--ink)}
+.stat b{font:400 64px 'Bowlby One';color:var(--red);display:block;line-height:1}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gal div{height:200px;border:3px solid var(--ink);border-radius:22px;padding:16px;font:400 20px 'Bowlby One';display:flex;align-items:flex-end}
+.gal div:nth-child(1){background:#ffb3b0}.gal div:nth-child(2){background:#ffd166}.gal div:nth-child(3){background:#b7e4c7}.gal div:nth-child(4){background:#e5383b;color:#fff}
+.app{background:var(--green);color:#fff;border:4px solid var(--ink);border-radius:36px;padding:56px;display:flex;justify-content:space-between;align-items:center;gap:32px;box-shadow:8px 8px 0 var(--ink)}
+.app h2{margin:0 0 8px}
+.app .btn{background:var(--cream);color:var(--ink)}
+.cta{text-align:center}
+.cta h2{font-size:60px}
+footer{background:var(--ink);color:var(--cream);padding:40px 0;font-size:15px}
+footer .wrap{display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+.sticker{background:#7b5cff;color:#fff}
+.hero{padding:20px 0 40px;gap:20px}
+.hero>div:first-child{padding-right:0}
+.lead{max-width:none;margin-bottom:20px}
+.cut{margin-top:50px;height:400px}
+.btn{padding:11px 20px;font-size:15px;box-shadow:3px 3px 0 var(--ink)}
+
+</style></head><body>
+<div class="wrap"><nav><span class="logo">RAZEN</span><ul><li>The cuts</li><li>Numbers</li><li>App</li></ul><a class="btn" href="#" style="padding:10px 20px;font-size:16px">Order a box</a></nav>
+<header class="hero"><div><span class="sticker">Premium. Plant-based. Slightly smug.</span>
+<h1>Steak without the <span>cow</span> drama.</h1>
+<p class="lead">Hand-trimmed, dry-aged-style cuts made from mushrooms, grains and beans. Tender enough for your dentures, good enough for your daughter's dinner party.</p>
+<a class="btn" href="#">Order your first box</a></div>
+<div class="cut"><svg viewBox="0 0 400 440"><ellipse cx="200" cy="230" rx="150" ry="110" fill="#e5383b" stroke="#2a1210" stroke-width="5"/><ellipse cx="200" cy="230" rx="110" ry="74" fill="#c1272d"/><path d="M110 220c40-30 70 20 110-10s50 20 80 0" stroke="#ffb3b0" stroke-width="8" fill="none" stroke-linecap="round"/><circle cx="270" cy="200" r="16" fill="#fff3e0" stroke="#2a1210" stroke-width="4"/><rect x="40" y="40" width="140" height="44" rx="22" fill="#fff3e0" stroke="#2a1210" stroke-width="4"/><text x="110" y="70" text-anchor="middle" font-family="Work Sans" font-weight="700" font-size="20" fill="#2a1210">0% cow</text></svg></div></header></div>
+<div class="strip"><span>RIBEYE</span>*<span>BRISKET</span>*<span>SAUSAGE</span>*<span>SCHNITZEL</span>*<span>MEATLESS BUT NOT TASTELESS</span>*<span>RIBEYE</span></div>
+<section><div class="wrap"><h2>Receipts, not rumors</h2><p class="sub">A few numbers we are quietly proud of.</p><div class="stats"><div class="stat"><b>92%</b>of tasters could not tell in a blind dinner</div><div class="stat"><b>18g</b>protein in every steak, with 0mg cholesterol</div><div class="stat"><b>4.9</b>stars from 11,000 slightly surprised customers</div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>The meat counter</h2><p class="sub">Our greatest hits, fresh from the butcher's block.</p><div class="gal"><div>Ribeye</div><div>Brisket</div><div>Bratwurst</div><div>Schnitzel</div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="app"><div><h2>Order from your armchair</h2><p>Big buttons, large text, and a phone number if you prefer to chat to a human. iOS and Android.</p></div><a class="btn" href="#">Get the app</a></div></div></section>
+<section class="cta"><div class="wrap"><h2>Be the interesting one at the next barbecue.</h2><p class="sub" style="margin:0 auto 28px">First box ships free. Cancel any time, by phone if you like.</p><a class="btn" href="#">Order your first box</a></div></section>
+<footer><div class="wrap"><span>Razen Plant Butchers, est. 2024</span><span>Call 0800 RAZEN / Privacy / Terms</span></div></footer>
+</body></html>

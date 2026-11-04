@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0155",
+ "brief_id": "e1-0155",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has richer luxury atmosphere and a data card focal point; v2 is elegant but sparse and a bit flat.",
+ "staging_src": "runs/E1/staging/e1-0155",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Deep green with gold, split hero with score card, Cormorant/Montserrat",
+  "Cream paper, navy serif, restrained split with gold rule, Baskerville"
+ ],
+ "v1_side": "b"
+}

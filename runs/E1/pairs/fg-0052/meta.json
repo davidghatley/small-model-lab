@@ -1,0 +1,24 @@
+{
+ "pair_id": "fg-0052",
+ "brief_id": "e1-0052",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk and lightened so it is not dominant; margin collapsed",
+  "CTA recolored to a pale grey-blue that blends into the page",
+  "Muddy olive-grey brand color",
+  "Beige-tinted panels clash with the cool palette",
+  "Third font family (monospace) in eyebrow",
+  "Fourth font family in the panel",
+  "Cramped hero with tight gap and padding",
+  "Inconsistent spacing between lede and buttons"
+ ],
+ "staging_src": "runs/E1/staging/e1-0052",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 20.377,
+ "pixel_pct_changed": 40.767
+}

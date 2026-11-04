@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0084",
+ "severity": "obvious",
+ "flaws": [
+  "Giant yellow Impact headline crammed with 0.85 line-height, clashing magenta span",
+  "Opaque lime glow block overlaps headline and lede",
+  "Lede, pill, nav and stats shrunk to 8-12px near-invisible dark-on-dark text",
+  "Buttons offset by relative positioning, overlapping each other, yellow CTA with white text",
+  "Mixed Courier body with Impact headline; hero left-aligned unevenly"
+ ]
+}

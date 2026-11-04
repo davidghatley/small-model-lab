@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0183",
+ "brief_id": "e1-0183",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 suits a wedding florist and optimistic mission tone better; v2 is energetic but the loud yellow undercuts wedding romance.",
+ "staging_src": "runs/E1/staging/e1-0183",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1: blush cream with Playfair serif, split hero with arched bouquet illustration",
+  "v2: bold yellow/pink neo-brutalist geometric with giant sans headline"
+ ],
+ "v1_side": "a"
+}

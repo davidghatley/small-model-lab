@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0135",
+ "brief_id": "e1-0135",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "script font on headline, inconsistent with sleek tone",
+  "tiny near-invisible body text",
+  "ring graphic overlaps headline and copy",
+  "CTA text cyan on cyan, unreadable",
+  "tiny, invisible nav links",
+  "clashing yellow/magenta pill"
+ ],
+ "staging_src": "runs/E1/staging/e1-0135",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 12.059,
+ "pixel_pct_changed": 18.045
+}

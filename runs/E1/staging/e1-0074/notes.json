@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0074",
+ "severity": "subtle",
+ "flaws": [
+  "off-palette hot pink accent on headline emphasis and eyebrow against gold/green palette",
+  "CTA recoloured to low-contrast green-on-green, less prominent",
+  "flatter type scale (60px headline) and cramped hero/nav padding with overlong lead line"
+ ]
+}

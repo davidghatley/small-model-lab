@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0069",
+ "brief_id": "e1-0069",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline 30px Times in yellow on pale blue, near invisible",
+  "Hot-pink illustration pulled over the hero text and rotated",
+  "Lead 11px Papyrus low contrast",
+  "CTA blue on blue with text barely visible",
+  "Nav 9px Times",
+  "Stats band white numbers on white",
+  "Hero grid broken"
+ ],
+ "staging_src": "runs/E1/staging/e1-0069",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 48.419,
+ "pixel_pct_changed": 46.357
+}

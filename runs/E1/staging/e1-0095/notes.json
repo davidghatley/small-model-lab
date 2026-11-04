@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0095",
+ "severity": "subtle",
+ "flaws": [
+  "CTA is a washed-out pale blue button with low contrast and smaller size",
+  "Kicker uses an off-palette orange against the cool blue scheme",
+  "Hero padding and meta spacing cramped against nav and photo"
+ ]
+}

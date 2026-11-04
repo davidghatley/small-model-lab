@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0147",
+ "brief_id": "e1-0147",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "bed illustration overlaps headline and paragraph",
+  "headline in script font, grey, mismatched with body",
+  "body and nav text tiny and low-contrast",
+  "magenta/green CTA clash, in Times, floating off position",
+  "stats band squeezed with tiny dark text"
+ ],
+ "staging_src": "runs/E1/staging/e1-0147",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 33.267,
+ "pixel_pct_changed": 59.762
+}

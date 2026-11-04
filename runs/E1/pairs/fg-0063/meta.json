@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0063",
+ "brief_id": "e1-0063",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline 28px Impact in pale tan, very low contrast",
+  "Lead 12px near-invisible",
+  "Hero grid broken to 1fr/3fr",
+  "Review board rotated and pulled over the text, cyan and magenta clash",
+  "Neon since-badge clashes with palette",
+  "Tiny cyan CTA with white text",
+  "Nav 9px Times, low contrast"
+ ],
+ "staging_src": "runs/E1/staging/e1-0063",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 40.079,
+ "pixel_pct_changed": 46.06
+}

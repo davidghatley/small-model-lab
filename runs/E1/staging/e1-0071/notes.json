@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0071",
+ "severity": "subtle",
+ "flaws": [
+  "overlong lead paragraph line length (max-width removed, extends across hero)",
+  "CTA demoted to a thin ghost button, less prominent",
+  "off-palette blue accent on headline emphasis and kicker against the warm red/cream palette"
+ ]
+}

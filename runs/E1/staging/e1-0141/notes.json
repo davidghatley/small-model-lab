@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0141",
+ "severity": "obvious",
+ "flaws": [
+  "hero panel overlaps headline and copy",
+  "body copy and nav are low-contrast, tiny (10-12px)",
+  "headline in Comic Sans, CTA in Times: inconsistent fonts",
+  "CTA yellow with near-white text, misplaced off the text column",
+  "panel recolored yellow with clashing text"
+ ]
+}

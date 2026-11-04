@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0071",
+ "brief_id": "e1-0071",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "overlong lead paragraph line length (max-width removed, extends across hero)",
+  "CTA demoted to a thin ghost button, less prominent",
+  "off-palette blue accent on headline emphasis and kicker against the warm red/cream palette"
+ ],
+ "staging_src": "runs/E1/staging/e1-0071",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 7.711,
+ "pixel_pct_changed": 5.827
+}

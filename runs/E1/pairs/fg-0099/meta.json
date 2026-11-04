@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0099",
+ "brief_id": "e1-0099",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Cup illustration card slides over the headline and body copy",
+  "Headline dark brown on near-black background, almost invisible",
+  "Body copy 9px Courier in dark grey on dark",
+  "CTA gold with gold text, tiny and misaligned",
+  "Hot-pink kicker and orange Impact nav clash with the luxury palette",
+  "Mixed fonts (Comic Sans, Courier, Impact, Times) replace refined serif/sans pairing"
+ ],
+ "staging_src": "runs/E1/staging/e1-0099",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 51.425,
+ "pixel_pct_changed": 33.791
+}

@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0062",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: h1 reduced to 44px",
+  "Hero CTA pale and small, less prominent",
+  "Off-palette orange accent on logo, price and stat numbers"
+ ]
+}

@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0189",
+ "brief_id": "e1-0189",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "Retirees need larger, higher-contrast type; v2 stays refined while v1's tiny light gold-on-black text is harder to read.",
+ "staging_src": "runs/E1/staging/e1-0189",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1: black and gold Bodoni, small spaced caps, framed garment panel",
+  "v2: ivory editorial Cormorant, larger readable type, camel gradient photo panel with caption"
+ ],
+ "v1_side": "a"
+}

@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0130",
+ "brief_id": "e1-0130",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "muddy desaturated palette (beige/olive/brown)",
+  "headline shrunk so it no longer dominates",
+  "cramped hero padding",
+  "tight hero column gap",
+  "CTA blends into background, small and low contrast",
+  "third font family in nav",
+  "fourth font family in lede"
+ ],
+ "staging_src": "runs/E1/staging/e1-0130",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 97.97,
+ "pixel_pct_changed": 98.787
+}

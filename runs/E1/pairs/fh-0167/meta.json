@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0167",
+ "brief_id": "e1-0167",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 data table with source note suits technical and precise; v2 is elegant but more emotional than precise.",
+ "staging_src": "runs/E1/staging/e1-0167",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1 white split hero with outcomes data table and mono labels",
+  "v2 dark navy and gold serif premium statement"
+ ],
+ "v1_side": "b"
+}

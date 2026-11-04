@@ -1,0 +1,24 @@
+{
+ "pair_id": "fg-0139",
+ "brief_id": "e1-0139",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline small, weak hierarchy",
+  "cramped hero",
+  "primary CTA washed out",
+  "secondary CTA equally washed out, no focal action",
+  "muddy dull green palette",
+  "third font family in nav",
+  "fourth font family in lede",
+  "fifth font in tag"
+ ],
+ "staging_src": "runs/E1/staging/e1-0139",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 23.871,
+ "pixel_pct_changed": 32.609
+}

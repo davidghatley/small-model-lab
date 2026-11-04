@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0179",
+ "brief_id": "e1-0179",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has maximum energy and a clear one-shot hierarchy; v2 is friendlier but less high-energy.",
+ "staging_src": "runs/E1/staging/e1-0179",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "Electric blue and lime, massive Anton caps headline, full-width stats bar",
+  "Warm cream, Poppins, rounded coral highlight, geometric color blobs and feature cards"
+ ],
+ "v1_side": "a"
+}

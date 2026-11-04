@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0005",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: h1 cut to 42px/500 so it barely outranks the 19px lead",
+  "Off-palette magenta accent on eyebrow and primary CTA against blue clinical system",
+  "Slightly uneven alignment: text column indented 34px and nudged up while the data panel is pushed down 60px"
+ ]
+}

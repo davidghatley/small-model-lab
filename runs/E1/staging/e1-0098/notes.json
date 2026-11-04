@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0098",
+ "severity": "subtle",
+ "flaws": [
+  "Headline scale flattened from 60px to 44px",
+  "CTA uses an off-palette bright blue against the earthy browns and greens",
+  "Text column nudged down and headline shifted left, so hero content is unevenly aligned with the illustration"
+ ]
+}

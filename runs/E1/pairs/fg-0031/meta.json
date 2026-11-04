@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0031",
+ "brief_id": "e1-0031",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut to 38px so it no longer dominates; kicker is larger than it",
+  "Four font families (Fraunces, Georgia, Courier, Trebuchet)",
+  "CTA is a pale tan button with low-contrast label, blends into background",
+  "Muddy beige palette with washed-out accent",
+  "Cramped hero: tight padding, narrow gap, stacked copy with uneven margins",
+  "Inconsistent spacing between nav and hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0031",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 38.914,
+ "pixel_pct_changed": 98.286
+}

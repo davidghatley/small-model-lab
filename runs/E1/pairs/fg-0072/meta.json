@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0072",
+ "brief_id": "e1-0072",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "huge monospace headline overlapping the signup card",
+  "body text 11px and near-invisible dark-on-dark",
+  "CTA buttons dark-on-dark, unreadable, and overlapping each other",
+  "signup card shifted and overlapping hero, pale text on pale card",
+  "magenta kicker and neon green glow clash with amber moody palette",
+  "nav links 9px low contrast; inconsistent fonts (Courier vs Fraunces/DM Sans)"
+ ],
+ "staging_src": "runs/E1/staging/e1-0072",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 33.468,
+ "pixel_pct_changed": 33.367
+}

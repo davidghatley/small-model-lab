@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0019",
+ "brief_id": "e1-0019",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 36px script font, overshadowed by 24px eyebrow and 23px subtext",
+  "Muddy bronze-grey palette; gold accents and body copy dimmed to low contrast",
+  "Book-a-consult CTA is a tiny dark button nearly invisible against the background",
+  "Four font families (Bodoni Moda, Pacifico, Lobster, Jost) in hero",
+  "Cramped hero (10px top padding, 12px gaps) beneath an over-spaced nav"
+ ],
+ "staging_src": "runs/E1/staging/e1-0019",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 10.414,
+ "pixel_pct_changed": 14.496
+}

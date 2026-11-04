@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0154",
+ "brief_id": "e1-0154",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 shows the event concretely and has more personality; v2 is stylish but text-only above the fold.",
+ "staging_src": "runs/E1/staging/e1-0154",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Saturated purple/yellow/pink poster style, tilted event card, Bowlby One",
+  "Cream editorial with heavy Fraunces headline, black rules, one orange accent"
+ ],
+ "v1_side": "b"
+}

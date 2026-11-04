@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0178",
+ "brief_id": "e1-0178",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 shows the product in the hero and keeps dark/moody energy with clear hierarchy; v2 is atmospheric but more abstract.",
+ "staging_src": "runs/E1/staging/e1-0178",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "Near-black with violet/amber, techno Chakra Petch, split hero with live game-UI mock",
+  "Plum dark, Fraunces serif centered headline, floating math symbols, testimonials"
+ ],
+ "v1_side": "a"
+}

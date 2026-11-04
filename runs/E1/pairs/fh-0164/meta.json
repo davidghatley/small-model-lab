@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0164",
+ "brief_id": "e1-0164",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 shows the product concretely and stays calm; v2 is pleasant but never shows what Umvel does.",
+ "staging_src": "runs/E1/staging/e1-0164",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1 soft teal split hero with product status card",
+  "v2 centered warm cream serif with quote"
+ ],
+ "v1_side": "a"
+}

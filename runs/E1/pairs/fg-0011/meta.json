@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0011",
+ "brief_id": "e1-0011",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Primary CTA turned into a small outlined ghost button, no more prominent than the secondary",
+  "Off-palette cyan kicker badge against the lime/pink scheme",
+  "Subhead line length stretched to ~1100px (far overlong measure) across the hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0011",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 44.008,
+ "pixel_pct_changed": 30.196
+}

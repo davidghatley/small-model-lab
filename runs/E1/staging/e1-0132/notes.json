@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0132",
+ "severity": "obvious",
+ "flaws": [
+  "headline in Comic Sans, hot magenta clashing with blue accent",
+  "tiny low-contrast body text",
+  "spec panel overlaps the headline and copy",
+  "CTA lime button with yellow text, unreadable",
+  "tiny nav links with almost no contrast"
+ ]
+}

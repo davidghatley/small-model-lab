@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Syquinor - One bottle a month, worth a lesson plan</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#faf8f4;--ink:#161412;--red:#c8321e;--mute:#6a645c;--line:#dcd6cb}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:19px/1.6 Newsreader,Georgia,serif}
+.wrap{max-width:1040px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0;border-bottom:1px solid var(--line);font:13px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em}
+.brand{font:500 24px Newsreader,serif;text-transform:none;letter-spacing:0}
+.brand b{color:var(--red)}
+nav span{margin-left:32px}
+.hero{padding:96px 0 88px;display:grid;grid-template-columns:7fr 4fr;gap:72px;align-items:end}
+.eyebrow{font:13px 'IBM Plex Mono',monospace;color:var(--red);text-transform:uppercase;letter-spacing:.12em;margin-bottom:24px;display:block}
+h1{font:400 84px/1 Newsreader,serif;letter-spacing:-.03em;margin-bottom:32px}
+h1 em{color:var(--red)}
+.lead{font-size:22px;color:var(--mute);max-width:26em;margin-bottom:40px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font:500 14px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;padding:20px 34px}
+.bottle{height:420px;border:1px solid var(--ink);position:relative;background:#f1ece2}
+.bottle svg{position:absolute;inset:0;width:100%;height:100%}
+.cap{font:12px 'IBM Plex Mono',monospace;color:var(--mute);margin-top:10px}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font:400 44px/1.1 Newsreader,serif;letter-spacing:-.02em;margin-bottom:40px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:48px}
+.steps .k{font:13px 'IBM Plex Mono',monospace;color:var(--red);margin-bottom:12px;display:block}
+.steps h3{font:500 24px Newsreader,serif;margin-bottom:8px}
+.steps p,.case p{font-size:17px;color:var(--mute)}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:56px}
+.case blockquote{font:italic 400 26px/1.35 Newsreader,serif;margin-bottom:16px}
+.case cite{font:12px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);font-style:normal}
+form{display:grid;grid-template-columns:1fr 1fr;gap:24px;max-width:760px}
+label{display:block;font:12px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.1em;color:var(--mute);margin-bottom:6px}
+input,textarea{width:100%;border:0;border-bottom:1px solid var(--ink);background:transparent;padding:8px 0;font:19px Newsreader,serif}
+.full{grid-column:1/-1}
+footer{border-top:1px solid var(--ink);padding:32px 0 48px;font:13px 'IBM Plex Mono',monospace;color:var(--mute);display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+.hero{grid-template-columns:1fr;gap:40px}
+.hero>div:first-child{max-width:none}
+.lead{max-width:none;font-size:20px}
+.eyebrow{color:#1aa6a0}
+.btn{background:transparent;color:#6a645c;border:1px solid #cfc8bb;padding:14px 22px;font-size:12px}
+.bottle{height:260px}
+
+</style></head><body>
+<div class="wrap">
+<nav><span class="brand" style="margin:0">Syqui<b>nor</b></span><div><span>How it works</span><span>Stories</span><span>Contact</span></div></nav>
+<header class="hero"><div><span class="eyebrow">Hot sauce by subscription, for people who grade papers</span>
+<h1>One bottle a month. <em>Worth</em> the staff room fridge.</h1>
+<p class="lead">Small-batch hot sauce from independent makers, mailed on the first Monday. Teacher pricing, skip any month, no commitment.</p>
+<a class="btn" href="#">Start for $14/month</a></div>
+<div><div class="bottle"><svg viewBox="0 0 200 420"><rect x="78" y="40" width="44" height="40" fill="#161412"/><path d="M70 90h60l14 50v230H56V140z" fill="#c8321e"/><rect x="72" y="190" width="56" height="90" fill="#faf8f4"/><rect x="82" y="205" width="36" height="4" fill="#161412"/><rect x="82" y="218" width="28" height="4" fill="#161412"/></svg></div><p class="cap">Fig. 1. This month: Ghost-pepper &amp; blood orange.</p></div></header>
+<section><h2>How it works</h2><div class="steps"><div><span class="k">01</span><h3>Pick your heat</h3><p>Mild, medium or "I have a free period." We match makers to your tolerance.</p></div><div><span class="k">02</span><h3>Open the box</h3><p>A bottle, a tasting card and a recipe short enough to cook between lessons.</p></div><div><span class="k">03</span><h3>Pause freely</h3><p>Summer break? Skip July and August in two clicks.</p></div></div></section>
+<section><h2>In the staff room</h2><div class="cases"><div class="case"><blockquote>"Our whole department chips in. Friday tacos have never been this competitive."</blockquote><cite>Dana R., Year 5 teacher, Leeds</cite><p style="margin-top:12px">Eight colleagues, one shared subscription, 11 months running.</p></div><div class="case"><blockquote>"I used the tasting cards for a chemistry-of-capsaicin lesson. The students loved it."</blockquote><cite>Marcus O., Science, Ohio</cite><p style="margin-top:12px">Turned a monthly treat into a classroom hook.</p></div></div></section>
+<section><h2>Questions? Write to us.</h2><form><div><label>Name</label><input></div><div><label>School email</label><input></div><div class="full"><label>Message</label><textarea rows="2"></textarea></div><div class="full"><a class="btn" href="#">Send message</a></div></form></section>
+<footer><span>Syquinor Ltd. Made in small batches.</span><span>Privacy / Terms / Shipping</span></footer>
+</div></body></html>

@@ -1,0 +1,1 @@
+{"brief_id":"e1-0026","severity":"subtle","flaws":["Off-palette magenta accent on label, logo and table ticks clashes with the orange CTA","Hero column widened and lede max-width removed, giving ~95 character lines","Comparison table padded tight and nudged down so it does not align with the hero text column"]}

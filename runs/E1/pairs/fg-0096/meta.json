@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0096",
+ "brief_id": "e1-0096",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Green blob illustration overlaps and covers the headline and paragraph",
+  "Headline in pale peach Impact on cream, nearly invisible",
+  "Body text 11px Courier in near-background pink",
+  "CTA is lime with pink text, tiny and offset",
+  "Yellow-on-yellow note label unreadable",
+  "Nav in oversized Comic Sans jammed together; logo tiny and misaligned; five font styles clash"
+ ],
+ "staging_src": "runs/E1/staging/e1-0096",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 27.538,
+ "pixel_pct_changed": 40.941
+}

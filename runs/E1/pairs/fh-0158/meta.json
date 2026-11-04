@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0158",
+ "brief_id": "e1-0158",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has a proper retro illustration and composition; v2's giant headline is bold but hero is more generic.",
+ "staging_src": "runs/E1/staging/e1-0158",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Cream 70s palette, Shrikhand headline, concentric sun graphic, double-rule dividers, offset-shadow buttons",
+  "Dark teal centered mega Abril Fatface headline with striped band"
+ ],
+ "v1_side": "b"
+}

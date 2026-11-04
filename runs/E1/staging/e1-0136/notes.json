@@ -1,0 +1,14 @@
+{
+ "brief_id": "e1-0136",
+ "severity": "moderate",
+ "flaws": [
+  "headline shrunk, weak hierarchy",
+  "cramped hero padding",
+  "tight hero gap",
+  "CTA pale and low contrast",
+  "third font family in nav",
+  "fourth font family in lede",
+  "muddy accent and muted gray palette",
+  "muddy cover block"
+ ]
+}

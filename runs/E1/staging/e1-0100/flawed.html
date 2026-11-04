@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gisy - Branding systems, specified</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f3f5f8;--ink:#0b1b2b;--mute:#4a5b6e;--line:#cfd7e1;--acc:#0050e6;--card:#fff}
+*{box-sizing:border-box;margin:0}
+body{font:16px/1.6 'IBM Plex Sans',sans-serif;color:var(--ink);background:var(--bg)}
+.w{max-width:1160px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px;border-bottom:1px solid var(--line)}
+.logo{font:500 20px 'IBM Plex Mono',monospace;letter-spacing:-.02em}
+.logo b{color:var(--acc)}
+nav ul{display:flex;gap:32px;list-style:none;padding:0;font-size:15px;color:var(--mute)}
+.btn{display:inline-block;background:var(--acc);color:#fff;padding:14px 26px;border-radius:4px;font-weight:600;text-decoration:none}
+.btn.o{background:none;color:var(--ink);border:1px solid var(--ink)}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:64px;padding:72px 0 88px;align-items:center}
+.tag{font:500 13px 'IBM Plex Mono',monospace;color:var(--acc);text-transform:uppercase;letter-spacing:.08em;margin-bottom:20px}
+h1{font-size:60px;line-height:1.05;letter-spacing:-.03em;font-weight:700;margin-bottom:24px}
+.lead{font-size:19px;color:var(--mute);max-width:520px;margin-bottom:36px}
+.cta{display:flex;gap:16px}
+.spec{background:var(--card);border:1px solid var(--line);border-radius:6px;padding:28px;font:14px/1.9 'IBM Plex Mono',monospace}
+.spec h3{font:600 13px 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);margin-bottom:12px}
+.spec div{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding:6px 0}
+.spec span:last-child{color:var(--acc)}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:32px;letter-spacing:-.02em;margin-bottom:24px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.c{background:var(--card);border:1px solid var(--line);padding:24px;border-radius:6px}
+.c h4{margin-bottom:8px}
+form{display:grid;gap:16px;max-width:520px}
+input,textarea{padding:12px;border:1px solid var(--line);font:inherit;border-radius:4px}
+footer{padding:40px 0;font-size:14px;color:var(--mute);border-top:1px solid var(--line)}
+</style><style>/*flaws*/
+h1{font-size:34px;font-weight:500;font-family:Georgia,serif;margin-bottom:6px}
+.hero{padding:20px 0 30px;gap:18px}
+.lead{font:italic 15px 'Comic Sans MS',cursive;max-width:none;margin-bottom:10px;color:#7a6f55}
+.tag{font-size:20px;color:#b08a2e;font-weight:700;letter-spacing:0;margin-bottom:4px}
+.btn{background:#d9d4c7;color:#8c8570;padding:6px 10px;font-weight:400}
+.cta{gap:3px}
+.btn.o{border-color:#d9d4c7;color:#8c8570}
+.spec{background:#e3dcc8;border-color:#c9b98a;padding:10px;line-height:1.3}
+.spec span:last-child{color:#a68a4f}
+nav{height:44px}
+</style></head><body>
+<div class="w"><nav><div class="logo">gisy<b>/</b></div><ul><li>Work</li><li>Integrations</li><li>Locations</li><li>FAQ</li></ul><a class="btn" href="#c">Book a scoping call</a></nav>
+<div class="hero"><div><div class="tag">Branding for IT-led organisations</div>
+<h1>Brand systems built like infrastructure.</h1>
+<p class="lead">Gisy is a boutique agency. We deliver versioned design tokens, audited accessibility and documented governance your security and procurement teams can actually review.</p>
+<div class="cta"><a class="btn" href="#c">Book a scoping call</a><a class="btn o" href="#i">See the spec sheet</a></div></div>
+<div class="spec"><h3>Typical engagement</h3><div><span>Discovery audit</span><span>2 wks</span></div><div><span>Token library (JSON/CSS)</span><span>v1.0</span></div><div><span>WCAG conformance</span><span>AA</span></div><div><span>SSO-gated asset portal</span><span>SAML</span></div><div><span>Local studio response</span><span>&lt; 4 h</span></div></div></div>
+<section id="i"><h2>Integrations</h2><div class="g3"><div class="c"><h4>Figma + Tokens Studio</h4><p>Tokens sync to your repo on every merge.</p></div><div class="c"><h4>Okta / Entra ID</h4><p>Single sign-on for the brand portal.</p></div><div class="c"><h4>ServiceNow</h4><p>Asset requests become tracked tickets.</p></div></div></section>
+<section><h2>Locations</h2><div class="g3"><div class="c"><h4>Leeds studio</h4><p>14 Wharf St, LS1</p></div><div class="c"><h4>Manchester</h4><p>3 Dye Works, M4</p></div><div class="c"><h4>Sheffield</h4><p>9 Kelham Island, S3</p></div></div></section>
+<section><h2>FAQ</h2><div class="g3"><div class="c"><h4>Do you sign DPAs?</h4><p>Yes, before kickoff.</p></div><div class="c"><h4>Where is data held?</h4><p>UK region, encrypted at rest.</p></div><div class="c"><h4>Handover format?</h4><p>Repo, tokens and a runbook.</p></div></div></section>
+<section id="c"><h2>Contact</h2><form><input placeholder="Work email"><textarea rows="3" placeholder="What are you replacing?"></textarea><a class="btn" href="#">Send</a></form><br><h4>Release notes by email</h4><form><input placeholder="you@company.com"><a class="btn o" href="#">Subscribe</a></form></section>
+<footer>&copy; 2026 Gisy Studio Ltd. Security policy / Privacy / Status</footer></div></body></html>

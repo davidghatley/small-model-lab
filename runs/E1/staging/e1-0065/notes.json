@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0065",
+ "severity": "subtle",
+ "flaws": [
+  "Hero CTA pale and small, less prominent",
+  "Off-palette hot pink on pill and headline accent",
+  "Cramped spacing between headline, lead and CTA"
+ ]
+}

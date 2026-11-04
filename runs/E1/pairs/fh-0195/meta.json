@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0195",
+ "brief_id": "e1-0195",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v2 has stronger color harmony and cleaner layout; v1 is characterful but the stamp is cramped and the truck motif is crude.",
+ "staging_src": "runs/E1/staging/e1-0195",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1 sepia newsprint/postal stamp, mono body, serif display",
+  "v2 teal/orange 70s sunset, rounded display type, split hero with striped arch"
+ ],
+ "v1_side": "a"
+}

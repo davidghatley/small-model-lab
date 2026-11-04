@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0105",
+ "brief_id": "e1-0105",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline dark-on-dark and swapped to script font, nearly invisible",
+  "Lead text 10px low contrast",
+  "Player card overlaps the text column, pale yellow clashing with dark theme",
+  "CTA buttons dark-on-dark unreadable",
+  "Inconsistent fonts (Comic Sans logo, script headline)"
+ ],
+ "staging_src": "runs/E1/staging/e1-0105",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 30.077,
+ "pixel_pct_changed": 33.806
+}

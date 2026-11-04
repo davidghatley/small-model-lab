@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Oralumdra — Urgent care for tiny humans</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#14183a;--yellow:#ffd23f;--pink:#ff6b9d;--mint:#bff0d4;--paper:#fff8e8;--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font:400 18px/1.55 "Bricolage Grotesque",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+.logo{font-weight:800;font-size:28px;letter-spacing:-.03em}.logo span{color:var(--pink)}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0;font-weight:600;font-size:16px}
+.btn{display:inline-block;background:var(--ink);color:var(--yellow);padding:16px 28px;border-radius:14px;font-weight:800;text-decoration:none;box-shadow:5px 5px 0 var(--pink);border:2px solid var(--ink)}
+.btn.s{padding:10px 18px;font-size:15px;box-shadow:3px 3px 0 var(--pink)}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:var(--s4);padding:var(--s4) 0 var(--s5);align-items:center}
+.sticker{display:inline-block;background:var(--mint);border:2px solid var(--ink);border-radius:99px;padding:6px 16px;font-weight:600;font-size:15px;transform:rotate(-2deg);margin-bottom:var(--s3)}
+h1{font-size:84px;line-height:.96;font-weight:800;letter-spacing:-.04em}
+h1 mark{background:var(--yellow);padding:0 10px;border-radius:10px;display:inline-block;transform:rotate(-1.5deg)}
+.lede{font-size:21px;margin:var(--s3) 0 var(--s4);max-width:30em}
+.card{background:var(--yellow);border:2px solid var(--ink);border-radius:24px;padding:var(--s4);box-shadow:8px 8px 0 var(--ink)}
+.card h3{font-size:26px;line-height:1.15;margin-bottom:var(--s2)}
+.card li{list-style:none;padding:10px 0;border-top:2px dashed var(--ink);display:flex;justify-content:space-between;font-weight:600}
+section{padding:var(--s5) 0 0}
+h2{font-size:48px;line-height:1.05;letter-spacing:-.03em;font-weight:800;margin-bottom:var(--s4)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.tile{background:#fff;border:2px solid var(--ink);border-radius:20px;padding:var(--s3)}
+.tile b{display:inline-grid;place-items:center;width:40px;height:40px;background:var(--pink);border:2px solid var(--ink);border-radius:50%;margin-bottom:var(--s2)}
+.int{display:flex;gap:var(--s2);flex-wrap:wrap}.int span{border:2px solid var(--ink);border-radius:99px;padding:8px 20px;background:#fff;font-weight:600}
+.app{background:var(--ink);color:var(--paper);border-radius:28px;padding:var(--s5) var(--s4);display:flex;justify-content:space-between;align-items:center;margin-top:var(--s5)}
+.app h2{margin:0}.app .btn{background:var(--yellow);color:var(--ink);box-shadow:5px 5px 0 var(--pink)}
+details{border-bottom:2px solid var(--ink);padding:var(--s2) 0;font-weight:600;font-size:20px}details p{font-weight:400;font-size:17px;margin-top:8px}
+footer{padding:var(--s5) 0 var(--s4);display:flex;justify-content:space-between;font-size:15px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">Oralum<span>dra</span></span><ul><li>Locations</li><li>How it works</li><li>Team</li><li>FAQ</li></ul><a class="btn s" href="#">Skip the line</a></nav>
+<header class="hero">
+<div><span class="sticker">Open till midnight, 7 nights</span>
+<h1>Your kid ate a <mark>Lego.</mark> We've got this.</h1>
+<p class="lede">Pediatric urgent care for the 9pm-fever, 2am-ear-infection, "is that a rash?" moments. Founders: we also handle your team's family benefits, so you can stay at the standup.</p>
+<a class="btn" href="#">Check in from your car</a></div>
+<div class="card"><h3>Wait times right now</h3><ul><li><span>Riverside</span><span>8 min</span></li><li><span>Old Mill</span><span>12 min</span></li><li><span>Harbor St.</span><span>5 min</span></li><li><span>Eastgate</span><span>19 min</span></li></ul></div>
+</header>
+<section><h2>Plays nicely with your stack</h2><div class="int"><span>Gusto</span><span>Rippling</span><span>Slack</span><span>Justworks</span><span>Google Calendar</span><span>Carta</span></div></section>
+<section><h2>How it works</h2><div class="g3"><div class="tile"><b>1</b><h3>Tap to check in</h3><p>Tell us the symptoms. We hold your spot.</p></div><div class="tile"><b>2</b><h3>Walk right in</h3><p>No waiting-room magazines from 2014.</p></div><div class="tile"><b>3</b><h3>Leave with a plan</h3><p>Notes go to your pediatrician before you reach the parking lot.</p></div></div></section>
+<section><h2>The grown-ups</h2><div class="g3"><div class="tile"><h3>Dr. Priya Raman</h3><p>Medical director. Can diagnose croup by ear.</p></div><div class="tile"><h3>Dr. Tom Okafor</h3><p>Emergency pediatrics. Fluent in dinosaur.</p></div><div class="tile"><h3>Nurse Bea Lindqvist</h3><p>Has never lost a sticker negotiation.</p></div></div></section>
+<div class="app"><h2>Get the app. Skip the clipboard.</h2><a class="btn" href="#">Download for iOS &amp; Android</a></div>
+<section><h2>Questions, answered</h2><details><summary>Do you take insurance?</summary><p>Yes, most major plans, and we'll tell you the cost before you're seen.</p></details><details><summary>Which ages do you treat?</summary><p>Newborns to 18 years old.</p></details></section>
+<footer><span>© 2026 Oralumdra Pediatric Urgent Care</span><span>Privacy · Careers · Press · 24/7 nurse line</span></footer>
+</div></body></html>

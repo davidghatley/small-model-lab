@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0006",
+ "severity": "obvious",
+ "flaws": [
+  "Saturated green page with hot-pink logo, orange/violet headline: clashing palette",
+  "Photo block rotated and absolutely positioned over the headline and CTA, causing overlap",
+  "Nav links and lead copy at 9-10px with near-invisible contrast",
+  "Five font families mixed (Papyrus, Verdana, Impact, script, Courier)",
+  "Buttons have text almost the same color as fill; the second button overlaps the first; tag floats over the picture"
+ ]
+}

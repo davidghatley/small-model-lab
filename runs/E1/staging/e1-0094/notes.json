@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0094",
+ "severity": "moderate",
+ "flaws": [
+  "Headline reduced to 32px medium serif, outranked by kicker and body text",
+  "Muddy slate-grey header replaces the crisp navy",
+  "Hero padding and gaps cramped",
+  "Primary CTA muted grey-blue while the secondary button is a loud mustard, so the wrong button dominates",
+  "Four font families (Georgia, Trebuchet, Courier, Manrope)",
+  "Timeline card low contrast against the header"
+ ]
+}

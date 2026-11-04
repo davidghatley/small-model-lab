@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0106",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 38px, lead and tags compete; weak hierarchy",
+  "Hero cramped with tight padding and gaps",
+  "CTA beige on beige, tiny, not standing out",
+  "Muddy tan/olive palette on jar card",
+  "Four fonts: Fraunces, Trebuchet, Courier, Karla"
+ ]
+}

@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0037",
+ "severity": "moderate",
+ "flaws": [
+  "Headline demoted to 32px Georgia, smaller than the eyebrow",
+  "Four font families (Manrope, Georgia, Comic Sans, Courier)",
+  "Primary and secondary CTAs identical pale beige, no emphasis",
+  "Muddy beige palette replacing the crisp green/white",
+  "Cramped hero with uneven spacing and an offset, tight dashboard card"
+ ]
+}

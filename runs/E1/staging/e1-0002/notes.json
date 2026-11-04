@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0002",
+ "severity": "subtle",
+ "flaws": [
+  "Hero stacked single column so the lead paragraph runs ~120 characters per line (overlong measure)",
+  "Off-palette teal eyebrow accent against the red/black system",
+  "CTA reduced to a pale ghost button, much less prominent"
+ ]
+}

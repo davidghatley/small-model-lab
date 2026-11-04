@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0097",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 30px regular serif, smaller than the kicker and body copy",
+  "Muddy beige/sage palette replaces the clean teal",
+  "Cramped hero: tiny gaps, squeezed phone mock",
+  "CTA is a pale small button that disappears into the page",
+  "Four font families (Georgia, Verdana, Courier, DM Sans)",
+  "Inconsistent text sizes across kicker, body and supporting note"
+ ]
+}

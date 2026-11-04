@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0103",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 40px serif, weak hierarchy",
+  "Lead in italic Courier, low contrast, unbounded line",
+  "CTAs low-contrast beige, tiny, cramped",
+  "Muddy brown/olive palette on dashboard; four font families",
+  "Hero padding cramped"
+ ]
+}

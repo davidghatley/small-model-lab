@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0105",
+ "severity": "obvious",
+ "flaws": [
+  "Headline dark-on-dark and swapped to script font, nearly invisible",
+  "Lead text 10px low contrast",
+  "Player card overlaps the text column, pale yellow clashing with dark theme",
+  "CTA buttons dark-on-dark unreadable",
+  "Inconsistent fonts (Comic Sans logo, script headline)"
+ ]
+}

@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Baorazen - Maker-Space Membership</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0a0618;--panel:#140d2b;--ink:#f3f0ff;--mu:#a79fcf;--a:#8b5cff;--b:#00e5ff;--line:#2a1f52}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 Sora,system-ui,sans-serif;overflow-x:hidden}
+.w{max-width:1160px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font-weight:800;font-size:21px;letter-spacing:.14em;text-transform:uppercase}.logo b{color:var(--b)}
+nav .l{display:flex;gap:28px;color:var(--mu);font-size:14px;align-items:center}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--a),var(--b));color:#06030f;font-weight:800;padding:16px 30px;border-radius:12px;text-decoration:none;box-shadow:0 0 36px rgba(0,229,255,.35)}
+.btn.s{padding:10px 18px;font-size:13px;box-shadow:none}
+.hero{text-align:center;padding:56px 0 40px;position:relative}
+.hero:before{content:"";position:absolute;left:50%;top:-40px;width:760px;height:460px;transform:translateX(-50%);background:radial-gradient(closest-side,rgba(139,92,255,.35),transparent);z-index:0}
+.hero>*{position:relative}
+.eyebrow{display:inline-block;border:1px solid var(--line);color:var(--b);padding:6px 16px;border-radius:99px;font-size:13px;margin-bottom:24px}
+h1{font-size:76px;line-height:1.02;font-weight:800;letter-spacing:-.04em;max-width:900px;margin:0 auto 22px}
+h1 span{background:linear-gradient(90deg,var(--a),var(--b));-webkit-background-clip:text;color:transparent}
+.lede{color:var(--mu);font-size:19px;max-width:620px;margin:0 auto 32px}
+.cta{display:flex;gap:16px;justify-content:center;align-items:center}.cta a.g{color:var(--ink);text-decoration:none;padding:15px 26px;border:1px solid var(--line);border-radius:12px}
+.rail{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
+.rail div{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:18px 20px;text-align:left}
+.rail b{display:block;font-size:26px}.rail span{color:var(--mu);font-size:13px}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-size:38px;line-height:1.1;letter-spacing:-.025em;margin-bottom:10px}.sub{color:var(--mu);margin-bottom:36px;max-width:520px}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-auto-rows:170px;gap:14px}
+.gal div{border-radius:18px;border:1px solid var(--line);padding:16px;display:flex;align-items:flex-end;font-weight:600;font-size:15px}
+.gal div:first-child{grid-row:span 2;background:linear-gradient(140deg,#3a1d8f,#0a6a80)}.gal div:nth-child(2){background:#1d1442}.gal div:nth-child(3){background:#0e3340}.gal div:nth-child(4){background:#2b1668}.gal div:nth-child(5){background:#123a2e}
+.int{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.int div{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:20px;text-align:center;font-weight:600}
+form{display:flex;gap:12px;max-width:560px}form input{flex:1;padding:15px 18px;border-radius:12px;border:1px solid var(--line);background:var(--panel);color:#fff;font:inherit}
+.band{text-align:center;padding:80px 0;background:linear-gradient(180deg,transparent,rgba(139,92,255,.18))}.band h2{margin-bottom:22px}
+footer{border-top:1px solid var(--line);max-width:1160px;margin:0 auto;padding:28px 32px;display:flex;justify-content:space-between;color:var(--mu);font-size:14px}
+</style><style>/* flaws */
+
+body{background:#1a0f3a!important}
+h1{font:400 34px/1.1 'Times New Roman',serif!important;color:#3a2a6a!important;letter-spacing:0!important;text-align:left!important;margin-left:-100px!important}
+h1 span{background:none!important;color:#ff00aa!important}
+.lede{font-size:11px!important;color:#463a70!important;max-width:300px!important;margin:-10px 0 0 380px!important}
+.btn{background:#7a6a2a!important;color:#8a7a3a!important;box-shadow:none!important;font-size:11px!important;padding:6px 10px!important}
+.cta a.g{color:#2a2050!important;border-color:#2a2050!important}
+.rail{grid-template-columns:repeat(4,1fr)!important;margin-top:-80px!important;gap:0!important}
+.rail div{background:#ffd400!important;border-color:#ff00aa!important}
+.rail b{color:#fff6b0!important;font-size:15px!important}.rail span{color:#ffe14a!important;font-size:9px!important}
+.eyebrow{font-size:20px!important;color:#41ff41!important;border-color:#41ff41!important}
+nav .l{color:#2c2250!important}
+
+</style></head><body>
+<div class="w"><nav><div class="logo">Bao<b>razen</b></div><div class="l"><span>Gallery</span><span>Tools</span><span>Newsletter</span><a class="btn s" href="#">Join the space</a></div></nav>
+<header class="hero"><div class="eyebrow">Open 24/7 for members</div>
+<h1>Build the gear <span>that builds you.</span></h1>
+<p class="lede">Baorazen is a 12,000 sq ft maker-space with CNC, laser, 3D printing and a metal shop. Athletes use it to prototype braces, grips and training rigs.</p>
+<div class="cta"><a class="btn" href="#">Join the space</a><a class="g" href="#">Book a tour</a></div>
+<div class="rail"><div><b>38</b><span>machines on the floor</span></div><div><b>$79</b><span>per month, all access</span></div><div><b>24/7</b><span>keycard entry</span></div><div><b>600+</b><span>active members</span></div></div></header></div>
+<section><div class="w"><h2>Built here</h2><p class="sub">Recent member projects.</p><div class="gal"><div>Carbon-fiber ankle brace</div><div>Climbing hangboard</div><div>Custom oar handles</div><div>Sled weight system</div><div>Tape-cutter jig</div></div></div></section>
+<section><div class="w"><h2>Plugs into your workflow</h2><p class="sub">Send files straight from the tools you already use.</p><div class="int"><div>Fusion 360</div><div>Onshape</div><div>Slack</div><div>Google Calendar</div></div></div></section>
+<section><div class="w"><h2>Get the weekly build log</h2><p class="sub">One email on Fridays with new projects and open machine slots.</p><form><input placeholder="you@email.com"><a class="btn" href="#">Subscribe</a></form></div></section>
+<div class="band"><div class="w"><h2>Your first month is $39.</h2><a class="btn" href="#">Join the space</a></div></div>
+<footer><span>Baorazen Maker-Space, Unit 4</span><span>hello@baorazen.space</span></footer>
+</body></html>

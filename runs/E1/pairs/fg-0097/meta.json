@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0097",
+ "brief_id": "e1-0097",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 30px regular serif, smaller than the kicker and body copy",
+  "Muddy beige/sage palette replaces the clean teal",
+  "Cramped hero: tiny gaps, squeezed phone mock",
+  "CTA is a pale small button that disappears into the page",
+  "Four font families (Georgia, Verdana, Courier, DM Sans)",
+  "Inconsistent text sizes across kicker, body and supporting note"
+ ],
+ "staging_src": "runs/E1/staging/e1-0097",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 29.866,
+ "pixel_pct_changed": 98.363
+}

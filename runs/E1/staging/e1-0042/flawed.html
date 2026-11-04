@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tenfi - Small change, big day</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;800&family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbf4ea;--ink:#3a2a28;--mut:#7a6561;--acc:#c8553d;--sage:#8fa98a;--blush:#f3d9cf;--card:#fffaf3;--s1:8px;--s2:16px;--s3:32px;--s4:64px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.65 Nunito,sans-serif}
+.w{max-width:1140px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:80px}
+.logo{font:800 30px Fraunces,serif;color:var(--acc)}
+nav a{color:var(--mut);text-decoration:none;margin-left:32px;font-weight:600;font-size:16px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:var(--s4);align-items:center;padding:var(--s3) 0 var(--s5)}
+.eyebrow{color:var(--sage);font-weight:700;font-size:15px;margin-bottom:var(--s2);letter-spacing:.06em}
+h1{font:800 68px/1.05 Fraunces,serif;letter-spacing:-.01em}
+.lead{font-size:20px;color:var(--mut);max-width:480px;margin:var(--s3) 0}
+.btn{display:inline-block;background:var(--acc);color:#fff;font-weight:700;padding:17px 32px;border-radius:40px;text-decoration:none;font-size:18px}
+.btn.o{background:none;color:var(--acc);border:2px solid var(--acc);margin-left:12px}
+.jar{height:400px;border-radius:200px 200px 40px 40px;background:var(--blush);position:relative;overflow:hidden}
+.jar i{position:absolute;border-radius:50%;background:var(--acc);opacity:.9}
+.jar i:nth-child(1){width:90px;height:90px;left:30px;bottom:30px}
+.jar i:nth-child(2){width:64px;height:64px;left:150px;bottom:20px;background:var(--sage)}
+.jar i:nth-child(3){width:110px;height:110px;right:40px;bottom:40px;background:#e9a38f}
+.jar i:nth-child(4){width:70px;height:70px;left:90px;bottom:110px;background:#e9a38f}
+.jar i:nth-child(5){width:56px;height:56px;right:120px;bottom:150px}
+.jar b{position:absolute;top:60px;left:0;right:0;text-align:center;font:800 28px Fraunces,serif;color:var(--ink)}
+sec{display:block;padding:var(--s5) 0}
+h2{font:800 42px/1.1 Fraunces,serif;margin-bottom:var(--s4)}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.post{background:var(--card);border-radius:24px;padding:var(--s3)}
+.post small{color:var(--sage);font-weight:700}
+.post h3{font:600 22px/1.3 Fraunces,serif;margin:8px 0 12px}
+.post p{color:var(--mut);font-size:16px}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;grid-template-rows:180px 180px;gap:16px}
+.gal div{border-radius:24px;display:flex;align-items:end;padding:16px;font-weight:700;color:#fff}
+.gal div:nth-child(1){grid-row:span 2;background:linear-gradient(160deg,#c8553d,#e9a38f)}
+.gal div:nth-child(2){background:#8fa98a}.gal div:nth-child(3){background:#d9a441}.gal div:nth-child(4){background:#a86a5b}.gal div:nth-child(5){background:#6f8c7b}
+.faq{max-width:760px}
+.faq details{border-bottom:1px solid #e6d6c4;padding:20px 0}
+.faq summary{font:600 21px Fraunces,serif;cursor:pointer}
+.faq p{color:var(--mut);margin-top:10px}
+.news{background:var(--blush);border-radius:36px;padding:var(--s4);text-align:center}
+.news h2{margin-bottom:var(--s2)}
+.news form{margin-top:var(--s3);display:flex;justify-content:center;gap:12px}
+.news input{padding:16px 22px;border-radius:40px;border:0;width:320px;font:inherit}
+.news button{background:var(--acc);color:#fff;border:0;border-radius:40px;padding:16px 30px;font:700 17px Nunito}
+footer{padding:var(--s3) 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px}
+/* flaws */
+h1{color:#ff7ad9}
+.lead{font-size:11px;color:#d6c8b4;max-width:none}
+.eyebrow{font-size:9px;margin-bottom:-26px;color:#e8dcc8}
+.jar{margin-left:-210px;margin-top:70px;position:relative;z-index:2;transform:rotate(-5deg)}
+.hero{align-items:start}
+nav a{font-family:'Comic Sans MS',cursive;font-size:22px;color:#19e0d0}
+.logo{position:relative;left:120px;top:28px}
+.btn{background:#19e0d0;color:#fff}
+.btn.o{background:#ffe600;color:#fff;border-color:#ffe600;margin-left:-14px}
+</style></head><body>
+<div class="w">
+<nav><div class="logo">Tenfi</div><div><a href="#">How it works</a><a href="#">Stories</a><a href="#">For planners</a><a href="#">Sign in</a></div></nav>
+<header class="hero"><div>
+<div class="eyebrow">FOR WEDDING PLANNERS</div>
+<h1>Let the spare change pay for the champagne.</h1>
+<p class="lead">Tenfi rounds up every purchase and invests the difference, so you and your couples build a little cushion without noticing.</p>
+<a class="btn" href="#">Start rounding up</a><a class="btn o" href="#">See how it works</a></div>
+<div class="jar"><b>$1,284 saved</b><i></i><i></i><i></i><i></i><i></i></div>
+</header></div>
+<sec><div class="w"><h2>Fresh from the Tenfi journal</h2><div class="posts">
+<div class="post"><small>MONEY</small><h3>How planners are saving for their own slow season</h3><p>Four planners share what a spare-change habit did for off-months.</p></div>
+<div class="post"><small>WEDDINGS</small><h3>A couple, a round-up, and a honeymoon fund</h3><p>Eighteen months of tiny rounding turned into a week in Lisbon.</p></div>
+<div class="post"><small>GUIDES</small><h3>Investing 101 without the jargon</h3><p>What an index fund is, in about the time it takes to steam a veil.</p></div></div></div></sec>
+<sec><div class="w"><h2>Little moments, growing</h2><div class="gal"><div>Lisbon fund</div><div>Venue deposit</div><div>Rainy day</div><div>Studio rent</div><div>Honeymoon</div></div></div></sec>
+<sec><div class="w"><h2>Good questions</h2><div class="faq">
+<details open><summary>How does a round-up work?</summary><p>You buy a coffee for $3.60. Tenfi rounds to $4.00 and invests the 40 cents.</p></details>
+<details><summary>Is my money safe?</summary><p>Funds are held at an SIPC-member brokerage and you can withdraw any time.</p></details>
+<details><summary>What does Tenfi cost?</summary><p>$1 a month, and nothing for balances under $100.</p></details></div></div></sec>
+<sec><div class="w"><div class="news"><h2>Notes for planners who plan ahead</h2><p>One warm email a month. No spam, ever.</p><form><input placeholder="your@email.com"><button type="button">Sign me up</button></form></div></div></sec>
+<div class="w"><footer><span>Tenfi, made with care.</span><span>Privacy / Terms / Contact</span></footer></div>
+</body></html>

@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0082",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 40px so it no longer dominates the hero",
+  "Muddy beige palette with low-contrast tan CTA that blends into the background",
+  "Four font families (Georgia, Trebuchet, Impact, Archivo/mono)",
+  "Inconsistent spacing and cramped hero/nav gaps"
+ ]
+}

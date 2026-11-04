@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0111",
+ "brief_id": "e1-0111",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Right panel pulled left with negative margin so it overlaps the headline",
+  "Clashing neon green/pink/yellow on panel and CTA",
+  "Lead copy 11px in pale grey on off-white (unreadable)",
+  "Headline in Times, lead in Georgia, button in Comic Sans (inconsistent fonts)",
+  "CTA tiny with low-contrast text",
+  "Bottom strip cells misaligned with uneven padding"
+ ],
+ "staging_src": "runs/E1/staging/e1-0111",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 69.356,
+ "pixel_pct_changed": 49.736
+}

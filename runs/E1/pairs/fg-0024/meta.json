@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0024",
+ "brief_id": "e1-0024",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Lavender page, orange hero and neon green/blue text clash badly",
+  "Headline overlaps the book illustration through negative margins; illustration misplaced and offset",
+  "Lede, note, nav and CTA at 8-11px with very low contrast (orange on orange)",
+  "Mixed Comic Sans, Impact, Courier and Times fonts",
+  "Eyebrow shifted out of the text column; nav links crammed; header button label matches its fill and disappears"
+ ],
+ "staging_src": "runs/E1/staging/e1-0024",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 94.572,
+ "pixel_pct_changed": 99.994
+}

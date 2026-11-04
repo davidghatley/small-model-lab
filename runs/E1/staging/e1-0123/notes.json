@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0123",
+ "severity": "obvious",
+ "flaws": [
+  "headline in teal Times against pale grid, low contrast",
+  "photo frame overlaps and rotates over headline and text",
+  "lede, nav and spec label tiny and washed out",
+  "hero grid collapsed to one column leaving a broken layout",
+  "Comic Sans logo plus Times plus Plex fonts",
+  "orange CTA with cream text, unreadable"
+ ]
+}

@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0120",
+ "severity": "obvious",
+ "flaws": [
+  "h1 in clashing purple Impact against bone",
+  "stat sidebar overlaps the headline and lede",
+  "lede and nav at very low contrast and tiny size",
+  "kick label 9px unreadable",
+  "mixed Comic Sans / Courier / Impact fonts",
+  "CTA lime with white text, low contrast"
+ ]
+}

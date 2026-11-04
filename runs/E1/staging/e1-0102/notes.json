@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0102",
+ "severity": "obvious",
+ "flaws": [
+  "Yellow headline on cream, serif font clash, overlapping art",
+  "Subhead at 11px low-contrast and overlapping headline",
+  "Art shifted over text; cards white-on-yellow unreadable",
+  "CTA/pill nearly invisible low contrast",
+  "Logo in Courier, inconsistent fonts"
+ ]
+}

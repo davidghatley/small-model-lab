@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0008",
+ "severity": "subtle",
+ "flaws": [
+  "Off-palette purple sticker amid red/pink/green system",
+  "Slightly cramped hero: reduced padding and gutter, lead line runs full column width (long measure)",
+  "Primary CTA shrunk to a small button with weak shadow, less prominent; hero art pushed down so columns look misaligned"
+ ]
+}

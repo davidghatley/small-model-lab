@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0038",
+ "severity": "subtle",
+ "flaws": [
+  "Overlong line length: lede runs the full wide column at small size",
+  "CTA demoted to a small greyish button, less prominent",
+  "Off-palette blue kicker against the orange/charcoal scheme"
+ ]
+}

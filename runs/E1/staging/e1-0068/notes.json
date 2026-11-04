@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0068",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: h1 46px",
+  "Off-palette magenta accent in headline",
+  "Pale small CTA with lead copy line stretching overlong"
+ ]
+}

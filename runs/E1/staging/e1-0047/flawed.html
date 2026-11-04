@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boelpix - Premium spare-change investing</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07070c;--ink:#f4f2ff;--mut:#a29fba;--acc:#7cf5c8;--vio:#8a5cff;--card:#12121c;--line:#25253a;--s1:8px;--s2:16px;--s3:32px;--s4:64px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.6 Inter,sans-serif;background-image:radial-gradient(900px 500px at 80% -10%,rgba(138,92,255,.35),transparent)}
+.w{max-width:1180px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:76px}
+.logo{font:800 26px Sora;letter-spacing:-.02em}
+.logo b{color:var(--acc)}
+nav a{color:var(--mut);text-decoration:none;margin-left:28px;font-size:15px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:var(--s4);align-items:center;padding:var(--s3) 0 var(--s5)}
+.tag{border:1px solid var(--line);background:var(--card);padding:6px 14px;border-radius:99px;font-size:14px;color:var(--acc);display:inline-block;margin-bottom:var(--s3)}
+h1{font:800 84px/1 Sora;letter-spacing:-.04em}
+h1 span{background:linear-gradient(90deg,var(--acc),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:21px;color:var(--mut);max-width:500px;margin:var(--s3) 0}
+.btn{display:inline-block;background:var(--acc);color:#04130d;font:600 18px Sora;padding:18px 34px;border-radius:14px;text-decoration:none}
+.btn.g{background:none;color:var(--ink);border:1px solid var(--line);margin-left:12px;padding:17px 28px}
+.cardv{background:linear-gradient(145deg,#1a1a2e,#0e0e18);border:1px solid var(--line);border-radius:28px;padding:var(--s3);box-shadow:0 30px 80px rgba(138,92,255,.25)}
+.cardv small{color:var(--mut)}
+.cardv .big{font:800 56px Sora;letter-spacing:-.03em;margin:4px 0 var(--s2)}
+.bars{display:flex;align-items:end;gap:8px;height:130px}
+.bars i{flex:1;background:linear-gradient(var(--acc),var(--vio));border-radius:6px 6px 0 0;display:block}
+.cardv .r{display:flex;justify-content:space-between;margin-top:var(--s2);color:var(--mut);font-size:15px}
+.cardv .r b{color:var(--acc)}
+sec{display:block;padding:var(--s5) 0;border-top:1px solid var(--line)}
+h2{font:800 44px/1.05 Sora;letter-spacing:-.03em;margin-bottom:var(--s4)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}
+.stats b{display:block;font:800 52px Sora;color:var(--acc);letter-spacing:-.03em}
+.stats span{color:var(--mut)}
+.t3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:var(--s3)}
+.q p{font-size:19px;margin-bottom:var(--s2)}
+.q cite{color:var(--mut);font-style:normal;font-size:15px}
+.ints{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.ints span{border:1px solid var(--line);background:var(--card);padding:12px 24px;border-radius:12px;font:600 16px Sora}
+.faq{max-width:800px}
+.faq details{border-bottom:1px solid var(--line);padding:20px 0}
+.faq summary{font:600 20px Sora;cursor:pointer}
+.faq p{color:var(--mut);margin-top:10px}
+footer{border-top:1px solid var(--line);padding:var(--s3) 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px}
+/* flaws */
+.hero{grid-template-columns:1.9fr 1fr}
+.lead{max-width:none;font-size:17px}
+h1 span{background:linear-gradient(90deg,#ff9d2e,#ff5f2e);-webkit-background-clip:text;background-clip:text;color:transparent}
+.tag{color:#ff9d2e}
+.btn{background:#1f2c28;color:#7cf5c8;border:1px solid #2f4a41;padding:14px 24px;font-size:16px}
+</style></head><body>
+<div class="w">
+<nav><div class="logo">boelpix<b>.</b></div><div><a href="#">Premium</a><a href="#">Results</a><a href="#">FAQ</a><a href="#">Log in</a></div></nav>
+<header class="hero"><div>
+<span class="tag">Premium tier, built for first paychecks</span>
+<h1>Turn spare change into <span>real wealth.</span></h1>
+<p class="lead">Boelpix rounds up every purchase and invests it across a managed portfolio of ETFs, with human advisors included. Made for recent grads who plan to win.</p>
+<a class="btn" href="#">Open an account</a><a class="btn g" href="#">See plans</a></div>
+<div class="cardv"><small>Portfolio value</small><div class="big">$12,480</div><div class="bars"><i style="height:30%"></i><i style="height:42%"></i><i style="height:38%"></i><i style="height:58%"></i><i style="height:52%"></i><i style="height:74%"></i><i style="height:92%"></i></div><div class="r"><span>This year</span><b>+14.2%</b></div></div>
+</header></div>
+<sec><div class="w"><h2>The numbers behind the shine</h2><div class="stats">
+<div><b>$212M</b><span>invested by members</span></div><div><b>180k</b><span>recent grads onboard</span></div><div><b>0.25%</b><span>flat annual fee</span></div><div><b>4.8</b><span>average app rating</span></div></div></div></sec>
+<sec><div class="w"><h2>Grads on the climb</h2><div class="t3">
+<div class="q"><p>I started with my first paycheck. Two years later it is my down payment fund.</p><cite>Jordan K., software engineer</cite></div>
+<div class="q"><p>The advisor call was free and actually useful. Nobody talked down to me.</p><cite>Aisha M., nurse</cite></div>
+<div class="q"><p>Round-ups made investing feel like a game I was winning.</p><cite>Diego R., designer</cite></div></div></div></sec>
+<sec><div class="w"><h2>Connects to your money</h2><div class="ints"><span>Chase</span><span>Capital One</span><span>Venmo</span><span>Apple Pay</span><span>Plaid</span><span>Robinhood transfer</span></div></div></sec>
+<sec><div class="w"><h2>Straight answers</h2><div class="faq">
+<details open><summary>What makes Premium different?</summary><p>Managed portfolios, advisor access and tax-loss harvesting for a flat 0.25 percent.</p></details>
+<details><summary>Is there a minimum?</summary><p>No minimum. Round-ups start from your first purchase.</p></details>
+<details><summary>Can I withdraw anytime?</summary><p>Yes. Withdrawals settle in two business days.</p></details></div></div></sec>
+<div class="w"><footer><span>Boelpix Financial. Investing involves risk.</span><span>Privacy / Terms / Disclosures</span></footer></div>
+</body></html>

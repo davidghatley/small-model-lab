@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0041",
+ "severity": "subtle",
+ "flaws": [
+  "Lead paragraph max-width removed so lines run about 95 characters",
+  "CTA button recolored to an off-palette purple that clashes with coral/teal",
+  "Hero top padding squeezed so the pill and nav feel cramped"
+ ]
+}

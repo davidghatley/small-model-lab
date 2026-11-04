@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0038",
+ "brief_id": "e1-0038",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Overlong line length: lede runs the full wide column at small size",
+  "CTA demoted to a small greyish button, less prominent",
+  "Off-palette blue kicker against the orange/charcoal scheme"
+ ],
+ "staging_src": "runs/E1/staging/e1-0038",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 25.011,
+ "pixel_pct_changed": 20.87
+}

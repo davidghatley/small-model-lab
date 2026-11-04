@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0138",
+ "severity": "obvious",
+ "flaws": [
+  "Impact neon-green headline with collapsed line-height overlapping the paragraph",
+  "tiny near-invisible lede on dark background",
+  "CTA yellow text on lime, unreadable",
+  "secondary button overlaps primary",
+  "tiny nav links",
+  "logo in mismatched font"
+ ]
+}

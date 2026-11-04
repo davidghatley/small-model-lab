@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0020",
+ "brief_id": "e1-0020",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero padding cramped (28px top vs 96px) and headline-to-body spacing tight",
+  "Lede paragraph has no max-width, running ~100+ characters per line",
+  "Primary CTA demoted to a small low-contrast beige button that nearly disappears into the paper background"
+ ],
+ "staging_src": "runs/E1/staging/e1-0020",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 12.393,
+ "pixel_pct_changed": 9.361
+}

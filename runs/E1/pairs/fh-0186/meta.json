@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0186",
+ "brief_id": "e1-0186",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1's immersive sunset scene sells a luxury journey warmly; v2 is tidy but the mosaic is abstract and less evocative.",
+ "staging_src": "runs/E1/staging/e1-0186",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1: full-bleed sunset gradient hero with SVG train and valley, serif display type",
+  "v2: white split hero with serif headline and gradient photo mosaic"
+ ],
+ "v1_side": "a"
+}

@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0088",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut from 92px to 46px mixed-case Trebuchet: weak hierarchy",
+  "Muddy beige/khaki palette replaces orange and blue accents; grid background removed",
+  "CTA is a pale tan button that blends into background",
+  "4 font families (Palatino, Trebuchet, Georgia, Courier) and inconsistent spacing"
+ ]
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0086",
+ "brief_id": "e1-0086",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero CTA recolored yellow on yellow panel so it barely stands out, smaller",
+  "Headline reduced to 60px: flatter type scale",
+  "Hero padding cramped; lede line runs full column; stats row nudged out of alignment with hero edges"
+ ],
+ "staging_src": "runs/E1/staging/e1-0086",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 38.485,
+ "pixel_pct_changed": 36.661
+}

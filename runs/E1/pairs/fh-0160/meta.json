@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0160",
+ "brief_id": "e1-0160",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 tone is blunter and hierarchy sharper; v2 is polished but too soft for no-nonsense.",
+ "staging_src": "runs/E1/staging/e1-0160",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1 bold brutalist split hero, cream/black/orange, spec card",
+  "v2 centered light serif editorial, soft green, generic cards"
+ ],
+ "v1_side": "b"
+}

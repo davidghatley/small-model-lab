@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0117",
+ "brief_id": "e1-0117",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Photo frames pulled left with negative margin, overlapping headline and copy",
+  "Headline in pale beige on cream (near-invisible) in Impact",
+  "Lead copy 11px low-contrast Courier",
+  "Clashing cyan button with yellow text and neon-green steps bar",
+  "Logo in pink Comic Sans, nav links 10px (inconsistent fonts, tiny text)"
+ ],
+ "staging_src": "runs/E1/staging/e1-0117",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 36.005,
+ "pixel_pct_changed": 53.236
+}

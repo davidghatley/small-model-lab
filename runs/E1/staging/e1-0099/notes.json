@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0099",
+ "severity": "obvious",
+ "flaws": [
+  "Cup illustration card slides over the headline and body copy",
+  "Headline dark brown on near-black background, almost invisible",
+  "Body copy 9px Courier in dark grey on dark",
+  "CTA gold with gold text, tiny and misaligned",
+  "Hot-pink kicker and orange Impact nav clash with the luxury palette",
+  "Mixed fonts (Comic Sans, Courier, Impact, Times) replace refined serif/sans pairing"
+ ]
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kafiel — Onboarding on rails</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#06080f;--panel:#0e1322;--line:#1d2640;--text:#eef2ff;--mute:#8e9ac0;--cy:#3df0ff;--ind:#6c63ff;--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:88px}
+*{box-sizing:border-box;margin:0}
+body{background:radial-gradient(1000px 520px at 50% -10%,#1a2060 0,transparent 70%),var(--bg);color:var(--text);font:400 17px/1.6 "Space Grotesk",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0;font-size:15px}
+.logo{font-weight:700;font-size:22px;letter-spacing:-.02em}.logo i{display:inline-block;width:12px;height:12px;background:linear-gradient(135deg,var(--cy),var(--ind));border-radius:3px;margin-right:8px}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0;color:var(--mute)}
+.btn{display:inline-block;background:linear-gradient(135deg,var(--cy),#7fb6ff);color:#04101a;font-weight:700;padding:15px 28px;border-radius:12px;text-decoration:none;box-shadow:0 0 36px #3df0ff44}
+.btn.g{background:transparent;color:var(--text);border:1px solid var(--line);box-shadow:none;margin-left:var(--s2)}
+.btn.s{padding:9px 18px;font-size:14px}
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:var(--s4);padding:var(--s5) 0 var(--s4);align-items:center}
+.chip{display:inline-block;font:500 13px "JetBrains Mono";color:var(--cy);border:1px solid #1e4a5c;background:#0a1d2b;border-radius:99px;padding:5px 14px;margin-bottom:var(--s3)}
+h1{font-size:72px;line-height:1;font-weight:700;letter-spacing:-.04em}
+h1 span{background:linear-gradient(90deg,var(--cy),var(--ind));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lede{color:var(--mute);font-size:20px;margin:var(--s3) 0 var(--s4);max-width:27em}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:16px;font:400 14px/1.8 "JetBrains Mono",monospace;overflow:hidden;box-shadow:0 30px 80px #0008}
+.term .bar{display:flex;gap:6px;padding:12px 16px;border-bottom:1px solid var(--line)}.term .bar b{width:10px;height:10px;border-radius:50%;background:#2a3358}
+.term pre{padding:var(--s3);color:#b7c2ec;white-space:pre-wrap}.term .c{color:var(--cy)}.term .g{color:#6ee7a0}.term .m{color:#6b779e}
+section{padding:var(--s5) 0 0}
+h2{font-size:44px;line-height:1.1;letter-spacing:-.03em;margin-bottom:var(--s4)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:18px;padding:var(--s4) var(--s3)}
+.card .big{font:500 44px "JetBrains Mono";color:var(--cy)}.card p{color:var(--mute);font-size:16px}
+.card.hot{border-color:var(--ind);box-shadow:0 0 50px #6c63ff33}
+.price{font-size:44px;font-weight:700;margin:8px 0}.price small{font-size:16px;color:var(--mute);font-weight:400}
+details{border-bottom:1px solid var(--line);padding:var(--s2) 0;font-size:19px;font-weight:500}details p{color:var(--mute);font-size:16px;margin-top:8px;font-weight:400}
+.cta{margin-top:var(--s5);text-align:center;padding:var(--s5) var(--s4);border:1px solid var(--line);border-radius:28px;background:linear-gradient(180deg,#10163a,#0b0f20)}
+footer{display:flex;justify-content:space-between;color:var(--mute);font-size:14px;padding:var(--s5) 0 var(--s4)}
+</style><style>/* flaws */
+:root{--bg:#2e2c2a;--panel:#3b3835;--line:#4d4944;--text:#d6cfc2;--mute:#a39b8c;--cy:#9a8f6a;--ind:#7d6f8a}
+body{background:#2e2c2a;font-family:"Palatino Linotype",serif}
+h1{font-family:"Trebuchet MS",sans-serif;font-size:44px;letter-spacing:0;line-height:1.15}
+h1 span{background:none;color:#a89c74}
+.lede{font-size:20px;margin:6px 0 14px;max-width:none;color:#cfc7b8;font-family:Georgia,serif}
+.btn{background:#4a4640;color:#b9ae98;box-shadow:none;border:1px solid #5c564d;padding:10px 18px;font-size:14px;border-radius:6px}
+.btn.g{background:#4a4640}
+.hero{padding:16px 0 30px;gap:12px}
+.chip{margin-bottom:38px;background:#3b3835;border-color:#5c564d;color:#a39b8c}
+.term{box-shadow:none;margin-top:36px}
+nav{padding:8px 0 44px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo"><i></i>Kafiel</span><ul><li>Product</li><li>Case studies</li><li>Pricing</li><li>Docs</li></ul><a class="btn s" href="#">Start free</a></nav>
+<header class="hero">
+<div><span class="chip">&gt; new hire ready in 4 days</span>
+<h1>Onboarding, <span>compiled.</span></h1>
+<p class="lede">Kafiel turns your onboarding docs into repeatable workflows: access provisioning, repo setup and first-PR checklists, with support that answers in under five minutes.</p>
+<a class="btn" href="#">Start free trial</a><a class="btn g" href="#">Read the docs</a></div>
+<div class="term"><div class="bar"><b></b><b></b><b></b></div><pre><span class="m"># kafiel run onboard --role backend</span>
+<span class="c">&#9656;</span> provisioning GitHub, Okta, PagerDuty <span class="g">done</span>
+<span class="c">&#9656;</span> cloning monorepo, seeding dev DB   <span class="g">done</span>
+<span class="c">&#9656;</span> assigning buddy: @mira             <span class="g">done</span>
+<span class="c">&#9656;</span> first PR checklist                 <span class="m">3/5</span>
+<span class="g">&#10003; ready in 2h 14m</span></pre></div>
+</header>
+<section><h2>Shipped on day one</h2><div class="g3">
+<div class="card"><div class="big">-62%</div><h3>Time to first commit</h3><p>Helix Robotics cut it from 9 days to 3.4 with scripted environments.</p></div>
+<div class="card"><div class="big">4 min</div><h3>Median support reply</h3><p>Northwind Pay's platform team escalates straight to Kafiel engineers.</p></div>
+<div class="card"><div class="big">0</div><h3>Missed access tickets</h3><p>Orbital Labs automated 31 SaaS entitlements across 140 hires.</p></div></div></section>
+<section><h2>Pricing</h2><div class="g3">
+<div class="card"><h3>Starter</h3><div class="price">$0</div><p>Up to 5 hires a month, community support.</p></div>
+<div class="card hot"><h3>Team</h3><div class="price">$12<small> /hire</small></div><p>Unlimited workflows, SSO and the 5-minute support SLA.</p></div>
+<div class="card"><h3>Scale</h3><div class="price">Custom</div><p>Audit logs, self-hosted runners and a dedicated engineer.</p></div></div></section>
+<section><h2>FAQ</h2><details><summary>Does Kafiel need admin access to our IdP?</summary><p>Only scoped, revocable tokens for the apps you connect.</p></details><details><summary>Can we version workflows in git?</summary><p>Yes, workflows are YAML and sync with any repo.</p></details></section>
+<div class="cta"><h2 style="margin-bottom:var(--s3)">Ship your next hire faster.</h2><a class="btn" href="#">Start free trial</a></div>
+<footer><span>© 2026 Kafiel Inc.</span><span>Status · Security · Changelog · Privacy</span></footer>
+</div></body></html>

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0104",
+ "brief_id": "e1-0104",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA buttons washed out to low-contrast grey, less prominent",
+  "Lead line length stretched too long",
+  "Off-palette hot-pink tile and uneven vertical alignment in tile grid"
+ ],
+ "staging_src": "runs/E1/staging/e1-0104",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 13.285,
+ "pixel_pct_changed": 12.093
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0053",
+ "brief_id": "e1-0053",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA buttons recolored to off-palette bright blue",
+  "Hero padding cut so content feels cramped against nav",
+  "Headline indented relative to kicker and paragraph (uneven alignment)"
+ ],
+ "staging_src": "runs/E1/staging/e1-0053",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 24.431,
+ "pixel_pct_changed": 26.8
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0110",
+ "brief_id": "e1-0110",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero padding cramped (top/bottom reduced to ~20px)",
+  "CTA button recolored to off-palette bright teal instead of the gold accent",
+  "Lead paragraph max-width removed, giving an overlong line length"
+ ],
+ "staging_src": "runs/E1/staging/e1-0110",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 9.844,
+ "pixel_pct_changed": 19.617
+}

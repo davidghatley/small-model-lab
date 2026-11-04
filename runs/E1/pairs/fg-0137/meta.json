@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0137",
+ "brief_id": "e1-0137",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "flatter type scale, headline underpowered",
+  "off-palette blue label against orange brand accent",
+  "CTA pale and less prominent"
+ ],
+ "staging_src": "runs/E1/staging/e1-0137",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 9.382,
+ "pixel_pct_changed": 7.114
+}

@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0054",
+ "severity": "obvious",
+ "flaws": [
+  "Body copy and nav nearly invisible dark-on-dark",
+  "Gold replaced with hot pink, killing the luxury feel",
+  "Teal image panel clashing with palette and overlapping the text column",
+  "Oversized Impact headline with collapsed leading, lines collide",
+  "Paragraph pulled up into the headline",
+  "Nav in a mismatched comic font",
+  "Eyebrow text tiny"
+ ]
+}

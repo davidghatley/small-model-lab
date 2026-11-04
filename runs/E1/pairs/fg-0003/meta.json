@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0003",
+ "brief_id": "e1-0003",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Dark grey page background with dark-grey nav and logo text (illegible)",
+  "Headline in a script font, overlapped by the stat card which sits above it",
+  "Lead and pills at 10-11px with near-zero contrast",
+  "Clashing neon green/pink/cyan; buttons have text matching background and overlap each other",
+  "Hero columns collapsed into an absolute-positioned broken layout; mixed fonts"
+ ],
+ "staging_src": "runs/E1/staging/e1-0003",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 172.243,
+ "pixel_pct_changed": 98.176
+}

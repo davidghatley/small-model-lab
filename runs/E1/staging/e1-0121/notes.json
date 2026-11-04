@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0121",
+ "severity": "moderate",
+ "flaws": [
+  "headline shrunk to 40px, no longer dominant over 22px lede",
+  "four font families (Space Grotesk, Georgia, Courier, Trebuchet)",
+  "muddy olive/brown/grey palette",
+  "cramped hero with tiny, inconsistent gaps",
+  "CTA grey on grey, does not stand out",
+  "button gap 3px vs other spacing"
+ ]
+}

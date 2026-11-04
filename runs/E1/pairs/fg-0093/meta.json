@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0093",
+ "brief_id": "e1-0093",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Spec card overlaps and covers the headline and paragraph",
+  "Orange-on-orange text in the spec table is unreadable",
+  "Headline in pale peach Comic Sans with tight negative tracking on off-white",
+  "Body copy and kicker shrunk to 9-10px in near-background grey",
+  "CTA is a pale peach button with white text, tiny and shifted out of alignment",
+  "Nav links 8px in a different font; five font families mixed"
+ ],
+ "staging_src": "runs/E1/staging/e1-0093",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 22.469,
+ "pixel_pct_changed": 24.66
+}

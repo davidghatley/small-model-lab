@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0016",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 44px script font; the 26px eyebrow and 24px subtext compete with it",
+  "Muddy grey-green palette: pine and sun replaced with dull khaki, low-contrast text on dark",
+  "Yellow CTA turned into a dim small bordered button that disappears into the background",
+  "Four font families: Barlow Condensed, Pacifico, Playfair Display, Public Sans",
+  "Hero cramped (6px top padding) under an oversized nav gap, uneven spacing"
+ ]
+}

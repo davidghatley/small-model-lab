@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0036",
+ "brief_id": "e1-0036",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline shrunk to 34px, serif, dark-on-dark purple, shifted off-grid",
+  "Lede 11px, dark purple on near-black, offset oddly",
+  "CTA olive-on-olive with tiny label; ghost button invisible",
+  "Stat rail pulled up over the CTA row, yellow cards with pale-yellow unreadable text",
+  "Neon green eyebrow and magenta accent clash with palette",
+  "Nav links nearly invisible"
+ ],
+ "staging_src": "runs/E1/staging/e1-0036",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 43.003,
+ "pixel_pct_changed": 99.868
+}

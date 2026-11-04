@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Nimo Games - Play like you train</title>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b10;--lime:#c6ff00;--pink:#ff2e88;--fg:#f5f5f0;--mute:#a7a7b3;--panel:#16161f;--s1:8px;--s2:16px;--s3:24px;--s4:48px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{font-family:Barlow,Arial,sans-serif;background:var(--bg);color:var(--fg);line-height:1.5;overflow-x:hidden}
+.w{max-width:1200px;margin:0 auto;padding:0 var(--s3)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+.logo{font-family:Anton,Impact,sans-serif;font-size:32px;letter-spacing:1px;color:var(--lime)}
+nav a{color:var(--fg);text-decoration:none;margin-left:var(--s3);font-weight:600;text-transform:uppercase;font-size:14px;letter-spacing:.1em}
+.hero{position:relative;padding:var(--s4) 0 var(--s5);display:grid;grid-template-columns:1.25fr 1fr;gap:var(--s4);align-items:center}
+.kick{display:inline-block;background:var(--pink);color:#fff;font-weight:700;text-transform:uppercase;letter-spacing:.12em;font-size:13px;padding:6px 12px;transform:skew(-10deg);margin-bottom:var(--s3)}
+h1{font-family:Anton,Impact,sans-serif;font-size:128px;line-height:.92;text-transform:uppercase;font-weight:400}
+h1 em{font-style:normal;color:var(--lime)}
+.sub{font-size:21px;color:var(--mute);max-width:26em;margin:var(--s3) 0 var(--s4)}
+.btn{display:inline-block;background:var(--lime);color:#0b0b10;font-family:Anton,Impact,sans-serif;text-transform:uppercase;letter-spacing:.06em;font-size:24px;padding:20px 44px;text-decoration:none;transform:skew(-10deg)}
+.btn.g{background:none;color:var(--fg);border:2px solid var(--fg);margin-left:var(--s2)}
+.art{height:440px;position:relative}
+.art div{position:absolute;transform:skew(-10deg)}
+.a1{inset:0 0 40px 60px;background:linear-gradient(135deg,var(--pink),#7a1fff)}
+.a2{width:200px;height:200px;left:0;bottom:0;background:var(--lime)}
+.a3{right:-30px;top:40px;width:120px;height:260px;border:6px solid var(--fg)}
+section{padding:var(--s5) 0}
+h2{font-family:Anton,Impact,sans-serif;font-size:60px;text-transform:uppercase;font-weight:400;margin-bottom:var(--s4);line-height:1}
+h2 em{font-style:normal;color:var(--pink)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.box{background:var(--panel);padding:var(--s3);border-left:6px solid var(--lime)}.box h3{font-family:Anton,Impact,sans-serif;font-weight:400;font-size:26px;text-transform:uppercase;margin-bottom:var(--s1)}.box p{color:var(--mute)}
+.q{font-size:20px}.q small{display:block;color:var(--lime);margin-top:var(--s2);font-weight:700}
+.price{text-align:center;border:2px solid #2b2b38;padding:var(--s4) var(--s3);background:var(--panel)}.price.hot{border-color:var(--lime)}.price b{font-family:Anton,Impact,sans-serif;font-size:64px;font-weight:400;display:block;color:var(--lime)}
+.faq details{border-bottom:1px solid #2b2b38;padding:var(--s3) 0;font-size:20px;font-weight:600}.faq p{color:var(--mute);font-weight:400;margin-top:var(--s1);font-size:17px}
+.news{background:var(--lime);color:#0b0b10}.news form{display:flex;gap:var(--s2);max-width:640px}.news input{flex:1;padding:18px;font:inherit;border:3px solid #0b0b10}.news button{background:#0b0b10;color:var(--lime);font-family:Anton;font-size:20px;text-transform:uppercase;padding:0 32px;border:0}
+.cta{text-align:center}.cta h2{font-size:96px}
+footer{border-top:1px solid #2b2b38;padding:var(--s4) 0;color:var(--mute);font-size:14px;display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+.btn{background:transparent;color:#c6ff00;border:2px solid #c6ff00;font-size:17px;padding:12px 26px}
+.btn.g{color:#a7a7b3;border-color:#555}
+.kick{background:#19c9d9;color:#0b0b10}
+.sub{max-width:none;width:1100px;position:relative;font-size:20px}
+.hero{grid-template-columns:1fr 1fr}
+h1{font-size:112px}
+
+</style></head><body>
+<div class="w"><nav><div class="logo">NIMO</div><div><a href="#">Games</a><a href="#">Pricing</a><a href="#">FAQ</a></div></nav>
+<div class="hero"><div><span class="kick">New studio. First game out now.</span>
+<h1>Play like<br>you <em>train.</em></h1>
+<p class="sub">Sprint Kings is a 3-minute-round arena game built for people who hate sitting still. Pick a squad, push your pace, and beat your own time.</p>
+<a class="btn" href="#">Play free</a><a class="btn g" href="#">Watch trailer</a></div>
+<div class="art"><div class="a1"></div><div class="a2"></div><div class="a3"></div></div></div></div>
+<section><div class="w"><h2>Built for <em>competitors</em></h2><div class="g3">
+<div class="box"><h3>3-minute rounds</h3><p>One warm-up, one rep, done. Fits between sets.</p></div>
+<div class="box"><h3>Heart-rate sync</h3><p>Pair a watch and your pace becomes your power.</p></div>
+<div class="box"><h3>Squad ladders</h3><p>Weekly leagues with your gym, club or team.</p></div></div></div></section>
+<section><div class="w"><h2>What players <em>say</em></h2><div class="g3">
+<div class="box q">"I play after every session. It feels like a cool-down that fights back."<small>Dani O., sprinter</small></div>
+<div class="box q">"Our whole rowing squad is on the ladder. Trash talk is elite."<small>Marcus L., rower</small></div>
+<div class="box q">"Rounds are short enough that I actually finish them."<small>Keiko T., triathlete</small></div></div></div></section>
+<section><div class="w"><h2>Pricing</h2><div class="g3">
+<div class="price"><h3>Rookie</h3><b>$0</b><p>Core modes, weekly ladder</p></div>
+<div class="price hot"><h3>Pro</h3><b>$6</b><p>per month. All modes, heart-rate sync</p></div>
+<div class="price"><h3>Team</h3><b>$24</b><p>per month. Up to 20 players</p></div></div></div></section>
+<section class="faq"><div class="w"><h2>FAQ</h2><details><summary>Which devices does it run on?</summary><p>PC, Mac and the major consoles.</p></details><details><summary>Do I need a wearable?</summary><p>No. Sync is optional.</p></details><details><summary>Is Pro required to compete?</summary><p>No. Rookie can enter every weekly ladder.</p></details></div></section>
+<section class="news"><div class="w"><h2>Get drops first</h2><form><input placeholder="you@email.com"><button>Sign up</button></form></div></section>
+<section class="cta"><div class="w"><h2>Ready? <em>Go.</em></h2><a class="btn" href="#">Play free</a></div></section>
+<div class="w"><footer><span>&copy; 2026 Nimo Games</span><span>Press &middot; Discord &middot; Privacy</span></footer></div>
+</body></html>

@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Coka Bikes - Fixed fast, built right</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#111418;--mut:#4f5762;--acc:#ff5a00;--soft:#f0f1f3;--line:#d8dbe0;--s1:8px;--s2:16px;--s3:32px;--s4:64px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.55 Barlow,sans-serif}
+.w{max-width:1180px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font:800 32px 'Barlow Condensed';text-transform:uppercase;letter-spacing:.02em}
+.logo b{color:var(--acc)}
+nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-weight:600;font-size:16px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s4);align-items:center;padding:var(--s3) 0 var(--s5)}
+.eyebrow{font:700 16px 'Barlow Condensed';letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:var(--s2)}
+h1{font:800 96px/.92 'Barlow Condensed';text-transform:uppercase;letter-spacing:-.005em}
+.lead{font-size:21px;color:var(--mut);max-width:500px;margin:var(--s3) 0}
+.btn{display:inline-block;background:var(--acc);color:#fff;font:700 20px 'Barlow Condensed';letter-spacing:.06em;text-transform:uppercase;padding:18px 36px;text-decoration:none}
+.btn.g{background:none;border:2px solid var(--ink);color:var(--ink);margin-left:12px;padding:16px 32px}
+.panel{background:var(--ink);color:#fff;padding:var(--s3)}
+.panel h3{font:700 22px 'Barlow Condensed';text-transform:uppercase;letter-spacing:.08em;color:var(--acc);margin-bottom:var(--s2)}
+.panel .r{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid #333a44}
+.panel .r:last-child{border:0}
+.panel .r b{font:700 24px 'Barlow Condensed'}
+sec{display:block;padding:var(--s5) 0;border-top:2px solid var(--ink)}
+h2{font:800 56px/1 'Barlow Condensed';text-transform:uppercase;margin-bottom:var(--s4)}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}
+.team i{display:block;aspect-ratio:1;background:var(--soft);margin-bottom:12px;position:relative}
+.team i:after{content:"";position:absolute;inset:30%;border-radius:50%;background:var(--ink)}
+.team div:nth-child(2) i:after{background:var(--acc)}
+.team b{font:700 24px 'Barlow Condensed';text-transform:uppercase;display:block}
+.team span{color:var(--mut);font-size:16px}
+.ints{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.ints div{background:var(--soft);padding:var(--s3);font:700 24px 'Barlow Condensed';text-transform:uppercase}
+.ints small{display:block;font:400 15px Barlow;color:var(--mut);text-transform:none;margin-top:4px}
+.faq{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3) var(--s4)}
+.faq h3{font:700 24px 'Barlow Condensed';text-transform:uppercase;margin-bottom:6px}
+.faq p{color:var(--mut)}
+.cta{background:var(--acc);color:#fff;padding:var(--s5) 0;text-align:center}
+.cta h2{font-size:72px;margin-bottom:var(--s3)}
+.cta .btn{background:var(--ink)}
+.app{display:flex;justify-content:space-between;align-items:center;padding:var(--s4) 0}
+.app h2{margin:0 0 8px;font-size:44px}
+.app .st a{display:inline-block;background:var(--ink);color:#fff;padding:14px 26px;font:700 18px 'Barlow Condensed';text-transform:uppercase;text-decoration:none;margin-left:12px}
+footer{border-top:2px solid var(--ink);padding:var(--s3) 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px}
+/* flaws */
+h1{font-size:96px;line-height:.92}
+.panel{background:#00e5a0;color:#ff00aa;margin-left:-170px;margin-top:150px;position:relative;z-index:2;transform:rotate(-3deg)}
+.panel h3{color:#ffe600}
+.panel .r{border-color:#ff00aa}
+.eyebrow{font-size:10px;color:#ffd9c2}
+.lead{color:#e8e8e8;font-size:13px}
+nav a{font-family:'Comic Sans MS',cursive;font-size:12px;color:#bbb}
+.logo{font-family:'Courier New',monospace;font-size:14px}
+.btn{background:#ffe600;color:#fff}
+.btn.g{margin-left:-24px;position:relative;z-index:3;border-color:#00e5a0;color:#00e5a0}
+.hero{align-items:start}
+</style></head><body>
+<div class="w">
+<nav><div class="logo">Coka<b>.</b></div><div><a href="#">Repairs</a><a href="#">Team</a><a href="#">FAQ</a><a href="#">Visit</a></div></nav>
+<header class="hero"><div>
+<div class="eyebrow">Neighborhood bike shop. Now with more shop.</div>
+<h1>Fixed today. Rides tomorrow.</h1>
+<p class="lead">Coka repairs commuter and road bikes in 24 hours, flat pricing, no upsells. We just closed our seed round, so a second location opens this spring.</p>
+<a class="btn" href="#">Book a tune-up</a><a class="btn g" href="#">See prices</a></div>
+<div class="panel"><h3>Flat-rate menu</h3>
+<div class="r"><span>Basic tune-up</span><b>$75</b></div><div class="r"><span>Full overhaul</span><b>$185</b></div><div class="r"><span>Flat tire fix</span><b>$20</b></div><div class="r"><span>Turnaround</span><b>24 hrs</b></div></div>
+</header></div>
+<sec><div class="w"><h2>Who has your bike</h2><div class="team">
+<div><i></i><b>Maya Torres</b><span>Owner and head mechanic</span></div><div><i></i><b>Eli Brandt</b><span>Wheelbuilder</span></div><div><i></i><b>Noor Haddad</b><span>Fit specialist</span></div><div><i></i><b>Pete Lowry</b><span>Front desk</span></div></div></div></sec>
+<sec><div class="w"><h2>Works with your routine</h2><div class="ints"><div>Strava<small>Auto-log service miles</small></div><div>Apple Health<small>Count commute rides</small></div><div>Google Calendar<small>Pickup reminders</small></div><div>Venmo<small>Pay by phone</small></div></div></div></sec>
+<sec><div class="w"><h2>FAQ</h2><div class="faq">
+<div><h3>Do I need an appointment?</h3><p>Not for flats. Tune-ups are booked online or by walk-in space.</p></div>
+<div><h3>Do you service e-bikes?</h3><p>Yes, mechanical work and brakes on all major brands.</p></div>
+<div><h3>Is there a warranty?</h3><p>30 days on labor, no questions.</p></div>
+<div><h3>Can I get a loaner?</h3><p>Overhauls include a free loaner bike.</p></div></div></div></sec>
+<div class="cta"><div class="w"><h2>Your bike is waiting.</h2><a class="btn" href="#">Book a tune-up</a></div></div>
+<div class="w app"><div><h2>Book from your phone</h2><span style="color:var(--mut)">Track repairs and get a text when it is ready.</span></div><div class="st"><a href="#">App Store</a><a href="#">Google Play</a></div></div>
+<div class="w"><footer><span>Coka Bikes, 418 Maple Ave. Open Tue to Sun, 8 to 6.</span><span>Privacy / Terms</span></footer></div>
+</body></html>

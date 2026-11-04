@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0093",
+ "severity": "obvious",
+ "flaws": [
+  "Spec card overlaps and covers the headline and paragraph",
+  "Orange-on-orange text in the spec table is unreadable",
+  "Headline in pale peach Comic Sans with tight negative tracking on off-white",
+  "Body copy and kicker shrunk to 9-10px in near-background grey",
+  "CTA is a pale peach button with white text, tiny and shifted out of alignment",
+  "Nav links 8px in a different font; five font families mixed"
+ ]
+}

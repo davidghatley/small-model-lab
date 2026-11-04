@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0116",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: headline reduced to 46px",
+  "CTA recolored to off-palette purple",
+  "Hero padding and eyebrow spacing cramped"
+ ]
+}

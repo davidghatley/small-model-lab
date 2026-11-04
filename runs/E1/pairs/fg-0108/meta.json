@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0108",
+ "brief_id": "e1-0108",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline oversized and overlapping loaf art",
+  "Lead 11px yellow-on-yellow unreadable",
+  "Buttons yellow-on-yellow with Comic Sans",
+  "Logo in script font, nav text tiny low-contrast",
+  "Art overlapping text column"
+ ],
+ "staging_src": "runs/E1/staging/e1-0108",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 43.721,
+ "pixel_pct_changed": 54.528
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0029",
+ "brief_id": "e1-0029",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Headline reduced to 42px bold so the type scale is flat and the hero is less commanding",
+  "Primary CTA demoted to a pale blue button with low-contrast text, hardly stands out",
+  "Off-palette orange label pill against the otherwise cool blue scheme, plus cramped hero padding"
+ ],
+ "staging_src": "runs/E1/staging/e1-0029",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.6,
+ "pixel_pct_changed": 23.863
+}

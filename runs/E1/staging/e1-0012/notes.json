@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0012",
+ "severity": "obvious",
+ "flaws": [
+  "Garish yellow page background clashing with magenta headline and cyan panel",
+  "Timeline panel pulled left over the headline/hero text with rotation, overlapping blocks",
+  "Subtext, label and nav set at 9-11px in pale yellow on yellow: unreadable low contrast",
+  "CTA buttons tiny, mis-positioned and low contrast, offset into the panel",
+  "Inconsistent fonts: Pacifico, Comic Neue, Courier, DM Sans mixed in hero"
+ ]
+}

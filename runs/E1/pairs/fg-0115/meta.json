@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0115",
+ "brief_id": "e1-0115",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 34px Georgia, weak hierarchy",
+  "Four+ font families (Archivo, Source Sans, Georgia, Courier, Comic Sans)",
+  "CTA washed-out light blue with white text, same weight as secondary button",
+  "Muddy grey-beige hero gradient",
+  "Cramped hero spacing and uneven fact-row offsets"
+ ],
+ "staging_src": "runs/E1/staging/e1-0115",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 17.309,
+ "pixel_pct_changed": 32.798
+}

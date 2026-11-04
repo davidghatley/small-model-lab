@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0066",
+ "severity": "obvious",
+ "flaws": [
+  "Headline 20px grey Arial on paper, no hierarchy",
+  "Certificate card rotated and dragged over the hero text, purple/lime/magenta clash",
+  "Lead 11px Comic Sans in near-background color",
+  "CTA mustard on mustard-tone, tiny",
+  "Nav 9px Times",
+  "Stats bar dark text on dark background, unreadable",
+  "Hero grid broken"
+ ]
+}

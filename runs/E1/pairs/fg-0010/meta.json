@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0010",
+ "brief_id": "e1-0010",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 40px and set in Playfair, no longer dominant over the 26px subtext",
+  "Muddy khaki palette with low-contrast muted text",
+  "Primary CTA blends into the background (same colour, thin border, small grey text)",
+  "Four font families (Archivo, Playfair, Pacifico, Georgia) mixed in hero and nav",
+  "Cramped hero padding with inconsistent gaps against a loose nav"
+ ],
+ "staging_src": "runs/E1/staging/e1-0010",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 65.56,
+ "pixel_pct_changed": 99.959
+}

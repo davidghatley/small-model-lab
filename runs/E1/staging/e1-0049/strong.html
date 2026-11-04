@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Cora - Freight matched in minutes</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Public+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafaf7;--ink:#10231f;--mut:#4d605b;--acc:#0e6b57;--sig:#e8b100;--card:#fff;--line:#d9dfdb;--s1:8px;--s2:16px;--s3:32px;--s4:64px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.6 'Public Sans',sans-serif}
+.w{max-width:1180px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px;border-bottom:1px solid var(--line)}
+.logo{font:700 28px 'Space Grotesk';color:var(--acc)}
+nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-weight:500;font-size:15px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s4);align-items:center;padding:var(--s4) 0 var(--s5)}
+.eyebrow{font:500 15px 'Space Grotesk';color:var(--acc);margin-bottom:var(--s2)}
+h1{font:700 72px/1.02 'Space Grotesk';letter-spacing:-.03em}
+.lead{font-size:21px;color:var(--mut);max-width:520px;margin:var(--s3) 0}
+.btn{display:inline-block;background:var(--acc);color:#fff;font:700 18px 'Space Grotesk';padding:18px 32px;border-radius:8px;text-decoration:none}
+.btn.g{background:none;color:var(--acc);border:2px solid var(--acc);margin-left:12px;padding:16px 28px}
+.lane{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:var(--s3);box-shadow:0 12px 40px rgba(16,35,31,.08)}
+.lane h3{font:700 20px 'Space Grotesk';margin-bottom:var(--s2)}
+.lane .r{display:flex;justify-content:space-between;padding:14px 0;border-top:1px solid var(--line);font-size:16px}
+.lane .r b{color:var(--acc)}
+.lane .r.hl{background:#fff6d9;margin:0 -16px;padding:14px 16px;border-radius:8px;border:0}
+sec{display:block;padding:var(--s5) 0;border-top:1px solid var(--line)}
+h2{font:700 42px/1.08 'Space Grotesk';letter-spacing:-.02em;margin-bottom:var(--s4)}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.steps div{border-top:4px solid var(--acc);padding-top:var(--s2)}
+.steps b{font:700 15px 'Space Grotesk';color:var(--sig);background:var(--ink);padding:3px 10px;border-radius:4px}
+.steps h3{font:700 24px 'Space Grotesk';margin:12px 0 6px}
+.steps p{color:var(--mut);font-size:17px}
+.ints{display:flex;flex-wrap:wrap;gap:var(--s2)}
+.ints span{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px 24px;font:700 18px 'Space Grotesk'}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.plan{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:var(--s3)}
+.plan.f{background:var(--ink);color:#fff}
+.plan h3{font:700 22px 'Space Grotesk'}
+.price{font:700 48px 'Space Grotesk';margin:12px 0}
+.price small{font:400 16px 'Public Sans';opacity:.7}
+.plan li{list-style:none;padding:5px 0;opacity:.85}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.posts small{color:var(--acc);font-weight:600}
+.posts h3{font:700 22px/1.25 'Space Grotesk';margin:6px 0 8px}
+.posts p{color:var(--mut);font-size:16px}
+.cases{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.case{background:var(--acc);color:#fff;border-radius:16px;padding:var(--s3)}
+.case b{font:700 56px 'Space Grotesk';color:var(--sig);display:block}
+.case h3{font:700 22px 'Space Grotesk';margin:4px 0 8px}
+.case p{opacity:.9;font-size:16px}
+footer{border-top:1px solid var(--line);padding:var(--s3) 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px}
+</style></head><body>
+<div class="w">
+<nav><div class="logo">cora</div><div><a href="#">How it works</a><a href="#">Pricing</a><a href="#">Case studies</a><a href="#">Sign in</a></div></nav>
+<header class="hero"><div>
+<div class="eyebrow">Backed by our new $8M seed round</div>
+<h1>Move event freight without calling six carriers.</h1>
+<p class="lead">Cora matches your load with a vetted carrier in minutes. Florals, furniture and rentals reach the venue on time, at a price you see up front.</p>
+<a class="btn" href="#">Post a load</a><a class="btn g" href="#">Get a quote</a></div>
+<div class="lane"><h3>Atlanta to Charleston, 14 pallets</h3>
+<div class="r hl"><span>Harbor Line Freight</span><b>$640, Thu 8am</b></div><div class="r"><span>Blue Ridge Carriers</span><b>$690, Thu 11am</b></div><div class="r"><span>Palmetto Haul</span><b>$710, Fri 7am</b></div></div>
+</header></div>
+<sec><div class="w"><h2>Three steps, no phone tag</h2><div class="steps">
+<div><b>01</b><h3>Post your load</h3><p>Pickup, drop-off, weight and the delivery window.</p></div>
+<div><b>02</b><h3>Compare matches</h3><p>See real prices and carrier ratings in about five minutes.</p></div>
+<div><b>03</b><h3>Track to the door</h3><p>Live updates and a proof-of-delivery photo.</p></div></div></div></sec>
+<sec><div class="w"><h2>Plugs into your planning stack</h2><div class="ints"><span>Aisle Planner</span><span>HoneyBook</span><span>QuickBooks</span><span>Google Calendar</span><span>Slack</span></div></div></sec>
+<sec><div class="w"><h2>Pricing that matches the load</h2><div class="plans">
+<div class="plan"><h3>Pay as you go</h3><div class="price">6%<small> per load</small></div><ul><li>No monthly fee</li><li>Full tracking</li></ul></div>
+<div class="plan f"><h3>Planner</h3><div class="price">$99<small> / mo + 3%</small></div><ul><li>Unlimited quotes</li><li>Team seats</li><li>Priority carriers</li></ul></div>
+<div class="plan"><h3>Agency</h3><div class="price">Custom</div><ul><li>Volume rates</li><li>Dedicated rep</li></ul></div></div></div></sec>
+<sec><div class="w"><h2>Notes from the dock</h2><div class="posts">
+<div><small>GUIDE</small><h3>How to ship 200 chairs without losing a Saturday</h3><p>A checklist for rental freight.</p></div>
+<div><small>PRODUCT</small><h3>Why we show prices before you book</h3><p>The thinking behind transparent matches.</p></div>
+<div><small>NEWS</small><h3>We raised $8M to fix event logistics</h3><p>What the seed funds in 2027.</p></div></div></div></sec>
+<sec><div class="w"><h2>Case studies</h2><div class="cases">
+<div class="case"><b>-31%</b><h3>Willow and Vine Events</h3><p>Cut freight spend on a 400-guest wedding in Savannah.</p></div>
+<div class="case"><b>0</b><h3>Late deliveries in 90 days</h3><p>Southern Table Rentals moved 60 loads through Cora.</p></div></div></div></sec>
+<div class="w"><footer><span>Cora Freight, Inc.</span><span>Privacy / Terms / Contact</span></footer></div>
+</body></html>

@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tave - Guided hiking for athletes</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#0b1f2a;--mute:#5a6b75;--ice:#eaf3f7;--blue:#0a7cc2;--line:#d6e2e9;--sans:"Inter Tight",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 var(--sans)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font-weight:700;font-size:22px;letter-spacing:.14em}
+nav ul{display:flex;gap:36px;list-style:none;padding:0;font-size:15px;font-weight:500}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:600;font-size:17px;padding:16px 30px;border-radius:6px;text-decoration:none}
+.hero{display:grid;grid-template-columns:1fr 1.05fr;gap:56px;align-items:center;padding:40px 0 80px}
+.k{font-size:13px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin-bottom:18px}
+h1{font-weight:600;font-size:62px;line-height:1.04;letter-spacing:-.035em;margin-bottom:22px}
+.hero p{color:var(--mute);max-width:460px;margin-bottom:32px}
+.hero .meta{display:flex;gap:40px;margin-top:40px;padding-top:24px;border-top:1px solid var(--line)}
+.meta b{display:block;font-size:28px;font-weight:600}.meta span{font-size:13px;color:var(--mute)}
+.photo{height:480px;border-radius:12px;background:linear-gradient(180deg,#cfe6f3 0%,#eaf3f7 45%,#fff 46%);position:relative;overflow:hidden}
+.photo svg{position:absolute;inset:0;width:100%;height:100%}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font-weight:600;font-size:36px;letter-spacing:-.03em;margin-bottom:36px}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.tile{height:200px;border-radius:8px}
+.t1{background:linear-gradient(135deg,#9fc7de,#e5f1f7)}.t2{background:linear-gradient(135deg,#0b3a55,#4a8fb5)}.t3{background:linear-gradient(135deg,#cfe0c9,#f0f6ed)}.t4{background:linear-gradient(135deg,#6f8fa3,#c9d9e2)}
+.cap{font-size:14px;color:var(--mute);margin-top:8px}
+.person{background:var(--ice);border-radius:10px;padding:24px}
+.person i{display:block;width:56px;height:56px;border-radius:50%;background:var(--blue);margin-bottom:14px}
+.person b{display:block;font-size:18px}.person span{font-size:14px;color:var(--mute)}
+.card{border:1px solid var(--line);border-radius:10px;padding:24px}.card h3{font-size:20px;font-weight:600;margin-bottom:6px}.card p{font-size:15px;color:var(--mute)}
+.cta{background:var(--ink);color:#fff;text-align:center}.cta h2{margin-bottom:24px}
+footer{padding:36px 0;font-size:14px;color:var(--mute)}
+/* injected flaws */
+.btn{background:#d4e6f1;color:#5b8ca8;font-weight:500;padding:12px 22px;font-size:15px}
+.k{color:#e0742b}
+.hero{padding:6px 0 20px}
+.hero .meta{margin-top:14px;padding-top:14px}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">TAVE</div><ul><li>Tours</li><li>Guides</li><li>Journal</li><li>Contact</li></ul><a class="btn" href="#">Plan a tour</a></nav>
+<div class="hero">
+<div><div class="k">Guided hiking for athletes</div>
+<h1>Train on the mountain. Not on guesswork.</h1>
+<p>Small-group guided hikes built around pace, elevation and recovery. Each route is mapped to the minute, led by certified guides, and paired with a support team that replies within the hour.</p>
+<a class="btn" href="#">Plan a tour</a>
+<div class="meta"><div><b>12</b><span>athletes max per group</span></div><div><b>1,800 m</b><span>average daily gain</span></div><div><b>&lt; 1 hr</b><span>support response</span></div></div></div>
+<div class="photo"><svg viewBox="0 0 600 480" preserveAspectRatio="none"><path d="M0 330 L150 170 L240 260 L360 90 L520 280 L600 220 L600 480 L0 480Z" fill="#7fb0cd"/><path d="M0 400 L130 290 L260 370 L420 250 L600 380 L600 480 L0 480Z" fill="#0b3a55"/><path d="M360 90 L395 150 L360 135 L330 150Z" fill="#fff"/></svg></div>
+</div></div>
+<section><div class="wrap"><h2>Gallery</h2><div class="g4">
+<div><div class="tile t1"></div><div class="cap">Gran Paradiso ridge, 3,100 m</div></div><div><div class="tile t2"></div><div class="cap">Dawn start, Dolomites</div></div><div><div class="tile t3"></div><div class="cap">Recovery camp, Tatras</div></div><div><div class="tile t4"></div><div class="cap">Scree traverse, Pyrenees</div></div></div></div></section>
+<section><div class="wrap"><h2>Team</h2><div class="g3">
+<div class="person"><i></i><b>Lena Moser</b><span>Head guide, IFMGA certified</span></div><div class="person"><i></i><b>Tomas Reyes</b><span>Performance coach, ex-trail racer</span></div><div class="person"><i></i><b>Aiko Tanaka</b><span>Wilderness medic and route planner</span></div></div></div></section>
+<section><div class="wrap"><h2>From the journal</h2><div class="g3">
+<div class="card"><h3>Heart-rate zones above 2,500 m</h3><p>Why your zone 2 shifts at altitude and how to pace it.</p></div><div class="card"><h3>Packing for a 20 km vertical day</h3><p>A 6 kg checklist tested on three ranges.</p></div><div class="card"><h3>Recovery between hut nights</h3><p>Sleep, fuel and mobility protocols from our guides.</p></div></div></div></section>
+<section class="cta"><div class="wrap"><h2>Pick your next ascent</h2><a class="btn" href="#">Plan a tour</a></div></section>
+<footer><div class="wrap">Tave Guided Hiking, Via Roma 12, Aosta, Italy. support@tave.example</div></footer>
+</body></html>

@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0089",
+ "severity": "subtle",
+ "flaws": [
+  "Hero CTA recolored pale lavender with low-contrast text, much less prominent",
+  "Off-palette magenta accent on tag and stat numbers",
+  "Hero padding cramped and lede line runs overlong"
+ ]
+}

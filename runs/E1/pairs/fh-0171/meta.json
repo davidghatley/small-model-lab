@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0171",
+ "brief_id": "e1-0171",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1's metrics panel and restrained palette speak to enterprise IT; v2 is moodier but less credible.",
+ "staging_src": "runs/E1/staging/e1-0171",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Near-black GitHub-like dark, serif headline, split hero with live metrics panel and comparison table",
+  "Purple-black glow, centered huge grotesk headline, coral pill CTA, blog cards"
+ ],
+ "v1_side": "b"
+}

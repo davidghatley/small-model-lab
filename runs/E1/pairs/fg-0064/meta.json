@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0064",
+ "brief_id": "e1-0064",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut to 42px medium and out-sized by 26px lead",
+  "Muddy desaturated palette replaces bright yellow/pink/teal",
+  "CTA same tone as background and small",
+  "Four font families: Bricolage, Courier, Georgia, Arial Black",
+  "Cramped hero with reduced padding and gap"
+ ],
+ "staging_src": "runs/E1/staging/e1-0064",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 48.161,
+ "pixel_pct_changed": 83.817
+}

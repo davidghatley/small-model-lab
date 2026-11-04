@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Zenmo - Aquarium Supplies</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#04202e;--deep:#031a26;--ink:#f2fbff;--mu:#a7c7d4;--ac:#ff6a3d;--c:#2ee6d0;--line:#0f4258}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.6 'Nunito Sans',system-ui,sans-serif}
+.w{max-width:1200px;margin:0 auto;padding:0 36px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font:800 28px 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em}.logo b{color:var(--c)}
+nav .l{display:flex;gap:28px;align-items:center;font-weight:600;font-size:15px;color:var(--mu)}
+.btn{display:inline-block;background:var(--ac);color:#fff;font:700 18px 'Bricolage Grotesque',sans-serif;padding:16px 32px;border-radius:14px;text-decoration:none}
+.btn.s{padding:10px 20px;font-size:14px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;padding:48px 0 80px;align-items:center}
+.pill{display:inline-block;background:rgba(46,230,208,.14);color:var(--c);padding:6px 14px;border-radius:99px;font-weight:600;font-size:14px;margin-bottom:20px}
+h1{font:800 78px/1 'Bricolage Grotesque',sans-serif;letter-spacing:-.035em;margin-bottom:22px}
+h1 span{color:var(--c)}
+.lede{font-size:20px;color:var(--mu);max-width:520px;margin-bottom:32px}
+.cta{display:flex;gap:18px;align-items:center}.cta small{color:var(--mu)}
+.tank{height:440px;border-radius:28px;border:2px solid var(--line);background:linear-gradient(180deg,#0a5a78,#052f44 70%,#1c1a12 70%,#4a3a1e);position:relative;overflow:hidden}
+.tank svg{position:absolute;inset:0;width:100%;height:100%}
+.tag{position:absolute;right:20px;top:20px;background:var(--ac);padding:8px 14px;border-radius:10px;font:700 14px 'Bricolage Grotesque'}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font:800 44px/1.05 'Bricolage Grotesque',sans-serif;letter-spacing:-.02em;margin-bottom:12px}.sub{color:var(--mu);margin-bottom:36px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{background:var(--deep);border:1px solid var(--line);border-radius:20px;padding:26px}
+.card h3{font:700 22px 'Bricolage Grotesque';margin-bottom:6px}.card p{color:var(--mu);font-size:15px}
+.price{font:800 44px 'Bricolage Grotesque';color:var(--c);margin:6px 0}
+.card.f{background:var(--c);color:#04202e}.card.f .price{color:#04202e}.card.f p{color:#04202e}
+.logos{display:flex;justify-content:space-between;font:800 22px 'Bricolage Grotesque';color:#4f7a8c}
+.big{font:800 54px 'Bricolage Grotesque';color:var(--ac);line-height:1}
+footer{border-top:1px solid var(--line);padding:32px 36px;max-width:1200px;margin:0 auto;display:flex;justify-content:space-between;color:var(--mu);font-size:14px}
+</style><style>/* flaws */
+
+h1 span{color:#b86bff!important}
+.btn{background:#2a6a86!important;color:#d6eef7!important;font-size:15px!important;padding:12px 22px!important}
+.pill{margin-left:22px!important}
+.tank{margin-top:34px!important}
+
+</style></head><body>
+<div class="w"><nav><div class="logo">zenmo<b>.</b></div><div class="l"><span>Pricing</span><span>Features</span><span>Reviews</span><a class="btn s" href="#">Shop starter kits</a></div></nav>
+<header class="hero"><div><div class="pill">Free tank-setup coaching</div>
+<h1>Your first tank, <span>done right.</span></h1>
+<p class="lede">Zenmo sells complete aquarium kits, tested water chemistry and live support for first-time home buyers filling a brand-new living room.</p>
+<div class="cta"><a class="btn" href="#">Shop starter kits</a><small>Ships in 24 hours. 30-day livestock guarantee.</small></div></div>
+<div class="tank"><svg viewBox="0 0 400 440"><g fill="#2ee6d0" opacity=".25"><circle cx="90" cy="120" r="8"/><circle cx="110" cy="80" r="5"/><circle cx="300" cy="150" r="10"/></g><path d="M120 250 q40 -40 80 0 q-40 40 -80 0 M200 250 l30 -20 v40z" fill="#ff6a3d"/><path d="M300 310 q10 -90 -10 -140 M320 310 q-5 -70 15 -120" stroke="#2ee6d0" stroke-width="6" fill="none"/></svg><div class="tag">Kit 40L / $149</div></div></header></div>
+<section><div class="w"><h2>Pricing</h2><p class="sub">Three kits. Everything in the box.</p><div class="g3">
+<div class="card"><h3>Nano 20L</h3><div class="price">$89</div><p>Tank, filter, light, heater, starter bacteria.</p></div>
+<div class="card f"><h3>Home 40L</h3><div class="price">$149</div><p>Adds stand, test kit, 3 plants. Most popular.</p></div>
+<div class="card"><h3>Statement 90L</h3><div class="price">$329</div><p>Rimless glass, canister filter, programmable LED.</p></div></div></div></section>
+<section><div class="w"><h2>Features</h2><p class="sub">Built so the first month is boring in the best way.</p><div class="g3">
+<div class="card"><h3>Cycle guarantee</h3><p>If your tank does not cycle in 6 weeks, we replace it.</p></div>
+<div class="card"><h3>Live chat</h3><p>Real aquarists, 8am to 10pm, every day.</p></div>
+<div class="card"><h3>Water test credits</h3><p>Free monthly test strips, delivered.</p></div></div></div></section>
+<section><div class="w"><div class="logos"><span>AquaSoft</span><span>Finwell</span><span>ReefLab</span><span>Tidal</span><span>PlantPro</span></div></div></section>
+<section><div class="w"><h2>Case studies</h2><p class="sub">New owners, real tanks.</p><div class="g3">
+<div class="card"><div class="big">8 wks</div><h3>Jess &amp; Tom, condo</h3><p>From empty box to stable planted tank.</p></div>
+<div class="card"><div class="big">0</div><h3>Rina, townhouse</h3><p>Zero fish losses in the first quarter.</p></div>
+<div class="card"><div class="big">3</div><h3>The Okafors</h3><p>Grew from one 20L to three tanks in a year.</p></div></div></div></section>
+<section><div class="w"><h2>Testimonials</h2><p class="sub">&nbsp;</p><div class="g3">
+<div class="card"><p>"I bought a house and a fish tank in the same month. Zenmo made one of them easy."</p></div>
+<div class="card"><p>"The chat team talked me out of overstocking. Saved my betta and my sanity."</p></div>
+<div class="card"><p>"Test strips show up before I remember to order them."</p></div></div></div></section>
+<footer><span>Zenmo Aquarium Supply</span><span>fins@zenmo.shop</span></footer>
+</body></html>

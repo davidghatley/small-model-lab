@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0102",
+ "brief_id": "e1-0102",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Yellow headline on cream, serif font clash, overlapping art",
+  "Subhead at 11px low-contrast and overlapping headline",
+  "Art shifted over text; cards white-on-yellow unreadable",
+  "CTA/pill nearly invisible low contrast",
+  "Logo in Courier, inconsistent fonts"
+ ],
+ "staging_src": "runs/E1/staging/e1-0102",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 17.25,
+ "pixel_pct_changed": 19.309
+}

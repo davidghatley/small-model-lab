@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0143",
+ "severity": "subtle",
+ "flaws": [
+  "CTA pale pink with white text, smaller, no shadow: weaker prominence",
+  "off-palette purple on the accent word",
+  "flatter headline scale (74px to 54px)",
+  "hero padding cramped and paragraph line length overlong"
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0101",
+ "severity": "subtle",
+ "flaws": [
+  "Hero text column stretched so subhead line length is overlong",
+  "Primary CTA muted, smaller and less prominent",
+  "Off-palette red logo/accent against sage scheme"
+ ]
+}

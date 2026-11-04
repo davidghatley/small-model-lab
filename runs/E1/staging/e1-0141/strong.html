@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gimerar Used-Car Inspections</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d1b2a;--panel:#14283d;--mint:#4ff0b0;--ink:#eaf4ff;--mut:#9db4cc;--sun:#ffd166}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Space Grotesk',sans-serif;background:var(--bg);color:var(--ink);font-size:18px;line-height:1.55}
+nav{display:flex;justify-content:space-between;align-items:center;padding:24px 72px}
+.logo{font-weight:700;font-size:24px;letter-spacing:-.02em}.logo i{color:var(--mint);font-style:normal}
+nav ul{display:flex;gap:32px;list-style:none;padding:0;color:var(--mut)}
+.hero{padding:56px 72px 64px;display:grid;grid-template-columns:1.2fr 1fr;gap:56px;align-items:center}
+.tag{font-family:'JetBrains Mono',monospace;font-size:14px;color:var(--mint);margin-bottom:16px}
+h1{font-size:72px;line-height:1.02;letter-spacing:-.035em;margin-bottom:24px}
+h1 span{color:var(--mint)}
+.hero p{color:var(--mut);max-width:500px;font-size:20px;margin-bottom:32px}
+.btn{display:inline-block;background:var(--mint);color:#06231a;font-weight:700;padding:18px 32px;border-radius:10px;text-decoration:none}
+.panel{background:var(--panel);border:1px solid #24405c;border-radius:16px;padding:28px;font-family:'JetBrains Mono',monospace;font-size:14px}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px solid #24405c;color:var(--mut)}
+.ok{color:var(--mint)}.warn{color:var(--sun)}
+section{padding:64px 72px}
+h2{font-size:36px;letter-spacing:-.02em;margin-bottom:28px}
+.g{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.c{background:var(--panel);border-radius:14px;padding:28px;color:var(--mut)}
+.c b{color:var(--ink);display:block;font-size:22px;margin-bottom:8px}
+.cta{background:var(--mint);color:#06231a;text-align:center;padding:64px}
+.cta h2{margin-bottom:12px}
+footer{padding:32px 72px;color:var(--mut);font-size:15px}
+</style></head><body>
+<nav><div class="logo">gimerar<i>.</i></div><ul><li>How it works</li><li>Cities</li><li>Journal</li><li>Sign in</li></ul></nav>
+<header class="hero"><div>
+<div class="tag">// 150-point inspection, in your driveway</div>
+<h1>Debug a used car <span>before you buy it.</span></h1>
+<p>Two mechanics, one mission: nobody inherits someone else's hidden problems. Get a clear, honest report in 24 hours.</p>
+<a class="btn" href="#">Book an inspection - $149</a></div>
+<div class="panel"><div class="row"><span>2017 Subaru Outback</span><span>VIN ...4821</span></div><div class="row"><span>Engine and fluids</span><span class="ok">PASS</span></div><div class="row"><span>Brake pads (front)</span><span class="warn">3mm WARN</span></div><div class="row"><span>Frame and rust</span><span class="ok">PASS</span></div><div class="row"><span>Transmission log</span><span class="ok">PASS</span></div><div class="row"><span>Negotiation leverage</span><span class="ok">$1,150</span></div></div></header>
+<section><h2>Where we inspect</h2><div class="g"><div class="c"><b>Seattle</b>Capitol Hill to Bellevue</div><div class="c"><b>Austin</b>Downtown and Round Rock</div><div class="c"><b>Denver</b>Front Range, mobile</div></div></section>
+<section><h2>From the journal</h2><div class="g"><div class="c"><b>Reading a CarFax like a stack trace</b>6 min read</div><div class="c"><b>The 5 sounds a CVT makes before it dies</b>4 min read</div><div class="c"><b>We found 312 odometer lies</b>8 min read</div></div></section>
+<section><h2>Recent finds</h2><div class="g"><div class="c"><b>Flood line</b>Hidden under carpet</div><div class="c"><b>Repainted panel</b>Detected by gauge</div><div class="c"><b>Clean bill</b>Bought with confidence</div></div></section>
+<div class="cta"><h2>Make the next car a good one.</h2>Reports in 24 hours, money back if we miss a major fault.</div>
+<footer>Gimerar Inspections · hello@gimerar.example · Privacy · Terms</footer>
+</body></html>

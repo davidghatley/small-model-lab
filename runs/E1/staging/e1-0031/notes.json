@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0031",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 38px so it no longer dominates; kicker is larger than it",
+  "Four font families (Fraunces, Georgia, Courier, Trebuchet)",
+  "CTA is a pale tan button with low-contrast label, blends into background",
+  "Muddy beige palette with washed-out accent",
+  "Cramped hero: tight padding, narrow gap, stacked copy with uneven margins",
+  "Inconsistent spacing between nav and hero"
+ ]
+}

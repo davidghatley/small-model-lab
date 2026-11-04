@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0137",
+ "severity": "subtle",
+ "flaws": [
+  "flatter type scale, headline underpowered",
+  "off-palette blue label against orange brand accent",
+  "CTA pale and less prominent"
+ ]
+}

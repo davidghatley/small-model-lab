@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0098",
+ "brief_id": "e1-0098",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Headline scale flattened from 60px to 44px",
+  "CTA uses an off-palette bright blue against the earthy browns and greens",
+  "Text column nudged down and headline shifted left, so hero content is unevenly aligned with the illustration"
+ ],
+ "staging_src": "runs/E1/staging/e1-0098",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 13.402,
+ "pixel_pct_changed": 11.982
+}

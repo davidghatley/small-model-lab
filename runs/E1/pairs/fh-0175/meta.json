@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0175",
+ "brief_id": "e1-0175",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 delivers the quirky/irreverent tone with confident hierarchy; v2 is pleasant but tamer.",
+ "staging_src": "runs/E1/staging/e1-0175",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "Neo-brutalist yellow, heavy grotesk, rotated sticker card, hard shadows",
+  "Soft sage, DM Serif centered headline, layered ridge illustration, rounded testimonials"
+ ],
+ "v1_side": "a"
+}

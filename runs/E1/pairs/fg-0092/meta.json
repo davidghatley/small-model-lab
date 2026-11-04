@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0092",
+ "brief_id": "e1-0092",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA uses an off-palette electric blue that clashes with the retro warm palette and lost its offset shadow",
+  "Headline scale flattened from 72px to 54px, weakening hierarchy",
+  "Hero paragraph runs the full column width (overlong line length)",
+  "Eyebrow label indented slightly out of alignment with headline"
+ ],
+ "staging_src": "runs/E1/staging/e1-0092",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 12.964,
+ "pixel_pct_changed": 12.818
+}

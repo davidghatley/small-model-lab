@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0150",
+ "brief_id": "e1-0150",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has clearer hierarchy and conveys precision with concrete data; v2 hero number is striking but copy is thinner.",
+ "staging_src": "runs/E1/staging/e1-0150",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "Light spec-sheet, split hero with live spec panel, IBM Plex mono/sans",
+  "Dark centered hero dominated by giant 3.0 C readout, Space Grotesk"
+ ],
+ "v1_side": "b"
+}

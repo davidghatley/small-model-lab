@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0142",
+ "brief_id": "e1-0142",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline shrunk to 34px, no longer dominant",
+  "four font families (Georgia, Courier, Trebuchet, Plex)",
+  "muddy olive/khaki palette",
+  "CTA washed out and doesn't stand out",
+  "cramped, inconsistent hero spacing"
+ ],
+ "staging_src": "runs/E1/staging/e1-0142",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 27.239,
+ "pixel_pct_changed": 39.885
+}

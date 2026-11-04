@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0075",
+ "brief_id": "e1-0075",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "giant yellow script headline overlapping the form and unreadable against white",
+  "lead text 12px pale cyan on white",
+  "CTA yellow with white text and dashed pink border",
+  "form box rotated, shifted over headline, green with low-contrast text",
+  "inconsistent fonts: script, Times, Comic Sans, Manrope",
+  "nav 8px tiny low-contrast text"
+ ],
+ "staging_src": "runs/E1/staging/e1-0075",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 58.814,
+ "pixel_pct_changed": 41.882
+}

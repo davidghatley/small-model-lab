@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0032",
+ "severity": "subtle",
+ "flaws": [
+  "Flatter type scale: h1 reduced from 54px to 40px, barely above lede",
+  "Off-palette orange accent on CTAs against blue/mono system",
+  "Hero padding cut, spec panel cramped"
+ ]
+}

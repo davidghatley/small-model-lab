@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lumelni - Secrets stay on your machine</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#09080c;--panel:#121018;--line:#262230;--fg:#ece8f2;--mute:#8d869b;--ember:#ff9a3d;--violet:#7c5cff;--s1:8px;--s2:16px;--s3:24px;--s4:48px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{font-family:"JetBrains Mono",ui-monospace,Menlo,monospace;background:var(--bg);color:var(--fg);line-height:1.65;font-size:15px;background-image:radial-gradient(ellipse 70% 50% at 75% 0%,rgba(124,92,255,.25),transparent)}
+.w{max-width:1120px;margin:0 auto;padding:0 var(--s3)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0;font-size:14px}
+.logo{font-family:Fraunces,Georgia,serif;font-size:26px;font-weight:600}.logo i{color:var(--ember);font-style:normal}
+nav a{color:var(--mute);text-decoration:none;margin-left:var(--s3)}
+.hero{padding:var(--s5) 0;display:grid;grid-template-columns:1.3fr 1fr;gap:var(--s4);align-items:center}
+.eye{color:var(--ember);font-size:13px;margin-bottom:var(--s3)}
+h1{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:76px;line-height:1.02;letter-spacing:-2px}
+h1 em{color:var(--ember);font-style:italic}
+.sub{color:var(--mute);font-size:17px;max-width:32em;margin:var(--s3) 0 var(--s4)}
+.btn{display:inline-block;background:var(--ember);color:#150b00;font-weight:500;padding:16px 28px;text-decoration:none;border-radius:4px;font-size:15px;box-shadow:0 0 40px rgba(255,154,61,.35)}
+.btn.g{background:none;color:var(--fg);border:1px solid var(--line);box-shadow:none;margin-left:var(--s2)}
+.term{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:var(--s3);font-size:13px;color:var(--mute)}
+.term b{color:var(--fg);font-weight:500}.term .ok{color:#6be08f}.term .dots{display:flex;gap:6px;margin-bottom:var(--s2)}.term .dots i{width:10px;height:10px;border-radius:50%;background:var(--line)}
+section{padding:var(--s5) 0;border-top:1px solid var(--line)}
+h2{font-family:Fraunces,Georgia,serif;font-weight:400;font-size:42px;letter-spacing:-1px;margin-bottom:var(--s4);line-height:1.1}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;padding:var(--s3)}.card h3{font-family:Fraunces,serif;font-weight:600;font-size:21px;margin-bottom:var(--s1)}.card p{color:var(--mute);font-size:14px}
+.card .n{color:var(--ember);font-size:13px;margin-bottom:var(--s2)}
+.big{font-family:Fraunces,serif;font-size:44px;color:var(--ember);line-height:1}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}.team div{border-left:2px solid var(--violet);padding-left:var(--s2)}.team b{font-family:Fraunces,serif;font-size:19px;font-weight:600;display:block}.team span{color:var(--mute);font-size:13px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2);max-width:720px}
+input,textarea{font:inherit;background:var(--panel);border:1px solid var(--line);color:var(--fg);padding:14px;border-radius:4px}textarea{grid-column:1/-1;height:100px}form .btn{grid-column:1/-1;justify-self:start;border:0;cursor:pointer}
+footer{border-top:1px solid var(--line);padding:var(--s4) 0;color:var(--mute);font-size:13px;display:flex;justify-content:space-between}
+</style></head><body>
+<div class="w"><nav><div class="logo">lumelni<i>_</i></div><div><a href="#">Features</a><a href="#">Cases</a><a href="#">Team</a><a href="#">Contact</a></div></nav>
+<div class="hero"><div><div class="eye">&gt; local-first &middot; end-to-end encrypted &middot; audited</div>
+<h1>Your team's secrets, <em>never in our cloud.</em></h1>
+<p class="sub">Lumelni is a password manager that keeps vaults on your own devices and syncs peer to peer. No server holds your keys, so there is nothing for anyone to breach.</p>
+<a class="btn" href="#">Start a 14-day trial</a><a class="btn g" href="#">Read the spec</a></div>
+<div class="term"><div class="dots"><i></i><i></i><i></i></div><p><b>$</b> lumelni sync --peer build-03</p><p class="ok">&#10003; handshake verified (ed25519)</p><p class="ok">&#10003; 214 items merged, 0 conflicts</p><p>&#9679; server contacted: <b>none</b></p></div></div></div>
+<section><div class="w"><h2>Built for people who read the source</h2><div class="g3">
+<div class="card"><div class="n">01</div><h3>Peer-to-peer sync</h3><p>Vaults replicate between your devices over an encrypted mesh.</p></div>
+<div class="card"><div class="n">02</div><h3>CLI and SSH agent</h3><p>Inject secrets into shells, CI runners and git without copy-paste.</p></div>
+<div class="card"><div class="n">03</div><h3>Open audits</h3><p>Two independent audits, with reports and the full code published.</p></div></div></div></section>
+<section><div class="w"><h2>Case studies</h2><div class="g3">
+<div class="card"><div class="big">0 leaks</div><p>A 60-person fintech moved off a hosted vault in a weekend.</p></div>
+<div class="card"><div class="big">-9 hrs</div><p>Weekly credential-rotation work removed for a game-server team.</p></div>
+<div class="card"><div class="big">100%</div><p>Offline access kept for a field-research lab with poor uplink.</p></div></div></div></section>
+<section><div class="w"><h2>The team</h2><div class="team">
+<div><b>Ada Kowalski</b><span>Cryptography</span></div><div><b>Jun Park</b><span>Systems</span></div><div><b>Rosa Mendes</b><span>Security review</span></div><div><b>Elan Cho</b><span>Developer tools</span></div></div></div></section>
+<section><div class="w"><h2>Talk to an engineer</h2><form><input placeholder="name"><input placeholder="work email"><textarea placeholder="team size, stack, questions"></textarea><button class="btn">Send</button></form></div></section>
+<div class="w"><footer><span>&copy; 2026 Lumelni</span><span>security@lumelni.example &middot; PGP &middot; Privacy</span></footer></div>
+</body></html>

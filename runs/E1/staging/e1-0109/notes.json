@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0109",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk, grey serif, loses to oversized eyebrow",
+  "Cramped hero",
+  "CTAs dull olive on dark, not prominent",
+  "Muddy olive/brown palette in terminal card replacing the clean mint/dark scheme",
+  "Four font families"
+ ]
+}

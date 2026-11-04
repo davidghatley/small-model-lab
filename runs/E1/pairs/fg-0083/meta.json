@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0083",
+ "brief_id": "e1-0083",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "H1 reduced to 52px: flatter type scale, headline less dominant",
+  "CTA restyled as a pale outline button, much less prominent",
+  "Off-palette teal accent on eyebrow and stat numbers; hero lede overlong line; cramped hero padding"
+ ],
+ "staging_src": "runs/E1/staging/e1-0083",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 22.133,
+ "pixel_pct_changed": 27.993
+}

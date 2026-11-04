@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0106",
+ "brief_id": "e1-0106",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 38px, lead and tags compete; weak hierarchy",
+  "Hero cramped with tight padding and gaps",
+  "CTA beige on beige, tiny, not standing out",
+  "Muddy tan/olive palette on jar card",
+  "Four fonts: Fraunces, Trebuchet, Courier, Karla"
+ ],
+ "staging_src": "runs/E1/staging/e1-0106",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 22.304,
+ "pixel_pct_changed": 54.312
+}

@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0144",
+ "brief_id": "e1-0144",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "hero headline small and grey on dark, not dominant",
+  "body text near-invisible and tiny",
+  "chip text same color as its background",
+  "CTA tiny, yellow with white text, absolutely placed away from copy",
+  "nav links black on near-black",
+  "random fonts (Brush Script, Papyrus, Courier)",
+  "glaring magenta blob behind the text"
+ ],
+ "staging_src": "runs/E1/staging/e1-0144",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 28.346,
+ "pixel_pct_changed": 44.875
+}

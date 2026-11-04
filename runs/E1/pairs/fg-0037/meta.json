@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0037",
+ "brief_id": "e1-0037",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline demoted to 32px Georgia, smaller than the eyebrow",
+  "Four font families (Manrope, Georgia, Comic Sans, Courier)",
+  "Primary and secondary CTAs identical pale beige, no emphasis",
+  "Muddy beige palette replacing the crisp green/white",
+  "Cramped hero with uneven spacing and an offset, tight dashboard card"
+ ],
+ "staging_src": "runs/E1/staging/e1-0037",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 32.598,
+ "pixel_pct_changed": 96.368
+}

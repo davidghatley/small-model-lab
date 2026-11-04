@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0048",
+ "severity": "obvious",
+ "flaws": [
+  "Flat-rate panel neon green with magenta text, overlapping the headline",
+  "Lead paragraph light grey 13px on white, nearly invisible",
+  "Eyebrow 10px pale peach on white",
+  "Nav tiny grey Comic Sans, logo shrunk to 14px Courier",
+  "CTA yellow with white text and ghost button overlaps it",
+  "Hero blocks misaligned vertically"
+ ]
+}

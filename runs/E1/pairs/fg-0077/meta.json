@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0077",
+ "brief_id": "e1-0077",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA button washed-out pale clay with white text, low contrast and smaller",
+  "overlong lead line extending past the hero column",
+  "off-palette cool blue pill against warm wood/clay palette",
+  "slightly flatter headline and tighter hero padding"
+ ],
+ "staging_src": "runs/E1/staging/e1-0077",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 18.699,
+ "pixel_pct_changed": 19.812
+}

@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0122",
+ "severity": "subtle",
+ "flaws": [
+  "flatter type scale: h1 60px vs 88px, lede 18px",
+  "off-palette magenta accent on highlighted headline word",
+  "CTA demoted to a small outlined button with no emphasis"
+ ]
+}

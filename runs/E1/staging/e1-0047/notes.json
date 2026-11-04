@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0047",
+ "severity": "subtle",
+ "flaws": [
+  "Orange gradient accent off-palette against the mint/violet scheme",
+  "Lead line length stretched to about 95 characters",
+  "Primary CTA reduced to a dark low-emphasis button"
+ ]
+}

@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0107",
+ "severity": "subtle",
+ "flaws": [
+  "Hero lead line length overlong",
+  "Primary CTA washed out salmon with weak border, less prominent",
+  "Off-palette blue cover clashing with red/teal/yellow scheme"
+ ]
+}

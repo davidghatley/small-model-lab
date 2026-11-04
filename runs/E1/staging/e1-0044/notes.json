@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0044",
+ "severity": "subtle",
+ "flaws": [
+  "Lead paragraph widened to roughly 95 characters per line",
+  "Off-palette hot pink used for the eyebrow and headline highlight",
+  "Primary CTA washed out and smaller, less prominent"
+ ]
+}

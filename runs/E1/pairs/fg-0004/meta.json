@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0004",
+ "brief_id": "e1-0004",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut to 32px serif so it is weaker than the eyebrow/body, no dominant hierarchy",
+  "Palette turned from cool ice/violet to muddy brown/amber, off-tone for futuristic brief",
+  "Hero collapsed to a cramped stacked block with inconsistent spacing",
+  "Three+ font families (script logo, Courier nav, Times headline, Georgia body)",
+  "Primary CTA a dull brown button identical in weight to the secondary"
+ ],
+ "staging_src": "runs/E1/staging/e1-0004",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.567,
+ "pixel_pct_changed": 89.792
+}

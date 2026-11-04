@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0025",
+ "brief_id": "e1-0025",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 44px so the lede and terminal compete with it; weak hierarchy",
+  "Muddy grey-brown/khaki palette replaces the cyan/indigo on near-black, losing the futuristic sleek tone",
+  "Both CTAs are small tan-on-brown buttons with no emphasis",
+  "Four font families: Palatino body, Trebuchet headline, Georgia lede, JetBrains Mono",
+  "Inconsistent spacing: cramped nav/hero/lede gaps versus oversized chip and terminal margins"
+ ],
+ "staging_src": "runs/E1/staging/e1-0025",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 44.407,
+ "pixel_pct_changed": 99.997
+}

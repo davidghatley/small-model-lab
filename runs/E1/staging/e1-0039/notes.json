@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0039",
+ "severity": "obvious",
+ "flaws": [
+  "Headline shrunk to 30px Impact in tan on tan, clashing with the serif system and low contrast",
+  "Lede 11px beige on beige",
+  "Kicker in cyan Courier, off-palette",
+  "CTA beige-on-beige with 11px label",
+  "Photo panel shifted left over the copy, rotated, with neon yellow fill",
+  "Nav links and logo washed out/tiny"
+ ]
+}

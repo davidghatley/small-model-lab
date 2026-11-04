@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0185",
+ "brief_id": "e1-0185",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 conveys futuristic and sleek with a concrete product visual; v2 is clean but has a thinner focal point and more generic look.",
+ "staging_src": "runs/E1/staging/e1-0185",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1: dark sci-fi with cyan glow, split hero with robot schematic panel",
+  "v2: light airy centered ultralight type with dark stat pane"
+ ],
+ "v1_side": "b"
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0113",
+ "brief_id": "e1-0113",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Flatter type scale: headline reduced to 54px",
+  "CTA made pale, flat and smaller so it is less prominent",
+  "Step cards unevenly aligned (middle offset down, third shifted left)"
+ ],
+ "staging_src": "runs/E1/staging/e1-0113",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 14.464,
+ "pixel_pct_changed": 13.427
+}

@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0054",
+ "brief_id": "e1-0054",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Body copy and nav nearly invisible dark-on-dark",
+  "Gold replaced with hot pink, killing the luxury feel",
+  "Teal image panel clashing with palette and overlapping the text column",
+  "Oversized Impact headline with collapsed leading, lines collide",
+  "Paragraph pulled up into the headline",
+  "Nav in a mismatched comic font",
+  "Eyebrow text tiny"
+ ],
+ "staging_src": "runs/E1/staging/e1-0054",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 36.536,
+ "pixel_pct_changed": 33.152
+}

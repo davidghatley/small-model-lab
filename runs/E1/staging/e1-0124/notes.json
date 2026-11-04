@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0124",
+ "severity": "moderate",
+ "flaws": [
+  "headline shrunk to 36px light weight, weak hierarchy",
+  "four fonts: Lora, Georgia, Courier New, Comic Sans/Arial Black",
+  "muddy beige-grey palette replaces clay and moss",
+  "cramped hero spacing",
+  "CTA tan on tan, barely visible"
+ ]
+}

@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Dratriora — Audiobooks. No fluff.</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;500;700;900&family=Archivo+Narrow:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f4f1ea;--ink:#111;--y:#ffd400;--mute:#444;--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.55 Archivo,system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:3px solid var(--ink);font:700 16px "Archivo Narrow",sans-serif;text-transform:uppercase;letter-spacing:.06em}
+.logo{font:900 26px Archivo;letter-spacing:-.02em;text-transform:none}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0}
+.btn{display:inline-block;background:var(--y);color:var(--ink);font:900 18px Archivo;padding:18px 32px;text-decoration:none;border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink)}
+.btn.w{background:#fff;box-shadow:none;margin-left:var(--s2)}
+.btn.s{font-size:14px;padding:8px 16px;box-shadow:3px 3px 0 var(--ink)}
+.hero{display:grid;grid-template-columns:1.5fr 1fr;gap:var(--s4);padding:var(--s5) 0;align-items:end}
+h1{font:900 96px/.92 Archivo;letter-spacing:-.05em;text-transform:uppercase}
+h1 u{text-decoration:none;background:var(--y);padding:0 8px}
+.lede{font-size:21px;margin:var(--s4) 0;max-width:28em;font-weight:500}
+.stat{border:3px solid var(--ink);background:#fff;padding:var(--s3)}
+.stat b{display:block;font:900 64px/1 Archivo}.stat span{font:700 16px "Archivo Narrow";text-transform:uppercase;letter-spacing:.05em}
+.stat+.stat{border-top:0}
+section{padding:var(--s5) 0 0}
+h2{font:900 52px/1 Archivo;letter-spacing:-.04em;text-transform:uppercase;margin-bottom:var(--s4)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border:3px solid var(--ink)}
+.st{padding:var(--s4) var(--s3);background:#fff}.st+.st{border-left:3px solid var(--ink)}
+.st i{font:900 56px Archivo;font-style:normal;color:var(--ink)}.st h3{font:900 22px Archivo;text-transform:uppercase;margin:8px 0}.st p{color:var(--mute);font-size:16px}
+.app{background:var(--ink);color:var(--bg);padding:var(--s4);display:flex;justify-content:space-between;align-items:center;margin-top:var(--s5)}
+.app h2{margin:0;font-size:38px}.app .btn{box-shadow:6px 6px 0 var(--y);border-color:var(--y)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:var(--s2)}
+input,textarea{padding:14px;border:3px solid var(--ink);background:#fff;font:inherit;width:100%}textarea{grid-column:1/3;height:100px}
+form .btn{grid-column:1/3;justify-self:start;cursor:pointer}
+.cta{text-align:center;margin-top:var(--s5);padding:var(--s5) 0;border-top:3px solid var(--ink)}
+footer{display:flex;justify-content:space-between;font:700 14px "Archivo Narrow";text-transform:uppercase;padding:var(--s4) 0;border-top:3px solid var(--ink);letter-spacing:.06em}
+</style><style>/* flaws */
+:root{--bg:#e2ddd0;--y:#c9b676;--mute:#6a665c}
+h1{font-family:Georgia,serif;font-size:52px;font-weight:700;letter-spacing:0;line-height:1.15;text-transform:none}
+h1 u{background:none;text-decoration:underline}
+.lede{font-family:"Trebuchet MS",sans-serif;font-size:23px;font-weight:400;margin:6px 0 12px;max-width:none}
+.btn{background:#d1c7a0;color:#7b7457;border:1px solid #a89f7d;box-shadow:none;font:500 14px "Courier New",monospace;padding:9px 14px}
+.btn.w{background:#d9d3c2}
+.stat{background:#d6d0be;border:1px solid #b4ad98;padding:12px}
+.stat b{font-size:40px}
+.hero{padding:14px 0 36px;gap:14px}
+nav{padding:6px 0 38px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">Dratriora</span><ul><li>How it works</li><li>Pricing</li><li>Contact</li></ul><a class="btn s" href="#">Get the app</a></nav>
+<header class="hero">
+<div><h1>Listen more. <u>Pay less.</u></h1>
+<p class="lede">One audiobook a month, any title in the catalogue, $9. No credits, no upsells, no points. Two people run this company and we answer every email ourselves.</p>
+<a class="btn" href="#">Start 14-day trial</a><a class="btn w" href="#">See the catalogue</a></div>
+<div><div class="stat"><b>52,000</b><span>titles, none locked</span></div><div class="stat"><b>$9</b><span>per month, flat</span></div></div>
+</header>
+<section><h2>How it works</h2><div class="g3"><div class="st"><i>1</i><h3>Sign up</h3><p>Email and card. Two minutes.</p></div><div class="st"><i>2</i><h3>Pick a book</h3><p>Any title. It's yours to keep.</p></div><div class="st"><i>3</i><h3>Listen anywhere</h3><p>Offline, on speed, on the commute.</p></div></div></section>
+<div class="app"><h2>The app. iOS and Android.</h2><a class="btn" href="#">Download</a></div>
+<section><h2>Talk to us</h2><form><input placeholder="Name"><input placeholder="Email"><textarea placeholder="What do you need?"></textarea><a class="btn" href="#">Send it</a></form></section>
+<div class="cta"><h2>Stop browsing. Start listening.</h2><a class="btn" href="#">Start 14-day trial</a></div>
+<footer><span>© 2026 Dratriora. Two humans, one inbox.</span><span>Privacy · Terms · Refunds</span></footer>
+</div></body></html>

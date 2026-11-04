@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0114",
+ "brief_id": "e1-0114",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline widened across the sidebar and overlaps the quote column",
+  "Oversized red circle dragged over the headline",
+  "Lead paragraph 10px pale grey on paper in Courier",
+  "Quote in red Comic Sans at small size on near-matching background",
+  "Clashing neon green/magenta CTA, blue Impact headline (inconsistent fonts)",
+  "Nav links and footer facts washed out to near-invisible"
+ ],
+ "staging_src": "runs/E1/staging/e1-0114",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.964,
+ "pixel_pct_changed": 14.163
+}

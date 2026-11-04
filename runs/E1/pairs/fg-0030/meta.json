@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0030",
+ "brief_id": "e1-0030",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline shrunk to 26px in a serif that clashes with the grotesk body, low-contrast olive color",
+  "Lede text 12px and dark grey on near-black, unreadable",
+  "Visual panel shifted left/down so it overlaps the text column",
+  "CTA button gold-on-gold, almost invisible label",
+  "Tag line in loud magenta 22px, clashing with the teal palette",
+  "Stats row pulled up into the CTA with 9px dark text",
+  "Nav links nearly invisible"
+ ],
+ "staging_src": "runs/E1/staging/e1-0030",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 16.778,
+ "pixel_pct_changed": 38.488
+}

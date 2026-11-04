@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0057",
+ "severity": "obvious",
+ "flaws": [
+  "Tiny low-contrast lede on cream",
+  "Lime headline span on cream is nearly unreadable",
+  "Magenta date chip with neon green text",
+  "Shape art shifted left over the headline",
+  "Headline in a mismatched serif italic",
+  "Buttons in monospace",
+  "Second button misaligned and overlapping the first"
+ ]
+}

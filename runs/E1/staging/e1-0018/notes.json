@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0018",
+ "severity": "obvious",
+ "flaws": [
+  "Pale khaki page background replaces dark navy; clashing yellow/orange headline and hot-pink card",
+  "Rotated pink dotted-border stat card dragged over the headline: overlapping blocks",
+  "Subhead, tag and nav at 8-10px with near-background colours: unreadable",
+  "CTA buttons tiny, green-on-green and beige-on-beige, displaced away from copy",
+  "Fonts mixed: Pacifico, Courier New, Comic Neue, Sora"
+ ]
+}

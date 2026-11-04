@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0078",
+ "severity": "obvious",
+ "flaws": [
+  "headline shrunk and in Impact, pale yellow on light blue, overlapped by glasses graphic",
+  "lead text 10px pale on light blue",
+  "yellow tag with near-yellow text, light-blue CTA with light-blue text, overlapping the lead",
+  "glasses illustration pulled left over text; hero has large dead space below",
+  "nav 8px low contrast, Courier logo, inconsistent fonts"
+ ]
+}

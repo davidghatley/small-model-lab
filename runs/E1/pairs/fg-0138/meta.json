@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0138",
+ "brief_id": "e1-0138",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Impact neon-green headline with collapsed line-height overlapping the paragraph",
+  "tiny near-invisible lede on dark background",
+  "CTA yellow text on lime, unreadable",
+  "secondary button overlaps primary",
+  "tiny nav links",
+  "logo in mismatched font"
+ ],
+ "staging_src": "runs/E1/staging/e1-0138",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 10.538,
+ "pixel_pct_changed": 8.498
+}

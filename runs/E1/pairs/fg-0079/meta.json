@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0079",
+ "brief_id": "e1-0079",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline cut to 46px light serif, losing the punchy irreverent weight and hierarchy",
+  "both CTAs small, beige on beige, no border or shadow",
+  "Palatino and Brush Script added to Archivo Black and Space Grotesk (4 families)",
+  "muddy khaki/beige palette replaces orange/lime/black; card text low contrast",
+  "cramped hero with inconsistent gaps"
+ ],
+ "staging_src": "runs/E1/staging/e1-0079",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 75.551,
+ "pixel_pct_changed": 55.162
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Moni - Forms, hand-built since 2006</title>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#efe6d3;--ink:#2f2a1f;--mut:#665c46;--acc:#9a4a24;--moss:#4d5f34;--paper:#faf4e4;--line:#c9b992;--s1:8px;--s2:16px;--s3:32px;--s4:64px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.65 Lora,serif}
+.w{max-width:1140px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:80px}
+.logo{font:700 40px Caveat,cursive;color:var(--moss)}
+nav a{color:var(--mut);text-decoration:none;margin-left:30px;font-size:16px}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:var(--s4);align-items:center;padding:var(--s3) 0 var(--s5)}
+.note{font:700 28px Caveat;color:var(--acc);transform:rotate(-2deg);display:inline-block;margin-bottom:var(--s2)}
+h1{font:700 64px/1.08 Lora,serif;letter-spacing:-.01em}
+.lead{font-size:20px;color:var(--mut);max-width:500px;margin:var(--s3) 0}
+.btn{display:inline-block;background:var(--moss);color:#faf4e4;font:600 18px Lora;padding:16px 32px;border-radius:6px;text-decoration:none;box-shadow:4px 4px 0 var(--ink)}
+.paper{background:var(--paper);padding:var(--s3);border:2px solid var(--ink);box-shadow:8px 8px 0 var(--line);transform:rotate(1.5deg)}
+.paper h3{font:700 30px Caveat;margin-bottom:12px}
+.paper label{display:block;font-size:14px;color:var(--mut);margin-top:12px}
+.paper span{display:block;border-bottom:2px dashed var(--ink);height:32px}
+.paper .chk{display:flex;gap:10px;margin-top:16px;align-items:center}
+.paper .chk i{width:18px;height:18px;border:2px solid var(--ink);display:block}
+.paper .chk i.on{background:var(--acc)}
+sec{display:block;padding:var(--s5) 0;border-top:2px dashed var(--line)}
+h2{font:700 44px/1.1 Lora;margin-bottom:var(--s4)}
+.team{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.team div{background:var(--paper);padding:var(--s3);border:1px solid var(--line)}
+.team i{display:block;width:80px;height:80px;border-radius:50%;background:var(--moss);margin-bottom:12px}
+.team div:nth-child(2) i{background:var(--acc)}.team div:nth-child(3) i{background:#c19a3c}
+.team h3{font:700 32px Caveat}
+.team p{font-size:16px;color:var(--mut)}
+.cta{background:var(--moss);color:var(--paper);padding:var(--s5) 0;text-align:center}
+.cta h2{margin-bottom:var(--s3)}
+.cta .btn{background:var(--paper);color:var(--moss);box-shadow:4px 4px 0 var(--ink)}
+.posts{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+.posts article{border-left:4px solid var(--acc);padding-left:var(--s2)}
+.posts h3{font-size:24px;line-height:1.3;margin-bottom:8px}
+.posts p{color:var(--mut);font-size:16px}
+.plans{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.plan{background:var(--paper);border:2px solid var(--ink);padding:var(--s3)}
+.plan h3{font:700 32px Caveat}
+.price{font:700 46px Lora;margin:8px 0 16px}
+.plan li{list-style:none;padding:4px 0;color:var(--mut)}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3);text-align:center}
+.stats b{display:block;font:700 64px Caveat;color:var(--acc);line-height:1}
+.stats span{color:var(--mut);font-size:16px}
+footer{padding:var(--s3) 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px;border-top:2px dashed var(--line)}
+/* flaws */
+h1{color:#cdbd96}
+.note{font-size:11px;color:#d9cba7}
+.lead{font-size:12px;color:#d0c3a0;max-width:none}
+nav a{font:400 22px Impact,sans-serif;color:#ff00aa}
+.logo{position:relative;left:60px;top:30px}
+.paper{margin-left:-230px;margin-top:80px;position:relative;z-index:2;transform:rotate(7deg)}
+.hero{align-items:start}
+.btn{background:#7b8f5c;color:#8a9c6c;box-shadow:none;margin-left:-20px;position:relative;z-index:3}
+</style></head><body>
+<div class="w">
+<nav><div class="logo">moni</div><div><a href="#">Forms</a><a href="#">Our story</a><a href="#">Pricing</a><a href="#">Log in</a></div></nav>
+<header class="hero"><div>
+<span class="note">twenty years of good forms</span>
+<h1>Make a form as easily as packing a trail mix.</h1>
+<p class="lead">Moni is a no-code form builder for trail clubs, guides and outfitters. Sign-ups, waivers, gear lists and permits, with no code at all.</p>
+<a class="btn" href="#">Build your first form</a></div>
+<div class="paper"><h3>Spring Trail Crew Sign-up</h3><label>Your name</label><span></span><label>Which trail?</label><span></span><div class="chk"><i class="on"></i>I can bring a saw</div><div class="chk"><i></i>I need a carpool</div></div>
+</header></div>
+<sec><div class="w"><h2>The people who make Moni</h2><div class="team">
+<div><i></i><h3>Hannah Birch</h3><p>Founded Moni in 2006 after a lost sign-up sheet at a Sierra Club hike.</p></div>
+<div><i></i><h3>Tomas Reed</h3><p>Lead engineer. Leads trail work every second Saturday.</p></div>
+<div><i></i><h3>Iris Calloway</h3><p>Support. Answers email herself, usually with a story.</p></div></div></div></sec>
+<div class="cta"><div class="w"><h2>Your next trip starts with a sign-up sheet.</h2><a class="btn" href="#">Build your first form</a></div></div>
+<sec style="border:0"><div class="w"><h2>From the field notes</h2><div class="posts">
+<article><h3>How a 12-person climbing club retired its clipboard</h3><p>Their waiver rate went from 60 to 98 percent in one season.</p></article>
+<article><h3>Twenty years, three redesigns, one rule</h3><p>Every Moni form has to work on a phone with cold hands.</p></article></div></div></sec>
+<sec><div class="w"><h2>Fair prices</h2><div class="plans">
+<div class="plan"><h3>Seedling</h3><div class="price">Free</div><ul><li>3 forms</li><li>100 responses a month</li></ul></div>
+<div class="plan"><h3>Trailhead</h3><div class="price">$12</div><ul><li>Unlimited forms</li><li>Waivers and signatures</li></ul></div>
+<div class="plan"><h3>Basecamp</h3><div class="price">$39</div><ul><li>Team accounts</li><li>Payments and permits</li></ul></div></div></div></sec>
+<sec><div class="w"><div class="stats"><div><b>20</b><span>years in business</span></div><div><b>1.8M</b><span>forms filled out</span></div><div><b>6,400</b><span>outdoor groups</span></div><div><b>4</b><span>people answering email</span></div></div></div></sec>
+<div class="w"><footer><span>Moni. Made by hand in Duluth, Minnesota.</span><span>Privacy / Terms / Say hello</span></footer></div>
+</body></html>

@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0163",
+ "brief_id": "e1-0163",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 puts the comparison proof above the fold and reads direct; v2 is stylish but the dark dev look suits students less.",
+ "staging_src": "runs/E1/staging/e1-0163",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1 white bold sans split hero with comparison table in the fold",
+  "v2 dark terminal-mono with lime accent and 3 steps"
+ ],
+ "v1_side": "a"
+}

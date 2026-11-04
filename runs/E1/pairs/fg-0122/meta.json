@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0122",
+ "brief_id": "e1-0122",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "flatter type scale: h1 60px vs 88px, lede 18px",
+  "off-palette magenta accent on highlighted headline word",
+  "CTA demoted to a small outlined button with no emphasis"
+ ],
+ "staging_src": "runs/E1/staging/e1-0122",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 54.594,
+ "pixel_pct_changed": 35.898
+}

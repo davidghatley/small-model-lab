@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0084",
+ "brief_id": "e1-0084",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Giant yellow Impact headline crammed with 0.85 line-height, clashing magenta span",
+  "Opaque lime glow block overlaps headline and lede",
+  "Lede, pill, nav and stats shrunk to 8-12px near-invisible dark-on-dark text",
+  "Buttons offset by relative positioning, overlapping each other, yellow CTA with white text",
+  "Mixed Courier body with Impact headline; hero left-aligned unevenly"
+ ],
+ "staging_src": "runs/E1/staging/e1-0084",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 30.563,
+ "pixel_pct_changed": 37.803
+}

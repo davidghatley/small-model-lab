@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tavelvel - Small-lot coffee, roasted to order</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Jost:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#14100d;--panel:#1d1813;--ink:#f1e8da;--mute:#a99d8a;--gold:#c9a45c;--line:#3a3129;--serif:"Cormorant Garamond",Georgia,serif;--sans:"Jost",system-ui,sans-serif}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:300 18px/1.7 var(--sans)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;height:84px}
+.logo{font:600 28px var(--serif);letter-spacing:.28em;text-transform:uppercase;color:var(--gold)}
+nav ul{display:flex;gap:36px;list-style:none;padding:0;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+.btn{display:inline-block;border:1px solid var(--gold);background:var(--gold);color:#14100d;font:500 14px var(--sans);letter-spacing:.18em;text-transform:uppercase;padding:18px 36px;text-decoration:none}
+.btn.o{background:transparent;color:var(--gold)}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:72px;align-items:center;padding:56px 0 96px}
+.k{font-size:13px;letter-spacing:.24em;text-transform:uppercase;color:var(--gold);margin-bottom:22px}
+h1{font:500 76px/1.02 var(--serif);margin-bottom:26px;letter-spacing:-.01em}
+h1 i{color:var(--gold)}
+.hero p{color:var(--mute);max-width:480px;margin-bottom:36px}
+.cup{height:460px;border:1px solid var(--line);position:relative;background:radial-gradient(circle at 50% 40%,#2c2219,#14100d 70%)}
+.cup svg{position:absolute;inset:0;width:100%;height:100%}
+.cup span{position:absolute;bottom:20px;left:0;right:0;text-align:center;font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+section{padding:88px 0;border-top:1px solid var(--line)}
+h2{font:500 44px/1.1 var(--serif);margin-bottom:12px}
+.lead{color:var(--mute);margin-bottom:44px;max-width:520px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:var(--panel);border:1px solid var(--line);padding:34px}
+.card h3{font:500 28px var(--serif);margin-bottom:8px}.card p{color:var(--mute);font-size:16px}
+.price{font:500 44px var(--serif);color:var(--gold);margin:8px 0}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th,td{padding:18px 20px;text-align:left;border-bottom:1px solid var(--line)}th{font:500 12px var(--sans);letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.q{font:500 24px/1.4 var(--serif)}.q small{display:block;margin-top:14px;font:400 12px var(--sans);letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:760px}
+input,textarea{width:100%;font:inherit;padding:14px;border:0;border-bottom:1px solid var(--mute);background:transparent;color:var(--ink)}
+footer{padding:40px 0;font-size:13px;letter-spacing:.1em;color:var(--mute);border-top:1px solid var(--line)}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">Tavelvel</div><ul><li>Coffees</li><li>Subscriptions</li><li>Journal</li><li>Visit</li></ul></nav>
+<div class="hero">
+<div><div class="k">Artisan roaster &middot; Founded this year</div>
+<h1>Coffee for the <i>first morning</i> in your own home.</h1>
+<p>Small-lot beans roasted to order every Tuesday and Friday, shipped within 24 hours. A gift of three single-origin coffees comes with every closing-day order, a quiet way to begin.</p>
+<a class="btn" href="#">Begin your subscription</a></div>
+<div class="cup"><svg viewBox="0 0 400 460"><ellipse cx="200" cy="300" rx="110" ry="24" fill="#2c2219"/><path d="M110 200 H290 Q290 300 200 310 Q110 300 110 200Z" fill="#e9dcc4"/><ellipse cx="200" cy="200" rx="90" ry="14" fill="#4b2e1a"/><path d="M290 220 Q335 220 330 255 Q325 285 285 280" stroke="#e9dcc4" stroke-width="12" fill="none"/><path d="M180 150 Q170 120 185 95 M215 150 Q205 120 220 95" stroke="#c9a45c" stroke-width="2" fill="none" opacity=".7"/></svg><span>Ethiopia Guji, washed &middot; 220g</span></div>
+</div></div>
+<section><div class="wrap"><h2>How Tavelvel compares</h2><p class="lead">Fresh, traceable and fairly priced against the usual choices.</p>
+<table><tr><th></th><th>Tavelvel</th><th>Supermarket</th><th>Big subscription</th></tr><tr><td>Roasted</td><td>Within 3 days</td><td>Months ago</td><td>1 to 2 weeks</td></tr><tr><td>Origin detail</td><td>Farm and lot</td><td>Blend</td><td>Country</td></tr><tr><td>Per 12 oz bag</td><td>$19</td><td>$9</td><td>$22</td></tr></table></div></section>
+<section><div class="wrap" style="text-align:center"><h2>Raise your first cup in the new house</h2><p class="lead" style="margin:0 auto 32px">Free shipping and a ceramic dripper on your first closing-gift box.</p><a class="btn" href="#">Begin your subscription</a></div></section>
+<section><div class="wrap"><h2>What you receive</h2><p class="lead">Three details that make the difference.</p><div class="g3">
+<div class="card"><h3>Roasted to order</h3><p>Nothing sits on a shelf. Your roast date is printed on the bag.</p></div>
+<div class="card"><h3>Single-lot traceability</h3><p>Every coffee names the farm, the altitude and the harvest.</p></div>
+<div class="card"><h3>Pause anytime</h3><p>Moving, painting, closing? Skip a shipment in one tap.</p></div></div></div></section>
+<section><div class="wrap"><h2>Subscriptions</h2><p class="lead">Choose a rhythm.</p><div class="g3">
+<div class="card"><h3>Weekly</h3><div class="price">$17</div><p>One 12 oz bag every Friday.</p></div>
+<div class="card"><h3>Fortnightly</h3><div class="price">$19</div><p>Two bags, alternating origins.</p></div>
+<div class="card"><h3>Housewarming</h3><div class="price">$54</div><p>Three single origins and a ceramic dripper.</p></div></div></div></section>
+<section><div class="wrap"><h2>Kind words</h2><p class="lead">From households that brewed their first morning with us.</p><div class="g3">
+<div class="card q">"We unpacked the kitchen last and brewed the Guji first."<small>Jonah and Mei, Denver</small></div>
+<div class="card q">"The bag smelled like the moment we got the keys."<small>Ana, Austin</small></div>
+<div class="card q">"Better than the cafe on our old street."<small>Chris and Dev, Columbus</small></div></div></div></section>
+<section><div class="wrap"><h2>Write to the roaster</h2><p class="lead">Wholesale, gifts for your realtor, or a question about grind.</p><form><input placeholder="Name"><input placeholder="Email"><textarea style="grid-column:1/3" rows="3" placeholder="Message"></textarea><div><a class="btn o" href="#">Send</a></div></form></div></section>
+<footer><div class="wrap">TAVELVEL COFFEE ROASTERS &middot; 18 Foundry Row, Portland, Maine &middot; hello@tavelvel.example</div></footer>
+</body></html>

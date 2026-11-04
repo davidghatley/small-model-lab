@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0070",
+ "severity": "moderate",
+ "flaws": [
+  "headline shrunk to 34px Georgia medium weight, not dominant",
+  "CTA buttons small and washed-out low contrast",
+  "extra font families (Georgia, Comic Sans) on top of Inter and Plex Mono",
+  "muddy beige/olive/brown palette in panel and tag",
+  "inconsistent spacing: cramped hero, uneven gaps, 4px button gap"
+ ]
+}

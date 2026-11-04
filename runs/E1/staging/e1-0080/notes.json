@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0080",
+ "severity": "subtle",
+ "flaws": [
+  "CTA button recolored to off-palette magenta, loses offset shadow and shrinks",
+  "Hero lede runs full column width (overlong line) at smaller size",
+  "Hero top/bottom padding and column gap cramped"
+ ]
+}

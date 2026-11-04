@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0143",
+ "brief_id": "e1-0143",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA pale pink with white text, smaller, no shadow: weaker prominence",
+  "off-palette purple on the accent word",
+  "flatter headline scale (74px to 54px)",
+  "hero padding cramped and paragraph line length overlong"
+ ],
+ "staging_src": "runs/E1/staging/e1-0143",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 24.976,
+ "pixel_pct_changed": 25.504
+}

@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0064",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 42px medium and out-sized by 26px lead",
+  "Muddy desaturated palette replaces bright yellow/pink/teal",
+  "CTA same tone as background and small",
+  "Four font families: Bricolage, Courier, Georgia, Arial Black",
+  "Cramped hero with reduced padding and gap"
+ ]
+}

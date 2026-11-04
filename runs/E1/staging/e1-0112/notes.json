@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0112",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 34px so it no longer dominates",
+  "Four font families (Playfair, Jost, Trebuchet, Courier, Comic Sans)",
+  "CTA recolored to muddy beige-on-beige and shrunk",
+  "Inconsistent hero spacing (tight top, large bottom, mismatched margins)",
+  "Palette muddied with greige gradient and logo bar"
+ ]
+}

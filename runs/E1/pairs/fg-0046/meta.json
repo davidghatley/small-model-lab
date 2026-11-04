@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0046",
+ "brief_id": "e1-0046",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut to 40px sentence-case, weak hierarchy",
+  "Four font families (Archivo Black, Times, Courier, Trebuchet)",
+  "Muddy grey-violet and khaki palette replaces the electric violet and lime",
+  "Cramped hero with tight padding and uneven lead spacing",
+  "CTA made pale and small so it does not stand out"
+ ],
+ "staging_src": "runs/E1/staging/e1-0046",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 59.602,
+ "pixel_pct_changed": 99.348
+}

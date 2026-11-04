@@ -1,0 +1,24 @@
+{
+ "pair_id": "fg-0051",
+ "brief_id": "e1-0051",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Hot-pink hero background clashing with lime accent text",
+  "Tiny low-contrast hero paragraph",
+  "Tiny eyebrow text",
+  "Stat captions tiny and near-invisible",
+  "Phone mockup pulled left so it overlaps the headline",
+  "Headline switched to a mismatched comic font",
+  "CTA buttons use a third unrelated font",
+  "Stat row cramped and misaligned from the text column"
+ ],
+ "staging_src": "runs/E1/staging/e1-0051",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 67.419,
+ "pixel_pct_changed": 65.391
+}

@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0132",
+ "brief_id": "e1-0132",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "headline in Comic Sans, hot magenta clashing with blue accent",
+  "tiny low-contrast body text",
+  "spec panel overlaps the headline and copy",
+  "CTA lime button with yellow text, unreadable",
+  "tiny nav links with almost no contrast"
+ ],
+ "staging_src": "runs/E1/staging/e1-0132",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 18.15,
+ "pixel_pct_changed": 18.683
+}

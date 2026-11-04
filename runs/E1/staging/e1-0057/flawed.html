@@ -1,0 +1,46 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Basy - A micro-festival for makers</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Nunito:wght@500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FFF4D6;--ink:#2A1B4D;--pink:#FF5C9E;--cyan:#27C8E8;--lime:#9BE15D;--yel:#FFD23F;--s2:16px;--s3:24px;--s4:48px;--s5:88px}
+*{box-sizing:border-box;margin:0}
+body{font:500 18px/1.55 'Nunito',system-ui,sans-serif;background:var(--bg);color:var(--ink)}
+.wrap{max-width:1160px;margin:0 auto;padding:0 var(--s3)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+.logo{font:700 34px 'Fredoka',sans-serif;color:var(--pink)}
+nav ul{display:flex;gap:32px;list-style:none;padding:0;font-weight:700;font-size:15px}
+.btn{display:inline-block;padding:16px 30px;background:var(--pink);color:#fff;font:700 19px 'Courier New',monospace;border-radius:16px;text-decoration:none;box-shadow:0 6px 0 #B52F6C}
+.btn.b{background:var(--cyan);box-shadow:0 6px 0 #138AA5;color:var(--ink);margin-left:-20px;margin-top:30px}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:var(--s4);align-items:center;padding:var(--s4) 0 var(--s5)}
+.date{display:inline-block;background:#FF00FF;color:#39FF14;font:700 16px 'Fredoka';padding:8px 16px;border-radius:12px;transform:rotate(-2deg)}
+h1{font:italic 700 84px/.98 'Times New Roman',serif;margin:var(--s3) 0;letter-spacing:-.01em}
+h1 span{color:#B6F23A}
+.lede{font-size:11px;color:#E6D9A8;max-width:28em;margin-bottom:var(--s4)}
+.art{position:relative;height:430px;margin-left:-420px}
+.art i{position:absolute;display:block}
+.a1{width:260px;height:260px;border-radius:50%;background:var(--cyan);left:20px;top:10px}
+.a2{width:200px;height:200px;background:var(--yel);right:10px;top:120px;border-radius:32px;transform:rotate(14deg)}
+.a3{width:170px;height:170px;background:var(--lime);left:90px;bottom:0;border-radius:50% 50% 50% 0}
+.a4{width:120px;height:120px;background:var(--pink);right:70px;bottom:20px;clip-path:polygon(50% 0,100% 100%,0 100%)}
+section{padding:var(--s5) 0}
+h2{font:700 46px/1.05 'Fredoka';margin-bottom:var(--s4)}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.card{background:#fff;border:3px solid var(--ink);border-radius:20px;padding:var(--s3)}
+.num{font:700 56px 'Fredoka';color:var(--pink)}
+.band{background:var(--ink);color:var(--bg)}
+footer{padding:var(--s4) 0;font-size:14px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">basy</span><ul><li>Lineup</li><li>Tickets</li><li>Journal</li><li>App</li></ul><a class="btn" href="#">Get tickets</a></nav>
+<header class="hero">
+<div><span class="date">June 12-14, Pittsburgh</span>
+<h1>The tiny festival where <span>players become makers.</span></h1>
+<p class="lede">Three days, 800 people, one old roller rink. Build a controller, mod a console, jam on a game in 48 hours, then play everything you made.</p>
+<a class="btn" href="#">Grab a ticket, $89</a><a class="btn b" href="#">See the lineup</a></div>
+<div class="art"><i class="a1"></i><i class="a2"></i><i class="a3"></i><i class="a4"></i></div>
+</header></div>
+<section class="band"><div class="wrap"><div class="cols"><div><div class="num">800</div>makers and players</div><div><div class="num">48h</div>game jam, start to finish</div><div><div class="num">62</div>workshops and talks</div></div></div></section>
+<section><div class="wrap"><h2>Ticket tiers.</h2><div class="cols"><div class="card"><b>Player</b><div class="num">$89</div>All three days</div><div class="card"><b>Maker</b><div class="num">$149</div>Plus workshop kit</div><div class="card"><b>Crew</b><div class="num">$0</div>Volunteer 8 hours</div></div></div></section>
+<section><div class="wrap"><h2>Fresh off the blog.</h2><div class="cols"><div class="card">How we built a skate-rink arcade</div><div class="card">Meet the 2025 jam winners</div><div class="card">Soldering 101 for thumbs</div></div></div></section>
+<section class="band"><div class="wrap"><h2>Schedule in your pocket.</h2><p>The Basy app is free on iOS and Android.</p></div></section>
+<footer><div class="wrap">Basy Micro-Festival. Code of conduct / Contact</div></footer>
+</body></html>

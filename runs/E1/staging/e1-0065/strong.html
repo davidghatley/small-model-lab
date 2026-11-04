@@ -1,0 +1,44 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Oraveve - Split bills fairly</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fffdf8;--sun:#ff9f1c;--sky:#2e5bff;--navy:#0e1b3d;--mint:#d9f5e8;--muted:#56607a;--line:#e8e4d8}
+*{box-sizing:border-box;margin:0}
+body{font:17px/1.6 'Plus Jakarta Sans',sans-serif;background:var(--bg);color:var(--navy)}
+.w{max-width:1160px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;height:80px}
+.logo{font-weight:800;font-size:25px;letter-spacing:-.5px}.logo i{color:var(--sun);font-style:normal}
+nav a{margin-left:30px;color:var(--muted);text-decoration:none;font-size:15px;font-weight:500}
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:56px;align-items:center;padding:32px 0 56px}
+.pill{display:inline-block;background:var(--mint);color:#146c43;padding:6px 16px;border-radius:999px;font-weight:700;font-size:14px;margin-bottom:20px}
+h1{font-size:62px;line-height:1.04;letter-spacing:-2px;font-weight:800;margin-bottom:24px}
+h1 span{color:var(--sky)}
+.lead{font-size:20px;color:var(--muted);max-width:27em;margin-bottom:32px}
+.btn{display:inline-block;background:var(--sky);color:#fff;padding:17px 34px;border-radius:14px;font-weight:700;text-decoration:none;box-shadow:0 8px 20px rgba(46,91,255,.3)}
+.phone{width:300px;margin:auto;background:var(--navy);border-radius:36px;padding:14px;transform:rotate(3deg)}
+.scr{background:#fff;border-radius:26px;padding:22px}.scr h4{font-size:14px;color:var(--muted);font-weight:500}.scr b{font-size:30px;display:block;margin-bottom:12px}
+.row{display:flex;justify-content:space-between;padding:10px 0;border-top:1px solid var(--line);font-size:15px}.row em{font-style:normal;font-weight:700;color:#146c43}
+.logos{border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:24px 0}
+.logos .w{display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-weight:700;font-size:18px}.logos small{font-size:13px;font-weight:500}
+section{padding:84px 0}
+h2{font-size:40px;line-height:1.15;letter-spacing:-1px;margin-bottom:36px}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.f{padding:28px;border:1px solid var(--line);border-radius:18px;background:#fff}.f h3{margin-bottom:8px}
+table{width:100%;border-collapse:collapse;border:1px solid var(--line);background:#fff}
+th,td{padding:16px 22px;text-align:left;border-bottom:1px solid var(--line)}th{background:#fff7e8;font-size:14px}td.y{font-weight:700;color:var(--sky)}
+.locs{display:flex;gap:16px;flex-wrap:wrap}.locs span{background:#fff;border:1px solid var(--line);padding:12px 22px;border-radius:999px;font-weight:600}
+.cta{background:var(--navy);color:#fff;text-align:center}.cta h2{margin-bottom:12px}.cta p{color:#b9c2de;margin-bottom:28px}.cta .btn{background:var(--sun);color:var(--navy);box-shadow:none}
+.news{display:flex;justify-content:space-between;align-items:center;gap:32px}
+.news form{display:flex;gap:12px}input{font:inherit;padding:14px 20px;border:1px solid var(--line);border-radius:12px;width:300px}
+.news button{font:inherit;font-weight:700;background:var(--navy);color:#fff;border:0;border-radius:12px;padding:14px 26px}
+footer{padding:36px 0;color:var(--muted);font-size:14px;text-align:center}
+</style></head><body>
+<div class="w"><nav><div class="logo">Ora<i>veve</i></div><div><a href="#">Features</a><a href="#">Compare</a><a href="#">Cities</a><a href="#">Download</a></div></nav>
+<div class="hero"><div><span class="pill">Built by two friends who got tired of IOUs</span><h1>Split the bill. <span>Keep the friends.</span></h1><p class="lead">Oraveve settles shared rides, rent and dinners in one tap, and gives 1% of every fee to community transit funds.</p><a class="btn" href="#">Get Oraveve free</a></div>
+<div class="phone"><div class="scr"><h4>Friday dinner, 5 people</h4><b>$126.40</b><div class="row"><span>Ana</span><em>paid</em></div><div class="row"><span>Marcus</span><em>paid</em></div><div class="row"><span>You owe</span><span><b style="font-size:16px;display:inline">$25.28</b></span></div></div></div></div></div>
+<div class="logos"><div class="w"><small>Supported by commuter groups</small><span>RideTogether</span><span>CityLoop</span><span>GreenLine Co-op</span><span>TransitFirst</span></div></div>
+<section><div class="w"><h2>Everything a group needs</h2><div class="feat"><div class="f"><h3>One-tap settle</h3><p>Pay back by bank transfer in seconds, no fees under $50.</p></div><div class="f"><h3>Commute pools</h3><p>Split shared cabs, parking and tolls on autopilot.</p></div><div class="f"><h3>Fair by default</h3><p>Itemised splits so the salad eater never pays for the steak.</p></div></div></div></section>
+<section style="background:#fff7e8"><div class="w"><h2>Oraveve vs. the old ways</h2><table><tr><th></th><th>Oraveve</th><th>Spreadsheet</th><th>Cash and memory</th></tr><tr><td>Time to settle</td><td class="y">10 seconds</td><td>A weekend</td><td>Never</td></tr><tr><td>Itemised splits</td><td class="y">Yes</td><td>Manual</td><td>No</td></tr><tr><td>Reminders</td><td class="y">Automatic</td><td>Awkward texts</td><td>Awkward silence</td></tr></table></div></section>
+<section><div class="w"><h2>Live in these cities</h2><div class="locs"><span>London</span><span>Manchester</span><span>Toronto</span><span>Chicago</span><span>Melbourne</span><span>Berlin</span></div></div></section>
+<section class="cta"><div class="w"><h2>Every ride shared is a little greener.</h2><p>Join 80,000 commuters splitting smarter.</p><a class="btn" href="#">Get Oraveve free</a></div></section>
+<section><div class="w news"><div><h2 style="margin:0 0 8px">The Oraveve letter</h2><p>One short email a month on fair money habits.</p></div><form><input placeholder="you@email.com"><button>Subscribe</button></form></div></section>
+<footer>Oraveve Ltd - hello@oraveve.example - Terms - Privacy</footer></body></html>

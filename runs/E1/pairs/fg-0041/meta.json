@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0041",
+ "brief_id": "e1-0041",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Lead paragraph max-width removed so lines run about 95 characters",
+  "CTA button recolored to an off-palette purple that clashes with coral/teal",
+  "Hero top padding squeezed so the pill and nav feel cramped"
+ ],
+ "staging_src": "runs/E1/staging/e1-0041",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 20.625,
+ "pixel_pct_changed": 24.802
+}

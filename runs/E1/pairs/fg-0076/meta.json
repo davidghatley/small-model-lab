@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0076",
+ "brief_id": "e1-0076",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline cut to 40px Verdana regular, no longer dominant",
+  "CTA small, tan on tan, no border or shadow",
+  "Verdana and Georgia added to DM Serif, Space Mono, Work Sans (5 families)",
+  "muddy olive/grey-mauve palette replacing crisp teal/mustard/brick",
+  "inconsistent spacing between nav, hero and badge; cramped hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0076",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 26.853,
+ "pixel_pct_changed": 35.451
+}

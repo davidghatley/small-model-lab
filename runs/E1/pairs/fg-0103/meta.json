@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0103",
+ "brief_id": "e1-0103",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 40px serif, weak hierarchy",
+  "Lead in italic Courier, low contrast, unbounded line",
+  "CTAs low-contrast beige, tiny, cramped",
+  "Muddy brown/olive palette on dashboard; four font families",
+  "Hero padding cramped"
+ ],
+ "staging_src": "runs/E1/staging/e1-0103",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 17.562,
+ "pixel_pct_changed": 46.922
+}

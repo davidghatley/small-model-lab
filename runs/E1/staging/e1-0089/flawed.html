@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gisyqui - managed thermostats for IT teams</title>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;700;800;900&family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#ffffff;--ink:#0a0a0a;--mute:#555b63;--blue:#0a3cff;--soft:#f1f3f6;--line:#d8dce2}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.55 "Public Sans",system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0;border-bottom:3px solid var(--ink)}
+.logo{font:900 26px "Public Sans";letter-spacing:-.03em}
+nav ul{display:flex;gap:30px;list-style:none;padding:0;font-weight:700;font-size:15px}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:56px;padding:64px 0 80px;align-items:center}
+.tag{font:500 13px "Roboto Mono";text-transform:uppercase;letter-spacing:.08em;color:var(--blue);margin-bottom:18px}
+h1{font:900 80px/.98 "Public Sans";letter-spacing:-.045em;margin-bottom:24px}
+.lede{font-size:21px;color:var(--mute);max-width:520px;margin-bottom:32px}
+.btn{display:inline-block;background:var(--blue);color:#fff;font-weight:800;padding:18px 32px;text-decoration:none;border-radius:4px}
+.btn.o{background:none;color:var(--ink);border:2px solid var(--ink);margin-left:12px;padding:16px 30px}
+.facts{display:flex;gap:32px;margin-top:36px;font:500 13px "Roboto Mono";color:var(--mute)}.facts b{display:block;font:900 30px "Public Sans";color:var(--ink)}
+.dash{border:3px solid var(--ink);background:var(--soft);padding:22px}
+.dash h3{font:500 12px "Roboto Mono";text-transform:uppercase;letter-spacing:.08em;margin-bottom:14px}
+.dash .row{display:flex;justify-content:space-between;background:#fff;border:1px solid var(--line);padding:12px 14px;margin-bottom:8px;font-size:15px;font-weight:600}
+.dash .row span:last-child{font-family:"Roboto Mono";color:var(--blue)}
+.dash .big{font:900 56px "Public Sans";letter-spacing:-.04em;margin:8px 0}
+section{padding:72px 0;border-top:3px solid var(--ink)}
+h2{font:900 48px/1 "Public Sans";letter-spacing:-.035em;margin-bottom:28px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);background:var(--soft);padding:24px}.card h4{font-size:20px;font-weight:800;margin-bottom:6px}.card p{color:var(--mute);font-size:15px}
+.n{font:500 13px "Roboto Mono";color:var(--blue);margin-bottom:10px}
+.price{border:2px solid var(--ink);padding:28px}.price.hot{background:var(--ink);color:#fff}.price b{font:900 46px "Public Sans";letter-spacing:-.03em}.price li{list-style:none;padding:9px 0;border-top:1px solid var(--line);font-size:15px}.price.hot li{border-color:#333}
+.price h4{font:500 13px "Roboto Mono";text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+.cta{background:var(--blue);color:#fff;padding:64px 0;border:0}.cta .btn{background:#fff;color:var(--blue)}.cta h2{margin-bottom:12px}
+footer{padding:28px 0;font:13px "Roboto Mono";display:flex;justify-content:space-between;color:var(--mute)}
+/* flaws */
+.hero .btn{background:#d6dcf5;color:#7b86c9;font-weight:500;padding:14px 22px}
+.hero .btn.o{background:none;border:1px solid #c9ccd4;color:#7a808a}
+.tag{color:#a21caf}.facts b{color:#a21caf}
+.hero{padding:30px 0 40px;gap:28px}
+.lede{max-width:none}
+
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">GISYQUI</div><ul><li>Product</li><li>Pricing</li><li>Security</li><li>Docs</li></ul></nav>
+<div class="hero">
+<div>
+<div class="tag">Smart thermostats for commercial buildings</div>
+<h1>Cut HVAC cost. Keep IT in control.</h1>
+<p class="lede">Gisyqui thermostats run on your network, your SSO and your rules. SOC 2 Type II, local-first firmware, no cloud lock-in. Savings average 23% of HVAC spend. Profits fund school retrofits.</p>
+<a class="btn" href="#">Book a technical demo</a><a class="btn o" href="#">Read the security whitepaper</a>
+<div class="facts"><div><b>23%</b>avg. energy saved</div><div><b>SOC 2</b>Type II</div><div><b>PoE</b>no wall wiring</div></div>
+</div>
+<div class="dash"><h3>Fleet / Building 4 / Floor 2</h3><div class="big">21.5&deg;C</div><div class="row"><span>Zone A - Server room</span><span>18.0&deg;C</span></div><div class="row"><span>Zone B - Open plan</span><span>21.5&deg;C</span></div><div class="row"><span>Zone C - Meeting</span><span>20.5&deg;C</span></div><div class="row"><span>Firmware</span><span>v4.2.1 OK</span></div></div>
+</div></div>
+<section><div class="wrap"><h2>Features IT will actually check</h2><div class="grid3">
+<div class="card"><div class="n">01</div><h4>SAML / OIDC SSO</h4><p>Okta, Entra ID and Google Workspace out of the box.</p></div>
+<div class="card"><div class="n">02</div><h4>VLAN-ready, PoE powered</h4><p>One cable, isolated network, no open inbound ports.</p></div>
+<div class="card"><div class="n">03</div><h4>REST and MQTT API</h4><p>Pipe telemetry into Grafana or your BMS.</p></div></div></div></section>
+<section><div class="wrap"><h2>How it works</h2><div class="grid3">
+<div class="card"><div class="n">STEP 1</div><h4>Site survey</h4><p>We map zones and network in two days.</p></div>
+<div class="card"><div class="n">STEP 2</div><h4>Staged rollout</h4><p>One floor first, then the portfolio.</p></div>
+<div class="card"><div class="n">STEP 3</div><h4>Automate</h4><p>Schedules, occupancy rules, alerts.</p></div></div></div></section>
+<section><div class="wrap"><h2>Pricing</h2><div class="grid3">
+<div class="price"><h4>Pilot</h4><b>$0</b><ul><li>Up to 10 devices</li><li>90-day trial</li><li>Email support</li></ul></div>
+<div class="price hot"><h4>Business</h4><b>$6/device/mo</b><ul><li>SSO and audit logs</li><li>99.9% SLA</li><li>Phone support</li></ul></div>
+<div class="price"><h4>Enterprise</h4><b>Custom</b><ul><li>On-prem controller</li><li>Dedicated engineer</li><li>Custom contracts</li></ul></div></div></div></section>
+<section><div class="wrap"><h2>Case studies</h2><div class="grid3">
+<div class="card"><h4>Regional hospital group</h4><p>412 devices, 26% saved, zero network incidents.</p></div>
+<div class="card"><h4>Logistics HQ</h4><p>Rolled out across 9 sites in 11 weeks.</p></div>
+<div class="card"><h4>County school district</h4><p>$310k a year redirected to classrooms.</p></div></div></div></section>
+<section class="cta"><div class="wrap"><h2>See it on your network.</h2><p style="margin-bottom:24px;opacity:.9">A 30-minute technical demo with an engineer, not a sales rep.</p><a class="btn" href="#">Book a technical demo</a></div></section>
+<div class="wrap"><footer><span>&copy; 2026 Gisyqui Systems</span><span>Security &middot; Status &middot; Docs &middot; Contact</span></footer></div>
+</body></html>

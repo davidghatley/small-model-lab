@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0127",
+ "severity": "moderate",
+ "flaws": [
+  "headline cut to 44px Times, no longer dominant",
+  "four fonts: Bricolage, Times, Courier, Verdana",
+  "muddy desaturated palette kills the quirky tone",
+  "hero cramped with tight stacked spacing",
+  "CTA tan on tan, lost on the page"
+ ]
+}

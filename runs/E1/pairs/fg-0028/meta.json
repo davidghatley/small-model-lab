@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0028",
+ "brief_id": "e1-0028",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut from 96px black sans to 52px serif so the 23px lede nearly matches it; weak hierarchy",
+  "Muddy beige/khaki palette with the yellow accent desaturated, losing the blunt high-contrast tone",
+  "CTAs reduced to small low-contrast tan buttons without borders or shadows",
+  "Four font families: Georgia, Trebuchet, Courier New and Archivo",
+  "Inconsistent spacing: cramped nav/hero/lede versus large nav-bottom gap, awkward hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0028",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 46.745,
+ "pixel_pct_changed": 93.676
+}

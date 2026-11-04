@@ -1,0 +1,20 @@
+{
+ "pair_id": "fg-0140",
+ "brief_id": "e1-0140",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "CTA recolored to a pale tan with low-contrast text and shrunk, much less prominent",
+  "off-palette purple accent on logo and secondary link",
+  "flatter type scale: hero headline cut from 68px to 50px",
+  "nav padding cramped"
+ ],
+ "staging_src": "runs/E1/staging/e1-0140",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 41.856,
+ "pixel_pct_changed": 27.978
+}

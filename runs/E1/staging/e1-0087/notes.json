@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0087",
+ "severity": "obvious",
+ "flaws": [
+  "Red Impact headline overlaps the orange photo block",
+  "Photo block shifted left over the text column and recoloured orange",
+  "Eyebrow, lede, nav and trust row shrunk to 8-12px with low contrast on pale background",
+  "Yellow CTA with white text and clashing cyan/pink secondary button, offset out of line",
+  "Mixed fonts: script body, Impact, Courier, Times"
+ ]
+}

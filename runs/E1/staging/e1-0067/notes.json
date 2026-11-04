@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0067",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 40px muddy brown, outweighed by 22px side copy",
+  "Muddy beige/brown palette replaces black and red",
+  "CTA is a plain text link, no button",
+  "Four font families: Georgia, Trebuchet, Courier, Inter",
+  "Cramped hero"
+ ]
+}

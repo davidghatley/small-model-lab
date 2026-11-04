@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0046",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 40px sentence-case, weak hierarchy",
+  "Four font families (Archivo Black, Times, Courier, Trebuchet)",
+  "Muddy grey-violet and khaki palette replaces the electric violet and lime",
+  "Cramped hero with tight padding and uneven lead spacing",
+  "CTA made pale and small so it does not stand out"
+ ]
+}

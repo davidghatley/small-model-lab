@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0068",
+ "brief_id": "e1-0068",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Flatter type scale: h1 46px",
+  "Off-palette magenta accent in headline",
+  "Pale small CTA with lead copy line stretching overlong"
+ ],
+ "staging_src": "runs/E1/staging/e1-0068",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 23.323,
+ "pixel_pct_changed": 15.025
+}

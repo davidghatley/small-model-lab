@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0070",
+ "brief_id": "e1-0070",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "headline shrunk to 34px Georgia medium weight, not dominant",
+  "CTA buttons small and washed-out low contrast",
+  "extra font families (Georgia, Comic Sans) on top of Inter and Plex Mono",
+  "muddy beige/olive/brown palette in panel and tag",
+  "inconsistent spacing: cramped hero, uneven gaps, 4px button gap"
+ ],
+ "staging_src": "runs/E1/staging/e1-0070",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 15.483,
+ "pixel_pct_changed": 25.615
+}

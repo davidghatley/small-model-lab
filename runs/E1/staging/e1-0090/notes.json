@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0090",
+ "severity": "obvious",
+ "flaws": [
+  "Quest card overlaps and covers the headline/body at an angle",
+  "Lime and yellow text on yellow backgrounds is nearly unreadable",
+  "Body copy shrunk to 11px and note to 7px",
+  "CTA is pink-on-pink with no contrast and sits misaligned",
+  "Headline in Times with clashing shadow; Comic Sans, Papyrus, Courier mixed in",
+  "Nav links tiny, crammed, dark on dark"
+ ]
+}

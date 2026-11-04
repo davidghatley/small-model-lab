@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0091",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 36px light serif, smaller than eyebrow and body so it is not dominant",
+  "Muddy olive/khaki palette replaces the fresh teal and sun yellow",
+  "Cramped hero with tiny gaps and padding, undersized art block",
+  "CTA is a pale, small, low-contrast button that blends into the background",
+  "Four font families (Verdana, Courier, Georgia, Trebuchet)",
+  "Inconsistent text sizes between eyebrow, body and supporting line"
+ ]
+}

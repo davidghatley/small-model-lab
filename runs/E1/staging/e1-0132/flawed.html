@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Boelel - Language training with measurable outcomes</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fafbfc;--ink:#0d1b2a;--blue:#1d4ed8;--grid:#dde3ea;--mute:#516173;--panel:#fff}
+*{box-sizing:border-box;margin:0}
+body{font-family:'IBM Plex Sans',sans-serif;background:var(--bg);color:var(--ink);line-height:1.6;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:40px 40px;background-attachment:local}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:20px 0;border-bottom:1px solid var(--ink);background:var(--bg);margin:0 -40px;padding-left:40px;padding-right:40px}
+.logo{font-family:'IBM Plex Mono',monospace;font-weight:500;font-size:20px}
+nav ul{display:flex;gap:32px;list-style:none;font-size:9px;color:#e6efd0}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;padding:72px 0 88px;align-items:center}
+.tag{font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--blue);letter-spacing:.06em;text-transform:uppercase}
+h1{font-family:'Comic Sans MS',cursive;color:#ff3df2;font-weight:600;font-size:60px;line-height:1.08;letter-spacing:-.02em;margin:16px 0 24px}
+.lede{font-size:10px;color:#c9d3df;max-width:32em;margin-bottom:32px}
+.btn{display:inline-block;background:#7bff00;color:#ffe600;font-weight:600;padding:16px 28px;font-size:17px;text-decoration:none;border-radius:2px}
+.btn.g{background:var(--panel);color:var(--ink);border:1px solid var(--ink);margin-left:12px}
+.spec{margin-left:-190px;margin-top:70px;position:relative;z-index:2;background:var(--panel);border:1px solid var(--ink);font-family:'IBM Plex Mono',monospace;font-size:14px}
+.spec h4{font-weight:500;padding:12px 18px;border-bottom:1px solid var(--ink);background:var(--ink);color:#fff}
+.spec div{display:flex;justify-content:space-between;padding:12px 18px;border-bottom:1px solid var(--grid)}
+.spec b{color:var(--blue);font-weight:500}
+section{padding:72px 0;background:var(--bg)}
+h2{font-weight:600;font-size:36px;letter-spacing:-.01em;margin-bottom:28px}
+table{width:100%;border-collapse:collapse;background:var(--panel);border:1px solid var(--ink);font-size:16px}
+th,td{padding:14px 18px;text-align:left;border-bottom:1px solid var(--grid)}
+th{font-family:'IBM Plex Mono',monospace;font-size:13px;text-transform:uppercase;letter-spacing:.05em;background:#eef2f7}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--panel);border:1px solid var(--ink);padding:24px}
+.card .n{font-family:'IBM Plex Mono',monospace;font-size:34px;color:var(--blue)}
+.cta{background:var(--ink);color:#fff;text-align:center}
+.cta .btn{background:#fff;color:var(--ink)}
+details{background:var(--panel);border:1px solid var(--ink);padding:16px 20px;margin-bottom:10px}
+summary{font-weight:600}
+details p{color:var(--mute);margin-top:8px}
+footer{padding:32px 0;font-family:'IBM Plex Mono',monospace;font-size:13px;color:var(--mute);background:var(--bg);border-top:1px solid var(--ink)}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">boelel/</div><ul><li>Compare</li><li>Case studies</li><li>Team</li><li>FAQ</li></ul></nav>
+<header class="hero">
+<div><div class="tag">v1.0 / launched 2026</div>
+<h1>Language training you can report on.</h1>
+<p class="lede">Boelel gives program managers placement tests mapped to CEFR, cohort dashboards and CSV exports for funders. Learners get 12-minute daily lessons. You get the numbers.</p>
+<a class="btn" href="#cta">Book a 20-minute demo</a><a class="btn g" href="#">View sample report</a></div>
+<div class="spec"><h4>cohort_report.csv / spring</h4>
+<div><span>learners_enrolled</span><b>240</b></div><div><span>weekly_active_rate</span><b>78.4%</b></div><div><span>median_cefr_gain</span><b>+0.7 level</b></div><div><span>completion_rate</span><b>83%</b></div></div>
+</header></div>
+<section><div class="wrap"><h2>Boelel against the alternatives</h2>
+<table><tr><th>Capability</th><th>Boelel</th><th>Consumer apps</th><th>In-person classes</th></tr>
+<tr><td>CEFR-mapped placement</td><td>Included</td><td>No</td><td>Varies</td></tr>
+<tr><td>Funder-ready exports</td><td>CSV and PDF</td><td>None</td><td>Manual</td></tr>
+<tr><td>Cost per learner / month</td><td>$6</td><td>$13</td><td>$90</td></tr></table></div></section>
+<section><div class="wrap"><h2>Case studies</h2>
+<div class="grid3"><div class="card"><div class="n">+0.9</div><h3>Welcome Table, Dayton</h3><p>Refugee cohort of 60 advanced almost a full CEFR level in 14 weeks.</p></div>
+<div class="card"><div class="n">91%</div><h3>Open Doors Library</h3><p>Completion across an evening program run by two volunteers.</p></div>
+<div class="card"><div class="n">3x</div><h3>BridgeWork Network</h3><p>Reporting time cut from three days to one hour.</p></div></div></div></section>
+<section class="cta" id="cta"><div class="wrap"><h2>See your cohort data in a live demo.</h2><p style="margin-bottom:24px">Bring a spreadsheet of your learners. We will load it.</p><a class="btn" href="#">Book a demo</a></div></section>
+<section><div class="wrap"><h2>Team</h2>
+<div class="grid3"><div class="card"><b>Anika Rao</b><p>CEO, former TESOL curriculum lead</p></div><div class="card"><b>Tomas Weiss</b><p>CTO, speech recognition engineer</p></div><div class="card"><b>Lena Okafor</b><p>Head of Programs, ex-nonprofit director</p></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>FAQ</h2>
+<details open><summary>Which languages are supported?</summary><p>Spanish, French, Arabic, Mandarin, Ukrainian and English as a second language.</p></details>
+<details><summary>Is learner data private?</summary><p>Yes. SOC 2 Type I, data stored in the US, deletion on request.</p></details></div></section>
+<footer><div class="wrap">boelel, inc. / contact@boelel.app / status: all systems normal</div></footer>
+</body></html>

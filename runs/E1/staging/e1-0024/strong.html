@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Tatenar Books — Read somewhere better</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700;9..144,900&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--green:#124b3a;--sun:#ffc533;--cream:#fff9ea;--coral:#ef6a4c;--ink:#102a22;--mute:#4d6259;--s1:8px;--s2:16px;--s3:24px;--s4:40px;--s5:80px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--cream);color:var(--ink);font:400 18px/1.6 Nunito,system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 var(--s4)}
+nav{display:flex;justify-content:space-between;align-items:center;padding:var(--s3) 0}
+.logo{font:900 28px Fraunces,serif;color:var(--green)}
+nav ul{display:flex;gap:var(--s4);list-style:none;padding:0;font-weight:600;font-size:16px}
+.btn{display:inline-block;background:var(--green);color:var(--cream);padding:16px 30px;border-radius:99px;font-weight:800;text-decoration:none}
+.btn.y{background:var(--sun);color:var(--ink)}
+.btn.s{padding:10px 22px;font-size:15px}
+.hero{background:var(--green);color:var(--cream);border-radius:32px;display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s4);padding:var(--s5) var(--s5) var(--s4);align-items:center;position:relative;overflow:hidden}
+.hero .k{display:inline-block;color:var(--sun);font-weight:800;letter-spacing:.1em;text-transform:uppercase;font-size:14px;margin-bottom:var(--s2)}
+h1{font:900 68px/1.02 Fraunces,serif;letter-spacing:-.02em}
+h1 span{color:var(--sun)}
+.lede{font-size:20px;margin:var(--s3) 0 var(--s4);color:#e1ecd9;max-width:28em}
+.note{margin-top:var(--s3);font-size:15px;color:#b6cfbf}
+section{padding:var(--s5) 0 0}
+h2{font:900 44px/1.1 Fraunces,serif;color:var(--green);margin-bottom:var(--s4)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.feat{background:#fff;border-radius:24px;padding:var(--s4) var(--s3);border:2px solid #f0e6c8}
+.feat .ic{width:52px;height:52px;border-radius:16px;background:var(--sun);display:grid;place-items:center;font-size:26px;margin-bottom:var(--s2)}
+.feat:nth-child(2) .ic{background:var(--coral)}.feat:nth-child(3) .ic{background:#9fd7b8}
+.feat h3{font:700 22px Fraunces,serif;margin-bottom:8px}.feat p{color:var(--mute);font-size:16px}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:var(--s3)}
+.person .av{aspect-ratio:1;border-radius:50%;margin-bottom:var(--s2)}
+.person h3{font:700 20px Fraunces,serif}.person p{color:var(--mute);font-size:15px}
+.quotes{display:grid;grid-template-columns:1fr 1fr;gap:var(--s3)}
+blockquote{background:var(--sun);border-radius:24px;padding:var(--s4);font:500 22px/1.4 Fraunces,serif}
+blockquote:last-child{background:#ffe6a6}blockquote cite{display:block;font:600 15px Nunito;margin-top:var(--s2)}
+footer{margin-top:var(--s5);background:var(--green);color:#cfe0d5;padding:var(--s4);border-radius:32px 32px 0 0;display:flex;justify-content:space-between;font-size:15px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">Tatenar</span><ul><li>Shop</li><li>Events</li><li>Remote-worker desks</li><li>Our mission</li></ul><a class="btn s" href="#">Join the reading club</a></nav>
+<header class="hero">
+<div><span class="k">Independent since 2006</span>
+<h1>Take a book break. <span>Change a life.</span></h1>
+<p class="lede">For twenty years Tatenar has put the profits from every novel into community literacy. Now our quiet reading room and fast Wi-Fi are open to remote workers, too.</p>
+<a class="btn y" href="#">Reserve a desk</a><p class="note">12,400 children given their first book. Your coffee break helped.</p></div>
+<svg viewBox="0 0 360 320" role="img" aria-label="Stack of books with a sun"><circle cx="270" cy="70" r="46" fill="#ffc533"/><rect x="40" y="250" width="280" height="40" rx="6" fill="#ef6a4c"/><rect x="62" y="206" width="236" height="40" rx="6" fill="#9fd7b8"/><rect x="48" y="162" width="250" height="40" rx="6" fill="#fff9ea"/><rect x="80" y="118" width="206" height="40" rx="6" fill="#ffc533"/><path d="M90 128h80M72 172h110M70 216h90M56 260h100" stroke="#124b3a" stroke-width="5" stroke-linecap="round" opacity=".5"/></svg>
+</header>
+<section><h2>A bookstore that works as hard as you do</h2><div class="g3">
+<div class="feat"><div class="ic">&#9749;</div><h3>Quiet-hours reading room</h3><p>Forty desks, power at every seat and no calls before noon.</p></div>
+<div class="feat"><div class="ic">&#128218;</div><h3>Staff picks by mail</h3><p>Our booksellers choose a title a month, shipped anywhere.</p></div>
+<div class="feat"><div class="ic">&#10084;</div><h3>Profit with purpose</h3><p>Ten percent of every sale funds school libraries nearby.</p></div></div></section>
+<section><h2>The people behind the shelves</h2><div class="team">
+<div class="person"><div class="av" style="background:var(--sun)"></div><h3>Nadia Osei</h3><p>Founder and head bookseller</p></div>
+<div class="person"><div class="av" style="background:var(--coral)"></div><h3>Lucas Ferreira</h3><p>Events and community</p></div>
+<div class="person"><div class="av" style="background:#9fd7b8"></div><h3>Hana Whitfield</h3><p>Children's literacy lead</p></div>
+<div class="person"><div class="av" style="background:#ffe6a6"></div><h3>Omar Siddiqui</h3><p>Remote-work desk host</p></div></div></section>
+<section><h2>What readers say</h2><div class="quotes">
+<blockquote>"I work from Tatenar three days a week. I get more done, and my money does good."<cite>Jess Moreau, product designer</cite></blockquote>
+<blockquote>"They remembered my daughter's favourite series. That never happens online."<cite>Tom Achterberg, customer since 2011</cite></blockquote></div></section>
+</div>
+<footer><span>© 2026 Tatenar Books, 14 Mill Lane</span><span>Visit · Events · Donate · Contact</span></footer>
+</body></html>

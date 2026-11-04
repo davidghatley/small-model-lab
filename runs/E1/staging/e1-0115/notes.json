@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0115",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 34px Georgia, weak hierarchy",
+  "Four+ font families (Archivo, Source Sans, Georgia, Courier, Comic Sans)",
+  "CTA washed-out light blue with white text, same weight as secondary button",
+  "Muddy grey-beige hero gradient",
+  "Cramped hero spacing and uneven fact-row offsets"
+ ]
+}

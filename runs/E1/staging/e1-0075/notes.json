@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0075",
+ "severity": "obvious",
+ "flaws": [
+  "giant yellow script headline overlapping the form and unreadable against white",
+  "lead text 12px pale cyan on white",
+  "CTA yellow with white text and dashed pink border",
+  "form box rotated, shifted over headline, green with low-contrast text",
+  "inconsistent fonts: script, Times, Comic Sans, Manrope",
+  "nav 8px tiny low-contrast text"
+ ]
+}

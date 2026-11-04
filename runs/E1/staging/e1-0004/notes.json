@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0004",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 32px serif so it is weaker than the eyebrow/body, no dominant hierarchy",
+  "Palette turned from cool ice/violet to muddy brown/amber, off-tone for futuristic brief",
+  "Hero collapsed to a cramped stacked block with inconsistent spacing",
+  "Three+ font families (script logo, Courier nav, Times headline, Georgia body)",
+  "Primary CTA a dull brown button identical in weight to the secondary"
+ ]
+}

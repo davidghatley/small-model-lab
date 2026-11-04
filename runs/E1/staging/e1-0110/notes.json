@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0110",
+ "severity": "subtle",
+ "flaws": [
+  "Hero padding cramped (top/bottom reduced to ~20px)",
+  "CTA button recolored to off-palette bright teal instead of the gold accent",
+  "Lead paragraph max-width removed, giving an overlong line length"
+ ]
+}

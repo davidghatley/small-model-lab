@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0050",
+ "severity": "subtle",
+ "flaws": [
+  "Primary CTA recolored to a pale beige with low contrast, so it no longer stands out",
+  "Off-palette purple accent on the hero chip",
+  "Hero paragraph has no max-width (overlong line length)",
+  "Hero text column widened and illustration squeezed, giving ~90+ character lines"
+ ]
+}

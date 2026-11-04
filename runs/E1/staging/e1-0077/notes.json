@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0077",
+ "severity": "subtle",
+ "flaws": [
+  "CTA button washed-out pale clay with white text, low contrast and smaller",
+  "overlong lead line extending past the hero column",
+  "off-palette cool blue pill against warm wood/clay palette",
+  "slightly flatter headline and tighter hero padding"
+ ]
+}

@@ -1,0 +1,24 @@
+{
+ "pair_id": "fg-0058",
+ "brief_id": "e1-0058",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk, wrong font, tight margin; weak hierarchy",
+  "CTA washed out against background",
+  "Muddy olive",
+  "Dull tan background",
+  "Dull panels with little separation",
+  "Extra monospace font for the lede",
+  "Cramped hero",
+  "Cramped hours card"
+ ],
+ "staging_src": "runs/E1/staging/e1-0058",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 45.561,
+ "pixel_pct_changed": 99.83
+}

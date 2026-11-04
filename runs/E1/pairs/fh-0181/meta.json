@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0181",
+ "brief_id": "e1-0181",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1's report card makes the product tangible and the navy/serif tone reads trustworthy and calm; v2 is punchier but less calm.",
+ "staging_src": "runs/E1/staging/e1-0181",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1: white corporate navy, serif headline, split hero with sample inspection report card",
+  "v2: pale teal bold-sans centered hero with oversized headline and stat bar"
+ ],
+ "v1_side": "b"
+}

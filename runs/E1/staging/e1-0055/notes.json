@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0055",
+ "severity": "moderate",
+ "flaws": [
+  "Headline small, light and in a mismatched serif; weak hierarchy, odd spacing",
+  "CTA in pale grey with low contrast",
+  "Muddy grey-green panel color",
+  "Muddy khaki accent",
+  "Another font family in the lede",
+  "Cramped hero",
+  "Buttons nearly touching"
+ ]
+}

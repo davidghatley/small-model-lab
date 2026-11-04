@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0126",
+ "brief_id": "e1-0126",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "acid green, magenta and cyan palette clashes with luxury tone",
+  "body copy dark green on dark green, unreadable",
+  "hero visual slides over headline and text",
+  "8px eyebrow and low-contrast nav",
+  "Impact, Comic Sans, Courier mixed in place of refined serif",
+  "white-on-neon CTA low contrast"
+ ],
+ "staging_src": "runs/E1/staging/e1-0126",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 39.162,
+ "pixel_pct_changed": 98.864
+}

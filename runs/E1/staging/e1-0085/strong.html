@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Arnorbo - a private journal for hard days</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Karla:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0d0c14;--bg2:#15131f;--fg:#ece7de;--mute:#a49fb0;--amber:#f0b663;--line:#2a2638}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--fg);font:17px/1.65 Karla,system-ui,sans-serif}
+.wrap{max-width:1140px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+.logo{font:600 30px "Cormorant Garamond",serif;letter-spacing:.04em}
+nav ul{display:flex;gap:34px;list-style:none;padding:0;color:var(--mute);font-size:15px}
+.hero{display:grid;grid-template-columns:1.15fr 1fr;gap:64px;align-items:center;padding:48px 0 88px}
+.eyebrow{color:var(--amber);font-size:14px;letter-spacing:.16em;text-transform:uppercase;margin-bottom:22px}
+h1{font:500 78px/1.02 "Cormorant Garamond",serif;letter-spacing:-.01em;margin-bottom:26px}
+h1 i{color:var(--amber)}
+.lede{font-size:20px;color:var(--mute);max-width:490px;margin-bottom:36px}
+.btn{display:inline-block;background:var(--amber);color:#1a1208;font-weight:700;padding:17px 32px;border-radius:999px;text-decoration:none;box-shadow:0 0 36px rgba(240,182,99,.3)}
+.note{display:block;color:var(--mute);font-size:14px;margin-top:18px}
+.book{background:linear-gradient(160deg,#1c1930,#100f1a);border:1px solid var(--line);border-radius:20px;padding:36px;height:460px;position:relative;overflow:hidden}
+.book:before{content:"";position:absolute;right:-60px;top:-60px;width:260px;height:260px;border-radius:50%;background:radial-gradient(closest-side,rgba(240,182,99,.35),transparent)}
+.book small{color:var(--mute);letter-spacing:.1em;text-transform:uppercase;font-size:12px}
+.book p{font:500 28px/1.35 "Cormorant Garamond",serif;margin:18px 0 28px}
+.mood{display:flex;gap:10px}.mood span{width:44px;height:44px;border-radius:50%;border:1px solid var(--line);display:flex;align-items:center;justify-content:center;color:var(--mute);font-size:14px}.mood span.on{background:var(--amber);color:#1a1208}
+.line{height:10px;border-radius:5px;background:#26233a;margin-top:14px}
+section{padding:80px 0;border-top:1px solid var(--line)}
+h2{font:500 46px/1.1 "Cormorant Garamond",serif;margin-bottom:32px}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:var(--bg2);border:1px solid var(--line);border-radius:16px;padding:26px}
+.card h4{font:600 24px "Cormorant Garamond";margin-bottom:6px}.card p{color:var(--mute);font-size:15px}
+.tile{height:180px;border-radius:14px;background:linear-gradient(150deg,#26203f,#0f0e18)}.tile:nth-child(2n){background:linear-gradient(150deg,#3a2a2a,#14111a)}
+form{display:grid;gap:12px;max-width:520px}input,textarea{background:var(--bg2);border:1px solid var(--line);border-radius:10px;padding:14px;color:var(--fg);font:inherit}
+footer{border-top:1px solid var(--line);padding:32px 0;color:var(--mute);font-size:14px;display:flex;justify-content:space-between}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">Arnorbo</div><ul><li>How it helps</li><li>Programs</li><li>Journal</li><li>Contact</li></ul></nav>
+<div class="hero">
+<div>
+<div class="eyebrow">A journaling app for the long nights</div>
+<h1>Write what you can't <i>say out loud.</i></h1>
+<p class="lede">Arnorbo is a private, encrypted journal with gentle prompts built with clinicians. Priced at $3 a month, with free seats for nonprofit teams supporting staff wellbeing.</p>
+<a class="btn" href="#">Start writing tonight</a>
+<span class="note">No ads. No data sales. Entries are encrypted on your device.</span>
+</div>
+<div class="book"><small>Tuesday, 11:42 pm</small><p>"What is one thing that felt heavier than it should have today?"</p><div class="mood"><span>low</span><span>flat</span><span class="on">ok</span><span>lift</span></div><div class="line" style="width:92%"></div><div class="line" style="width:78%"></div><div class="line" style="width:60%"></div></div>
+</div></div>
+<section><div class="wrap"><h2>From the Arnorbo notebook</h2><div class="grid3">
+<div class="card"><h4>Naming a feeling takes the edge off</h4><p>What affect-labelling research means for a nightly entry.</p></div>
+<div class="card"><h4>Burnout in program teams</h4><p>Three check-ins that take five minutes.</p></div>
+<div class="card"><h4>Why we encrypt locally</h4><p>A plain explanation of how we cannot read your pages.</p></div></div></div></section>
+<section><div class="wrap"><h2>Kind words</h2><div class="grid3">
+<div class="card"><h4>"It is the only app I open when I can't sleep."</h4><p>Dana, program manager</p></div>
+<div class="card"><h4>"We rolled it out to 40 staff in a day."</h4><p>Ravi, nonprofit director</p></div>
+<div class="card"><h4>"Prompts never feel clinical."</h4><p>Sofia, case worker</p></div></div></div></section>
+<section><div class="wrap"><h2>Quiet moments</h2><div class="grid3"><div class="tile"></div><div class="tile"></div><div class="tile"></div></div></div></section>
+<section><div class="wrap"><h2>Bring Arnorbo to your team</h2><form><input placeholder="Your name"><input placeholder="Organization"><textarea rows="4" placeholder="How many staff would use it?"></textarea><a class="btn" href="#" style="text-align:center">Request nonprofit seats</a></form></div></section>
+<div class="wrap"><footer><span>&copy; 2026 Arnorbo</span><span>Privacy &middot; Crisis resources &middot; Contact</span></footer></div>
+</body></html>

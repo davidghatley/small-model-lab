@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0129",
+ "brief_id": "e1-0129",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "body copy and nav near-invisible cream on cream",
+  "form card slides over the headline and lede",
+  "hot pink, teal and yellow clash with refined tone",
+  "8-10px tiny labels and logo wall",
+  "Courier, Comic Sans, Impact replace the serif pairing",
+  "pink CTA with yellow text"
+ ],
+ "staging_src": "runs/E1/staging/e1-0129",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.271,
+ "pixel_pct_changed": 38.77
+}

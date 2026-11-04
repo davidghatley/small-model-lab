@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0069",
+ "severity": "obvious",
+ "flaws": [
+  "Headline 30px Times in yellow on pale blue, near invisible",
+  "Hot-pink illustration pulled over the hero text and rotated",
+  "Lead 11px Papyrus low contrast",
+  "CTA blue on blue with text barely visible",
+  "Nav 9px Times",
+  "Stats band white numbers on white",
+  "Hero grid broken"
+ ]
+}

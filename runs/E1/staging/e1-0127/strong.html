@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Katen — Onboarding, but fun</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fff4dc;--ink:#1b1230;--pink:#ff5fa2;--lime:#c6f432;--violet:#6a4cff;--s:8px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.55 'Bricolage Grotesque',system-ui,sans-serif}
+.wrap{max-width:1160px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0}
+.logo{font-weight:800;font-size:30px;letter-spacing:-.04em}.logo span{color:var(--pink)}
+nav ul{display:flex;gap:28px;list-style:none;padding:0;font-weight:600;font-size:16px}
+.btn{display:inline-block;background:var(--ink);color:#fff;padding:16px 30px;border-radius:14px;font-weight:800;text-decoration:none;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--pink)}
+.btn.l{background:var(--lime);color:var(--ink);box-shadow:5px 5px 0 var(--ink)}
+.hero{display:grid;grid-template-columns:1.25fr 1fr;gap:48px;align-items:center;padding:48px 0 72px}
+.stk{display:inline-block;background:var(--lime);border:3px solid var(--ink);padding:4px 14px;border-radius:30px;font-weight:600;font-size:15px;transform:rotate(-2deg);margin-bottom:24px}
+h1{font-weight:800;font-size:84px;line-height:.95;letter-spacing:-.045em;margin-bottom:24px}
+h1 u{text-decoration:none;background:var(--pink);color:#fff;padding:0 10px;border-radius:12px;display:inline-block;transform:rotate(-1.5deg)}
+.lede{font-size:21px;max-width:500px;margin-bottom:32px}
+.art{position:relative;height:440px}
+.art div{position:absolute;border:3px solid var(--ink);border-radius:24px}
+.a1{left:0;top:20px;width:260px;height:300px;background:var(--violet);transform:rotate(-6deg)}
+.a2{right:0;top:80px;width:240px;height:280px;background:var(--lime);transform:rotate(5deg);padding:20px;font-weight:800;font-size:26px;line-height:1.1}
+.a3{left:60px;bottom:10px;width:300px;height:110px;background:#fff;padding:16px;font-weight:600;font-size:17px}
+section{padding:80px 0}
+h2{font-weight:800;font-size:48px;letter-spacing:-.035em;margin-bottom:32px}
+table{width:100%;border-collapse:separate;border-spacing:0;border:3px solid var(--ink);border-radius:20px;overflow:hidden;background:#fff}
+th,td{padding:16px 22px;text-align:left;border-bottom:2px solid var(--ink)}th{background:var(--ink);color:#fff}
+tr:last-child td{border-bottom:0}.y{color:var(--violet);font-weight:800}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:20px;padding:24px;box-shadow:6px 6px 0 var(--ink)}
+.card h3{font-weight:800;font-size:24px}.logos{display:flex;gap:24px;flex-wrap:wrap;font-weight:800;font-size:22px}
+.logos span{border:3px solid var(--ink);border-radius:40px;padding:6px 20px;background:#fff}
+footer{background:var(--ink);color:#fff;padding:36px 0;font-size:15px}
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">katen<span>!</span></span><ul><li>Why us</li><li>Compare</li><li>Stories</li><li>Gallery</li></ul><a class="btn" href="#">Book a demo</a></nav>
+<header class="hero"><div>
+<span class="stk">Premium onboarding. Zero beige.</span>
+<h1>Day one shouldn't feel like <u>jury duty.</u></h1>
+<p class="lede">Katen turns new-hire paperwork into a fast, friendly first week. Even your most overbooked parent-of-three hire is productive by Wednesday.</p>
+<a class="btn l" href="#">Try Katen free</a></div>
+<div class="art"><div class="a1"></div><div class="a2">Welcome aboard! 6 of 7 tasks done.</div><div class="a3">Laptop shipped. Badge printed. Pizza ordered.</div></div>
+</header></div>
+<section style="background:#fff;border-block:3px solid var(--ink)"><div class="wrap"><h2>Katen vs. the spreadsheet</h2>
+<table><tr><th></th><th>Katen</th><th>Spreadsheet</th><th>Legacy HRIS</th></tr><tr><td>Time to first task</td><td class="y">4 min</td><td>2 days</td><td>3 weeks</td></tr><tr><td>New hire smiles</td><td class="y">Frequent</td><td>Rare</td><td>Never</td></tr><tr><td>Setup cost</td><td class="y">$0</td><td>A weekend</td><td>$40k</td></tr></table></div></section>
+<section><div class="wrap"><h2>Teams who survived week one</h2><div class="g3">
+<div class="card"><h3>Pogo Logistics</h3><p>Cut ramp time from 21 days to 9.</p></div><div class="card"><h3>Little Orchard</h3><p>Onboarded 40 seasonal staff in an afternoon.</p></div><div class="card"><h3>Nudge Health</h3><p>Dropped first-week quits to zero.</p></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Loved by these fine firms</h2><div class="logos"><span>Pogo</span><span>Orchard</span><span>Nudge</span><span>Brisk</span><span>Tallboy</span></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Plays nice with</h2><div class="g3"><div class="card"><h3>Slack</h3></div><div class="card"><h3>Workday</h3></div><div class="card"><h3>Google Workspace</h3></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>The gallery of tiny wins</h2><div class="g3"><div class="card" style="background:var(--lime);height:140px"></div><div class="card" style="background:var(--pink);height:140px"></div><div class="card" style="background:var(--violet);height:140px"></div></div></div></section>
+<footer><div class="wrap">katen! · made with snacks · &copy; 2026</div></footer>
+</body></html>

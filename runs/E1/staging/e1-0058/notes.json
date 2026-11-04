@@ -1,0 +1,14 @@
+{
+ "brief_id": "e1-0058",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk, wrong font, tight margin; weak hierarchy",
+  "CTA washed out against background",
+  "Muddy olive",
+  "Dull tan background",
+  "Dull panels with little separation",
+  "Extra monospace font for the lede",
+  "Cramped hero",
+  "Cramped hours card"
+ ]
+}

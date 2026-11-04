@@ -1,0 +1,23 @@
+{
+ "pair_id": "fg-0057",
+ "brief_id": "e1-0057",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Tiny low-contrast lede on cream",
+  "Lime headline span on cream is nearly unreadable",
+  "Magenta date chip with neon green text",
+  "Shape art shifted left over the headline",
+  "Headline in a mismatched serif italic",
+  "Buttons in monospace",
+  "Second button misaligned and overlapping the first"
+ ],
+ "staging_src": "runs/E1/staging/e1-0057",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 36.045,
+ "pixel_pct_changed": 33.998
+}

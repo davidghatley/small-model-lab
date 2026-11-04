@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0036",
+ "severity": "obvious",
+ "flaws": [
+  "Headline shrunk to 34px, serif, dark-on-dark purple, shifted off-grid",
+  "Lede 11px, dark purple on near-black, offset oddly",
+  "CTA olive-on-olive with tiny label; ghost button invisible",
+  "Stat rail pulled up over the CTA row, yellow cards with pale-yellow unreadable text",
+  "Neon green eyebrow and magenta accent clash with palette",
+  "Nav links nearly invisible"
+ ]
+}

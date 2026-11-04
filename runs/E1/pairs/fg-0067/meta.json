@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0067",
+ "brief_id": "e1-0067",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut to 40px muddy brown, outweighed by 22px side copy",
+  "Muddy beige/brown palette replaces black and red",
+  "CTA is a plain text link, no button",
+  "Four font families: Georgia, Trebuchet, Courier, Inter",
+  "Cramped hero"
+ ],
+ "staging_src": "runs/E1/staging/e1-0067",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 35.615,
+ "pixel_pct_changed": 99.818
+}

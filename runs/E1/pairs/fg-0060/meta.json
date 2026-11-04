@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0060",
+ "brief_id": "e1-0060",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline shrunk to 30px in pale tan on cream (very low contrast), Courier font",
+  "Lead paragraph 11px Comic Sans in near-background color",
+  "Nav links 9px low contrast",
+  "Price card pulled left over the hero text with rotation, purple and neon green clash",
+  "CTA tiny neon-green button with white text",
+  "Logo wall text 9px and washed out"
+ ],
+ "staging_src": "runs/E1/staging/e1-0060",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 35.904,
+ "pixel_pct_changed": 43.234
+}

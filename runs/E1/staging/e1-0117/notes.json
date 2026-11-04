@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0117",
+ "severity": "obvious",
+ "flaws": [
+  "Photo frames pulled left with negative margin, overlapping headline and copy",
+  "Headline in pale beige on cream (near-invisible) in Impact",
+  "Lead copy 11px low-contrast Courier",
+  "Clashing cyan button with yellow text and neon-green steps bar",
+  "Logo in pink Comic Sans, nav links 10px (inconsistent fonts, tiny text)"
+ ]
+}

@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0006",
+ "brief_id": "e1-0006",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Saturated green page with hot-pink logo, orange/violet headline: clashing palette",
+  "Photo block rotated and absolutely positioned over the headline and CTA, causing overlap",
+  "Nav links and lead copy at 9-10px with near-invisible contrast",
+  "Five font families mixed (Papyrus, Verdana, Impact, script, Courier)",
+  "Buttons have text almost the same color as fill; the second button overlaps the first; tag floats over the picture"
+ ],
+ "staging_src": "runs/E1/staging/e1-0006",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 125.39,
+ "pixel_pct_changed": 93.97
+}

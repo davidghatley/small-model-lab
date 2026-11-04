@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0016",
+ "brief_id": "e1-0016",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 44px script font; the 26px eyebrow and 24px subtext compete with it",
+  "Muddy grey-green palette: pine and sun replaced with dull khaki, low-contrast text on dark",
+  "Yellow CTA turned into a dim small bordered button that disappears into the background",
+  "Four font families: Barlow Condensed, Pacifico, Playfair Display, Public Sans",
+  "Hero cramped (6px top padding) under an oversized nav gap, uneven spacing"
+ ],
+ "staging_src": "runs/E1/staging/e1-0016",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 106.065,
+ "pixel_pct_changed": 92.206
+}

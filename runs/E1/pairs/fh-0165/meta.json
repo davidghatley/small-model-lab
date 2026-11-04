@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0165",
+ "brief_id": "e1-0165",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 delivers bold high-energy tone with memorable hierarchy; v2 is clean but safer and generic.",
+ "staging_src": "runs/E1/staging/e1-0165",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1 neo-brutalist yellow with huge caps and hard shadows",
+  "v2 purple/pink gradient friendly fintech split"
+ ],
+ "v1_side": "b"
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0023",
+ "brief_id": "e1-0023",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Off-palette acid-lime accent on the CTA and eyebrow clashes with the established red/violet scheme",
+  "Headline reduced to 50px so the type scale is flatter and the hero loses impact",
+  "Contact panel padding cramped and the panel nudged out of alignment with the hero text column"
+ ],
+ "staging_src": "runs/E1/staging/e1-0023",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 22.888,
+ "pixel_pct_changed": 31.836
+}

@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0130",
+ "severity": "moderate",
+ "flaws": [
+  "muddy desaturated palette (beige/olive/brown)",
+  "headline shrunk so it no longer dominates",
+  "cramped hero padding",
+  "tight hero column gap",
+  "CTA blends into background, small and low contrast",
+  "third font family in nav",
+  "fourth font family in lede"
+ ]
+}

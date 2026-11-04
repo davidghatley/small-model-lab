@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0142",
+ "severity": "moderate",
+ "flaws": [
+  "headline shrunk to 34px, no longer dominant",
+  "four font families (Georgia, Courier, Trebuchet, Plex)",
+  "muddy olive/khaki palette",
+  "CTA washed out and doesn't stand out",
+  "cramped, inconsistent hero spacing"
+ ]
+}

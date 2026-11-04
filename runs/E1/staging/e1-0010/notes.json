@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0010",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 40px and set in Playfair, no longer dominant over the 26px subtext",
+  "Muddy khaki palette with low-contrast muted text",
+  "Primary CTA blends into the background (same colour, thin border, small grey text)",
+  "Four font families (Archivo, Playfair, Pacifico, Georgia) mixed in hero and nav",
+  "Cramped hero padding with inconsistent gaps against a loose nav"
+ ]
+}

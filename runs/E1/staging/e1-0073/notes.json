@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0073",
+ "severity": "moderate",
+ "flaws": [
+  "headline shrunk to 40px, smaller than the pill and lead; weak hierarchy",
+  "CTA small, low-contrast beige on beige, no shadow",
+  "four font families (Trebuchet, Georgia, Courier, Nunito)",
+  "muddy khaki/olive palette replacing warm coral/peach",
+  "cramped hero with inconsistent spacing and wide lead line"
+ ]
+}

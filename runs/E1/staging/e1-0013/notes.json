@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0013",
+ "severity": "moderate",
+ "flaws": [
+  "Headline reduced to 34px in a script font, outranked by 22px subtext and 24px eyebrow",
+  "Muddy desaturated brown/grey palette replaces ember and violet; text contrast low",
+  "Primary CTA is a small dim button identical in weight to the ghost button",
+  "Four font families: Lobster, Playfair, Fraunces, JetBrains Mono",
+  "Cramped hero with 16px top padding and uneven gaps beneath a roomy nav"
+ ]
+}

@@ -1,0 +1,14 @@
+{
+ "brief_id": "e1-0139",
+ "severity": "moderate",
+ "flaws": [
+  "headline small, weak hierarchy",
+  "cramped hero",
+  "primary CTA washed out",
+  "secondary CTA equally washed out, no focal action",
+  "muddy dull green palette",
+  "third font family in nav",
+  "fourth font family in lede",
+  "fifth font in tag"
+ ]
+}

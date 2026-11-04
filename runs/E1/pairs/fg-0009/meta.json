@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0009",
+ "brief_id": "e1-0009",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Hot-pink page background with lime headline and orange image block: clashing palette",
+  "Plant image rotated and absolutely positioned on top of the headline and lead text",
+  "Eyebrow and lead set at 9-10px in pale pink on pink (near zero contrast)",
+  "Impact, script, Courier and Comic Sans mixed with the original fonts",
+  "CTA pale pink text on pale pink fill, secondary link overlaps the primary button"
+ ],
+ "staging_src": "runs/E1/staging/e1-0009",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 42.995,
+ "pixel_pct_changed": 99.835
+}

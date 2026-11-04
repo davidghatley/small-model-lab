@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0061",
+ "severity": "moderate",
+ "flaws": [
+  "Headline weak (34px Courier, muddy grey) and outranked by 24px lead and 20px tag",
+  "Muddy beige/olive palette replaces navy and teal",
+  "Cramped hero: tiny padding and gap",
+  "CTA button same tone as background, small",
+  "Four font families: Courier, Georgia, Arial Black, Arial/Inter"
+ ]
+}

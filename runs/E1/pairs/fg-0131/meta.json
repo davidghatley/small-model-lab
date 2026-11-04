@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0131",
+ "brief_id": "e1-0131",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "primary CTA made low-emphasis, no longer pops",
+  "off-palette magenta accent on eyebrow tag",
+  "overlong line length on lede"
+ ],
+ "staging_src": "runs/E1/staging/e1-0131",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 7.089,
+ "pixel_pct_changed": 14.976
+}

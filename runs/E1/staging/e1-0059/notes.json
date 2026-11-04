@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0059",
+ "severity": "subtle",
+ "flaws": [
+  "CTA smaller and pale, less prominent",
+  "Off-palette magenta status labels",
+  "Hero paragraph unconstrained, overlong line length",
+  "Hero text column widened, board squeezed"
+ ]
+}

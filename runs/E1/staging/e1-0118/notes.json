@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0118",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 32px, weak hierarchy",
+  "Extra font families (Trebuchet, Courier, Comic Sans) beyond Merriweather/Nunito Sans",
+  "CTA recolored to low-contrast beige and shrunk",
+  "Muddy tan palette on phone card and tag",
+  "Cramped, inconsistent hero spacing and phone card crowding the copy"
+ ]
+}

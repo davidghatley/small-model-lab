@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0072",
+ "severity": "obvious",
+ "flaws": [
+  "huge monospace headline overlapping the signup card",
+  "body text 11px and near-invisible dark-on-dark",
+  "CTA buttons dark-on-dark, unreadable, and overlapping each other",
+  "signup card shifted and overlapping hero, pale text on pale card",
+  "magenta kicker and neon green glow clash with amber moody palette",
+  "nav links 9px low contrast; inconsistent fonts (Courier vs Fraunces/DM Sans)"
+ ]
+}

@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bocovel - Modest couture, rendered for tomorrow</title>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&family=Space+Grotesk:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#07080c;--panel:#10131a;--line:#252a36;--text:#e9ecf2;--mute:#8d95a6;--ice:#9ee7ff;--vio:#8b7bff}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--text);font:16px/1.65 'Space Grotesk',system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;height:84px;font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.logo{font:600 20px Sora,sans-serif;letter-spacing:.4em;color:var(--text)}
+nav ul{display:flex;gap:40px;list-style:none;padding:0}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center;padding:56px 0 96px;position:relative}
+.hero:before{content:"";position:absolute;right:-10%;top:-10%;width:640px;height:640px;background:radial-gradient(closest-side,rgba(139,123,255,.28),transparent);pointer-events:none}
+.eyebrow{font-size:12px;letter-spacing:.24em;text-transform:uppercase;color:var(--ice);margin-bottom:24px;display:block}
+h1{font:300 68px/1.04 Sora,sans-serif;letter-spacing:-.03em;margin-bottom:24px}
+h1 b{font-weight:600;background:linear-gradient(90deg,var(--ice),var(--vio));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{color:var(--mute);font-size:18px;max-width:26em;margin-bottom:40px}
+.btn{display:inline-block;background:linear-gradient(90deg,var(--ice),#b6a9ff);color:#06080d;font:600 14px Sora,sans-serif;letter-spacing:.12em;text-transform:uppercase;padding:18px 34px;border-radius:2px}
+.btn.ghost{background:none;border:1px solid var(--line);color:var(--text);margin-left:12px}
+.figure{height:500px;border:1px solid var(--line);background:linear-gradient(160deg,#171b26,#0b0d13);position:relative;overflow:hidden}
+.figure svg{position:absolute;inset:0;width:100%;height:100%}
+.tick{position:absolute;left:20px;bottom:18px;font-size:11px;letter-spacing:.2em;color:var(--mute);text-transform:uppercase}
+section{padding:88px 0;border-top:1px solid var(--line)}
+h2{font:300 42px/1.1 Sora,sans-serif;letter-spacing:-.02em;margin-bottom:48px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line)}
+.steps div{background:var(--panel);padding:36px}
+.steps b{font:300 40px Sora;color:var(--ice);display:block;margin-bottom:12px}
+.steps p{color:var(--mute);font-size:15px}
+.gal{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;grid-auto-rows:220px}
+.gal div{border:1px solid var(--line);position:relative}
+.gal div:first-child{grid-row:span 2}
+.g1{background:linear-gradient(180deg,#232a3d,#0e1119)}.g2{background:linear-gradient(135deg,#2a2347,#0e1119)}.g3{background:linear-gradient(135deg,#14323d,#0e1119)}.g4{background:linear-gradient(135deg,#2e2e3a,#0e1119)}.g5{background:linear-gradient(135deg,#1c2a4a,#0e1119)}
+.gal span{position:absolute;left:16px;bottom:12px;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--mute)}
+.app{display:flex;justify-content:space-between;align-items:center;gap:40px;border:1px solid var(--line);padding:56px;background:var(--panel)}
+.app h2{margin-bottom:12px;font-size:36px}
+.cta{text-align:center}
+.cta h2{font-size:52px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:20px;max-width:720px}
+input,textarea{background:transparent;border:1px solid var(--line);color:var(--text);padding:16px;font:inherit;width:100%}
+.full{grid-column:1/-1}
+footer{border-top:1px solid var(--line);padding:40px 0;color:var(--mute);font-size:13px;letter-spacing:.1em;display:flex;justify-content:space-between}
+</style><style>/* flaws */
+
+body{font-family:Georgia,serif;background:#14110f}
+nav{font-family:'Courier New',monospace;color:#b0a090}
+.logo{font:700 20px 'Brush Script MT',cursive;letter-spacing:.05em}
+.hero{display:block;padding:20px 0 30px}
+.eyebrow{font-size:15px;color:#d8a35a;letter-spacing:.05em;text-transform:none}
+h1{font:400 32px/1.3 'Times New Roman',serif;letter-spacing:0;margin-bottom:12px}
+h1 b{background:none;color:#e8a33a}
+.lead{font-size:16px;color:#8a7f72;max-width:none}
+.btn{background:#3a332c;color:#9a8e7e;padding:10px 16px;font-size:12px}
+.btn.ghost{margin-left:4px;border-color:#6b5f50;color:#9a8e7e}
+.figure{height:260px;margin-top:20px;background:#2c241d}
+.hero:before{background:radial-gradient(closest-side,rgba(180,100,40,.35),transparent)}
+
+</style></head><body>
+<div class="wrap">
+<nav><span class="logo">BOCOVEL</span><ul><li>Collection</li><li>Atelier</li><li>App</li><li>Contact</li></ul></nav>
+<header class="hero"><div><span class="eyebrow">Modest wear / Season 01 / Launched 2026</span>
+<h1>Cover more. <b>Reveal</b> nothing but intent.</h1>
+<p class="lead">Technical silks, laser-cut seams and engineered drape. Modest couture for those who treat a wardrobe like architecture.</p>
+<a class="btn" href="#">Enter the collection</a><a class="btn ghost" href="#">Book a fitting</a></div>
+<div class="figure"><svg viewBox="0 0 300 500" preserveAspectRatio="xMidYMid slice"><defs><linearGradient id="g" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#9ee7ff"/><stop offset="1" stop-color="#8b7bff"/></linearGradient></defs><path d="M150 70c-20 0-30 14-30 32s10 30 30 30 30-12 30-30-10-32-30-32zM120 140c-30 20-50 120-60 340h180c-10-220-30-320-60-340z" fill="#0b0d13" stroke="url(#g)" stroke-width="1.5"/><path d="M150 140v340M120 140c10 120 0 240-20 340M180 140c-10 120 0 240 20 340" stroke="url(#g)" stroke-width=".6" fill="none" opacity=".6"/></svg><span class="tick">Look 01 / Aether Abaya</span></div></header>
+<section><h2>How it works</h2><div class="steps"><div><b>01</b><h3 style="font:600 18px Sora;margin-bottom:8px">Scan</h3><p>Send three measurements in the app. Our fit model does the rest.</p></div><div><b>02</b><h3 style="font:600 18px Sora;margin-bottom:8px">Cut</h3><p>Your piece is cut to order in Milan within 72 hours.</p></div><div><b>03</b><h3 style="font:600 18px Sora;margin-bottom:8px">Arrive</h3><p>White-glove delivery, tailoring adjustments free for a year.</p></div></div></section>
+<section><h2>The collection</h2><div class="gal"><div class="g1"><span>Aether abaya</span></div><div class="g2"><span>Halo wrap</span></div><div class="g3"><span>Lumen coat</span></div><div class="g4"><span>Vector dress</span></div><div class="g5"><span>Orbit scarf</span></div></div></section>
+<section><div class="app"><div><h2>Your atelier, in the app</h2><p style="color:var(--mute)">Private previews, fit memory and concierge chat, on iOS and Android.</p></div><div><a class="btn" href="#">App Store</a><a class="btn ghost" href="#">Google Play</a></div></div></section>
+<section class="cta"><h2>Dress for what comes next.</h2><a class="btn" href="#">Request early access</a></section>
+<section><h2>Concierge</h2><form><input placeholder="Name"><input placeholder="Email"><textarea class="full" rows="3" placeholder="How can we help?"></textarea><div class="full"><a class="btn" href="#">Send</a></div></form></section>
+<footer><span>BOCOVEL 2026</span><span>PRIVACY / TERMS / PRESS</span></footer>
+</div></body></html>

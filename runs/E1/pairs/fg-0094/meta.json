@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0094",
+ "brief_id": "e1-0094",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline reduced to 32px medium serif, outranked by kicker and body text",
+  "Muddy slate-grey header replaces the crisp navy",
+  "Hero padding and gaps cramped",
+  "Primary CTA muted grey-blue while the secondary button is a loud mustard, so the wrong button dominates",
+  "Four font families (Georgia, Trebuchet, Courier, Manrope)",
+  "Timeline card low contrast against the header"
+ ],
+ "staging_src": "runs/E1/staging/e1-0094",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 102.035,
+ "pixel_pct_changed": 84.932
+}

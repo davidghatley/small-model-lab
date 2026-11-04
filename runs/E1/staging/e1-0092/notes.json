@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0092",
+ "severity": "subtle",
+ "flaws": [
+  "CTA uses an off-palette electric blue that clashes with the retro warm palette and lost its offset shadow",
+  "Headline scale flattened from 72px to 54px, weakening hierarchy",
+  "Hero paragraph runs the full column width (overlong line length)",
+  "Eyebrow label indented slightly out of alignment with headline"
+ ]
+}

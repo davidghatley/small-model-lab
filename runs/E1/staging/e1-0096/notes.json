@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0096",
+ "severity": "obvious",
+ "flaws": [
+  "Green blob illustration overlaps and covers the headline and paragraph",
+  "Headline in pale peach Impact on cream, nearly invisible",
+  "Body text 11px Courier in near-background pink",
+  "CTA is lime with pink text, tiny and offset",
+  "Yellow-on-yellow note label unreadable",
+  "Nav in oversized Comic Sans jammed together; logo tiny and misaligned; five font styles clash"
+ ]
+}

@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0091",
+ "brief_id": "e1-0091",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 36px light serif, smaller than eyebrow and body so it is not dominant",
+  "Muddy olive/khaki palette replaces the fresh teal and sun yellow",
+  "Cramped hero with tiny gaps and padding, undersized art block",
+  "CTA is a pale, small, low-contrast button that blends into the background",
+  "Four font families (Verdana, Courier, Georgia, Trebuchet)",
+  "Inconsistent text sizes between eyebrow, body and supporting line"
+ ],
+ "staging_src": "runs/E1/staging/e1-0091",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 39.913,
+ "pixel_pct_changed": 47.391
+}

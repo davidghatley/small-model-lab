@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0048",
+ "brief_id": "e1-0048",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Flat-rate panel neon green with magenta text, overlapping the headline",
+  "Lead paragraph light grey 13px on white, nearly invisible",
+  "Eyebrow 10px pale peach on white",
+  "Nav tiny grey Comic Sans, logo shrunk to 14px Courier",
+  "CTA yellow with white text and ghost button overlaps it",
+  "Hero blocks misaligned vertically"
+ ],
+ "staging_src": "runs/E1/staging/e1-0048",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 41.583,
+ "pixel_pct_changed": 30.455
+}

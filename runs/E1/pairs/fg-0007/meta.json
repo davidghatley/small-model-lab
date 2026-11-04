@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0007",
+ "brief_id": "e1-0007",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline reduced to 34px regular Georgia, weaker than the 20px eyebrow and body so hierarchy is flat",
+  "Muddy olive/khaki palette replacing the crisp clinical white and teal",
+  "Hero stacked into a cramped single column with tight uneven spacing",
+  "Four font families (script logo, Courier nav, Georgia heading, Verdana body)",
+  "CTAs washed-out khaki and no longer stand out; two buttons look identical"
+ ],
+ "staging_src": "runs/E1/staging/e1-0007",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 29.331,
+ "pixel_pct_changed": 92.285
+}

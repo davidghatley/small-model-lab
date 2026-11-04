@@ -1,0 +1,12 @@
+{
+ "brief_id": "e1-0033",
+ "severity": "obvious",
+ "flaws": [
+  "Headline switched to Comic Sans in dim yellow, losing the heavy display face",
+  "Side stat panel pulled over the headline/lede and set yellow-on-yellow, unreadable",
+  "Tag chip pale yellow on yellow at 9px",
+  "Lede 13px dark grey on black",
+  "CTA button dark olive on dark with tiny label",
+  "Nav links and CTA note nearly invisible"
+ ]
+}

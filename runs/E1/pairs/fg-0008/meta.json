@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0008",
+ "brief_id": "e1-0008",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Off-palette purple sticker amid red/pink/green system",
+  "Slightly cramped hero: reduced padding and gutter, lead line runs full column width (long measure)",
+  "Primary CTA shrunk to a small button with weak shadow, less prominent; hero art pushed down so columns look misaligned"
+ ],
+ "staging_src": "runs/E1/staging/e1-0008",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 49.148,
+ "pixel_pct_changed": 30.766
+}

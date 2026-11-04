@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fiel - The neighborhood paper, owned by the neighborhood</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Courier+Prime&family=Source+Serif+4:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#f4ead5;--ink:#1f1a14;--red:#b3261e;--navy:#1d3557;--rule:#cdbf9f}
+*{box-sizing:border-box;margin:0}
+body{background:var(--paper);color:var(--ink);font:17px/1.6 'Source Serif 4',Georgia,serif}
+.wrap{max-width:1080px;margin:0 auto;padding:0 32px}
+.mast{text-align:center;padding:24px 0 12px;border-bottom:4px double var(--ink)}
+.dateline{display:flex;justify-content:space-between;font:14px 'Courier Prime',monospace;border-bottom:1px solid var(--ink);padding-bottom:8px;margin-bottom:12px}
+.mast h2{font:900 64px/1 'Playfair Display',serif;letter-spacing:.04em;color:var(--ink)}
+.mast p{font:14px 'Courier Prime',monospace;color:var(--red);letter-spacing:.12em;text-transform:uppercase;margin-top:6px}
+nav{display:flex;justify-content:center;gap:36px;padding:12px 0;border-bottom:1px solid var(--ink);font:14px 'Courier Prime',monospace;text-transform:uppercase;letter-spacing:.08em}
+.hero{display:grid;grid-template-columns:1.6fr 1fr;gap:48px;padding:44px 0 56px}
+.kicker{font:14px 'Courier Prime',monospace;color:var(--red);text-transform:uppercase;letter-spacing:.14em;margin-bottom:12px}
+h1{font:900 56px/1.08 'Playfair Display',serif;margin-bottom:20px}
+.lead{font-size:20px;max-width:32em;margin-bottom:28px}
+.btn{display:inline-block;background:var(--red);color:#fff8ea;font:700 15px 'Courier Prime',monospace;letter-spacing:.1em;text-transform:uppercase;padding:16px 30px;border:2px solid var(--ink);box-shadow:4px 4px 0 var(--ink)}
+.side{border-left:1px solid var(--rule);padding-left:40px}
+.side h3{font:700 22px 'Playfair Display',serif;margin-bottom:12px}
+.side li{list-style:none;padding:10px 0;border-bottom:1px dotted var(--rule);font-size:16px}
+.side b{color:var(--red);font-family:'Courier Prime',monospace}
+section{padding:56px 0;border-top:1px solid var(--ink)}
+h2.s{font:900 36px 'Playfair Display',serif;margin-bottom:28px}
+.cols{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.price{border:2px solid var(--ink);padding:28px;background:#fbf4e3}
+.price.pick{background:var(--navy);color:#f4ead5}
+.price .n{font:900 44px 'Playfair Display',serif;margin:8px 0}
+.price .n small{font:14px 'Courier Prime',monospace}
+.price ul{padding-left:18px;font-size:15px}
+.story h3{font:700 22px 'Playfair Display',serif;margin:8px 0}
+.story p{font-size:15.5px}
+.story .ph{height:130px;background:repeating-linear-gradient(45deg,#d8c9a5 0 6px,#e6dabb 6px 12px);border:1px solid var(--ink)}
+table{width:100%;border-collapse:collapse;font-size:16px}
+th,td{padding:12px 16px;border-bottom:1px solid var(--rule);text-align:left}
+th{font:700 14px 'Courier Prime',monospace;text-transform:uppercase;letter-spacing:.08em;background:var(--ink);color:var(--paper)}
+.app{display:flex;gap:40px;align-items:center;justify-content:space-between}
+.badge{display:inline-block;border:2px solid var(--ink);padding:10px 20px;font:700 14px 'Courier Prime',monospace;margin-right:10px}
+.cta{background:var(--red);color:#fff8ea;text-align:center;padding:64px 0}
+.cta h2{font:900 40px 'Playfair Display',serif;margin-bottom:20px}
+.cta .btn{background:#fff8ea;color:var(--ink)}
+footer{padding:32px 0;font:14px 'Courier Prime',monospace;display:flex;justify-content:space-between}
+</style></head><body>
+<div class="wrap">
+<div class="mast"><div class="dateline"><span>Est. 2006</span><span>Owned by 4,800 neighbors</span><span>Vol. XX, No. 1</span></div><h2>THE FIEL</h2><p>Your local news cooperative</p></div>
+<nav><span>News</span><span>Membership</span><span>Stories</span><span>Get the app</span></nav>
+<header class="hero"><div><p class="kicker">Twenty years of knowing your block</p>
+<h1>The school board, the road closures, the bake sale: all in five minutes.</h1>
+<p class="lead">Fiel is the local paper you remember, run by the families who read it. A short morning edition built for parents with a school run to make.</p>
+<a class="btn" href="#">Join the co-op</a></div>
+<aside class="side"><h3>In today's edition</h3><ul><li><b>6:40</b> Bus route 12 shifts to Maple</li><li><b>7:05</b> Library summer hours announced</li><li><b>7:30</b> Council votes on crosswalk funds</li><li><b>8:00</b> Where to find a swim lesson spot</li></ul></aside></header>
+<section><h2 class="s">Membership, priced like a paper subscription</h2><div class="cols">
+<div class="price"><h3>Neighbor</h3><div class="n">$5<small> /mo</small></div><ul><li>Morning edition</li><li>Event calendar</li></ul></div>
+<div class="price pick"><h3>Household</h3><div class="n">$9<small> /mo</small></div><ul><li>Everything in Neighbor</li><li>Vote in co-op elections</li><li>School alerts</li></ul></div>
+<div class="price"><h3>Patron</h3><div class="n">$25<small> /mo</small></div><ul><li>Fund a reporter's beat</li><li>Name in the masthead</li></ul></div></div></section>
+<section><h2 class="s">Case studies from the co-op</h2><div class="cols">
+<div class="story"><div class="ph"></div><h3>The crosswalk that got built</h3><p>Our reporting on near-misses led to a funded crossing outside Hollis Elementary in 11 weeks.</p></div>
+<div class="story"><div class="ph"></div><h3>A budget, explained</h3><p>Parents read the school budget line by line and asked the questions that changed it.</p></div>
+<div class="story"><div class="ph"></div><h3>Saving the Saturday market</h3><p>A member drive raised $60,000 and kept 40 stalls open.</p></div></div></section>
+<section><h2 class="s">Fiel versus the feed</h2><table><tr><th></th><th>Fiel</th><th>Social feed</th><th>Big chain paper</th></tr><tr><td>Owned by readers</td><td>Yes</td><td>No</td><td>No</td></tr><tr><td>Reading time</td><td>5 minutes</td><td>Endless</td><td>30 minutes</td></tr><tr><td>Ads follow you</td><td>Never</td><td>Always</td><td>Often</td></tr><tr><td>Monthly cost</td><td>From $5</td><td>Your attention</td><td>$18</td></tr></table></section>
+<section class="app"><div><h2 class="s" style="margin-bottom:12px">Take the paper with you</h2><p style="margin-bottom:20px">The morning edition lands at 6:30, with school-closing alerts that actually matter.</p><span class="badge">App Store</span><span class="badge">Google Play</span></div></section>
+</div>
+<div class="cta"><h2>Own your local news again.</h2><a class="btn" href="#">Join the co-op today</a></div>
+<div class="wrap"><footer><span>The Fiel Cooperative, since 2006</span><span>About · Corrections · Contact</span></footer></div>
+</body></html>

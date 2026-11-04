@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0149",
+ "severity": "subtle",
+ "flaws": [
+  "CTA washed-out taupe with white text, smaller, much less prominent",
+  "off-palette green eyebrow",
+  "flatter headline scale (76px to 60px)",
+  "paragraph line length overlong and nav/hero padding cramped"
+ ]
+}

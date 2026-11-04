@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0043",
+ "brief_id": "e1-0043",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 44px and lost its highlight, no longer dominant",
+  "Four font families (Plex Sans, Plex Mono, Georgia, Trebuchet)",
+  "Muddy beige/olive palette with grey body text",
+  "Inconsistent spacing: tight top, huge bottom padding, odd lead margins",
+  "CTA turned pale grey on grey, barely distinguishable from the page"
+ ],
+ "staging_src": "runs/E1/staging/e1-0043",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 46.34,
+ "pixel_pct_changed": 99.178
+}

@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0125",
+ "brief_id": "e1-0125",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "off-palette purple CTA clashes with teal brand",
+  "lede and headline run to an overlong line length",
+  "hero padding slightly cramped, card padding tight"
+ ],
+ "staging_src": "runs/E1/staging/e1-0125",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 18.669,
+ "pixel_pct_changed": 33.587
+}

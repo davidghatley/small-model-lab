@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0180",
+ "brief_id": "e1-0180",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 has warmer, calmer tone and an illustrated focal point; v2 is competent but generic dark SaaS feel.",
+ "staging_src": "runs/E1/staging/e1-0180",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "b",
+ "directions": [
+  "v1: light cream editorial serif, split hero with arched plant illustration",
+  "v2: dark forest-green centered sans hero with stat tiles"
+ ],
+ "v1_side": "b"
+}

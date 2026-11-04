@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0194",
+ "brief_id": "e1-0194",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 conveys precision with a spec table and readable hierarchy; v2 is striking but the oversized headline is less informative.",
+ "staging_src": "runs/E1/staging/e1-0194",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "v1 light blueprint grid, mono type, spec-sheet panel",
+  "v2 dark with giant lime type and contour lines"
+ ],
+ "v1_side": "a"
+}

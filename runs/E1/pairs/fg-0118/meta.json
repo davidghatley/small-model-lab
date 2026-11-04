@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0118",
+ "brief_id": "e1-0118",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline cut to 32px, weak hierarchy",
+  "Extra font families (Trebuchet, Courier, Comic Sans) beyond Merriweather/Nunito Sans",
+  "CTA recolored to low-contrast beige and shrunk",
+  "Muddy tan palette on phone card and tag",
+  "Cramped, inconsistent hero spacing and phone card crowding the copy"
+ ],
+ "staging_src": "runs/E1/staging/e1-0118",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 22.559,
+ "pixel_pct_changed": 25.647
+}

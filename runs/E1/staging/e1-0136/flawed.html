@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Elcolum - Comics, quietly made</title>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,wght@0,400;0,500;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--paper:#fbfaf7;--ink:#161616;--mute:#8f8a7a;--rule:#d8d5cc;--accent:#9c6b3f}
+*{box-sizing:border-box;margin:0}
+body{font-family:'Inter',sans-serif;background:var(--paper);color:var(--ink);line-height:1.65}
+.wrap{max-width:1080px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:baseline;padding:28px 0;border-bottom:1px solid var(--ink);font-size:14px}
+.logo{font-family:'Newsreader',serif;font-size:28px;font-weight:500;letter-spacing:-.01em}
+nav ul{display:flex;gap:28px;list-style:none;color:var(--mute);font-family:'Courier New',monospace}
+.hero{display:grid;grid-template-columns:7fr 5fr;gap:18px;padding:12px 0 24px;align-items:end}
+.kicker{font-size:13px;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);font-weight:600}
+h1{font-family:'Newsreader',serif;font-weight:400;font-size:38px;line-height:1;letter-spacing:-.025em;margin:20px 0 28px}
+h1 i{font-style:italic}
+.lede{font-family:Verdana,sans-serif;font-size:19px;color:var(--mute);max-width:30em;margin-bottom:32px}
+.btn{display:inline-block;background:#d3cfc2;color:#9a968a;font-weight:500;font-size:16px;padding:16px 30px;text-decoration:none}
+.cover{aspect-ratio:3/4;background:#5a5448;color:var(--paper);padding:28px;display:flex;flex-direction:column;justify-content:space-between;position:relative}
+.cover:before{content:"";position:absolute;right:28px;top:28px;width:84px;height:84px;border-radius:50%;background:var(--accent)}
+.cover small{font-size:12px;letter-spacing:.14em;text-transform:uppercase;opacity:.7}
+.cover h3{font-family:'Newsreader',serif;font-weight:400;font-size:40px;line-height:1.05}
+section{padding:72px 0;border-top:1px solid var(--rule)}
+h2{font-family:'Newsreader',serif;font-weight:400;font-size:40px;margin-bottom:32px;letter-spacing:-.015em}
+.list{display:grid;grid-template-columns:repeat(3,1fr);gap:40px}
+.item small{color:var(--accent);font-size:12px;letter-spacing:.12em;text-transform:uppercase;font-weight:600}
+.item h3{font-family:'Newsreader',serif;font-weight:500;font-size:24px;margin:8px 0}
+.item p{color:var(--mute);font-size:16px}
+.tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.tile{aspect-ratio:1;display:flex;align-items:end;padding:16px;font-size:14px;color:#fff}
+.names{display:flex;gap:40px;flex-wrap:wrap;font-family:'Newsreader',serif;font-size:24px;color:var(--mute)}
+.news{display:flex;gap:0;max-width:560px;border:1px solid var(--ink)}
+.news div{flex:1;padding:16px 18px;color:var(--mute)}
+.news a{background:var(--ink);color:var(--paper);padding:16px 28px;text-decoration:none;font-weight:500}
+.cta{text-align:center}
+.cta h2{font-size:56px}
+footer{padding:36px 0;border-top:1px solid var(--ink);font-size:14px;color:var(--mute)}
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">Elcolum</div><ul><li>Catalogue</li><li>Journal</li><li>Authors</li><li>Newsletter</li></ul></nav>
+<header class="hero">
+<div><div class="kicker">Independent comics, est. 2026</div>
+<h1>Stories for the long <i>walk out</i>.</h1>
+<p class="lede">Elcolum publishes graphic novels about weather, wilderness and the people who go looking for both. Printed on uncoated stock, sized to fit a trail pack.</p>
+<a class="btn" href="#news">Read the first chapter</a></div>
+<div class="cover"><small>Elcolum Editions, No. 07</small><h3>The Cairn Keepers</h3><small>Written by Ruth Alder, drawn by Joon Park</small></div>
+</header></div>
+<section><div class="wrap"><h2>Works in the field</h2>
+<div class="tiles"><div class="tile" style="background:#2f3d36">Ridge Line</div><div class="tile" style="background:#8a7a5c">Salt Flats</div><div class="tile" style="background:#40505e">Ice Reports</div><div class="tile" style="background:#7a3a2a">Kindling</div></div></div></section>
+<section><div class="wrap"><h2>Journal</h2>
+<div class="list"><div class="item"><small>Process</small><h3>Inking in the cold</h3><p>How Joon Park draws on location above treeline.</p></div>
+<div class="item"><small>Essay</small><h3>Why we print small</h3><p>A case for the pocket-sized graphic novel.</p></div>
+<div class="item"><small>News</small><h3>Our seed round, plainly</h3><p>What we raised, and what we will spend it on.</p></div></div></div></section>
+<section><div class="wrap"><h2>Distributed and read with</h2><div class="names"><span>Bookshop.org</span><span>REI Co-op</span><span>Hoopla</span><span>Comixology</span><span>Indiebound</span></div></div></section>
+<section id="news"><div class="wrap"><h2>One letter a month. No noise.</h2>
+<div class="news"><div>you@email.com</div><a href="#">Subscribe</a></div></div></section>
+<section class="cta"><div class="wrap"><h2>Start with the first chapter.</h2><a class="btn" href="#">Read it free</a></div></section>
+<footer><div class="wrap">Elcolum Editions. Set in Newsreader and Inter. editor@elcolum.com</div></footer>
+</body></html>

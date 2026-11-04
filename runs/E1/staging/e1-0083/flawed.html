@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Veten - guided walks for the daily commute</title>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,600&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+:root{--cream:#fff8ee;--ink:#1f2a44;--sun:#f4a259;--rose:#e76f51;--sky:#bfe3ea;--mute:#5a6480}
+*{box-sizing:border-box;margin:0}
+body{background:var(--cream);color:var(--ink);font:17px/1.6 Manrope,system-ui,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:0 40px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:28px 0}
+.logo{font:600 28px Fraunces,serif}
+nav ul{display:flex;gap:36px;list-style:none;padding:0;font-weight:500;font-size:15px}
+.hero{display:grid;grid-template-columns:1.1fr 1fr;gap:56px;align-items:center;padding:32px 0 56px}
+.eyebrow{font-weight:700;font-size:14px;color:var(--rose);letter-spacing:.08em;text-transform:uppercase;margin-bottom:16px}
+h1{font:600 74px/1.02 Fraunces,serif;letter-spacing:-.02em;margin-bottom:24px}
+.lede{font-size:20px;color:var(--mute);max-width:480px;margin-bottom:32px}
+.btn{display:inline-block;background:var(--ink);color:#fff;font-weight:800;padding:18px 34px;border-radius:14px;text-decoration:none;box-shadow:0 8px 24px rgba(31,42,68,.25)}
+.btn.alt{background:none;color:var(--ink);box-shadow:none;margin-left:12px;padding-left:16px}
+.sky{height:440px;border-radius:200px 200px 24px 24px;background:linear-gradient(180deg,var(--sky) 0%,#ffe3b8 55%,var(--sun) 100%);position:relative;overflow:hidden}
+.sky svg{position:absolute;inset:0;width:100%;height:100%}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);border-top:1px solid #e6dcc8;border-bottom:1px solid #e6dcc8;padding:28px 0}
+.stats div{padding:0 20px;border-left:1px solid #e6dcc8}.stats div:first-child{border:0;padding-left:0}
+.stats b{display:block;font:600 40px Fraunces,serif}.stats span{color:var(--mute);font-size:15px}
+section{padding:80px 0}
+h2{font:600 44px/1.1 Fraunces,serif;margin-bottom:32px;letter-spacing:-.01em}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+.post{background:#fff;border-radius:18px;overflow:hidden;box-shadow:0 2px 12px rgba(31,42,68,.08)}
+.post i{display:block;height:150px;background:var(--sky)}.post:nth-child(2) i{background:var(--sun)}.post:nth-child(3) i{background:#f6c9b8}
+.post div{padding:20px}.post b{font:600 20px Fraunces}.post p{color:var(--mute);font-size:15px;margin-top:6px}
+.band{background:var(--ink);color:#fff;text-align:center;border-radius:28px;padding:64px 32px}
+.band h2{margin-bottom:12px}.band .btn{background:var(--sun);color:var(--ink);margin-top:24px}
+.logos{display:flex;justify-content:space-between;color:#8a92a8;font:600 20px Fraunces}
+.quote{padding:28px;background:#fff;border-radius:18px;font:400 20px/1.4 Fraunces}.quote span{display:block;font:500 14px Manrope;color:var(--mute);margin-top:14px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.gal i{height:200px;border-radius:16px;background:var(--sky)}.gal i:nth-child(2n){background:var(--sun)}.gal i:nth-child(3n){background:#f6c9b8}
+footer{border-top:1px solid #e6dcc8;padding:32px 0;color:var(--mute);font-size:14px;display:flex;justify-content:space-between}
+/* flaws */
+h1{font-size:52px;line-height:1.15}
+.lede{max-width:none;font-size:18px}
+.btn{background:none;color:var(--ink);box-shadow:none;border:1px solid #c9bfa8;padding:14px 26px;font-weight:500}
+.stats{padding:18px 0}.stats b{color:#2e9e8f;font-size:34px}
+.eyebrow{color:#2e9e8f}
+.hero{padding:16px 0 36px}
+
+</style></head><body>
+<div class="wrap">
+<nav><div class="logo">Veten</div><ul><li>Cities</li><li>How it works</li><li>Journal</li><li>Sign in</li></ul></nav>
+<div class="hero">
+<div>
+<div class="eyebrow">Premium walking tours, every day</div>
+<h1>Make your walk the best part of the day.</h1>
+<p class="lede">Veten pairs local historians with your commute route. Audio stories, hidden stairways and a quieter way through the city. A share of every plan restores a public footpath.</p>
+<a class="btn" href="#">Start 14 days free</a><a class="btn alt" href="#">Hear a sample</a>
+</div>
+<div class="sky"><svg viewBox="0 0 440 440" preserveAspectRatio="xMidYMax slice"><circle cx="300" cy="170" r="54" fill="#fff8ee" opacity=".85"/><path d="M0 440V330l50-30 40 20 50-60 60 50 50-40 70 60 50-30 70 30v100z" fill="#1f2a44"/><path d="M0 440V380l80-20 90 24 100-30 170 26v60z" fill="#e76f51"/></svg></div>
+</div>
+<div class="stats"><div><b>42</b><span>cities with local guides</span></div><div><b>1,800</b><span>routes, 5 to 40 minutes</span></div><div><b>212 km</b><span>of footpath restored</span></div><div><b>4.9</b><span>average walk rating</span></div></div>
+</div>
+<section><div class="wrap"><h2>From the Veten journal</h2><div class="grid3">
+<div class="post"><i></i><div><b>Why the slow route wins</b><p>The commute study that changed our routing.</p></div></div>
+<div class="post"><i></i><div><b>Seven stairways in Lisbon</b><p>A guide's favorite shortcuts at sunrise.</p></div></div>
+<div class="post"><i></i><div><b>How 212 km got fixed</b><p>Where your subscription goes.</p></div></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><div class="band"><h2>Walk somewhere worth remembering.</h2><p style="opacity:.8">Cancel any time. First two weeks on us.</p><a class="btn" href="#">Start 14 days free</a></div></div></section>
+<section style="padding-top:0"><div class="wrap logos"><span>Monocle</span><span>Wanderlust</span><span>Kinfolk</span><span>Cityscape</span><span>Afar</span></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>Commuters say</h2><div class="grid3">
+<div class="quote">"I take the long way on purpose now."<span>Amira, Rotterdam</span></div>
+<div class="quote">"Forty minutes of history before my 9 am."<span>Tom, Chicago</span></div>
+<div class="quote">"Worth every cent of premium."<span>Keiko, Osaka</span></div></div></div></section>
+<section style="padding-top:0"><div class="wrap"><h2>On the route</h2><div class="gal"><i></i><i></i><i></i><i></i></div></div></section>
+<div class="wrap"><footer><span>&copy; 2026 Veten Walks</span><span>Cities &middot; Guides &middot; Footpath fund</span></footer></div>
+</body></html>

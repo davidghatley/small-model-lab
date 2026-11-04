@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Merel - Robotics Kits for Local Schools</title>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#fbfcfd;--ink:#0f1c2e;--mu:#52617a;--ac:#0a5fd8;--line:#d3dae6;--soft:#eef2f8}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:17px/1.65 'IBM Plex Sans',system-ui,sans-serif}
+.w{max-width:1180px;margin:0 auto;padding:0 36px}
+nav{display:flex;justify-content:space-between;align-items:center;height:68px;border-bottom:1px solid var(--line)}
+.logo{font:600 20px 'IBM Plex Mono',monospace}.logo i{color:var(--ac);font-style:normal}
+nav .l{display:flex;gap:28px;font-size:15px;color:var(--mu);align-items:center}
+.btn{display:inline-block;background:var(--ac);color:#fff;padding:14px 26px;border-radius:4px;text-decoration:none;font-weight:600}
+.btn.o{background:none;color:var(--ink);border:1.5px solid var(--ink);padding:12.5px 24px}
+.hero{display:grid;grid-template-columns:1fr 1fr;gap:56px;padding:64px 0 72px;align-items:center}
+.mono{font:500 13px 'IBM Plex Mono',monospace;color:var(--ac);letter-spacing:.08em;text-transform:uppercase;margin-bottom:18px}
+h1{font-size:54px;line-height:1.08;font-weight:600;letter-spacing:-.02em;margin-bottom:22px}
+.lede{color:var(--mu);font-size:19px;max-width:500px;margin-bottom:32px}
+.cta{display:flex;gap:14px}
+.spec{border:1px solid var(--line);background:var(--soft);padding:24px;font:400 14px/1.9 'IBM Plex Mono',monospace}
+.spec h4{font:600 13px 'IBM Plex Mono',monospace;letter-spacing:.1em;text-transform:uppercase;margin-bottom:10px;color:var(--mu)}
+.spec div{display:flex;justify-content:space-between;border-bottom:1px dashed var(--line)}
+.spec div span:last-child{font-weight:500}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h2{font-size:34px;line-height:1.2;margin-bottom:10px;font-weight:600;letter-spacing:-.01em}
+.sub{color:var(--mu);margin-bottom:36px;max-width:560px}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.card{border:1px solid var(--line);padding:24px;background:#fff}
+.card h3{font-size:19px;margin-bottom:6px}.card p{color:var(--mu);font-size:15px}
+.price{font:500 36px 'IBM Plex Mono',monospace;margin:10px 0}
+.card.f{border:2px solid var(--ac)}
+table{width:100%;border-collapse:collapse;font-size:15px}th,td{padding:12px;border-bottom:1px solid var(--line);text-align:left}th{background:var(--soft);font:500 13px 'IBM Plex Mono',monospace}
+form{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:700px}form input,form textarea{padding:12px;border:1px solid var(--line);font:inherit}form textarea{grid-column:1/3;height:90px}
+.band{background:var(--ink);color:#fff;padding:64px 0;text-align:center}.band h2{margin-bottom:20px}
+footer{padding:28px 36px;max-width:1180px;margin:0 auto;display:flex;justify-content:space-between;font-size:14px;color:var(--mu)}
+</style></head><body>
+<div class="w"><nav><div class="logo">merel<i>_</i>kit</div><div class="l"><span>Pricing</span><span>Locations</span><span>Blog</span><a class="btn" href="#">Request a demo</a></div></nav>
+<header class="hero"><div><div class="mono">Robotics kit / Grades 5 to 9</div>
+<h1>A robotics kit built for your local classroom.</h1>
+<p class="lede">Merel ships a 24-lesson curriculum, a 38-part chassis and a trained volunteer from your own town. Retirees with engineering backgrounds are welcome as mentors.</p>
+<div class="cta"><a class="btn" href="#">Request a demo</a><a class="btn o" href="#">Volunteer as a mentor</a></div></div>
+<div class="spec"><h4>Kit spec, rev 4.2</h4><div><span>Controller</span><span>ARM Cortex-M4, 80 MHz</span></div><div><span>Motors</span><span>2x geared DC, 6V</span></div><div><span>Sensors</span><span>Ultrasonic, line, IMU</span></div><div><span>Build time</span><span>~45 min / student pair</span></div><div><span>Lessons</span><span>24 (12 weeks)</span></div><div><span>Price per kit</span><span>$118 school rate</span></div></div></header></div>
+<section><div class="w"><h2>Blog preview</h2><p class="sub">Field notes from classrooms and mentors.</p><div class="g3">
+<div class="card"><div class="mono">Mentoring</div><h3>What a retired machinist taught 6th grade</h3><p>Six weeks, one gearbox, and a lot of patience.</p></div>
+<div class="card"><div class="mono">Curriculum</div><h3>Lesson 9: PID without the math</h3><p>How we explain feedback control to 11-year-olds.</p></div>
+<div class="card"><div class="mono">Local</div><h3>Three districts, one robot league</h3><p>Our spring tournament is open to visitors.</p></div></div></div></section>
+<section><div class="w"><h2>Pricing</h2><p class="sub">Per classroom set of 10 kits. Volunteers and spare parts included.</p><div class="g3">
+<div class="card"><h3>Starter</h3><div class="price">$1,180</div><p>10 kits, curriculum, 1 training session.</p></div>
+<div class="card f"><h3>Classroom</h3><div class="price">$1,890</div><p>Adds sensor pack, mentor placement, tournament entry.</p></div>
+<div class="card"><h3>District</h3><div class="price">Quote</div><p>Multiple schools, teacher training, local coordinator.</p></div></div></div></section>
+<section><div class="w"><h2>Comparison</h2><p class="sub">&nbsp;</p><table><tr><th>Feature</th><th>Merel</th><th>Generic kit</th></tr><tr><td>Local mentor placement</td><td>Included</td><td>No</td></tr><tr><td>Lesson plans</td><td>24, standards aligned</td><td>6 to 10</td></tr><tr><td>Replacement parts</td><td>Next-day, regional depot</td><td>2 to 3 weeks</td></tr></table></div></section>
+<section><div class="w"><h2>Locations</h2><p class="sub">Depots and demo classrooms.</p><div class="g3"><div class="card"><h3>Dayton, OH</h3><p>112 Wright Ave</p></div><div class="card"><h3>Asheville, NC</h3><p>40 Depot St</p></div><div class="card"><h3>Duluth, MN</h3><p>9 Harbor Rd</p></div></div></div></section>
+<section><div class="w"><h2>Contact</h2><p class="sub">Tell us about your school or your skills.</p><form><input placeholder="Name"><input placeholder="Email"><textarea placeholder="Message"></textarea><a class="btn" href="#" style="grid-column:1/2;text-align:center">Send</a></form></div></section>
+<div class="band"><div class="w"><h2>See a kit running in your district.</h2><a class="btn" href="#">Request a demo</a></div></div>
+<footer><span>Merel Robotics, Dayton OH</span><span>hello@merel.kit</span></footer>
+</body></html>

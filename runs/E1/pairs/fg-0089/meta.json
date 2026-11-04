@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0089",
+ "brief_id": "e1-0089",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero CTA recolored pale lavender with low-contrast text, much less prominent",
+  "Off-palette magenta accent on tag and stat numbers",
+  "Hero padding cramped and lede line runs overlong"
+ ],
+ "staging_src": "runs/E1/staging/e1-0089",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 25.256,
+ "pixel_pct_changed": 22.076
+}

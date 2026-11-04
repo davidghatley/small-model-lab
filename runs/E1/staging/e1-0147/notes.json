@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0147",
+ "severity": "obvious",
+ "flaws": [
+  "bed illustration overlaps headline and paragraph",
+  "headline in script font, grey, mismatched with body",
+  "body and nav text tiny and low-contrast",
+  "magenta/green CTA clash, in Times, floating off position",
+  "stats band squeezed with tiny dark text"
+ ]
+}

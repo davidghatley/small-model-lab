@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0085",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 44px Verdana so hierarchy collapses",
+  "Muddy mauve/grey palette replaces the deep indigo and amber accent",
+  "CTA is a dull brown button blending into background",
+  "Four font families (Verdana, Trebuchet, Courier, Karla) and inconsistent spacing"
+ ]
+}

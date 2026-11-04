@@ -1,0 +1,10 @@
+{
+ "brief_id": "e1-0100",
+ "severity": "moderate",
+ "flaws": [
+  "Headline shrunk to 34px serif so it no longer dominates; subhead and eyebrow larger/louder than H1",
+  "Hero padding and gaps collapsed, cramped",
+  "CTA recolored to low-contrast beige and shrunk, doesn't stand out",
+  "Muddy khaki palette on spec card; Georgia + Comic Sans + Plex = 3+ fonts"
+ ]
+}

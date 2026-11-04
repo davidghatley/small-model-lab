@@ -1,0 +1,17 @@
+{
+ "pair_id": "fh-0177",
+ "brief_id": "e1-0177",
+ "source": "frontier_hard",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": "v1 nails minimal editorial with strong type scale; v2 is clear and shows product but reads as generic SaaS.",
+ "staging_src": "runs/E1/staging/e1-0177",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "author_pick_side": "a",
+ "directions": [
+  "Warm off-white editorial, Instrument Serif oversized headline in asymmetric 8/4 layout, red accent",
+  "White technical layout, IBM Plex, blue accent, split hero with form mock"
+ ],
+ "v1_side": "a"
+}

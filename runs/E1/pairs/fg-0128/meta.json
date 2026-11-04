@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0128",
+ "brief_id": "e1-0128",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "off-palette orange eyebrow and logo against green brand",
+  "overlong body line length in hero",
+  "CTAs reduced to faint ghost buttons"
+ ],
+ "staging_src": "runs/E1/staging/e1-0128",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 17.855,
+ "pixel_pct_changed": 25.094
+}

@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0049",
+ "severity": "moderate",
+ "flaws": [
+  "Headline cut to 38px, no longer dominant",
+  "Five font families (Space Grotesk, Public Sans, Georgia, Courier, Verdana)",
+  "Muddy olive/sand palette replaces the deep green and amber",
+  "Inconsistent spacing: tiny top padding, large bottom, odd lead margins",
+  "Both CTAs pale beige on beige, indistinct"
+ ]
+}

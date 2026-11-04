@@ -1,0 +1,19 @@
+{
+ "pair_id": "fg-0065",
+ "brief_id": "e1-0065",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "subtle",
+ "flaw_notes": [
+  "Hero CTA pale and small, less prominent",
+  "Off-palette hot pink on pill and headline accent",
+  "Cramped spacing between headline, lead and CTA"
+ ],
+ "staging_src": "runs/E1/staging/e1-0065",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.192,
+ "pixel_pct_changed": 15.514
+}

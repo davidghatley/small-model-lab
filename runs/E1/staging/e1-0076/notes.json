@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0076",
+ "severity": "moderate",
+ "flaws": [
+  "headline cut to 40px Verdana regular, no longer dominant",
+  "CTA small, tan on tan, no border or shadow",
+  "Verdana and Georgia added to DM Serif, Space Mono, Work Sans (5 families)",
+  "muddy olive/grey-mauve palette replacing crisp teal/mustard/brick",
+  "inconsistent spacing between nav, hero and badge; cramped hero"
+ ]
+}

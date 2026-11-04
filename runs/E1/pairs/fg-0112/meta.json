@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0112",
+ "brief_id": "e1-0112",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline shrunk to 34px so it no longer dominates",
+  "Four font families (Playfair, Jost, Trebuchet, Courier, Comic Sans)",
+  "CTA recolored to muddy beige-on-beige and shrunk",
+  "Inconsistent hero spacing (tight top, large bottom, mismatched margins)",
+  "Palette muddied with greige gradient and logo bar"
+ ],
+ "staging_src": "runs/E1/staging/e1-0112",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 20.533,
+ "pixel_pct_changed": 53.881
+}

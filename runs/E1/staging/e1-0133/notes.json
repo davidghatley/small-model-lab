@@ -1,0 +1,13 @@
+{
+ "brief_id": "e1-0133",
+ "severity": "moderate",
+ "flaws": [
+  "muddy, desaturated palette",
+  "headline too small, weak hierarchy",
+  "cramped hero",
+  "tight hero gap",
+  "CTA low contrast, doesn't stand out",
+  "third font family in nav",
+  "fourth font family in lede"
+ ]
+}

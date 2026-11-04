@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0090",
+ "brief_id": "e1-0090",
+ "source": "frontier_graded",
+ "intended_better": "b",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Quest card overlaps and covers the headline/body at an angle",
+  "Lime and yellow text on yellow backgrounds is nearly unreadable",
+  "Body copy shrunk to 11px and note to 7px",
+  "CTA is pink-on-pink with no contrast and sits misaligned",
+  "Headline in Times with clashing shadow; Comic Sans, Papyrus, Courier mixed in",
+  "Nav links tiny, crammed, dark on dark"
+ ],
+ "staging_src": "runs/E1/staging/e1-0090",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "b",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 51.773,
+ "pixel_pct_changed": 38.007
+}

@@ -1,0 +1,9 @@
+{
+ "brief_id": "e1-0011",
+ "severity": "subtle",
+ "flaws": [
+  "Primary CTA turned into a small outlined ghost button, no more prominent than the secondary",
+  "Off-palette cyan kicker badge against the lime/pink scheme",
+  "Subhead line length stretched to ~1100px (far overlong measure) across the hero"
+ ]
+}

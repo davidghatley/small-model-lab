@@ -1,0 +1,11 @@
+{
+ "brief_id": "e1-0081",
+ "severity": "obvious",
+ "flaws": [
+  "H1 swapped to pink Georgia and overlaps the spec panel",
+  "Spec panel recolored cyan/yellow, shifted left over the headline column",
+  "Lede and kicker shrunk to 8-11px low-contrast text",
+  "Buttons absolutely positioned, clashing orange/purple, overlapping content",
+  "Mixed fonts: Comic Sans body, Georgia headline, Times buttons"
+ ]
+}

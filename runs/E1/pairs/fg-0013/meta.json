@@ -1,0 +1,21 @@
+{
+ "pair_id": "fg-0013",
+ "brief_id": "e1-0013",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "moderate",
+ "flaw_notes": [
+  "Headline reduced to 34px in a script font, outranked by 22px subtext and 24px eyebrow",
+  "Muddy desaturated brown/grey palette replaces ember and violet; text contrast low",
+  "Primary CTA is a small dim button identical in weight to the ghost button",
+  "Four font families: Lobster, Playfair, Fraunces, JetBrains Mono",
+  "Cramped hero with 16px top padding and uneven gaps beneath a roomy nav"
+ ],
+ "staging_src": "runs/E1/staging/e1-0013",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 19.877,
+ "pixel_pct_changed": 99.126
+}

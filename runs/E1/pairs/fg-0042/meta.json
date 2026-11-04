@@ -1,0 +1,22 @@
+{
+ "pair_id": "fg-0042",
+ "brief_id": "e1-0042",
+ "source": "frontier_graded",
+ "intended_better": "a",
+ "flaw_severity": "obvious",
+ "flaw_notes": [
+  "Headline hot pink on cream, clashing with terracotta brand and weak contrast",
+  "Lead paragraph 11px light beige on cream (near unreadable)",
+  "Eyebrow 9px and overlapping the headline via negative margin",
+  "Jar graphic pulled left and rotated so it overlaps the headline column",
+  "Nav in Comic Sans, oversize, cyan; logo displaced into the nav area",
+  "CTA buttons cyan and yellow with white text and overlapping each other"
+ ],
+ "staging_src": "runs/E1/staging/e1-0042",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "strong_side": "a",
+ "text_similarity": 1.0,
+ "pixel_mean_abs_diff": 16.055,
+ "pixel_pct_changed": 23.346
+}

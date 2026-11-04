@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fizen - Mobile detailing, cheap and loud</title>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Archivo:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f2f0ff;--ink:#14102b;--mut:#4e4a70;--acc:#5b2bff;--pop:#c6ff2e;--card:#fff;--line:#d9d4f7;--s1:8px;--s2:16px;--s3:32px;--s4:64px;--s5:96px}
+*{box-sizing:border-box;margin:0}
+body{background:var(--bg);color:var(--ink);font:400 18px/1.55 Archivo,sans-serif}
+.w{max-width:1180px;margin:0 auto;padding:0 32px}
+nav{display:flex;justify-content:space-between;align-items:center;height:72px}
+.logo{font:400 30px 'Archivo Black';color:var(--acc);letter-spacing:-.02em}
+nav a{color:var(--ink);text-decoration:none;margin-left:28px;font-weight:700;font-size:15px}
+.hero{display:grid;grid-template-columns:1.2fr 1fr;gap:var(--s4);align-items:center;padding:var(--s3) 0 var(--s5)}
+.tag{background:var(--pop);display:inline-block;padding:6px 14px;font-weight:700;font-size:14px;transform:rotate(-2deg);margin-bottom:var(--s3)}
+h1{font:400 92px/.95 'Archivo Black';letter-spacing:-.03em;text-transform:uppercase}
+h1 span{color:var(--acc)}
+.lead{font-size:21px;color:var(--mut);max-width:500px;margin:var(--s3) 0}
+.btn{display:inline-block;background:var(--acc);color:#fff;font:400 19px 'Archivo Black';padding:20px 34px;border-radius:10px;text-decoration:none;box-shadow:6px 6px 0 var(--ink)}
+.car{height:380px;background:var(--acc);border-radius:32px;position:relative;overflow:hidden}
+.car i{position:absolute;display:block}
+.car .b{left:12%;right:12%;bottom:90px;height:90px;background:var(--pop);border-radius:60px 80px 20px 20px}
+.car .t{left:28%;right:30%;bottom:160px;height:70px;background:var(--pop);border-radius:60px 60px 0 0}
+.car .w1,.car .w2{width:70px;height:70px;border-radius:50%;background:var(--ink);bottom:60px;border:10px solid #fff}
+.car .w1{left:22%}.car .w2{right:22%}
+.car .sp{width:14px;height:14px;background:#fff;transform:rotate(45deg);top:50px;left:20%}
+.car .sp2{width:22px;height:22px;background:#fff;transform:rotate(45deg);top:90px;right:18%}
+sec{display:block;padding:var(--s5) 0}
+h2{font:400 52px/1 'Archivo Black';text-transform:uppercase;letter-spacing:-.02em;margin-bottom:var(--s4)}
+.logos{display:flex;justify-content:space-between;gap:var(--s2);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);padding:24px 0;font:400 22px 'Archivo Black';color:var(--mut)}
+.f3{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.box{background:var(--card);border:3px solid var(--ink);border-radius:20px;padding:var(--s3);box-shadow:6px 6px 0 var(--ink)}
+.box h3{font:400 24px 'Archivo Black';margin-bottom:8px}
+.box p{color:var(--mut);font-size:17px}
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.gal div{aspect-ratio:1/1.1;border-radius:20px;padding:16px;display:flex;align-items:end;font:400 18px 'Archivo Black';color:#fff;background:var(--acc)}
+.gal div:nth-child(2){background:var(--ink)}.gal div:nth-child(3){background:#ff4f8b}.gal div:nth-child(4){background:var(--pop);color:var(--ink)}
+.ints{display:flex;gap:var(--s2);flex-wrap:wrap}
+.ints span{background:var(--card);border:2px solid var(--ink);border-radius:99px;padding:12px 24px;font-weight:700}
+.posts{display:grid;grid-template-columns:repeat(3,1fr);gap:var(--s3)}
+.posts h3{font:400 22px/1.2 'Archivo Black';margin:8px 0}
+.posts small{color:var(--acc);font-weight:700}
+.posts p{color:var(--mut);font-size:16px}
+.cta{background:var(--ink);color:#fff;text-align:center;padding:var(--s5) 0}
+.cta h2{font-size:72px}
+.cta .btn{background:var(--pop);color:var(--ink);box-shadow:6px 6px 0 var(--acc)}
+footer{padding:var(--s3) 0;display:flex;justify-content:space-between;color:var(--mut);font-size:14px}
+/* flaws */
+h1{font:400 40px/1.2 'Archivo Black';text-transform:none;letter-spacing:0}
+h1 span{color:#8f8aa6}
+.lead{font:400 17px/1.5 'Times New Roman',serif;margin:4px 0 12px}
+.tag{font:400 12px 'Courier New',monospace;background:#b5b88a;transform:none}
+nav a{font-family:'Trebuchet MS',sans-serif;font-weight:400}
+:root{--bg:#e3e0e6;--acc:#6f6a8a;--pop:#b5b88a;--mut:#7d7a88}
+.hero{padding:8px 0 20px;gap:16px}
+.btn{background:#cfcbe0;color:#8c88a6;box-shadow:none;font-size:15px;padding:10px 16px}
+.car{height:300px}
+</style></head><body>
+<div class="w">
+<nav><div class="logo">fizen</div><div><a href="#">Packages</a><a href="#">Work</a><a href="#">Journal</a><a href="#">Book</a></div></nav>
+<header class="hero"><div>
+<span class="tag">From $29 a wash</span>
+<h1>Your ride. <span>Spotless.</span> Wherever you park it.</h1>
+<p class="lead">Fizen detailers come to your studio, your co-working lot or your curb. Pro-level shine at freelancer-friendly prices.</p>
+<a class="btn" href="#">Book a detail</a></div>
+<div class="car"><i class="sp"></i><i class="sp2"></i><i class="t"></i><i class="b"></i><i class="w1"></i><i class="w2"></i></div>
+</header></div>
+<div class="w"><div class="logos"><span>Figma</span><span>Notion</span><span>Behance</span><span>Dribbble</span><span>Procreate</span></div></div>
+<sec><div class="w"><h2>Why Fizen</h2><div class="f3">
+<div class="box"><h3>We come to you</h3><p>Fully mobile with our own water and power. Book a spot, not a trip.</p></div>
+<div class="box"><h3>Priced for real life</h3><p>Flat packages from $29. No upsell at the curb.</p></div>
+<div class="box"><h3>Booked in 60 seconds</h3><p>Pick a time between gigs. Reschedule free up to two hours before.</p></div></div></div></sec>
+<sec style="padding-top:0"><div class="w"><h2>Before, after, wow</h2><div class="gal"><div>Matte black wrap</div><div>Interior reset</div><div>Pink hatchback</div><div>Wheel and trim</div></div></div></sec>
+<sec style="padding-top:0"><div class="w"><h2>Pairs with your tools</h2><div class="ints"><span>Google Calendar</span><span>Apple Calendar</span><span>Venmo</span><span>Stripe receipts</span><span>QuickBooks</span></div></div></sec>
+<sec style="padding-top:0"><div class="w"><h2>From the garage blog</h2><div class="posts">
+<div><small>CARE</small><h3>Wash a car in a studio parking lot</h3><p>Six rules for the hours between deadlines.</p></div>
+<div><small>BUDGET</small><h3>What a $29 detail actually includes</h3><p>A line-by-line look at the basic package.</p></div>
+<div><small>STYLE</small><h3>Wraps for people with taste</h3><p>Matte, satin and gloss, explained.</p></div></div></div></sec>
+<div class="cta"><div class="w"><h2>Make it shine.</h2><a class="btn" href="#">Book a detail</a></div></div>
+<div class="w"><footer><span>Fizen Mobile Detailing. Serving 14 cities.</span><span>Privacy / Terms / Help</span></footer></div>
+</body></html>
