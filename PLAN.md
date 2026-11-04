@@ -5,7 +5,7 @@ Full queue and acceptance criteria: docs/brief.md. Status lives in LEDGER.md.
 
 ## Phases
 - [x] E0 judge recon → top-2 judges (runs/E0/judges.md)
-- [ ] E1 judge taste validation (gate: ≥75% agreement on high-confidence pairs)
+- [x] E1 judge taste validation (conditional pass) (gate: ≥75% agreement on high-confidence pairs)
 - [ ] E2 design loop, 2–3 DPO rounds, held-out eval under 3 judges
 - [ ] E3 stock vs unlocked (after David applies the unlock)
 - [ ] E4 weight-space probe (optional)
@@ -25,3 +25,4 @@ Full queue and acceptance criteria: docs/brief.md. Status lives in LEDGER.md.
 - 2026-11-03: Coder = Qwen2.5-Coder-7B-Instruct (Apache-2.0, ungated), QLoRA via Unsloth. Not Qwen3.5-9B: Unsloth advises against QLoRA on Qwen3.5 and bf16 LoRA at 9B needs 22 GB (https://unsloth.ai/docs/models/qwen3.5/fine-tune). Not Mellum 2.1: MoE, not in Unsloth's catalog. Backup: Qwen3.5-2B or 4B bf16 LoRA if 7B DPO runs out of memory.
 - 2026-11-03: Coder serving = vLLM 0.33 + official Qwen2.5-Coder-7B-Instruct-AWQ in .venv-vllm (fp8 left no KV room, and fp8 KV needs nvcc). About 720–900 tok/s at 64 concurrent requests, ~1.3k tokens/page, so 2000 pages take ~1 h. E2 note: samples come from the AWQ model while DPO trains a bf16/4-bit LoRA. Serve the trained LoRA on the AWQ base in vLLM (or re-quantize) and log the mismatch.
 - 2026-11-03: E1 small_model pairs are all coder-vs-coder (s0 vs s1, same brief), since that's exactly what the judge compares in the E2 loop. Reference labels: 60 small_model + 40 hard + 20 graded. The graded 20 check the labeler against by-construction labels.
+- 2026-11-03: E1 conditional pass. E2 keeps judge pairs at order-averaged confidence ≥0.7, not 0.8: audited accuracy is the same within CI (86% vs 88%) and coverage doubles (47% vs 27%). 0.8 is run as an ablation if time allows.

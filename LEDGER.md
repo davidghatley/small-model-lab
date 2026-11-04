@@ -11,10 +11,13 @@ Decision / next: top 2 = omnijev-0.8b (train judge) + imajev-9b nf4 (held-out ju
 Env note: rsi-jev pins transformers 5.17 → own .venv-rsijev; main .venv uses 5.22.1.
 Cost note: ~2 h wall, mostly downloads (~45 GB). No paid API.
 
-## E1 — Does the judge have taste?   status: running
-Hypothesis: at least one fast local judge agrees ≥75% with frontier reference labels on its high-confidence pairs, with low position bias.
-Setup (planned): 300 pairs. ~200 frontier strong-vs-flawed (obvious/moderate/subtle flaws) + hard strong-vs-strong, written by Claude subagents (David 2026-11-03: no paid API); ~100 small-model pairs from the coder the scout picks. 100-pair reference labels from a blind Claude labeler on screenshots; David hand-checks 30. Judges: omnijev-0.8b, omnijev-4b Q8, rsi-jev-4b, imajev-9b nf4, both orders. Brief splits are fixed up front: briefs/e1 (200), e2_train (500), e2_eval (100, held out). gpu: stock.
-Result: (pending)
+## E1 — Does the judge have taste?   status: passed (conditional; David's 30 hand checks pending)
+Setup: 300 pairs at 1280×800 (150 frontier strong-vs-CSS-flawed, 50 strong-vs-strong, 100 base-coder s0-vs-s1), runs/E1/pairs, QA runs/E1/pairs_qa.md. 120 blind Opus reference labels (labeler 20/20 on graded). 4 judges × both orders. gpu: stock.
+Result (audited, runs/E1/audit/audit.md): on coder pairs vs reference, omnijev-0.8b 73% [63–83] overall, 86% [71–96] at conf ≥0.7 (47% coverage), 88% at ≥0.8 (n=16). imajev-9b 67% overall, 89% at ≥0.7 (30% coverage). Planted flaws: imajev-9b 95%, omnijev-4b 90%, rsi 77%, 0.8b 69% (subtle ~chance for 0.8b/rsi). Flip on A/B swap 30–58% → always order-average. Trivial baselines ≤63%. ECE not meaningful at this n.
+Gate: the coded gate pooled sources and reported PASS. On coder pairs only, 0.8b's lower CI bound is 0.71 (borderline); 4b/9b n too small.
+Decision: training judge = omnijev-0.8b, order-averaged, keep pairs at conf ≥0.7 (not the brief's 0.8: accuracy is the same within CI and coverage doubles; 0.8 is the ablation). Held-out judges = imajev-9b (confident subset) + Opus on 50 eval briefs. Limits: flaws are mostly palette/type-scale CSS changes; hard pairs ≈ chance for everyone.
+Cost note: ~20 Sonnet page-writing agents + 4 Opus labelers (plan usage, no API); GPU ≈ 2.5 h.
+
 ## E2 — The design loop   status: planned
 ## E3 — Unlock as a measured variable   status: planned (waits for David's unlock)
 ## E4 — Weight-space probe   status: planned (optional, ask before API spend)

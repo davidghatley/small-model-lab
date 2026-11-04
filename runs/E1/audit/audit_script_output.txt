@@ -1,0 +1,80 @@
+rows with missing/inconsistent fields: 0 {'omnijev-0.8b': 300, 'omnijev-4b': 300, 'rsi-jev-4b': 300, 'imajev-9b': 300} {'omnijev-0.8b': 0, 'omnijev-4b': 0, 'rsi-jev-4b': 0, 'imajev-9b': 0}
+ref counts {'sm': 60, 'fh': 40, 'fg': 20} ref label dist sm {'a': 32, 'b': 28}
+
+## Claim 1: sm vs reference
+omnijev-0.8b: overall 0.733 n=60
+  conf>=0.6: n=43 cov=0.72 agree=0.767 CI[0.628,0.884]
+  conf>=0.7: n=28 cov=0.47 agree=0.857 CI[0.714,0.964]
+  conf>=0.8: n=16 cov=0.27 agree=0.875 CI[0.688,1.000]
+  |p-.5|>=.2 (conf>=.7) n=28 agree=0.857
+  ref conf>=.75: n=23 agree=0.826
+  overall CI [0.633,0.833]
+omnijev-4b: overall 0.567 n=60
+  conf>=0.6: n=31 cov=0.52 agree=0.806 CI[0.677,0.935]
+  conf>=0.7: n=9 cov=0.15 agree=0.889 CI[0.667,1.000]
+  conf>=0.8: n=5 cov=0.08 agree=1.000 CI[1.000,1.000]
+  |p-.5|>=.2 (conf>=.7) n=9 agree=0.889
+  ref conf>=.75: n=23 agree=0.739
+  overall CI [0.433,0.683]
+rsi-jev-4b: overall 0.617 n=60
+  conf>=0.6: n=44 cov=0.73 agree=0.727 CI[0.591,0.841]
+  conf>=0.7: n=34 cov=0.57 agree=0.765 CI[0.618,0.912]
+  conf>=0.8: n=23 cov=0.38 agree=0.870 CI[0.739,1.000]
+  |p-.5|>=.2 (conf>=.7) n=34 agree=0.765
+  ref conf>=.75: n=23 agree=0.783
+  overall CI [0.483,0.733]
+imajev-9b: overall 0.667 n=60
+  conf>=0.6: n=35 cov=0.58 agree=0.800 CI[0.657,0.914]
+  conf>=0.7: n=18 cov=0.30 agree=0.889 CI[0.722,1.000]
+  conf>=0.8: n=6 cov=0.10 agree=1.000 CI[1.000,1.000]
+  |p-.5|>=.2 (conf>=.7) n=18 agree=0.889
+  ref conf>=.75: n=23 agree=0.913
+  overall CI [0.550,0.783]
+
+## Gate as coded: all reference pairs (sm+fh+fg), conf>=0.8
+omnijev-0.8b: all n=19 0.842 CI[0.684,1.000] | sm-only n=16 0.875 CI[0.6875,1.0]
+omnijev-4b: all n=9 1.000 CI[1.000,1.000] | sm-only n=5 1.000 CI[1.0,1.0]
+rsi-jev-4b: all n=33 0.879 CI[0.758,0.970] | sm-only n=23 0.870 CI[0.7391304347826086,1.0]
+imajev-9b: all n=14 1.000 CI[1.000,1.000] | sm-only n=6 1.000 CI[1.0,1.0]
+
+## Claim 2: position bias (all scored pairs)
+omnijev-0.8b: n=300 meanP(first)=0.469 flip=0.333 by-source(flip,P1)={'sm': (0.29, 0.43), 'fh': (0.36, 0.43), 'fg': (0.35, 0.51)}
+omnijev-4b: n=300 meanP(first)=0.370 flip=0.583 by-source(flip,P1)={'sm': (0.67, 0.34), 'fh': (0.76, 0.37), 'fg': (0.47, 0.39)}
+rsi-jev-4b: n=300 meanP(first)=0.520 flip=0.303 by-source(flip,P1)={'sm': (0.28, 0.46), 'fh': (0.34, 0.43), 'fg': (0.31, 0.59)}
+imajev-9b: n=300 meanP(first)=0.376 flip=0.397 by-source(flip,P1)={'sm': (0.43, 0.37), 'fh': (0.7, 0.34), 'fg': (0.27, 0.39)}
+
+## Claim 3: by construction (fg)
+omnijev-0.8b: n=150 0.687 CI[0.613,0.760] {'moderate': (50, 0.66), 'obvious': (50, 0.88), 'subtle': (50, 0.52)}
+omnijev-4b: n=150 0.900 CI[0.853,0.947] {'moderate': (50, 0.98), 'obvious': (50, 1.0), 'subtle': (50, 0.72)}
+rsi-jev-4b: n=150 0.773 CI[0.707,0.840] {'moderate': (50, 0.82), 'obvious': (50, 0.98), 'subtle': (50, 0.52)}
+imajev-9b: n=150 0.953 CI[0.920,0.987] {'moderate': (50, 1.0), 'obvious': (50, 1.0), 'subtle': (50, 0.86)}
+
+## Reference vs by-construction on the 20 fg in reference
+agree: 20 / 20
+
+## Baselines on sm vs reference
+nonbg higher: 0.567 CI[0.43,0.70]
+nonbg lower: 0.433 CI[0.30,0.57]
+dark higher: 0.550 CI[0.43,0.68]
+dark lower: 0.450 CI[0.32,0.57]
+size higher: 0.500 CI[0.50,0.50]
+size lower: 0.500 CI[0.50,0.50]
+edges higher: 0.633 CI[0.52,0.75]
+edges lower: 0.367 CI[0.25,0.48]
+std higher: 0.467 CI[0.33,0.58]
+std lower: 0.533 CI[0.42,0.67]
+ref side balance: pick always a = 0.5333333333333333
+omnijev-0.8b agrees with "nonbg higher" on sm: 0.467
+omnijev-0.8b agrees with "dark higher" on sm: 0.583
+omnijev-4b agrees with "nonbg higher" on sm: 0.5
+omnijev-4b agrees with "dark higher" on sm: 0.517
+rsi-jev-4b agrees with "nonbg higher" on sm: 0.55
+rsi-jev-4b agrees with "dark higher" on sm: 0.533
+imajev-9b agrees with "nonbg higher" on sm: 0.5
+imajev-9b agrees with "dark higher" on sm: 0.65
+
+## 0.8b hi-conf (>=.7) disagreements on sm: 4
+sm-0184 p_a_avg=0.19 ref a 0.75 | A is minimal but polished; B is cramped unstyled HTML with no spacing, default form controls and blue link.
+sm-0033 p_a_avg=0.81 ref b 0.7 | B has balanced hero and card grid (placeholders); A is just one long headline floating in empty gradient.
+sm-0055 p_a_avg=0.74 ref b 0.55 | A has content flush to edges and a broken image; B is only a hero but coherent and readable.
+sm-0045 p_a_avg=0.29 ref a 0.7 | A has strong headline hierarchy and even team grid; B has tiny unstyled default button and orphaned left-aligned team text.
