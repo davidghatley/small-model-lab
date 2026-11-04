@@ -1,0 +1,17 @@
+{
+ "pair_id": "sm-0100",
+ "brief_id": "e1-0100",
+ "source": "small_model",
+ "intended_better": null,
+ "flaw_severity": null,
+ "flaw_notes": null,
+ "gen_src": {
+  "a": "runs/E1/pages_base/e1-0100/s0.html",
+  "b": "runs/E1/pages_base/e1-0100/s1.html"
+ },
+ "s0_side": "a",
+ "fonts_ok": true,
+ "qa_flags": [],
+ "pixel_diff_pct": 59.609,
+ "pixel_mean_abs_diff": 73.371
+}
