@@ -1,0 +1,235 @@
+{
+ "policy_x": {
+  "name": "base",
+  "spec": "base"
+ },
+ "policy_y": {
+  "name": "r0_lr5e-5",
+  "spec": "runs/E2/round0/train_lr5e-5/adapter"
+ },
+ "n_briefs": 100,
+ "page_validity": {
+  "x": {
+   "n": 100,
+   "clean": 97,
+   "unclean": 3,
+   "render_failed": 0,
+   "blank": 0
+  },
+  "y": {
+   "n": 100,
+   "clean": 98,
+   "unclean": 2,
+   "render_failed": 0,
+   "blank": 0
+  }
+ },
+ "n_pairs_both_clean": 97,
+ "temperature": 0.7,
+ "seed": 0,
+ "gpu": "stock",
+ "holdout_guard": {
+  "datasets_checked": [
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/_smoke/dpo40.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/_smoke/round0/select/dpo.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/round0/select/dpo.jsonl"
+  ],
+  "rows_checked": 1300
+ },
+ "judges": {
+  "omnijev-0.8b": {
+   "all": {
+    "n": 97,
+    "win_rate": 0.485,
+    "win_rate_ci95": [
+     0.433,
+     0.541
+    ],
+    "mean_p_y": 0.502,
+    "mean_p_y_ci95": [
+     0.49,
+     0.515
+    ],
+    "mean_log_len_ratio_y_over_x": -0.003,
+    "frac_y_longer": 0.155,
+    "lc_win_rate": 0.462,
+    "lc_win_rate_ci95": [
+     0.271,
+     0.664
+    ],
+    "length_slope": 6.207,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.526,
+       0.0
+      ],
+      "n": 33,
+      "win_rate": 0.409
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.0
+      ],
+      "n": 32,
+      "win_rate": 0.516
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.218
+      ],
+      "n": 32,
+      "win_rate": 0.531
+     }
+    ],
+    "bucketed_lc_win_rate": 0.485,
+    "n_ties": 66
+   },
+   "conf_ge_0_7": {
+    "n": 2,
+    "win_rate": 0.5,
+    "win_rate_ci95": [
+     0.0,
+     1.0
+    ],
+    "mean_p_y": 0.548,
+    "mean_p_y_ci95": [
+     0.217,
+     0.879
+    ],
+    "mean_log_len_ratio_y_over_x": 0.02,
+    "frac_y_longer": 0.5,
+    "lc_win_rate": null,
+    "lc_win_rate_ci95": [
+     NaN,
+     NaN
+    ],
+    "length_slope": null,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.017,
+       -0.017
+      ],
+      "n": 1,
+      "win_rate": 0.0
+     },
+     {
+      "lr_range": [
+       0.057,
+       0.057
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     }
+    ],
+    "bucketed_lc_win_rate": 0.5,
+    "n_ties": 0
+   },
+   "order_flip_rate": 0.907
+  },
+  "imajev-9b": {
+   "all": {
+    "n": 97,
+    "win_rate": 0.495,
+    "win_rate_ci95": [
+     0.443,
+     0.552
+    ],
+    "mean_p_y": 0.499,
+    "mean_p_y_ci95": [
+     0.485,
+     0.514
+    ],
+    "mean_log_len_ratio_y_over_x": -0.003,
+    "frac_y_longer": 0.155,
+    "lc_win_rate": 0.498,
+    "lc_win_rate_ci95": [
+     0.303,
+     0.701
+    ],
+    "length_slope": 6.614,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.526,
+       0.0
+      ],
+      "n": 33,
+      "win_rate": 0.409
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.0
+      ],
+      "n": 32,
+      "win_rate": 0.484
+     },
+     {
+      "lr_range": [
+       0.0,
+       0.218
+      ],
+      "n": 32,
+      "win_rate": 0.594
+     }
+    ],
+    "bucketed_lc_win_rate": 0.496,
+    "n_ties": 66
+   },
+   "conf_ge_0_7": {
+    "n": 4,
+    "win_rate": 0.75,
+    "win_rate_ci95": [
+     0.25,
+     1.0
+    ],
+    "mean_p_y": 0.633,
+    "mean_p_y_ci95": [
+     0.38,
+     0.777
+    ],
+    "mean_log_len_ratio_y_over_x": -0.081,
+    "frac_y_longer": 0.75,
+    "lc_win_rate": 0.983,
+    "lc_win_rate_ci95": [
+     0.935,
+     0.988
+    ],
+    "length_slope": 14.549,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.526,
+       0.006
+      ],
+      "n": 2,
+      "win_rate": 0.5
+     },
+     {
+      "lr_range": [
+       0.057,
+       0.057
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     },
+     {
+      "lr_range": [
+       0.137,
+       0.137
+      ],
+      "n": 1,
+      "win_rate": 1.0
+     }
+    ],
+    "bucketed_lc_win_rate": 0.833,
+    "n_ties": 0
+   },
+   "order_flip_rate": 0.866
+  }
+ }
+}

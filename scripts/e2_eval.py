@@ -156,7 +156,7 @@ def analyze(rows, conf_min=0.0, nboot=2000, seed=0):
     ci = lambda v: [round(float(np.nanpercentile(v, 2.5)), 3), round(float(np.nanpercentile(v, 97.5)), 3)]
     keep = win != .5; b0, b1 = logit_fit(lr[keep], win[keep]) if keep.sum() >= 4 and len(set(win[keep])) > 1 else (float("nan"), float("nan"))
     order = np.argsort(lr); tern = np.array_split(order, 3)
-    buckets = [dict(lr_range=[round(float(lr[t].min()), 3), round(float(lr[t].max()), 3)], n=int(len(t)), win_rate=round(float(win[t].mean()), 3)) for t in tern]
+    buckets = [dict(lr_range=[round(float(lr[t].min()), 3), round(float(lr[t].max()), 3)], n=int(len(t)), win_rate=round(float(win[t].mean()), 3)) for t in tern if len(t)]
     return dict(n=n, win_rate=round(float(win.mean()), 3), win_rate_ci95=ci(wins), mean_p_y=round(float(pm.mean()), 3), mean_p_y_ci95=ci(pms),
                 mean_log_len_ratio_y_over_x=round(float(lr.mean()), 3), frac_y_longer=round(float((lr > 0).mean()), 3),
                 lc_win_rate=round(sig(b0), 3) if b0 == b0 else None, lc_win_rate_ci95=ci(lcs), length_slope=round(b1, 3) if b1 == b1 else None,

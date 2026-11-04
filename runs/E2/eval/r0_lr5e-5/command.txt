@@ -1,0 +1,1 @@
+/home/davidhatley/Projects/small-model-lab/.venv/bin/python scripts/e2_eval.py --out runs/E2/eval/r0_lr5e-5 --policy-y runs/E2/round0/train_lr5e-5/adapter --name-y r0_lr5e-5 --judges omnijev-0.8b,imajev-9b --stage report
