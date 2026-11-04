@@ -11,11 +11,12 @@ Decision / next: top 2 = omnijev-0.8b (train judge) + imajev-9b nf4 (held-out ju
 Env note: rsi-jev pins transformers 5.17 → own .venv-rsijev; main .venv uses 5.22.1.
 Cost note: ~2 h wall, mostly downloads (~45 GB). No paid API.
 
-## E1 — Does the judge have taste?   status: passed (conditional; David's 30 hand checks pending)
+## E1 — Does the judge have taste?   status: passed (David's hand check done 2026-11-04)
 Setup: 300 pairs at 1280×800 (150 frontier strong-vs-CSS-flawed, 50 strong-vs-strong, 100 base-coder s0-vs-s1), runs/E1/pairs, QA runs/E1/pairs_qa.md. 120 blind Opus reference labels (labeler 20/20 on graded). 4 judges × both orders. gpu: stock.
 Result (audited, runs/E1/audit/audit.md): on coder pairs vs reference, omnijev-0.8b 73% [63–83] overall, 86% [71–96] at conf ≥0.7 (47% coverage), 88% at ≥0.8 (n=16). imajev-9b 67% overall, 89% at ≥0.7 (30% coverage). Planted flaws: imajev-9b 95%, omnijev-4b 90%, rsi 77%, 0.8b 69% (subtle ~chance for 0.8b/rsi). Flip on A/B swap 30–58% → always order-average. Trivial baselines ≤63%. ECE not meaningful at this n.
 Gate: the coded gate pooled sources and reported PASS. On coder pairs only, 0.8b's lower CI bound is 0.71 (borderline); 4b/9b n too small.
 Decision: training judge = omnijev-0.8b, order-averaged, keep pairs at conf ≥0.7 (not the brief's 0.8: accuracy is the same within CI and coverage doubles; 0.8 is the ablation). Held-out judges = imajev-9b (confident subset) + Opus on 50 eval briefs. Limits: flaws are mostly palette/type-scale CSS changes; hard pairs ≈ chance for everyone.
+David (30 pairs, runs/E1/labels/david_analysis.md): 7 ties (6 of 15 coder pairs "both bad"). Non-tie agreement: planted/author truth 14/14, reference 20/23 (12/13 on his clear picks) → reference labels validated. Judges: omnijev-0.8b 16/23 (6/13 on his clear picks), omnijev-4b 18/23, rsi-jev 19/23 (conf≥0.7: 9/10), imajev-9b 19/23 (conf≥0.7: 7/7). n tiny; flags 0.8b as the weakest judge on human taste, and judges were confident on pairs David called both bad.
 Cost note: ~20 Sonnet page-writing agents + 4 Opus labelers (plan usage, no API); GPU ≈ 2.5 h.
 
 ## E2 — The design loop   status: running (round 0 retrain)
