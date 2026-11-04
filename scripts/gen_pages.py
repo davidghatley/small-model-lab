@@ -98,6 +98,7 @@ def main():
     ap.add_argument("--limit", type=int, default=None, help="only first N briefs")
     ap.add_argument("--prompt", default=str(ROOT / "scripts/prompts/coder_page.txt"))
     ap.add_argument("--adapter", default=None, help="optional LoRA dir served as model name 'adapter'")
+    ap.add_argument("--max-minutes", type=float, default=None, help="stop starting new samples after this many minutes (in-flight ones finish); rerun to resume")
     ap.add_argument("--port", type=int, default=8123)
     ap.add_argument("--server-url-port", type=int, default=None, help="reuse an already running server on this port")
     a = ap.parse_args()
@@ -149,7 +150,11 @@ def main():
         t_start = time.time()
         stats = dict(tok=0, n=0)
 
+        deadline = time.time() + a.max_minutes * 60 if a.max_minutes else None
+
         def work(b, k):
+            if deadline and time.time() > deadline:
+                return None
             seed = sample_seed(a.seed, b["id"], k)
             t0 = time.time()
             r = post(port, dict(model=model, messages=build_messages(tpl, b), temperature=a.temperature, top_p=a.top_p,
@@ -160,6 +165,7 @@ def main():
             fin = ch["finish_reason"]
             d = out / b["id"]; d.mkdir(exist_ok=True)
             (d / f"s{k}.html").write_text(html)
+            (d / f"s{k}.raw.txt").write_text(text)  # exact model output (E2 trains on it)
             row = dict(brief_id=b["id"], k=k, seed=seed, tokens=r["usage"]["completion_tokens"], prompt_tokens=r["usage"]["prompt_tokens"],
                        finish_reason=fin, truncated=(fin == "length"), latency=round(lat, 2), extracted_cleanly=bool(clean and fin != "length"),
                        temperature=a.temperature)

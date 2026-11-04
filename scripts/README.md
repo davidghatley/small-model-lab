@@ -62,3 +62,14 @@ Why AWQ: on-the-fly fp8 (`--quant fp8` with the bf16 checkpoint) loads (8.2 GiB)
 ```
 Starts/stops its own `vllm serve` (port 8123, `--max-num-seqs 48` default, continuous batching), posts one request per sample, writes `<out>/<brief_id>/s<k>.html`, `gen.jsonl` (brief_id, k, seed, tokens, prompt_tokens, finish_reason, truncated, latency, extracted_cleanly), `config.json`, `command.txt`, `server_cmd.txt`, `server.log`, `summary.json`. Resumable (rerun the same command; finished (brief,k) are skipped). Per-sample seed = hash(seed, brief_id, k). Prompt: `scripts/prompts/coder_page.txt` (system + `=====USER=====` + user with {product} {audience} {tone} {sections}). `extracted_cleanly` = complete doc (`</html>` present) and not truncated. `--adapter <lora dir>` serves a LoRA as the model for tuned runs; `--quant fp8 --dtype bfloat16 --model-path .../qwen2.5-coder-7b-instruct` for the unquantized-ish variant.
 Smoke (`runs/E1/_gen_smoke/`, 8 briefs x 2): exit 0, 16/16 clean, 0 truncated, 657 tok/s, 33 s. Bench (`_gen_smoke/bench100/`, 100 pages, 64 seqs): 723 tok/s incl. tail (about 900 steady), mean 1265 tokens/page, 1/100 truncated (6144-token loop), 99/100 clean, peak VRAM 10.8 GB whole GPU. 2000 pages is roughly 2.5M tokens, so about 45-60 min. The "~6M tokens" figure assumes 3k tokens/page; the base model writes about 1.3k.
+
+## E2 design loop (e2_loop.py, e2_eval.py)
+Env: `.venv-unsloth` (uv, py3.12: torch 2.14.1+cu130, unsloth 2026.11.1, trl 1.15.0, peft 0.21.2, transformers 5.17.0, bitsandbytes 0.50.2). Train base = `unsloth/Qwen2.5-Coder-7B-Instruct-bnb-4bit` at `/mnt/work/models/qwen2.5-coder-7b-instruct-bnb-4bit/`.
+```
+bash scripts/smoke_e2.sh                                                       # whole thing at toy size -> runs/E2/_smoke/
+.venv/bin/python scripts/e2_loop.py --round 0 --stage all --out runs/E2/round0/     # full round; each GPU call <= --max-minutes (25), via gpu_run
+.venv/bin/python scripts/e2_loop.py --round 0 --stage gen --out runs/E2/round0/     # one chunk of one stage; exit 3 = call again
+.venv/bin/python scripts/e2_loop.py --round 1 --stage all --out runs/E2/round1/     # samples from round0/train/adapter, trains on from it
+.venv/bin/python scripts/e2_eval.py --out runs/E2/eval/r1 --policy-y runs/E2/round1/train/adapter --stage all
+```
+Stages: gen (gen_pages.py, +`--max-minutes`, saves `s<k>.raw.txt`), render (e2_render.py, 6 processes), judge (e2_judge.py, cached in `judge/scores_<judge>.jsonl`), select (`--conf 0.7`; drops per-brief preference cycles via SCC, and pairs longer than 4096 tokens), train (e2_dpo.py: Unsloth QLoRA + TRL DPO, checkpoints every 5 steps, resumes). Select stats include chosen-vs-rejected length. LoRA trained on the bnb-4bit base loads on the AWQ base in vLLM `--enable-lora` unchanged (AutoAWQ Marlin kernel; smoke verified, outputs differ from base). DPO reference = base with adapter disabled (also in round >= 1).

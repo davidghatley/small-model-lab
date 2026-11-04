@@ -27,3 +27,5 @@ runs/**/*.jsonl
 !runs/E1/labels/*.jsonl
 !runs/E1/staging/*/*.html
 !runs/E1/scores/*.jsonl
+.venv-unsloth/
+.venv-vllm/

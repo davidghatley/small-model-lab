@@ -1,0 +1,26 @@
+{
+ "round": 1,
+ "out": "runs/E2/_smoke/round1_gen",
+ "gpu": "stock",
+ "versions": {
+  "python": "3.12.15",
+  "main": "5.22.1",
+  "vllm": "0.33.0",
+  "unsloth": "trl 1.15.0 unsloth 2026.11.1"
+ },
+ "written": "2026-11-03T20:28:33",
+ "stages": {
+  "gen": {
+   "chunks": 1,
+   "wall_s": 90.6,
+   "peak_gpu_used_mib": 10532
+  }
+ },
+ "gen": {
+  "samples": 2,
+  "tokens": 2516,
+  "wall_s": 31.7,
+  "agg_tok_per_s": 79.4
+ },
+ "policy_adapter": "runs/E2/_smoke/round0/train/adapter"
+}
