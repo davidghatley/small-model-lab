@@ -1,0 +1,25 @@
+{"pair_id": "pair_01", "better": "a", "confidence": 0.7, "rationale": "A has styled buttons, team cards and consistent widths; B has mismatched narrow blocks and an unstyled default button."}
+{"pair_id": "pair_02", "better": "a", "confidence": 0.75, "rationale": "A is dark, moody and tidy with testimonial and logo cards; B shows broken logo images and unpadded text."}
+{"pair_id": "pair_03", "better": "b", "confidence": 0.8, "rationale": "A has broken book-cover images and an unstyled newsletter input; B is a clean, styled card layout."}
+{"pair_id": "pair_04", "better": "b", "confidence": 0.7, "rationale": "A's gallery shows broken image alt text; B has a team card, CTA and tidy placeholders."}
+{"pair_id": "pair_05", "better": "b", "confidence": 0.6, "rationale": "B is more polished, with stats and contained cards; A is fine but plainer, with a pale low-contrast hero."}
+{"pair_id": "pair_06", "better": "b", "confidence": 0.55, "rationale": "A's headline is squeezed into a narrow column and the footer overlaps content; B has a clean hierarchy."}
+{"pair_id": "pair_07", "better": "b", "confidence": 0.85, "rationale": "A's hero image is broken, showing alt text behind the headline on flat grey; B is clean, green and on-brief."}
+{"pair_id": "pair_08", "better": "b", "confidence": 0.65, "rationale": "A has a bare bullet list and cut-off buttons; B has location cards and a clear app CTA."}
+{"pair_id": "pair_09", "better": "a", "confidence": 0.55, "rationale": "B's colorful feature cards are undercut by a list of broken images; A is sparse but nothing looks broken."}
+{"pair_id": "pair_10", "better": "a", "confidence": 0.75, "rationale": "B shows broken hero and app-download images and crude triangle icons; A is cohesive and playful."}
+{"pair_id": "pair_11", "better": "b", "confidence": 0.6, "rationale": "A has plain-text logos and an unstyled link CTA; B has a styled logo wall despite an odd blob overlap."}
+{"pair_id": "pair_12", "better": "b", "confidence": 0.6, "rationale": "B has a stronger headline, full-width hero and clean CTA; A's narrow hero and mixed colors feel disjointed."}
+{"pair_id": "pair_13", "better": "b", "confidence": 0.75, "rationale": "A's headline and subtitle run together on one line inside a big empty hero; B has a clear hero and how-it-works cards."}
+{"pair_id": "pair_14", "better": "b", "confidence": 0.75, "rationale": "A is mostly a giant grey placeholder with the footer overlapping it; B has a hero CTA, testimonials and a newsletter."}
+{"pair_id": "pair_15", "better": "b", "confidence": 0.7, "rationale": "A's monospace font suits retro, but a black triangle overlaps the testimonial; B is polished and well organized."}
+{"pair_id": "pair_16", "better": "a", "confidence": 0.6, "rationale": "B's garbled black icons look broken; A is sparse but clean, with a warm optimistic hero."}
+{"pair_id": "pair_17", "better": "b", "confidence": 0.75, "rationale": "A has an unstyled pricing table and bullets with weak contrast; B has a structured offer grid and pricing cards."}
+{"pair_id": "pair_18", "better": "b", "confidence": 0.6, "rationale": "A fits dark and moody but has default unstyled buttons and a split headline; B is more polished on a dark background."}
+{"pair_id": "pair_19", "better": "b", "confidence": 0.65, "rationale": "A's comparison table text runs together; B shows a clear side-by-side comparison and bold color blocks."}
+{"pair_id": "pair_20", "better": "b", "confidence": 0.7, "rationale": "A stacks jagged, uneven narrow panels; B is clean and consistent, with clear download buttons and cards."}
+{"pair_id": "pair_21", "better": "b", "confidence": 0.75, "rationale": "A is a full-screen gradient with one line of text; B shows a hero, feature cards and locations."}
+{"pair_id": "pair_22", "better": "b", "confidence": 0.65, "rationale": "A has leftover [City Name] placeholders and the footer overlaps content; B has tidy FAQ cards and a contained hero."}
+{"pair_id": "pair_23", "better": "a", "confidence": 0.7, "rationale": "B shows broken QR and logo images; A is clean and clinical, though its Join section is misaligned."}
+{"pair_id": "pair_24", "better": "a", "confidence": 0.7, "rationale": "A has a cohesive card layout with testimonials, CTA and steps; B is sparse, with a single quote and an odd red bar."}
+{"pair_id": "pair_25", "better": "b", "confidence": 0.75, "rationale": "A has a default grey button and an awkward hero split; B has a centered hero, styled CTA and clean sections."}
