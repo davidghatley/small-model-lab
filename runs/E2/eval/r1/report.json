@@ -1,0 +1,245 @@
+{
+ "policy_x": {
+  "name": "base",
+  "spec": "base"
+ },
+ "policy_y": {
+  "name": "r1",
+  "spec": "runs/E2/round1/train/adapter"
+ },
+ "n_briefs": 100,
+ "page_validity": {
+  "x": {
+   "n": 100,
+   "clean": 98,
+   "unclean": 2,
+   "render_failed": 0,
+   "blank": 0
+  },
+  "y": {
+   "n": 100,
+   "clean": 96,
+   "unclean": 4,
+   "render_failed": 0,
+   "blank": 0
+  }
+ },
+ "n_pairs_both_clean": 94,
+ "temperature": 0.7,
+ "seed": 0,
+ "gpu": "stock",
+ "holdout_guard": {
+  "datasets_checked": [
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/_smoke/dpo40.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/_smoke/round0/select/dpo.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/round0/select/dpo.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/round0/select_consensus/dpo.jsonl",
+   "/home/davidhatley/Projects/small-model-lab/runs/E2/round1/select/dpo.jsonl"
+  ],
+  "rows_checked": 2643
+ },
+ "judges": {
+  "omnijev-0.8b": {
+   "all": {
+    "n": 94,
+    "win_rate": 0.851,
+    "win_rate_ci95": [
+     0.777,
+     0.926
+    ],
+    "mean_p_y": 0.643,
+    "mean_p_y_ci95": [
+     0.614,
+     0.672
+    ],
+    "mean_log_len_ratio_y_over_x": 0.311,
+    "frac_y_longer": 0.851,
+    "lc_win_rate": 0.919,
+    "lc_win_rate_ci95": [
+     0.832,
+     0.98
+    ],
+    "length_slope": -1.868,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.567,
+       0.181
+      ],
+      "n": 32,
+      "win_rate": 0.875
+     },
+     {
+      "lr_range": [
+       0.193,
+       0.419
+      ],
+      "n": 31,
+      "win_rate": 0.871
+     },
+     {
+      "lr_range": [
+       0.428,
+       1.464
+      ],
+      "n": 31,
+      "win_rate": 0.806
+     }
+    ],
+    "bucketed_lc_win_rate": 0.851,
+    "n_ties": 0
+   },
+   "conf_ge_0_7": {
+    "n": 35,
+    "win_rate": 0.943,
+    "win_rate_ci95": [
+     0.857,
+     1.0
+    ],
+    "mean_p_y": 0.762,
+    "mean_p_y_ci95": [
+     0.712,
+     0.805
+    ],
+    "mean_log_len_ratio_y_over_x": 0.253,
+    "frac_y_longer": 0.771,
+    "lc_win_rate": 0.998,
+    "lc_win_rate_ci95": [
+     0.963,
+     1.0
+    ],
+    "length_slope": -6.899,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.567,
+       0.165
+      ],
+      "n": 12,
+      "win_rate": 1.0
+     },
+     {
+      "lr_range": [
+       0.194,
+       0.414
+      ],
+      "n": 12,
+      "win_rate": 0.917
+     },
+     {
+      "lr_range": [
+       0.416,
+       1.032
+      ],
+      "n": 11,
+      "win_rate": 0.909
+     }
+    ],
+    "bucketed_lc_win_rate": 0.942,
+    "n_ties": 0
+   },
+   "order_flip_rate": 0.309
+  },
+  "imajev-9b": {
+   "all": {
+    "n": 94,
+    "win_rate": 0.926,
+    "win_rate_ci95": [
+     0.872,
+     0.968
+    ],
+    "mean_p_y": 0.686,
+    "mean_p_y_ci95": [
+     0.66,
+     0.712
+    ],
+    "mean_log_len_ratio_y_over_x": 0.311,
+    "frac_y_longer": 0.851,
+    "lc_win_rate": 0.88,
+    "lc_win_rate_ci95": [
+     0.793,
+     0.984
+    ],
+    "length_slope": 2.414,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.567,
+       0.181
+      ],
+      "n": 32,
+      "win_rate": 0.844
+     },
+     {
+      "lr_range": [
+       0.193,
+       0.419
+      ],
+      "n": 31,
+      "win_rate": 0.968
+     },
+     {
+      "lr_range": [
+       0.428,
+       1.464
+      ],
+      "n": 31,
+      "win_rate": 0.968
+     }
+    ],
+    "bucketed_lc_win_rate": 0.927,
+    "n_ties": 0
+   },
+   "conf_ge_0_7": {
+    "n": 49,
+    "win_rate": 0.959,
+    "win_rate_ci95": [
+     0.898,
+     1.0
+    ],
+    "mean_p_y": 0.762,
+    "mean_p_y_ci95": [
+     0.726,
+     0.79
+    ],
+    "mean_log_len_ratio_y_over_x": 0.342,
+    "frac_y_longer": 0.878,
+    "lc_win_rate": 0.914,
+    "lc_win_rate_ci95": [
+     0.678,
+     0.967
+    ],
+    "length_slope": 3.848,
+    "bucketed_win_rate_by_length_tercile": [
+     {
+      "lr_range": [
+       -0.299,
+       0.242
+      ],
+      "n": 17,
+      "win_rate": 0.882
+     },
+     {
+      "lr_range": [
+       0.263,
+       0.483
+      ],
+      "n": 16,
+      "win_rate": 1.0
+     },
+     {
+      "lr_range": [
+       0.492,
+       0.913
+      ],
+      "n": 16,
+      "win_rate": 1.0
+     }
+    ],
+    "bucketed_lc_win_rate": 0.961,
+    "n_ties": 0
+   },
+   "order_flip_rate": 0.34
+  }
+ }
+}
