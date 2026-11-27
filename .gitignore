@@ -29,3 +29,8 @@ runs/**/*.jsonl
 !runs/E1/scores/*.jsonl
 .venv-unsloth/
 .venv-vllm/
+# generated / bulky, never commit
+unsloth_compiled_cache/
+runs/**/*.raw.txt
+runs/**/adapter/
+runs/**/ref/
